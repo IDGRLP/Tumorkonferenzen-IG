@@ -109,7 +109,7 @@
     "fshType": "Profile",
     "fshFile": "profile-TumorDiagnose.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 48
   },
   {
     "outputFile": "StructureDefinition-Melder.json",

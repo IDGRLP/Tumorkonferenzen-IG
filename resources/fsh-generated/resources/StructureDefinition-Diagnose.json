@@ -241,6 +241,16 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "Condition.note",
+        "path": "Condition.note",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.note.text",
+        "path": "Condition.note.text",
+        "mustSupport": true
       }
     ]
   }

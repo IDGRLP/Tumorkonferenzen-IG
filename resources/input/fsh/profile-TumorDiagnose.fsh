@@ -44,3 +44,5 @@ Description: "Diagnoseinformationen (Primärtumor, frühere Tumore)"
 * subject only Reference(TumorPatient)
 * subject 1.. MS
 * onsetDateTime MS
+* note MS
+  * text MS
