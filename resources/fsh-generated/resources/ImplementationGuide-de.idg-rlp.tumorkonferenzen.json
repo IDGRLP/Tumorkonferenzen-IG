@@ -176,6 +176,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/nebenwirkung"
+        },
+        "name": "Nebenwirkung",
+        "description": "Nebenwirkung Strahlentherapie und systemische Therapie nach CTCAE",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/obds-op-komplikation-cs"
         },
         "name": "oBDS Operation Komplikation Codesystem",

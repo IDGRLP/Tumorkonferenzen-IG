@@ -59,6 +59,19 @@
         "mustSupport": true
       },
       {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Procedure.performed[x]",
         "path": "Procedure.performed[x]",
         "slicing": {

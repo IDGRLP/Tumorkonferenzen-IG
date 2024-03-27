@@ -221,6 +221,14 @@
       {
         "id": "Procedure.subject",
         "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
@@ -295,6 +303,19 @@
         "id": "Procedure.complication.coding.code",
         "path": "Procedure.complication.coding.code",
         "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complicationDetail",
+        "path": "Procedure.complicationDetail",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/nebenwirkung"
+            ]
+          }
+        ],
         "mustSupport": true
       }
     ]

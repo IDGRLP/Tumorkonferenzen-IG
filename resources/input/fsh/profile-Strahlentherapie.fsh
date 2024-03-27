@@ -55,10 +55,12 @@ Description: "Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in 
 * outcome MS
   * text MS
 * complication MS
-* complication only Reference(Nebenwirkung)
+* complication
   * coding MS
     * system 1.. MS
     * code 1.. MS
+* complicationDetail MS
+* complicationDetail only Reference(Nebenwirkung)
 
 Extension: StrahlentherapieDetails
 Id: strahlentherapie-details

@@ -90,6 +90,14 @@
       {
         "id": "Procedure.subject",
         "path": "Procedure.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

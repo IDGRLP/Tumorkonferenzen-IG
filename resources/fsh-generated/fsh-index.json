@@ -84,16 +84,16 @@
     "fshName": "OperationEinzelprozedurExample",
     "fshType": "Instance",
     "fshFile": "profile-Operation.fsh",
-    "startLine": 55,
-    "endLine": 64
+    "startLine": 58,
+    "endLine": 67
   },
   {
     "outputFile": "Procedure-OperationExample.json",
     "fshName": "OperationExample",
     "fshType": "Instance",
     "fshFile": "profile-Operation.fsh",
-    "startLine": 47,
-    "endLine": 52
+    "startLine": 50,
+    "endLine": 55
   },
   {
     "outputFile": "Specimen-Tumor-Example.json",
@@ -168,12 +168,20 @@
     "endLine": 21
   },
   {
+    "outputFile": "StructureDefinition-nebenwirkung.json",
+    "fshName": "Nebenwirkung",
+    "fshType": "Profile",
+    "fshFile": "profile-Nebenwirkung.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
     "outputFile": "StructureDefinition-operation-einzelprozedur.json",
     "fshName": "OperationEinzelprozedur",
     "fshType": "Profile",
     "fshFile": "profile-Operation.fsh",
-    "startLine": 22,
-    "endLine": 44
+    "startLine": 24,
+    "endLine": 47
   },
   {
     "outputFile": "StructureDefinition-operation.json",
@@ -181,15 +189,15 @@
     "fshType": "Profile",
     "fshFile": "profile-Operation.fsh",
     "startLine": 1,
-    "endLine": 20
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-strahlentherapie-details.json",
     "fshName": "StrahlentherapieDetails",
     "fshType": "Extension",
     "fshFile": "profile-Strahlentherapie.fsh",
-    "startLine": 61,
-    "endLine": 110
+    "startLine": 65,
+    "endLine": 114
   },
   {
     "outputFile": "StructureDefinition-strahlentherapie.json",
@@ -197,7 +205,7 @@
     "fshType": "Profile",
     "fshFile": "profile-Strahlentherapie.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 63
   },
   {
     "outputFile": "StructureDefinition-tnm-distant-metastases-category.json",

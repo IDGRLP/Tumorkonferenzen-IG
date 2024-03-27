@@ -15,6 +15,7 @@
 [Melder-example-1]: Practitioner-Melder-example-1.html
 [MelderInOrganisation-example-1]: PractitionerRole-MelderInOrganisation-example-1.html
 [ICDO3Morphologie]: ValueSet-icd-o-3-morphologie.html
+[Nebenwirkung]: StructureDefinition-nebenwirkung.html
 [ObdsOpKomplikationCS]: CodeSystem-obds-op-komplikation-cs.html
 [ObdsOpKomplikationVS]: ValueSet-obds-op-komplikation-vs.html
 [Operation]: StructureDefinition-operation.html
