@@ -107,6 +107,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/familienanamnese"
+        },
+        "name": "Familienanamnese",
+        "description": "Familienanamnese",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/gesamtbeurteilung"
         },
         "name": "Gesamtbeurteilung",

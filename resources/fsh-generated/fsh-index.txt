@@ -19,6 +19,7 @@ StructureDefinition-Organisation.json                     Organisation          
 StructureDefinition-TumorPatient.json                     TumorPatient                       Profile     profile-TumorPatient.fsh                  1 - 57
 StructureDefinition-cancer-stage-group.json               CancerStageGroup                   Profile     profile-Staging.fsh                       1 - 21
 StructureDefinition-ecog.json                             ECOG                               Profile     profile-Allgemeiner_Leistungszustand.fsh  1 - 11
+StructureDefinition-familienanamnese.json                 Familienanamnese                   Profile     profile-Familienanamnese.fsh              1 - 10
 StructureDefinition-gesamtbeurteilung.json                Gesamtbeurteilung                  Profile     profile-Gesamtbeurteilung.fsh             1 - 21
 StructureDefinition-histologie.json                       Histologie                         Profile     profile-Histologie.fsh                    1 - 21
 StructureDefinition-nebenwirkung.json                     Nebenwirkung                       Profile     profile-Nebenwirkung.fsh                  1 - 39

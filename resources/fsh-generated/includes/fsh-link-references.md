@@ -6,6 +6,7 @@
 [ECOG]: StructureDefinition-ecog.html
 [ECOGPerformanceStatusVS]: ValueSet-ecog-performance-status.html
 [ECOGExample]: Observation-ECOGExample.html
+[Familienanamnese]: StructureDefinition-familienanamnese.html
 [Gesamtbeurteilung]: StructureDefinition-gesamtbeurteilung.html
 [Histologie]: StructureDefinition-histologie.html
 [Histologie-Example]: Observation-Histologie-Example.html

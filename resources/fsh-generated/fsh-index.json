@@ -160,6 +160,14 @@
     "endLine": 11
   },
   {
+    "outputFile": "StructureDefinition-familienanamnese.json",
+    "fshName": "Familienanamnese",
+    "fshType": "Profile",
+    "fshFile": "profile-Familienanamnese.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
     "outputFile": "StructureDefinition-gesamtbeurteilung.json",
     "fshName": "Gesamtbeurteilung",
     "fshType": "Profile",
