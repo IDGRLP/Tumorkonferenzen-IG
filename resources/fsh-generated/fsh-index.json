@@ -256,6 +256,14 @@
     "endLine": 17
   },
   {
+    "outputFile": "StructureDefinition-verlauf.json",
+    "fshName": "Verlauf",
+    "fshType": "Profile",
+    "fshFile": "profile-Verlauf.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
     "outputFile": "ValueSet-cancer-stage-group-vs.json",
     "fshName": "CancerStageVS",
     "fshType": "ValueSet",

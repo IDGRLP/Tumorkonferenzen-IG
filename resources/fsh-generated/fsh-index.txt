@@ -31,6 +31,7 @@ StructureDefinition-tnm-regional-nodes-category.json      TNMRegionalNodesCatego
 StructureDefinition-tnm-stage-group.json                  TNMStageGroup                      Profile     profile-Staging.fsh                       24 - 55
 StructureDefinition-tumor.json                            Tumor                              Profile     profile-Histologie.fsh                    33 - 41
 StructureDefinition-tumorErkrankung.json                  TumorErkrankung                    Profile     profile-TumorErkrankung.fsh               1 - 17
+StructureDefinition-verlauf.json                          Verlauf                            Profile     profile-Verlauf.fsh                       1 - 13
 ValueSet-cancer-stage-group-vs.json                       CancerStageVS                      ValueSet    valueSet-Staging.fsh                      38 - 67
 ValueSet-cancer-staging-method-vs.json                    CancerStagingMethodVS              ValueSet    valueSet-Staging.fsh                      3 - 23
 ValueSet-cancer-staging-type-vs.json                      CancerStagingTypeVS                ValueSet    valueSet-Staging.fsh                      25 - 31

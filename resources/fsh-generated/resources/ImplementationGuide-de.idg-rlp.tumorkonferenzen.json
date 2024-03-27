@@ -449,6 +449,14 @@
         },
         "name": "TumorPatient-example-1",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/verlauf"
+        },
+        "name": "Verlauf",
+        "description": "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.",
+        "exampleBoolean": false
       }
     ],
     "page": {

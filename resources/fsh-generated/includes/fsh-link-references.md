@@ -50,3 +50,4 @@
 [TumorErkrankung]: StructureDefinition-tumorErkrankung.html
 [TumorErkrankungExample]: EpisodeOfCare-TumorErkrankungExample.html
 [TumorPatient-example-1]: Patient-TumorPatient-example-1.html
+[Verlauf]: StructureDefinition-verlauf.html
