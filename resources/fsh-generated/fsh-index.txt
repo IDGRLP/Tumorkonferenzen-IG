@@ -2,7 +2,7 @@ Output File                                               Name                  
 CodeSystem-HistoGrade.json                                HistoGrade                         CodeSystem  codesystems.fsh                           86 - 101
 CodeSystem-obds-op-komplikation-cs.json                   ObdsOpKomplikationCS               CodeSystem  codesystems.fsh                           1 - 84
 CodeSystem-obds-strahlentherapie-intention-cs.json        ObdsStrahlentherapieIntentionCS    CodeSystem  codesystems.fsh                           103 - 112
-EpisodeOfCare-TumorErkrankungExample.json                 TumorErkrankungExample             Instance    profile-TumorErkrankung.fsh               13 - 19
+EpisodeOfCare-TumorErkrankungExample.json                 TumorErkrankungExample             Instance    profile-TumorErkrankung.fsh               19 - 25
 Observation-ECOGExample.json                              ECOGExample                        Instance    profile-Allgemeiner_Leistungszustand.fsh  14 - 20
 Observation-Histologie-Example.json                       Histologie-Example                 Instance    profile-Histologie.fsh                    23 - 31
 Organization-Organisation-example-1.json                  Organisation-example-1             Instance    profile-Organisation.fsh                  18 - 25
@@ -12,7 +12,7 @@ PractitionerRole-MelderInOrganisation-example-1.json      MelderInOrganisation-e
 Procedure-OperationEinzelprozedurExample.json             OperationEinzelprozedurExample     Instance    profile-Operation.fsh                     58 - 67
 Procedure-OperationExample.json                           OperationExample                   Instance    profile-Operation.fsh                     50 - 55
 Specimen-Tumor-Example.json                               Tumor-Example                      Instance    profile-Histologie.fsh                    43 - 51
-StructureDefinition-Diagnose.json                         TumorDiagnose                      Profile     profile-Diagnose.fsh                      1 - 46
+StructureDefinition-Diagnose.json                         TumorDiagnose                      Profile     profile-TumorDiagnose.fsh                 1 - 46
 StructureDefinition-Melder.json                           Melder                             Profile     profile-Melder.fsh                        1 - 15
 StructureDefinition-MelderInOrganisation.json             MelderInOrganisation               Profile     profile-MelderInOrganisation.fsh          1 - 13
 StructureDefinition-Organisation.json                     Organisation                       Profile     profile-Organisation.fsh                  1 - 15
@@ -30,7 +30,7 @@ StructureDefinition-tnm-primary-tumor-category.json       TNMPrimaryTumorCategor
 StructureDefinition-tnm-regional-nodes-category.json      TNMRegionalNodesCategory           Profile     profile-Staging.fsh                       70 - 80
 StructureDefinition-tnm-stage-group.json                  TNMStageGroup                      Profile     profile-Staging.fsh                       24 - 55
 StructureDefinition-tumor.json                            Tumor                              Profile     profile-Histologie.fsh                    33 - 41
-StructureDefinition-tumorErkrankung.json                  TumorErkrankung                    Profile     profile-TumorErkrankung.fsh               1 - 11
+StructureDefinition-tumorErkrankung.json                  TumorErkrankung                    Profile     profile-TumorErkrankung.fsh               1 - 17
 ValueSet-cancer-stage-group-vs.json                       CancerStageVS                      ValueSet    valueSet-Staging.fsh                      38 - 67
 ValueSet-cancer-staging-method-vs.json                    CancerStagingMethodVS              ValueSet    valueSet-Staging.fsh                      3 - 23
 ValueSet-cancer-staging-type-vs.json                      CancerStagingTypeVS                ValueSet    valueSet-Staging.fsh                      25 - 31

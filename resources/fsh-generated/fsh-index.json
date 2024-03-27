@@ -28,8 +28,8 @@
     "fshName": "TumorErkrankungExample",
     "fshType": "Instance",
     "fshFile": "profile-TumorErkrankung.fsh",
-    "startLine": 13,
-    "endLine": 19
+    "startLine": 19,
+    "endLine": 25
   },
   {
     "outputFile": "Observation-ECOGExample.json",
@@ -107,7 +107,7 @@
     "outputFile": "StructureDefinition-Diagnose.json",
     "fshName": "TumorDiagnose",
     "fshType": "Profile",
-    "fshFile": "profile-Diagnose.fsh",
+    "fshFile": "profile-TumorDiagnose.fsh",
     "startLine": 1,
     "endLine": 46
   },
@@ -253,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "profile-TumorErkrankung.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 17
   },
   {
     "outputFile": "ValueSet-cancer-stage-group-vs.json",

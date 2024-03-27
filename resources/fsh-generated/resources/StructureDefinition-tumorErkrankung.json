@@ -32,19 +32,46 @@
               "display": "Cancer Diagnosis"
             }
           ]
-        }
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis",
+        "path": "EpisodeOfCare.diagnosis",
+        "mustSupport": true
       },
       {
         "id": "EpisodeOfCare.diagnosis.condition",
         "path": "EpisodeOfCare.diagnosis.condition",
-        "type": [
-          {
-            "code": "Reference",
-            "targetProfile": [
-              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose"
-            ]
-          }
-        ]
+        "mustSupport": true
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis.role",
+        "path": "EpisodeOfCare.diagnosis.role",
+        "min": 1,
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/diagnosis-role"
+        }
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis.role.coding",
+        "path": "EpisodeOfCare.diagnosis.role.coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis.role.coding.system",
+        "path": "EpisodeOfCare.diagnosis.role.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "EpisodeOfCare.diagnosis.role.coding.code",
+        "path": "EpisodeOfCare.diagnosis.role.coding.code",
+        "min": 1,
+        "mustSupport": true
       },
       {
         "id": "EpisodeOfCare.patient",
@@ -56,7 +83,8 @@
               "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
             ]
           }
-        ]
+        ],
+        "mustSupport": true
       }
     ]
   }
