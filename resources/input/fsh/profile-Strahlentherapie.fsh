@@ -42,6 +42,7 @@ Description: "Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in 
     * code 1.. MS
     * version 1.. MS
 * subject MS
+* subject only Reference(TumorPatient)
 * performed[x] MS
 * performed[x] only Period
 * performedPeriod MS
@@ -54,6 +55,7 @@ Description: "Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in 
 * outcome MS
   * text MS
 * complication MS
+* complication only Reference(Nebenwirkung)
   * coding MS
     * system 1.. MS
     * code 1.. MS

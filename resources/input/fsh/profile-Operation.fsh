@@ -11,6 +11,8 @@ Description: "Operation (chirurgischer Eingriff) in ihrer Gesamtheit."
       * system 1..1 MS
       * code 1..1 MS
 * status MS
+* subject MS
+* subject only Reference(TumorPatient)
 * performed[x] MS
 * performedDateTime MS
 * complication from ObdsOpKomplikationVS (required)
@@ -40,6 +42,7 @@ Description: "Einzelprozedur als Teil einer Operation. Typischerweise mittels OP
   * coding[loinc]
     * ^patternCoding.system = LNC
 * subject MS
+* subject only Reference(TumorPatient)
 * performed[x] only dateTime
 * performed[x] 1.. MS
 
