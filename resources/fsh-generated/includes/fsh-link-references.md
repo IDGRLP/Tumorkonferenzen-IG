@@ -1,3 +1,4 @@
+[StatusLymphknoten]: StructureDefinition-status-lymphknoten.html
 [CancerStageGroup]: StructureDefinition-cancer-stage-group.html
 [CancerStageVS]: ValueSet-cancer-stage-group-vs.html
 [CancerStagingMethodVS]: ValueSet-cancer-staging-method-vs.html
@@ -5,6 +6,7 @@
 [ECOG]: StructureDefinition-ecog.html
 [ECOGPerformanceStatusVS]: ValueSet-ecog-performance-status.html
 [ECOGExample]: Observation-ECOGExample.html
+[Gesamtbeurteilung]: StructureDefinition-gesamtbeurteilung.html
 [Histologie]: StructureDefinition-histologie.html
 [Histologie-Example]: Observation-Histologie-Example.html
 [HistoGrade]: CodeSystem-HistoGrade.html
@@ -24,6 +26,8 @@
 [OperationExample]: Procedure-OperationExample.html
 [Organisation]: StructureDefinition-Organisation.html
 [Organisation-example-1]: Organization-Organisation-example-1.html
+[StatusPrimaertumor]: StructureDefinition-status-primaertumor.html
+[StatusFernmetastasen]: StructureDefinition-status-fernmetastasen.html
 [Strahlentherapie]: StructureDefinition-strahlentherapie.html
 [StrahlentherapieDetails]: StructureDefinition-strahlentherapie-details.html
 [TNMDistantMetastasesCategory]: StructureDefinition-tnm-distant-metastases-category.html

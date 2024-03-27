@@ -43,6 +43,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/status-lymphknoten"
+        },
+        "name": "Beurteilung Primärtumor",
+        "description": "Beurteilung des Lymphknoten-Status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/cancer-stage-group"
         },
         "name": "Cancer Stage Group Profile",
@@ -96,6 +104,14 @@
         "name": "ECOGExample",
         "description": "Beispielinstanz einer Observation welche einen ECOG Wert enthält.",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/gesamtbeurteilung"
+        },
+        "name": "Gesamtbeurteilung",
+        "description": "Gesamtbeurteilung des Tumorgeschehens",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -242,6 +258,22 @@
         },
         "name": "Organisation-example-1",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/status-primaertumor"
+        },
+        "name": "Status Primärtumor",
+        "description": "Beurteilung des Primärtumor-Status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/status-fernmetastasen"
+        },
+        "name": "StatusFernmetastasen",
+        "description": "Beurteilung des Fernmetastasen-Status",
+        "exampleBoolean": false
       },
       {
         "reference": {

@@ -160,6 +160,14 @@
     "endLine": 11
   },
   {
+    "outputFile": "StructureDefinition-gesamtbeurteilung.json",
+    "fshName": "Gesamtbeurteilung",
+    "fshType": "Profile",
+    "fshFile": "profile-Gesamtbeurteilung.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
     "outputFile": "StructureDefinition-histologie.json",
     "fshName": "Histologie",
     "fshType": "Profile",
@@ -190,6 +198,30 @@
     "fshFile": "profile-Operation.fsh",
     "startLine": 1,
     "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-status-fernmetastasen.json",
+    "fshName": "StatusFernmetastasen",
+    "fshType": "Profile",
+    "fshFile": "profile-StatusFernmetastasen.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-status-lymphknoten.json",
+    "fshName": "StatusLymphknoten",
+    "fshType": "Profile",
+    "fshFile": "profile-StatusLymphknoten.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-status-primaertumor.json",
+    "fshName": "StatusPrimaertumor",
+    "fshType": "Profile",
+    "fshFile": "profile-StatusPrimaertumor.fsh",
+    "startLine": 1,
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-strahlentherapie-details.json",
