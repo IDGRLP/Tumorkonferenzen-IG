@@ -3,7 +3,7 @@
   "id": "Histologie-Example",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/histologie"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie"
     ]
   },
   "code": {

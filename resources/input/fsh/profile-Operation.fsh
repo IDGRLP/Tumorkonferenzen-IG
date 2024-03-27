@@ -10,6 +10,7 @@ Description: "Operation (chirurgischer Eingriff) in ihrer Gesamtheit."
     * coding 1.. MS
       * system 1..1 MS
       * code 1..1 MS
+* status MS
 * performed[x] MS
 * performedDateTime MS
 * complication from ObdsOpKomplikationVS (required)
@@ -38,9 +39,9 @@ Description: "Einzelprozedur als Teil einer Operation. Typischerweise mittels OP
     * ^patternCoding.system = $OPS
   * coding[loinc]
     * ^patternCoding.system = LNC
+* subject MS
 * performed[x] only dateTime
 * performed[x] 1.. MS
-* subject 1.. MS
 
 
 Instance: OperationExample

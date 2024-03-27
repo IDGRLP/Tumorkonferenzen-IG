@@ -2,9 +2,14 @@
 [CancerStageVS]: ValueSet-cancer-stage-group-vs.html
 [CancerStagingMethodVS]: ValueSet-cancer-staging-method-vs.html
 [CancerStagingTypeVS]: ValueSet-cancer-staging-type-vs.html
+[ECOG]: StructureDefinition-ecog.html
+[ECOGPerformanceStatusVS]: ValueSet-ecog-performance-status.html
+[ECOGExample]: Observation-ECOGExample.html
 [Histologie]: StructureDefinition-histologie.html
 [Histologie-Example]: Observation-Histologie-Example.html
 [HistoGrade]: CodeSystem-HistoGrade.html
+[ObdsStrahlentherapieIntentionVS]: ValueSet-obds-strahlentherapie-intention-vs.html
+[ObdsStrahlentherapieIntentionCS]: CodeSystem-obds-strahlentherapie-intention-cs.html
 [Melder]: StructureDefinition-Melder.html
 [MelderInOrganisation]: StructureDefinition-MelderInOrganisation.html
 [Melder-example-1]: Practitioner-Melder-example-1.html
@@ -18,6 +23,8 @@
 [OperationExample]: Procedure-OperationExample.html
 [Organisation]: StructureDefinition-Organisation.html
 [Organisation-example-1]: Organization-Organisation-example-1.html
+[Strahlentherapie]: StructureDefinition-strahlentherapie.html
+[StrahlentherapieDetails]: StructureDefinition-strahlentherapie-details.html
 [TNMDistantMetastasesCategory]: StructureDefinition-tnm-distant-metastases-category.html
 [TNMDistantMetastasesCategoryVS]: ValueSet-tnm-distant-metastases-category-vs.html
 [TNMDistantMetastasesCategoryMaxVS]: ValueSet-tnm-distant-metastases-category-max-vs.html
@@ -39,4 +46,6 @@
 [Tumor-Example]: Specimen-Tumor-Example.html
 [TumorPatient]: StructureDefinition-TumorPatient.html
 [TumorDiagnose]: StructureDefinition-Diagnose.html
+[TumorErkrankung]: StructureDefinition-tumorErkrankung.html
+[TumorErkrankungExample]: EpisodeOfCare-TumorErkrankungExample.html
 [TumorPatient-example-1]: Patient-TumorPatient-example-1.html

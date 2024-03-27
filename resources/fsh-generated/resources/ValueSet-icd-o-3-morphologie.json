@@ -4,7 +4,7 @@
   "name": "ICDO3Morphologie",
   "id": "icd-o-3-morphologie",
   "title": "Morphologie Codes des ICD-O-3 CodeSystems.",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie",
   "compose": {
     "include": [
       {

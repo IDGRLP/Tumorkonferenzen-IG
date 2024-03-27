@@ -14,3 +14,9 @@ Description: "ECOG Performance Status (Level 0-5)."
 * LOINC#LA9625-0 "ECOG 3: (Nur begrenzte Selbstversorgung möglich; ist 50% oder mehr der Wachzeit an Bett oder Stuhl gebunden)"
 * LOINC#LA9626-8 "ECOG 4: (Völlig pflegebedürftig, keinerlei Selbstversorgung möglich; völlig an Bett oder Stuhl gebunden)"
 * LOINC#LA9627-6 "ECOG 5: (Tod)"
+
+ValueSet: ObdsStrahlentherapieIntentionVS
+Id: obds-strahlentherapie-intention-vs
+Title: "Intention der Strahlentherapie"
+Description: "Die Intention der Strahlentherapie"
+* include codes from system ObdsStrahlentherapieIntentionCS

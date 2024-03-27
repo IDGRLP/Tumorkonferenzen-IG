@@ -3,7 +3,7 @@
   "id": "ECOGExample",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/ecog"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
     ]
   },
   "code": {

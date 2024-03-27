@@ -3,7 +3,7 @@
   "id": "OperationEinzelprozedurExample",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-einzelprozedur"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation-einzelprozedur"
     ]
   },
   "code": {

@@ -1,0 +1,410 @@
+[
+  {
+    "outputFile": "CodeSystem-HistoGrade.json",
+    "fshName": "HistoGrade",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 86,
+    "endLine": 101
+  },
+  {
+    "outputFile": "CodeSystem-obds-op-komplikation-cs.json",
+    "fshName": "ObdsOpKomplikationCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 1,
+    "endLine": 84
+  },
+  {
+    "outputFile": "CodeSystem-obds-strahlentherapie-intention-cs.json",
+    "fshName": "ObdsStrahlentherapieIntentionCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 103,
+    "endLine": 112
+  },
+  {
+    "outputFile": "EpisodeOfCare-TumorErkrankungExample.json",
+    "fshName": "TumorErkrankungExample",
+    "fshType": "Instance",
+    "fshFile": "profile-TumorErkrankung.fsh",
+    "startLine": 13,
+    "endLine": 19
+  },
+  {
+    "outputFile": "Observation-ECOGExample.json",
+    "fshName": "ECOGExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Allgemeiner_Leistungszustand.fsh",
+    "startLine": 14,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Observation-Histologie-Example.json",
+    "fshName": "Histologie-Example",
+    "fshType": "Instance",
+    "fshFile": "profile-Histologie.fsh",
+    "startLine": 23,
+    "endLine": 31
+  },
+  {
+    "outputFile": "Organization-Organisation-example-1.json",
+    "fshName": "Organisation-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Organisation.fsh",
+    "startLine": 18,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Patient-TumorPatient-example-1.json",
+    "fshName": "TumorPatient-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-TumorPatient.fsh",
+    "startLine": 60,
+    "endLine": 78
+  },
+  {
+    "outputFile": "Practitioner-Melder-example-1.json",
+    "fshName": "Melder-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-Melder.fsh",
+    "startLine": 18,
+    "endLine": 27
+  },
+  {
+    "outputFile": "PractitionerRole-MelderInOrganisation-example-1.json",
+    "fshName": "MelderInOrganisation-example-1",
+    "fshType": "Instance",
+    "fshFile": "profile-MelderInOrganisation.fsh",
+    "startLine": 16,
+    "endLine": 20
+  },
+  {
+    "outputFile": "Procedure-OperationEinzelprozedurExample.json",
+    "fshName": "OperationEinzelprozedurExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Operation.fsh",
+    "startLine": 55,
+    "endLine": 64
+  },
+  {
+    "outputFile": "Procedure-OperationExample.json",
+    "fshName": "OperationExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Operation.fsh",
+    "startLine": 47,
+    "endLine": 52
+  },
+  {
+    "outputFile": "Specimen-Tumor-Example.json",
+    "fshName": "Tumor-Example",
+    "fshType": "Instance",
+    "fshFile": "profile-Histologie.fsh",
+    "startLine": 43,
+    "endLine": 51
+  },
+  {
+    "outputFile": "StructureDefinition-Diagnose.json",
+    "fshName": "TumorDiagnose",
+    "fshType": "Profile",
+    "fshFile": "profile-Diagnose.fsh",
+    "startLine": 1,
+    "endLine": 46
+  },
+  {
+    "outputFile": "StructureDefinition-Melder.json",
+    "fshName": "Melder",
+    "fshType": "Profile",
+    "fshFile": "profile-Melder.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-MelderInOrganisation.json",
+    "fshName": "MelderInOrganisation",
+    "fshType": "Profile",
+    "fshFile": "profile-MelderInOrganisation.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-Organisation.json",
+    "fshName": "Organisation",
+    "fshType": "Profile",
+    "fshFile": "profile-Organisation.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-TumorPatient.json",
+    "fshName": "TumorPatient",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorPatient.fsh",
+    "startLine": 1,
+    "endLine": 57
+  },
+  {
+    "outputFile": "StructureDefinition-cancer-stage-group.json",
+    "fshName": "CancerStageGroup",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-ecog.json",
+    "fshName": "ECOG",
+    "fshType": "Profile",
+    "fshFile": "profile-Allgemeiner_Leistungszustand.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-histologie.json",
+    "fshName": "Histologie",
+    "fshType": "Profile",
+    "fshFile": "profile-Histologie.fsh",
+    "startLine": 1,
+    "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-operation-einzelprozedur.json",
+    "fshName": "OperationEinzelprozedur",
+    "fshType": "Profile",
+    "fshFile": "profile-Operation.fsh",
+    "startLine": 22,
+    "endLine": 44
+  },
+  {
+    "outputFile": "StructureDefinition-operation.json",
+    "fshName": "Operation",
+    "fshType": "Profile",
+    "fshFile": "profile-Operation.fsh",
+    "startLine": 1,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-strahlentherapie-details.json",
+    "fshName": "StrahlentherapieDetails",
+    "fshType": "Extension",
+    "fshFile": "profile-Strahlentherapie.fsh",
+    "startLine": 61,
+    "endLine": 110
+  },
+  {
+    "outputFile": "StructureDefinition-strahlentherapie.json",
+    "fshName": "Strahlentherapie",
+    "fshType": "Profile",
+    "fshFile": "profile-Strahlentherapie.fsh",
+    "startLine": 1,
+    "endLine": 59
+  },
+  {
+    "outputFile": "StructureDefinition-tnm-distant-metastases-category.json",
+    "fshName": "TNMDistantMetastasesCategory",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 82,
+    "endLine": 92
+  },
+  {
+    "outputFile": "StructureDefinition-tnm-primary-tumor-category.json",
+    "fshName": "TNMPrimaryTumorCategory",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 58,
+    "endLine": 68
+  },
+  {
+    "outputFile": "StructureDefinition-tnm-regional-nodes-category.json",
+    "fshName": "TNMRegionalNodesCategory",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 70,
+    "endLine": 80
+  },
+  {
+    "outputFile": "StructureDefinition-tnm-stage-group.json",
+    "fshName": "TNMStageGroup",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 24,
+    "endLine": 55
+  },
+  {
+    "outputFile": "StructureDefinition-tumor.json",
+    "fshName": "Tumor",
+    "fshType": "Profile",
+    "fshFile": "profile-Histologie.fsh",
+    "startLine": 33,
+    "endLine": 41
+  },
+  {
+    "outputFile": "StructureDefinition-tumorErkrankung.json",
+    "fshName": "TumorErkrankung",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorErkrankung.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-cancer-stage-group-vs.json",
+    "fshName": "CancerStageVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 38,
+    "endLine": 67
+  },
+  {
+    "outputFile": "ValueSet-cancer-staging-method-vs.json",
+    "fshName": "CancerStagingMethodVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 3,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-cancer-staging-type-vs.json",
+    "fshName": "CancerStagingTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 25,
+    "endLine": 31
+  },
+  {
+    "outputFile": "ValueSet-ecog-performance-status.json",
+    "fshName": "ECOGPerformanceStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 6,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-icd-o-3-morphologie.json",
+    "fshName": "ICDO3Morphologie",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-obds-op-komplikation-vs.json",
+    "fshName": "ObdsOpKomplikationVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Operation.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-obds-strahlentherapie-intention-vs.json",
+    "fshName": "ObdsStrahlentherapieIntentionVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 18,
+    "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-tnm-distant-metastases-category-max-vs.json",
+    "fshName": "TNMDistantMetastasesCategoryMaxVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 181,
+    "endLine": 187
+  },
+  {
+    "outputFile": "ValueSet-tnm-distant-metastases-category-vs.json",
+    "fshName": "TNMDistantMetastasesCategoryVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 173,
+    "endLine": 179
+  },
+  {
+    "outputFile": "ValueSet-tnm-distant-metastases-staging-type-vs.json",
+    "fshName": "TNMDistantMetastasesStagingTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 164,
+    "endLine": 171
+  },
+  {
+    "outputFile": "ValueSet-tnm-primary-tumor-category-max-vs.json",
+    "fshName": "TNMPrimaryTumorCategoryMaxVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 126,
+    "endLine": 132
+  },
+  {
+    "outputFile": "ValueSet-tnm-primary-tumor-category-vs.json",
+    "fshName": "TNMPrimaryTumorCategoryVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 117,
+    "endLine": 124
+  },
+  {
+    "outputFile": "ValueSet-tnm-primary-tumor-staging-type-vs.json",
+    "fshName": "TNMPrimaryTumorStagingTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 108,
+    "endLine": 115
+  },
+  {
+    "outputFile": "ValueSet-tnm-regional-nodes-category-max-vs.json",
+    "fshName": "TNMRegionalNodesCategoryMaxVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 154,
+    "endLine": 160
+  },
+  {
+    "outputFile": "ValueSet-tnm-regional-nodes-category-vs.json",
+    "fshName": "TNMRegionalNodesCategoryVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 145,
+    "endLine": 152
+  },
+  {
+    "outputFile": "ValueSet-tnm-regional-nodes-staging-type-vs.json",
+    "fshName": "TNMRegionalNodesStagingTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 136,
+    "endLine": 143
+  },
+  {
+    "outputFile": "ValueSet-tnm-stage-group-max-vs.json",
+    "fshName": "TNMStageGroupMaxVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 98,
+    "endLine": 104
+  },
+  {
+    "outputFile": "ValueSet-tnm-stage-group-staging-type-vs.json",
+    "fshName": "TNMStageGroupStagingTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 80,
+    "endLine": 87
+  },
+  {
+    "outputFile": "ValueSet-tnm-stage-group-vs.json",
+    "fshName": "TNMStageGroupVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 89,
+    "endLine": 96
+  },
+  {
+    "outputFile": "ValueSet-tnm-staging-method-vs.json",
+    "fshName": "TNMStagingMethodVS",
+    "fshType": "ValueSet",
+    "fshFile": "valueSet-Staging.fsh",
+    "startLine": 69,
+    "endLine": 76
+  }
+]

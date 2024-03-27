@@ -1,48 +1,16 @@
 {
   "resourceType": "StructureDefinition",
   "id": "tnm-primary-tumor-category",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tnm-primary-tumor-category",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category",
   "name": "TNMPrimaryTumorCategory",
   "title": "TNM Primary Tumor Category Profile",
   "status": "draft",
   "description": "Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy.",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "sct-concept",
-      "uri": "http://snomed.info/conceptdomain",
-      "name": "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "sct-attr",
-      "uri": "http://snomed.org/attributebinding",
-      "name": "SNOMED CT Attribute Binding"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/cancer-stage-group",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -51,7 +19,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-staging-type-vs"
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs"
         }
       },
       {
@@ -59,11 +27,11 @@
         "path": "Observation.value[x]",
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-vs",
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-vs",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
-              "valueCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-max-vs"
+              "valueCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-max-vs"
             }
           ]
         }
@@ -74,7 +42,7 @@
         "min": 1,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs"
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-staging-method-vs"
         }
       },
       {

@@ -1,0 +1,255 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "strahlentherapie-details",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie-details",
+  "name": "StrahlentherapieDetails",
+  "title": "StrahlentherapieDetails",
+  "status": "draft",
+  "experimental": false,
+  "description": "Detailinformationen zur Strahlentherapie.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Procedure"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "StrahlentherapieDetails",
+        "definition": "Detailinformationen zur Strahlentherapie."
+      },
+      {
+        "id": "Extension.extension:stellungZuOp",
+        "path": "Extension.extension",
+        "sliceName": "stellungZuOp",
+        "short": "Stellung zu operativer Therapie",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:stellungZuOp.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:stellungZuOp.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "stellungZuOp"
+      },
+      {
+        "id": "Extension.extension:stellungZuOp.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:stellungZuOp.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:stellungZuOp.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:strahlenart",
+        "path": "Extension.extension",
+        "sliceName": "strahlenart",
+        "short": "Strahlenart",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:strahlenart.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:strahlenart.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "strahlenart"
+      },
+      {
+        "id": "Extension.extension:strahlenart.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:strahlenart.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:strahlenart.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:gesamtdosis",
+        "path": "Extension.extension",
+        "sliceName": "gesamtdosis",
+        "short": "Einzeldosis pro Tag",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:gesamtdosis.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:gesamtdosis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "gesamtdosis"
+      },
+      {
+        "id": "Extension.extension:gesamtdosis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:gesamtdosis.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:gesamtdosis.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:gesamtdosis.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:einzeldosis",
+        "path": "Extension.extension",
+        "sliceName": "einzeldosis",
+        "short": "Gesamtdosis",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:einzeldosis.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:einzeldosis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "einzeldosis"
+      },
+      {
+        "id": "Extension.extension:einzeldosis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:einzeldosis.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:einzeldosis.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:einzeldosis.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:boostdosis",
+        "path": "Extension.extension",
+        "sliceName": "boostdosis",
+        "short": "Boost-Dosis",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension:boostdosis.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:boostdosis.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "boostdosis"
+      },
+      {
+        "id": "Extension.extension:boostdosis.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:boostdosis.value[x].value",
+        "path": "Extension.extension.value[x].value",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:boostdosis.value[x].system",
+        "path": "Extension.extension.value[x].system",
+        "min": 1,
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Extension.extension:boostdosis.value[x].code",
+        "path": "Extension.extension.value[x].code",
+        "min": 1
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie-details"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

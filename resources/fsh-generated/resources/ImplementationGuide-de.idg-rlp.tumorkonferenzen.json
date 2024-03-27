@@ -1,9 +1,9 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "de.krebsregister-rlp.tumorboard",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/ImplementationGuide/de.krebsregister-rlp.tumorboard",
+  "id": "de.idg-rlp.tumorkonferenzen",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen",
   "version": "0.1.0",
-  "name": "TumorBoardRLP",
+  "name": "TumorkonferenzenIDG",
   "status": "draft",
   "publisher": "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact": [
@@ -12,16 +12,16 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.krebsregister-rlp.de/"
+          "value": "https://www.idg-rlp.de/"
         },
         {
           "system": "email",
-          "value": "info@krebsregister-rlp.de"
+          "value": "info@idg-rlp.de"
         }
       ]
     }
   ],
-  "packageId": "de.krebsregister-rlp.tumorboard",
+  "packageId": "de.idg-rlp.tumorkonferenzen",
   "fhirVersion": [
     "4.0.1"
   ],
@@ -95,7 +95,7 @@
         },
         "name": "ECOGExample",
         "description": "Beispielinstanz einer Observation welche einen ECOG Wert enthält.",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/ecog"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
       },
       {
         "reference": {
@@ -111,13 +111,29 @@
         },
         "name": "HistologieExample",
         "description": "HistologieExample",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/histologie"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie"
       },
       {
         "reference": {
           "reference": "CodeSystem/HistoGrade"
         },
         "name": "Histopathologische Grading Codes",
+        "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/obds-strahlentherapie-intention-vs"
+        },
+        "name": "Intention der Strahlentherapie",
+        "description": "Die Intention der Strahlentherapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/obds-strahlentherapie-intention-cs"
+        },
+        "name": "Intention der Strahlentherapie",
         "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
         "exampleBoolean": false
       },
@@ -142,14 +158,14 @@
           "reference": "Practitioner/Melder-example-1"
         },
         "name": "Melder-example-1",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder"
       },
       {
         "reference": {
           "reference": "PractitionerRole/MelderInOrganisation-example-1"
         },
         "name": "MelderInOrganisation-example-1",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"
       },
       {
         "reference": {
@@ -195,14 +211,14 @@
           "reference": "Procedure/OperationEinzelprozedurExample"
         },
         "name": "OperationEinzelprozedurExample",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-einzelprozedur"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation-einzelprozedur"
       },
       {
         "reference": {
           "reference": "Procedure/OperationExample"
         },
         "name": "OperationExample",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation"
       },
       {
         "reference": {
@@ -217,7 +233,23 @@
           "reference": "Organization/Organisation-example-1"
         },
         "name": "Organisation-example-1",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/strahlentherapie"
+        },
+        "name": "Strahlentherapie",
+        "description": "Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in ihrer Gesamtheit.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/strahlentherapie-details"
+        },
+        "name": "StrahlentherapieDetails",
+        "description": "Detailinformationen zur Strahlentherapie.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -369,7 +401,7 @@
         },
         "name": "Tumor-Example",
         "description": "Tumor-Example",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumor"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor"
       },
       {
         "reference": {
@@ -401,14 +433,14 @@
         },
         "name": "TumorErkrankungExample",
         "description": "Ein Beispiel für die Episode einer Tumorerkrankung.",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumorErkrankung"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorErkrankung"
       },
       {
         "reference": {
           "reference": "Patient/TumorPatient-example-1"
         },
         "name": "TumorPatient-example-1",
-        "exampleCanonical": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
       }
     ],
     "page": {

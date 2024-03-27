@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ObdsStrahlentherapieIntentionVS",
+  "id": "obds-strahlentherapie-intention-vs",
+  "title": "Intention der Strahlentherapie",
+  "description": "Die Intention der Strahlentherapie",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-strahlentherapie-intention-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs"
+      }
+    ]
+  }
+}

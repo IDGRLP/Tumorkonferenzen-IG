@@ -3,7 +3,7 @@
   "id": "Tumor-Example",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumor"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor"
     ]
   },
   "identifier": [

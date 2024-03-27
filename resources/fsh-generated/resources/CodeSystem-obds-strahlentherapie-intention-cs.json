@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ObdsStrahlentherapieIntentionCS",
+  "id": "obds-strahlentherapie-intention-cs",
+  "title": "Intention der Strahlentherapie",
+  "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs",
+  "concept": [
+    {
+      "code": "K",
+      "display": "kurativ"
+    },
+    {
+      "code": "P",
+      "display": "palliativ"
+    },
+    {
+      "code": "O",
+      "display": "lokal kurativ bei Oligometastasierung"
+    },
+    {
+      "code": "S",
+      "display": "sonstiges"
+    },
+    {
+      "code": "X",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 5
+}

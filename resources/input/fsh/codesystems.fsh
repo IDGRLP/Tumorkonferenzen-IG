@@ -99,3 +99,14 @@ Description: "Die histopathologische Einstufung des invasiven Karzinoms "
 * #GB "Borderline"
 * #U "unbekannt"
 * #T "trifft nicht zu"
+
+CodeSystem: ObdsStrahlentherapieIntentionCS
+Id: obds-strahlentherapie-intention-cs
+Title: "Intention der Strahlentherapie"
+Description: "Die histopathologische Einstufung des invasiven Karzinoms "
+* ^content = #complete
+* #K "kurativ"
+* #P "palliativ"
+* #O "lokal kurativ bei Oligometastasierung"
+* #S "sonstiges"
+* #X "keine Angabe"

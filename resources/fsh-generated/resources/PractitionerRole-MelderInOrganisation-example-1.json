@@ -3,7 +3,7 @@
   "id": "MelderInOrganisation-example-1",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"
     ]
   },
   "practitioner": {

@@ -3,7 +3,7 @@
   "id": "Organisation-example-1",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"
     ]
   },
   "name": "Klinikum Musterhausen",

@@ -3,7 +3,7 @@
   "id": "Melder-example-1",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder"
     ]
   },
   "name": [

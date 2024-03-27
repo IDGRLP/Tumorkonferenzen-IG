@@ -1,29 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "tumorErkrankung",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumorErkrankung",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorErkrankung",
   "name": "TumorErkrankung",
   "title": "Tumorerkrankung",
   "status": "draft",
   "description": "Tumorerkrankung/Fall, dient als Klammer der Krebserkrankung",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "EpisodeOfCare",
@@ -58,7 +41,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose"
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose"
             ]
           }
         ]
@@ -70,7 +53,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
             ]
           }
         ]

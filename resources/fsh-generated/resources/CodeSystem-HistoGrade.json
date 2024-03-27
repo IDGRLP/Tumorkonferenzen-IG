@@ -6,7 +6,7 @@
   "id": "HistoGrade",
   "title": "Histopathologische Grading Codes",
   "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/HistoGrade",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGrade",
   "concept": [
     {
       "code": "G0",

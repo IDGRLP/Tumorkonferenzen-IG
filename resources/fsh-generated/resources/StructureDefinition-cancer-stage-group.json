@@ -1,44 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "cancer-stage-group",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/cancer-stage-group",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/cancer-stage-group",
   "name": "CancerStageGroup",
   "title": "Cancer Stage Group Profile",
   "status": "draft",
   "description": "An assessment of the extent of the cancer in the body, according to a given cancer staging classification system. This profile can be used with any staging system, but it is specifically targeted for non-TNM staging systems, since specialized TNM staging profiles are provided.",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "sct-concept",
-      "uri": "http://snomed.info/conceptdomain",
-      "name": "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "sct-attr",
-      "uri": "http://snomed.org/attributebinding",
-      "name": "SNOMED CT Attribute Binding"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -59,7 +27,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs"
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-type-vs"
         }
       },
       {
@@ -70,7 +38,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
             ]
           }
         ],
@@ -85,7 +53,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Diagnose"
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose"
             ]
           }
         ],
@@ -107,7 +75,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "preferred",
-          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-stage-group-vs"
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs"
         }
       },
       {
@@ -116,7 +84,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "extensible",
-          "valueSet": "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs"
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-method-vs"
         }
       },
       {

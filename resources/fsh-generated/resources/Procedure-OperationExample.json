@@ -3,7 +3,7 @@
   "id": "OperationExample",
   "meta": {
     "profile": [
-      "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation"
     ]
   },
   "status": "completed",

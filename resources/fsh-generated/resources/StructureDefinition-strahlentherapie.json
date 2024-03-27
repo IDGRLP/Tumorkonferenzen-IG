@@ -1,0 +1,302 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "strahlentherapie",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie",
+  "name": "Strahlentherapie",
+  "title": "Strahlentherapie",
+  "status": "draft",
+  "description": "Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in ihrer Gesamtheit.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Procedure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.extension:intention",
+        "path": "Procedure.extension",
+        "sliceName": "intention",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x]",
+        "path": "Procedure.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x].coding",
+        "path": "Procedure.extension.value[x].coding",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x].coding.system",
+        "path": "Procedure.extension.value[x].coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:intention.value[x].coding.code",
+        "path": "Procedure.extension.value[x].coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details",
+        "path": "Procedure.extension",
+        "sliceName": "details",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie-details"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:stellungZuOp",
+        "path": "Procedure.extension.extension",
+        "sliceName": "stellungZuOp"
+      },
+      {
+        "id": "Procedure.extension:details.extension:stellungZuOp.value[x]",
+        "path": "Procedure.extension.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:stellungZuOp.value[x].system",
+        "path": "Procedure.extension.extension.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:stellungZuOp.value[x].code",
+        "path": "Procedure.extension.extension.value[x].code",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:strahlenart",
+        "path": "Procedure.extension.extension",
+        "sliceName": "strahlenart"
+      },
+      {
+        "id": "Procedure.extension:details.extension:strahlenart.value[x]",
+        "path": "Procedure.extension.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:strahlenart.value[x].system",
+        "path": "Procedure.extension.extension.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:strahlenart.value[x].code",
+        "path": "Procedure.extension.extension.value[x].code",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:gesamtdosis",
+        "path": "Procedure.extension.extension",
+        "sliceName": "gesamtdosis"
+      },
+      {
+        "id": "Procedure.extension:details.extension:gesamtdosis.value[x]",
+        "path": "Procedure.extension.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:gesamtdosis.value[x].value",
+        "path": "Procedure.extension.extension.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:gesamtdosis.value[x].system",
+        "path": "Procedure.extension.extension.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:gesamtdosis.value[x].code",
+        "path": "Procedure.extension.extension.value[x].code",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:einzeldosis",
+        "path": "Procedure.extension.extension",
+        "sliceName": "einzeldosis"
+      },
+      {
+        "id": "Procedure.extension:details.extension:einzeldosis.value[x]",
+        "path": "Procedure.extension.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:einzeldosis.value[x].value",
+        "path": "Procedure.extension.extension.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:einzeldosis.value[x].system",
+        "path": "Procedure.extension.extension.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:einzeldosis.value[x].code",
+        "path": "Procedure.extension.extension.value[x].code",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:boostdosis",
+        "path": "Procedure.extension.extension",
+        "sliceName": "boostdosis"
+      },
+      {
+        "id": "Procedure.extension:details.extension:boostdosis.value[x]",
+        "path": "Procedure.extension.extension.value[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:boostdosis.value[x].value",
+        "path": "Procedure.extension.extension.value[x].value",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:boostdosis.value[x].system",
+        "path": "Procedure.extension.extension.value[x].system",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.extension:details.extension:boostdosis.value[x].code",
+        "path": "Procedure.extension.extension.value[x].code",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.status",
+        "path": "Procedure.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code",
+        "path": "Procedure.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding.system",
+        "path": "Procedure.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding.version",
+        "path": "Procedure.code.coding.version",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.code.coding.code",
+        "path": "Procedure.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.subject",
+        "path": "Procedure.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "path": "Procedure.performed[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x].start",
+        "path": "Procedure.performed[x].start",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.performed[x].end",
+        "path": "Procedure.performed[x].end",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite",
+        "path": "Procedure.bodySite",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite.coding",
+        "path": "Procedure.bodySite.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite.coding.system",
+        "path": "Procedure.bodySite.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.bodySite.coding.code",
+        "path": "Procedure.bodySite.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.outcome",
+        "path": "Procedure.outcome",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.outcome.text",
+        "path": "Procedure.outcome.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complication",
+        "path": "Procedure.complication",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complication.coding",
+        "path": "Procedure.complication.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complication.coding.system",
+        "path": "Procedure.complication.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Procedure.complication.coding.code",
+        "path": "Procedure.complication.coding.code",
+        "min": 1,
+        "mustSupport": true
+      }
+    ]
+  }
+}

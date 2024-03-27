@@ -1,39 +1,12 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TumorPatient",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient",
   "name": "TumorPatient",
   "title": "Tumor-Patient",
   "status": "draft",
   "description": "Patienten-Stammdaten",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "cda",
-      "uri": "http://hl7.org/v3/cda",
-      "name": "CDA (R2)"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "loinc",
-      "uri": "http://loinc.org",
-      "name": "LOINC code for the element"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Patient",

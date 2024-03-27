@@ -6,7 +6,7 @@
   "id": "obds-op-komplikation-cs",
   "title": "oBDS Operation Komplikation Codesystem",
   "description": "Komplikation gemäß Vorgabe oBDS.",
-  "url": "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs",
   "concept": [
     {
       "code": "N",
