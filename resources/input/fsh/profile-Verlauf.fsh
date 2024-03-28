@@ -5,6 +5,7 @@ Title:          "Verlauf"
 Description:    "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge."
 * status 1.. MS
 * type 1.. MS
+* type = SCT#185389009
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * episodeOfCare 1.. MS

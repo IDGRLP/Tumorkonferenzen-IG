@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "verlauf",
-  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf",
-  "name": "Verlauf",
-  "title": "Verlauf",
+  "id": "tumorkonferenz",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz",
+  "name": "Tumorkonferenz",
+  "title": "Tumorkonferenz",
   "status": "draft",
-  "description": "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.",
+  "description": "Dieses Profil repräsentiert die Tumorkonferenz zu einem Patienten. Fragestellungen und Informationen, die speziell im Kontext der Tumorkonferenz erstellt werden, referenzieren auf eine entsprechende Tumorkonferenz-Instanz.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -26,7 +26,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "185389009",
+              "code": "287051000000107",
               "system": "http://snomed.info/sct"
             }
           ]

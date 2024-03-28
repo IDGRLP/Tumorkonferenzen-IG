@@ -485,6 +485,54 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/tumorkonferenz"
+        },
+        "name": "Tumorkonferenz",
+        "description": "Dieses Profil repräsentiert die Tumorkonferenz zu einem Patienten. Fragestellungen und Informationen, die speziell im Kontext der Tumorkonferenz erstellt werden, referenzieren auf eine entsprechende Tumorkonferenz-Instanz.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumorkonferenz-bemerkung"
+        },
+        "name": "TumorkonferenzBemerkung",
+        "description": "Tumorkonferenz: Bemerkung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumorkonferenz-fragestellung"
+        },
+        "name": "TumorkonferenzFragestellung",
+        "description": "Tumorkonferenz: Fragestellung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumorkonferenz-fragestellung-radiologie"
+        },
+        "name": "TumorkonferenzFragestellungRadiologie",
+        "description": "Tumorkonferenz: Fragestellung an die Radiologie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumorkonferenz-situation"
+        },
+        "name": "TumorkonferenzSituation",
+        "description": "Tumorkonferenz: Beschreibung der aktuelle Situation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumorkonferenz-therapie-verlauf"
+        },
+        "name": "TumorkonferenzTherapieVerlauf",
+        "description": "Tumorkonferenz: Beschreibung von Therapie und Verlauf",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Patient/TumorPatient-example-1"
         },
         "name": "TumorPatient-example-1",

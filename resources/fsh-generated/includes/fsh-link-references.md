@@ -54,5 +54,11 @@
 [TumorDiagnose]: StructureDefinition-Diagnose.html
 [TumorErkrankung]: StructureDefinition-tumorErkrankung.html
 [TumorErkrankungExample]: EpisodeOfCare-TumorErkrankungExample.html
+[Tumorkonferenz]: StructureDefinition-tumorkonferenz.html
+[TumorkonferenzBemerkung]: StructureDefinition-tumorkonferenz-bemerkung.html
+[TumorkonferenzFragestellung]: StructureDefinition-tumorkonferenz-fragestellung.html
+[TumorkonferenzFragestellungRadiologie]: StructureDefinition-tumorkonferenz-fragestellung-radiologie.html
+[TumorkonferenzSituation]: StructureDefinition-tumorkonferenz-situation.html
+[TumorkonferenzTherapieVerlauf]: StructureDefinition-tumorkonferenz-therapie-verlauf.html
 [TumorPatient-example-1]: Patient-TumorPatient-example-1.html
 [Verlauf]: StructureDefinition-verlauf.html

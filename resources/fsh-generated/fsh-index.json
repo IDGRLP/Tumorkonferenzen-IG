@@ -296,12 +296,60 @@
     "endLine": 17
   },
   {
+    "outputFile": "StructureDefinition-tumorkonferenz-bemerkung.json",
+    "fshName": "TumorkonferenzBemerkung",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorkonferenzBemerkung.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-tumorkonferenz-fragestellung-radiologie.json",
+    "fshName": "TumorkonferenzFragestellungRadiologie",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorkonferenzFragestellungRadiologie.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-tumorkonferenz-fragestellung.json",
+    "fshName": "TumorkonferenzFragestellung",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorkonferenzFragestellung.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-tumorkonferenz-situation.json",
+    "fshName": "TumorkonferenzSituation",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorkonferenzSituation.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-tumorkonferenz-therapie-verlauf.json",
+    "fshName": "TumorkonferenzTherapieVerlauf",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorkonferenzTherapieVerlauf.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-tumorkonferenz.json",
+    "fshName": "Tumorkonferenz",
+    "fshType": "Profile",
+    "fshFile": "profile-Tumorkonferenz.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
     "outputFile": "StructureDefinition-verlauf.json",
     "fshName": "Verlauf",
     "fshType": "Profile",
     "fshFile": "profile-Verlauf.fsh",
     "startLine": 1,
-    "endLine": 13
+    "endLine": 14
   },
   {
     "outputFile": "ValueSet-cancer-stage-group-vs.json",
