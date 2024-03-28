@@ -43,6 +43,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/befund-dokument"
+        },
+        "name": "BefundDokument",
+        "description": "Metadaten zu einem Befunddokument bzw. Bildbefund.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/status-lymphknoten"
         },
         "name": "Beurteilung Primärtumor",

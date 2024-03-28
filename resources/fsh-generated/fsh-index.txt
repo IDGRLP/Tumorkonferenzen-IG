@@ -17,6 +17,7 @@ StructureDefinition-Melder.json                                   Melder        
 StructureDefinition-MelderInOrganisation.json                     MelderInOrganisation                   Profile     profile-MelderInOrganisation.fsh                   1 - 13
 StructureDefinition-Organisation.json                             Organisation                           Profile     profile-Organisation.fsh                           1 - 15
 StructureDefinition-TumorPatient.json                             TumorPatient                           Profile     profile-TumorPatient.fsh                           1 - 57
+StructureDefinition-befund-dokument.json                          BefundDokument                         Profile     profile-BefundDokument.fsh                         1 - 14
 StructureDefinition-cancer-stage-group.json                       CancerStageGroup                       Profile     profile-Staging.fsh                                1 - 21
 StructureDefinition-ecog.json                                     ECOG                                   Profile     profile-Allgemeiner_Leistungszustand.fsh           1 - 11
 StructureDefinition-familienanamnese.json                         Familienanamnese                       Profile     profile-Familienanamnese.fsh                       1 - 10

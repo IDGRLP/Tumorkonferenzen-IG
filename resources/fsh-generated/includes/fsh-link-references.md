@@ -1,3 +1,4 @@
+[BefundDokument]: StructureDefinition-befund-dokument.html
 [StatusLymphknoten]: StructureDefinition-status-lymphknoten.html
 [CancerStageGroup]: StructureDefinition-cancer-stage-group.html
 [CancerStageVS]: ValueSet-cancer-stage-group-vs.html

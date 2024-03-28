@@ -144,6 +144,14 @@
     "endLine": 57
   },
   {
+    "outputFile": "StructureDefinition-befund-dokument.json",
+    "fshName": "BefundDokument",
+    "fshType": "Profile",
+    "fshFile": "profile-BefundDokument.fsh",
+    "startLine": 1,
+    "endLine": 14
+  },
+  {
     "outputFile": "StructureDefinition-cancer-stage-group.json",
     "fshName": "CancerStageGroup",
     "fshType": "Profile",
