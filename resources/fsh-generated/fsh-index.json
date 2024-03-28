@@ -328,6 +328,14 @@
     "endLine": 15
   },
   {
+    "outputFile": "StructureDefinition-tumorkonferenz-termin.json",
+    "fshName": "TumorkonferenzTermin",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorkonferenzTermin.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
     "outputFile": "StructureDefinition-tumorkonferenz-therapie-verlauf.json",
     "fshName": "TumorkonferenzTherapieVerlauf",
     "fshType": "Profile",
@@ -341,7 +349,7 @@
     "fshType": "Profile",
     "fshFile": "profile-Tumorkonferenz.fsh",
     "startLine": 1,
-    "endLine": 14
+    "endLine": 16
   },
   {
     "outputFile": "StructureDefinition-verlauf.json",

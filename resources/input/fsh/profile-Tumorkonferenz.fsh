@@ -10,5 +10,7 @@ Description:    "Dieses Profil repräsentiert die Tumorkonferenz zu einem Patien
 * subject only Reference(TumorPatient)
 * episodeOfCare 1.. MS
 * episodeOfCare only Reference(TumorErkrankung)
+* appointment MS
+* appointment only Reference(TumorkonferenzTermin)
 * period MS
   * start 1.. MS

@@ -62,6 +62,19 @@
         "mustSupport": true
       },
       {
+        "id": "Encounter.appointment",
+        "path": "Encounter.appointment",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-termin"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Encounter.period",
         "path": "Encounter.period",
         "mustSupport": true

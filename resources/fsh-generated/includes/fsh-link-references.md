@@ -59,6 +59,7 @@
 [TumorkonferenzFragestellung]: StructureDefinition-tumorkonferenz-fragestellung.html
 [TumorkonferenzFragestellungRadiologie]: StructureDefinition-tumorkonferenz-fragestellung-radiologie.html
 [TumorkonferenzSituation]: StructureDefinition-tumorkonferenz-situation.html
+[TumorkonferenzTermin]: StructureDefinition-tumorkonferenz-termin.html
 [TumorkonferenzTherapieVerlauf]: StructureDefinition-tumorkonferenz-therapie-verlauf.html
 [TumorPatient-example-1]: Patient-TumorPatient-example-1.html
 [Verlauf]: StructureDefinition-verlauf.html

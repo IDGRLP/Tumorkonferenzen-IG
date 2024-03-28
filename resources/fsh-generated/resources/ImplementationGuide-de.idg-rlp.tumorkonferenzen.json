@@ -525,6 +525,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/tumorkonferenz-termin"
+        },
+        "name": "TumorkonferenzTermin",
+        "description": "Termin für die Tumorkonferenz.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/tumorkonferenz-therapie-verlauf"
         },
         "name": "TumorkonferenzTherapieVerlauf",

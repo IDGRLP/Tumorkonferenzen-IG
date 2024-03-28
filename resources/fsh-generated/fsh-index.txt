@@ -40,8 +40,9 @@ StructureDefinition-tumorkonferenz-bemerkung.json                 Tumorkonferenz
 StructureDefinition-tumorkonferenz-fragestellung-radiologie.json  TumorkonferenzFragestellungRadiologie  Profile     profile-TumorkonferenzFragestellungRadiologie.fsh  1 - 15
 StructureDefinition-tumorkonferenz-fragestellung.json             TumorkonferenzFragestellung            Profile     profile-TumorkonferenzFragestellung.fsh            1 - 15
 StructureDefinition-tumorkonferenz-situation.json                 TumorkonferenzSituation                Profile     profile-TumorkonferenzSituation.fsh                1 - 15
+StructureDefinition-tumorkonferenz-termin.json                    TumorkonferenzTermin                   Profile     profile-TumorkonferenzTermin.fsh                   1 - 18
 StructureDefinition-tumorkonferenz-therapie-verlauf.json          TumorkonferenzTherapieVerlauf          Profile     profile-TumorkonferenzTherapieVerlauf.fsh          1 - 15
-StructureDefinition-tumorkonferenz.json                           Tumorkonferenz                         Profile     profile-Tumorkonferenz.fsh                         1 - 14
+StructureDefinition-tumorkonferenz.json                           Tumorkonferenz                         Profile     profile-Tumorkonferenz.fsh                         1 - 16
 StructureDefinition-verlauf.json                                  Verlauf                                Profile     profile-Verlauf.fsh                                1 - 14
 ValueSet-cancer-stage-group-vs.json                               CancerStageVS                          ValueSet    valueSet-Staging.fsh                               38 - 67
 ValueSet-cancer-staging-method-vs.json                            CancerStagingMethodVS                  ValueSet    valueSet-Staging.fsh                               3 - 23

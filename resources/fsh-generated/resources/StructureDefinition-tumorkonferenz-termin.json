@@ -1,0 +1,94 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tumorkonferenz-termin",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-termin",
+  "name": "TumorkonferenzTermin",
+  "title": "TumorkonferenzTermin",
+  "status": "draft",
+  "description": "Termin für die Tumorkonferenz.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment.status",
+        "path": "Appointment.status",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.serviceCategory",
+        "path": "Appointment.serviceCategory",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "287051000000107",
+              "system": "http://snomed.info/sct"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.supportingInformation",
+        "path": "Appointment.supportingInformation",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.start",
+        "path": "Appointment.start",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.end",
+        "path": "Appointment.end",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant",
+        "path": "Appointment.participant",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant.type",
+        "path": "Appointment.participant.type",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant.type.coding",
+        "path": "Appointment.participant.type.coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant.type.coding.system",
+        "path": "Appointment.participant.type.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant.type.coding.code",
+        "path": "Appointment.participant.type.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Appointment.participant.type.text",
+        "path": "Appointment.participant.type.text",
+        "mustSupport": true
+      }
+    ]
+  }
+}
