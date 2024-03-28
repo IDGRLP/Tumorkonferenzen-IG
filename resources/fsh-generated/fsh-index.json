@@ -256,6 +256,22 @@
     "endLine": 63
   },
   {
+    "outputFile": "StructureDefinition-systemische-therapie-details.json",
+    "fshName": "SystemischeTherapieDetails",
+    "fshType": "Extension",
+    "fshFile": "profile-SystemischeTherapie.fsh",
+    "startLine": 39,
+    "endLine": 54
+  },
+  {
+    "outputFile": "StructureDefinition-systemische-therapie.json",
+    "fshName": "SystemischeTherapie",
+    "fshType": "Profile",
+    "fshFile": "profile-SystemischeTherapie.fsh",
+    "startLine": 1,
+    "endLine": 37
+  },
+  {
     "outputFile": "StructureDefinition-tnm-distant-metastases-category.json",
     "fshName": "TNMDistantMetastasesCategory",
     "fshType": "Profile",
@@ -366,6 +382,14 @@
     "fshFile": "profile-Verlauf.fsh",
     "startLine": 1,
     "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-watchful-waiting.json",
+    "fshName": "WatchfulWaiting",
+    "fshType": "Profile",
+    "fshFile": "profile-WatchfulWaiting.fsh",
+    "startLine": 1,
+    "endLine": 31
   },
   {
     "outputFile": "ValueSet-cancer-stage-group-vs.json",

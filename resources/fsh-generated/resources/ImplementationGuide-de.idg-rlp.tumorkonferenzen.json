@@ -309,6 +309,22 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/systemische-therapie"
+        },
+        "name": "SystemischeTherapie",
+        "description": "Systemische Therapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/systemische-therapie-details"
+        },
+        "name": "SystemischeTherapieDetails",
+        "description": "Detailinformationen zur systemischen Therapie.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/tnm-distant-metastases-category"
         },
         "name": "TNM Distant Metastases Category Profile",
@@ -560,6 +576,14 @@
         },
         "name": "Verlauf",
         "description": "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/watchful-waiting"
+        },
+        "name": "WatchfulWaiting",
+        "description": "Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)",
         "exampleBoolean": false
       }
     ],

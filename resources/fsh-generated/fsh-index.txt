@@ -31,6 +31,8 @@ StructureDefinition-status-lymphknoten.json                       StatusLymphkno
 StructureDefinition-status-primaertumor.json                      StatusPrimaertumor                     Profile     profile-StatusPrimaertumor.fsh                     1 - 21
 StructureDefinition-strahlentherapie-details.json                 StrahlentherapieDetails                Extension   profile-Strahlentherapie.fsh                       65 - 114
 StructureDefinition-strahlentherapie.json                         Strahlentherapie                       Profile     profile-Strahlentherapie.fsh                       1 - 63
+StructureDefinition-systemische-therapie-details.json             SystemischeTherapieDetails             Extension   profile-SystemischeTherapie.fsh                    39 - 54
+StructureDefinition-systemische-therapie.json                     SystemischeTherapie                    Profile     profile-SystemischeTherapie.fsh                    1 - 37
 StructureDefinition-tnm-distant-metastases-category.json          TNMDistantMetastasesCategory           Profile     profile-Staging.fsh                                82 - 92
 StructureDefinition-tnm-primary-tumor-category.json               TNMPrimaryTumorCategory                Profile     profile-Staging.fsh                                58 - 68
 StructureDefinition-tnm-regional-nodes-category.json              TNMRegionalNodesCategory               Profile     profile-Staging.fsh                                70 - 80
@@ -45,6 +47,7 @@ StructureDefinition-tumorkonferenz-termin.json                    Tumorkonferenz
 StructureDefinition-tumorkonferenz-therapie-verlauf.json          TumorkonferenzTherapieVerlauf          Profile     profile-TumorkonferenzTherapieVerlauf.fsh          1 - 15
 StructureDefinition-tumorkonferenz.json                           Tumorkonferenz                         Profile     profile-Tumorkonferenz.fsh                         1 - 16
 StructureDefinition-verlauf.json                                  Verlauf                                Profile     profile-Verlauf.fsh                                1 - 14
+StructureDefinition-watchful-waiting.json                         WatchfulWaiting                        Profile     profile-WatchfulWaiting.fsh                        1 - 31
 ValueSet-cancer-stage-group-vs.json                               CancerStageVS                          ValueSet    valueSet-Staging.fsh                               38 - 67
 ValueSet-cancer-staging-method-vs.json                            CancerStagingMethodVS                  ValueSet    valueSet-Staging.fsh                               3 - 23
 ValueSet-cancer-staging-type-vs.json                              CancerStagingTypeVS                    ValueSet    valueSet-Staging.fsh                               25 - 31

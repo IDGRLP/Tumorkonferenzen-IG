@@ -32,6 +32,8 @@
 [StatusFernmetastasen]: StructureDefinition-status-fernmetastasen.html
 [Strahlentherapie]: StructureDefinition-strahlentherapie.html
 [StrahlentherapieDetails]: StructureDefinition-strahlentherapie-details.html
+[SystemischeTherapie]: StructureDefinition-systemische-therapie.html
+[SystemischeTherapieDetails]: StructureDefinition-systemische-therapie-details.html
 [TNMDistantMetastasesCategory]: StructureDefinition-tnm-distant-metastases-category.html
 [TNMDistantMetastasesCategoryVS]: ValueSet-tnm-distant-metastases-category-vs.html
 [TNMDistantMetastasesCategoryMaxVS]: ValueSet-tnm-distant-metastases-category-max-vs.html
@@ -64,3 +66,4 @@
 [TumorkonferenzTherapieVerlauf]: StructureDefinition-tumorkonferenz-therapie-verlauf.html
 [TumorPatient-example-1]: Patient-TumorPatient-example-1.html
 [Verlauf]: StructureDefinition-verlauf.html
+[WatchfulWaiting]: StructureDefinition-watchful-waiting.html
