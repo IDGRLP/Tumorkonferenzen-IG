@@ -1,31 +1,31 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-   <id value="de.krebsregister-rlp.tumorboard"/>
+   <id value="de.idg-rlp.tumorkonferenzen"/>
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <h2>TumorBoardRLP</h2>
+         <h2>TumorkonferenzenIDG</h2>
          <p>The official URL for this implementation guide is: </p>
-         <pre>http://krebsregister-rlp.de/fhir/tumorboard/ImplementationGuide/de.krebsregister-rlp.tumorboard</pre>
+         <pre>http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen</pre>
       </div>
    </text>
-   <url value="http://krebsregister-rlp.de/fhir/tumorboard/ImplementationGuide/de.krebsregister-rlp.tumorboard"/>
+   <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen"/>
    <version value="0.1.0"/>
-   <name value="TumorBoardRLP"/>
+   <name value="TumorkonferenzenIDG"/>
    <status value="draft"/>
-   <date value="2023-05-22T10:55:17+02:00"/>
-   <publisher value="Krebsregister Rheinland-Pfalz gGmbH"/>
+   <date value="2024-04-07T14:40:20+02:00"/>
+   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
    <contact>
-      <name value="Krebsregister Rheinland-Pfalz gGmbH"/>
+      <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
       <telecom>
          <system value="url"/>
-         <value value="https://www.krebsregister-rlp.de/"/>
+         <value value="https://www.idg-rlp.de/"/>
       </telecom>
       <telecom>
          <system value="email"/>
-         <value value="info@krebsregister-rlp.de"/>
+         <value value="info@idg-rlp.de"/>
       </telecom>
    </contact>
-   <packageId value="de.krebsregister-rlp.tumorboard"/>
+   <packageId value="de.idg-rlp.tumorkonferenzen"/>
    <license value="CC0-1.0"/>
    <fhirVersion value="4.0.1"/>
    <dependsOn id="hl7tx">
@@ -34,12 +34,25 @@
       </extension>
       <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
       <packageId value="hl7.terminology.r4"/>
-      <version value="5.0.0"/>
+      <version value="5.3.0"/>
+   </dependsOn>
+   <dependsOn id="hl7ext">
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+         <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+      </extension>
+      <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+      <packageId value="hl7.fhir.uv.extensions.r4"/>
+      <version value="1.0.0"/>
    </dependsOn>
    <dependsOn id="de_basisprofil_r4">
       <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
       <packageId value="de.basisprofil.r4"/>
       <version value="1.4.0"/>
+   </dependsOn>
+   <dependsOn id="hl7_fhir_us_mcode">
+      <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
+      <packageId value="hl7.fhir.us.mcode"/>
+      <version value="2.1.0"/>
    </dependsOn>
    <definition>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -119,7 +132,7 @@
             <valueString value="path-history"/>
          </extension>
          <extension url="value">
-            <valueString value="http://krebsregister-rlp.de/fhir/tumorboard/history.html"/>
+            <valueString value="http://idg-rlp.de/fhir/tumorkonferenzen/history.html"/>
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -196,6 +209,14 @@
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
          <extension url="code">
+            <valueString value="apply-wg"/>
+         </extension>
+         <extension url="value">
+            <valueString value="true"/>
+         </extension>
+      </extension>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+         <extension url="code">
             <valueString value="active-tables"/>
          </extension>
          <extension url="value">
@@ -235,44 +256,201 @@
          </extension>
       </extension>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-         <valueCode value="hl7.fhir.uv.tools#current"/>
+         <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
       </extension>
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <grouping id="-str-profile">
          <name value="Structures: Resource Profiles"/>
          <description value="These define constraints on FHIR resources for systems conforming to this implementation guide."/>
       </grouping>
-
-
+      
+      <grouping id="-str-extension">
+         <name value="Structures: Extension Definitions"/>
+         <description value="These define constraints on FHIR data types for systems conforming to this implementation guide."/>
+      </grouping>
       <grouping id="-term-valueset">
          <name value="Terminology: Value Sets"/>
          <description value="These define sets of codes used by systems conforming to this implementation guide."/>
       </grouping>
-
-
-
-
-
-
+      <grouping id="-term-codesystem">
+         <name value="Terminology: Code Systems"/>
+         <description value="These define new code systems used by systems conforming to this implementation guide."/>
+      </grouping>
+      
+      
+      
+      
+      
+      
       <grouping id="-ex-example">
          <name value="Example: Example Instances"/>
          <description value="These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like."/>
       </grouping>
-
-
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-befund-dokument.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/befund-dokument"/>
+         </reference>
+         <name value="BefundDokument"/>
+         <description value="Metadaten zu einem Befunddokument bzw. Bildbefund."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-status-lymphknoten.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/status-lymphknoten"/>
+         </reference>
+         <name value="Beurteilung Primärtumor"/>
+         <description value="Beurteilung des Lymphknoten-Status"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -288,21 +466,81 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-Diagnose.html"/>
+            <valueUri value="StructureDefinition-ecog.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/Diagnose"/>
+            <reference value="StructureDefinition/ecog"/>
          </reference>
-         <name value="Diagnose"/>
-         <description value="Diagnoseinformationen (Primärtumor, frühere Tumore)"/>
+         <name value="ECOG"/>
+         <description value="Allgemeiner Leistungszustand: ECOG"/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-familienanamnese.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/familienanamnese"/>
+         </reference>
+         <name value="Familienanamnese"/>
+         <description value="Familienanamnese"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-gesamtbeurteilung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/gesamtbeurteilung"/>
+         </reference>
+         <name value="Gesamtbeurteilung"/>
+         <description value="Gesamtbeurteilung des Tumorgeschehens"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-histologie.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/histologie"/>
+         </reference>
+         <name value="Histologie"/>
+         <description value="Histologie"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -318,6 +556,9 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -333,6 +574,27 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-nebenwirkung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/nebenwirkung"/>
+         </reference>
+         <name value="Nebenwirkung"/>
+         <description value="Nebenwirkung Strahlentherapie und systemische Therapie nach CTCAE"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -343,26 +605,32 @@
             <reference value="StructureDefinition/operation"/>
          </reference>
          <name value="Operation"/>
-         <description value="Hier steht die Beschreibung"/>
+         <description value="Operation (chirurgischer Eingriff) in ihrer Gesamtheit."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="StructureDefinition-operation-ops-code.html"/>
+            <valueUri value="StructureDefinition-operation-einzelprozedur.html"/>
          </extension>
          <reference>
-            <reference value="StructureDefinition/operation-ops-code"/>
+            <reference value="StructureDefinition/operation-einzelprozedur"/>
          </reference>
-         <name value="Operation OPS Code"/>
-         <description value="Hier steht die Beschreibung"/>
+         <name value="Operation Einzelprozedur"/>
+         <description value="Einzelprozedur als Teil einer Operation. Typischerweise mittels OPS dokumentiert."/>
          <exampleBoolean value="false"/>
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -378,6 +646,81 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-status-primaertumor.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/status-primaertumor"/>
+         </reference>
+         <name value="Status Primärtumor"/>
+         <description value="Beurteilung des Primärtumor-Status"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-status-fernmetastasen.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/status-fernmetastasen"/>
+         </reference>
+         <name value="StatusFernmetastasen"/>
+         <description value="Beurteilung des Fernmetastasen-Status"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-strahlentherapie.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/strahlentherapie"/>
+         </reference>
+         <name value="Strahlentherapie"/>
+         <description value="Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in ihrer Gesamtheit."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-systemische-therapie.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/systemische-therapie"/>
+         </reference>
+         <name value="SystemischeTherapie"/>
+         <description value="Systemische Therapie"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -393,6 +736,9 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -408,6 +754,9 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -423,6 +772,9 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -438,6 +790,27 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumor.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumor"/>
+         </reference>
+         <name value="Tumor"/>
+         <description value="Tumor"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="StructureDefinition:resource"/>
          </extension>
@@ -453,6 +826,243 @@
          <groupingId value="-str-profile"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-Diagnose.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/Diagnose"/>
+         </reference>
+         <name value="Tumordiagnose"/>
+         <description value="Diagnoseinformationen (Primärtumor, frühere Tumore)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorErkrankung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorErkrankung"/>
+         </reference>
+         <name value="Tumorerkrankung"/>
+         <description value="Tumorerkrankung/Fall, dient als Klammer der Krebserkrankung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorkonferenz.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorkonferenz"/>
+         </reference>
+         <name value="Tumorkonferenz"/>
+         <description value="Dieses Profil repräsentiert die Tumorkonferenz zu einem Patienten. Fragestellungen und Informationen, die speziell im Kontext der Tumorkonferenz erstellt werden, referenzieren auf eine entsprechende Tumorkonferenz-Instanz."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorkonferenz-bemerkung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorkonferenz-bemerkung"/>
+         </reference>
+         <name value="TumorkonferenzBemerkung"/>
+         <description value="Tumorkonferenz: Bemerkung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorkonferenz-fragestellung.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorkonferenz-fragestellung"/>
+         </reference>
+         <name value="TumorkonferenzFragestellung"/>
+         <description value="Tumorkonferenz: Fragestellung"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorkonferenz-fragestellung-radiologie.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorkonferenz-fragestellung-radiologie"/>
+         </reference>
+         <name value="TumorkonferenzFragestellungRadiologie"/>
+         <description value="Tumorkonferenz: Fragestellung an die Radiologie"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorkonferenz-situation.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorkonferenz-situation"/>
+         </reference>
+         <name value="TumorkonferenzSituation"/>
+         <description value="Tumorkonferenz: Beschreibung der aktuelle Situation"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorkonferenz-termin.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorkonferenz-termin"/>
+         </reference>
+         <name value="TumorkonferenzTermin"/>
+         <description value="Termin für die Tumorkonferenz."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-tumorkonferenz-therapie-verlauf.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/tumorkonferenz-therapie-verlauf"/>
+         </reference>
+         <name value="TumorkonferenzTherapieVerlauf"/>
+         <description value="Tumorkonferenz: Beschreibung von Therapie und Verlauf"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-verlauf.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/verlauf"/>
+         </reference>
+         <name value="Verlauf"/>
+         <description value="Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:resource"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-watchful-waiting.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/watchful-waiting"/>
+         </reference>
+         <name value="WatchfulWaiting"/>
+         <description value="Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-profile"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-strahlentherapie-details.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/strahlentherapie-details"/>
+         </reference>
+         <name value="StrahlentherapieDetails"/>
+         <description value="Detailinformationen zur Strahlentherapie."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="StructureDefinition:extension"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="StructureDefinition-systemische-therapie-details.html"/>
+         </extension>
+         <reference>
+            <reference value="StructureDefinition/systemische-therapie-details"/>
+         </reference>
+         <name value="SystemischeTherapieDetails"/>
+         <description value="Detailinformationen zur systemischen Therapie."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-str-extension"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -468,6 +1078,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -483,6 +1096,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -498,21 +1114,62 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
          <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-tnm-distant-metastases-category-max-vs.html"/>
+            <valueUri value="ValueSet-ecog-performance-status.html"/>
          </extension>
          <reference>
-            <reference value="ValueSet/tnm-distant-metastases-category-max-vs"/>
+            <reference value="ValueSet/ecog-performance-status"/>
          </reference>
-         <name value="TNM Distant Metastases Maximum Value Set"/>
-         <description value="Values for TNM distant metastases category must be selected from this value set, which includes all codes from UICC and all codes from TNMDistantMetastasesCategoryVS."/>
+         <name value="ECOG"/>
+         <description value="ECOG Performance Status (Level 0-5)."/>
          <exampleBoolean value="false"/>
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-obds-strahlentherapie-intention-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/obds-strahlentherapie-intention-vs"/>
+         </reference>
+         <name value="Intention der Strahlentherapie"/>
+         <description value="Die Intention der Strahlentherapie"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-icd-o-3-morphologie.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/icd-o-3-morphologie"/>
+         </reference>
+         <name value="Morphologie Codes des ICD-O-3 CodeSystems."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -528,6 +1185,27 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-tnm-distant-metastases-category-max-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/tnm-distant-metastases-category-max-vs"/>
+         </reference>
+         <name value="TNM Distant Metastases Maximum Value Set"/>
+         <description value="Values for TNM distant metastases category must be selected from this value set, which includes all codes from UICC and all codes from TNMDistantMetastasesCategoryVS."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -543,21 +1221,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ValueSet"/>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
          </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-tnm-primary-tumor-category-max-vs.html"/>
-         </extension>
-         <reference>
-            <reference value="ValueSet/tnm-primary-tumor-category-max-vs"/>
-         </reference>
-         <name value="TNM Primary Tumor Maximum Value Set"/>
-         <description value="Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-valueset"/>
-      </resource>
-      <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -573,6 +1239,27 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-tnm-primary-tumor-category-max-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/tnm-primary-tumor-category-max-vs"/>
+         </reference>
+         <name value="TNM Primary Tumor Maximum Value Set"/>
+         <description value="Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -588,21 +1275,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="ValueSet"/>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
          </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="ValueSet-tnm-regional-nodes-category-max-vs.html"/>
-         </extension>
-         <reference>
-            <reference value="ValueSet/tnm-regional-nodes-category-max-vs"/>
-         </reference>
-         <name value="TNM Regional Nodes Maximum Value Set"/>
-         <description value="Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS."/>
-         <exampleBoolean value="false"/>
-         <groupingId value="-term-valueset"/>
-      </resource>
-      <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -618,6 +1293,27 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-tnm-regional-nodes-category-max-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/tnm-regional-nodes-category-max-vs"/>
+         </reference>
+         <name value="TNM Regional Nodes Maximum Value Set"/>
+         <description value="Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -633,6 +1329,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -648,6 +1347,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -663,6 +1365,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -678,6 +1383,9 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="ValueSet"/>
          </extension>
@@ -693,6 +1401,117 @@
          <groupingId value="-term-valueset"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="ValueSet"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="ValueSet-obds-op-komplikation-vs.html"/>
+         </extension>
+         <reference>
+            <reference value="ValueSet/obds-op-komplikation-vs"/>
+         </reference>
+         <name value="oBDS Operation Komplikation Value Set"/>
+         <description value="Komplikation gemäß Vorgabe oBDS."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-valueset"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-HistoGrade.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/HistoGrade"/>
+         </reference>
+         <name value="Histopathologische Grading Codes"/>
+         <description value="Die histopathologische Einstufung des invasiven Karzinoms"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-obds-strahlentherapie-intention-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/obds-strahlentherapie-intention-cs"/>
+         </reference>
+         <name value="Intention der Strahlentherapie"/>
+         <description value="Die histopathologische Einstufung des invasiven Karzinoms"/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="CodeSystem"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="CodeSystem-obds-op-komplikation-cs.html"/>
+         </extension>
+         <reference>
+            <reference value="CodeSystem/obds-op-komplikation-cs"/>
+         </reference>
+         <name value="oBDS Operation Komplikation Codesystem"/>
+         <description value="Komplikation gemäß Vorgabe oBDS."/>
+         <exampleBoolean value="false"/>
+         <groupingId value="-term-codesystem"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-ECOGExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/ECOGExample"/>
+         </reference>
+         <name value="ECOGExample"/>
+         <description value="Beispielinstanz einer Observation welche einen ECOG Wert enthält."/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Observation"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Observation-Histologie-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Observation/Histologie-Example"/>
+         </reference>
+         <name value="HistologieExample"/>
+         <description value="HistologieExample"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Practitioner"/>
          </extension>
@@ -703,10 +1522,13 @@
             <reference value="Practitioner/Melder-example-1"/>
          </reference>
          <name value="Melder-example-1"/>
-         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Melder"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="PractitionerRole"/>
          </extension>
@@ -717,10 +1539,30 @@
             <reference value="PractitionerRole/MelderInOrganisation-example-1"/>
          </reference>
          <name value="MelderInOrganisation-example-1"/>
-         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/MelderInOrganisation"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Procedure"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Procedure-OperationEinzelprozedurExample.html"/>
+         </extension>
+         <reference>
+            <reference value="Procedure/OperationEinzelprozedurExample"/>
+         </reference>
+         <name value="OperationEinzelprozedurExample"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation-einzelprozedur"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Procedure"/>
          </extension>
@@ -731,24 +1573,13 @@
             <reference value="Procedure/OperationExample"/>
          </reference>
          <name value="OperationExample"/>
-         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
-         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-            <valueString value="Procedure"/>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
          </extension>
-         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-            <valueUri value="Procedure-OperationOpsCodeExample.html"/>
-         </extension>
-         <reference>
-            <reference value="Procedure/OperationOpsCodeExample"/>
-         </reference>
-         <name value="OperationOpsCodeExample"/>
-         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/operation-ops-code"/>
-         <groupingId value="-ex-example"/>
-      </resource>
-      <resource>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Organization"/>
          </extension>
@@ -759,10 +1590,49 @@
             <reference value="Organization/Organisation-example-1"/>
          </reference>
          <name value="Organisation-example-1"/>
-         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/Organisation"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"/>
          <groupingId value="-ex-example"/>
       </resource>
       <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="Specimen"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="Specimen-Tumor-Example.html"/>
+         </extension>
+         <reference>
+            <reference value="Specimen/Tumor-Example"/>
+         </reference>
+         <name value="Tumor-Example"/>
+         <description value="Tumor-Example"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+            <valueString value="EpisodeOfCare"/>
+         </extension>
+         <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+            <valueUri value="EpisodeOfCare-TumorErkrankungExample.html"/>
+         </extension>
+         <reference>
+            <reference value="EpisodeOfCare/TumorErkrankungExample"/>
+         </reference>
+         <name value="TumorErkrankungExample"/>
+         <description value="Ein Beispiel für die Episode einer Tumorerkrankung."/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorErkrankung"/>
+         <groupingId value="-ex-example"/>
+      </resource>
+      <resource>
+         <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-sort">
+            <valueInteger value="999999999"/>
+         </extension>
          <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
             <valueString value="Patient"/>
          </extension>
@@ -773,7 +1643,7 @@
             <reference value="Patient/TumorPatient-example-1"/>
          </reference>
          <name value="TumorPatient-example-1"/>
-         <exampleCanonical value="http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"/>
+         <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"/>
          <groupingId value="-ex-example"/>
       </resource>
       <page>
@@ -804,13 +1674,38 @@
             <title value="Artifacts Summary"/>
             <generation value="html"/>
             <page>
+               <nameUrl value="StructureDefinition-befund-dokument.html"/>
+               <title value="BefundDokument"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-status-lymphknoten.html"/>
+               <title value="Beurteilung Primärtumor"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-cancer-stage-group.html"/>
                <title value="Cancer Stage Group Profile"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-Diagnose.html"/>
-               <title value="Diagnose"/>
+               <nameUrl value="StructureDefinition-ecog.html"/>
+               <title value="ECOG"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-familienanamnese.html"/>
+               <title value="Familienanamnese"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-gesamtbeurteilung.html"/>
+               <title value="Gesamtbeurteilung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-histologie.html"/>
+               <title value="Histologie"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -824,18 +1719,43 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-nebenwirkung.html"/>
+               <title value="Nebenwirkung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-operation.html"/>
                <title value="Operation"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="StructureDefinition-operation-ops-code.html"/>
-               <title value="Operation OPS Code"/>
+               <nameUrl value="StructureDefinition-operation-einzelprozedur.html"/>
+               <title value="Operation Einzelprozedur"/>
                <generation value="generated"/>
             </page>
             <page>
                <nameUrl value="StructureDefinition-Organisation.html"/>
                <title value="Organisation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-status-primaertumor.html"/>
+               <title value="Status Primärtumor"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-status-fernmetastasen.html"/>
+               <title value="StatusFernmetastasen"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-strahlentherapie.html"/>
+               <title value="Strahlentherapie"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-systemische-therapie.html"/>
+               <title value="SystemischeTherapie"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -859,8 +1779,78 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="StructureDefinition-tumor.html"/>
+               <title value="Tumor"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="StructureDefinition-TumorPatient.html"/>
                <title value="Tumor-Patient"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-Diagnose.html"/>
+               <title value="Tumordiagnose"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorErkrankung.html"/>
+               <title value="Tumorerkrankung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorkonferenz.html"/>
+               <title value="Tumorkonferenz"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorkonferenz-bemerkung.html"/>
+               <title value="TumorkonferenzBemerkung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorkonferenz-fragestellung.html"/>
+               <title value="TumorkonferenzFragestellung"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorkonferenz-fragestellung-radiologie.html"/>
+               <title value="TumorkonferenzFragestellungRadiologie"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorkonferenz-situation.html"/>
+               <title value="TumorkonferenzSituation"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorkonferenz-termin.html"/>
+               <title value="TumorkonferenzTermin"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-tumorkonferenz-therapie-verlauf.html"/>
+               <title value="TumorkonferenzTherapieVerlauf"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-verlauf.html"/>
+               <title value="Verlauf"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-watchful-waiting.html"/>
+               <title value="WatchfulWaiting"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-strahlentherapie-details.html"/>
+               <title value="StrahlentherapieDetails"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="StructureDefinition-systemische-therapie-details.html"/>
+               <title value="SystemischeTherapieDetails"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -879,8 +1869,23 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-tnm-distant-metastases-category-max-vs.html"/>
-               <title value="TNM Distant Metastases Maximum Value Set"/>
+               <nameUrl value="ValueSet-ecog-performance-status.html"/>
+               <title value="ECOG"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-obds-strahlentherapie-intention-vs.html"/>
+               <title value="Intention der Strahlentherapie"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-icd-o-3-morphologie.html"/>
+               <title value="Morphologie Codes des ICD-O-3 CodeSystems."/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="ValueSet-obds-op-komplikation-vs.html"/>
+               <title value="oBDS Operation Komplikation Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -889,13 +1894,13 @@
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-tnm-distant-metastases-staging-type-vs.html"/>
-               <title value="TNM Distant Metastases Staging Type Value Set"/>
+               <nameUrl value="ValueSet-tnm-distant-metastases-category-max-vs.html"/>
+               <title value="TNM Distant Metastases Maximum Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-tnm-primary-tumor-category-max-vs.html"/>
-               <title value="TNM Primary Tumor Maximum Value Set"/>
+               <nameUrl value="ValueSet-tnm-distant-metastases-staging-type-vs.html"/>
+               <title value="TNM Distant Metastases Staging Type Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -904,18 +1909,23 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="ValueSet-tnm-primary-tumor-category-max-vs.html"/>
+               <title value="TNM Primary Tumor Maximum Value Set"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="ValueSet-tnm-primary-tumor-staging-type-vs.html"/>
                <title value="TNM Primary Tumor Staging Type Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-tnm-regional-nodes-category-max-vs.html"/>
-               <title value="TNM Regional Nodes Maximum Value Set"/>
+               <nameUrl value="ValueSet-tnm-regional-nodes-category-vs.html"/>
+               <title value="TNM Regional Nodes Category Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="ValueSet-tnm-regional-nodes-category-vs.html"/>
-               <title value="TNM Regional Nodes Category Value Set"/>
+               <nameUrl value="ValueSet-tnm-regional-nodes-category-max-vs.html"/>
+               <title value="TNM Regional Nodes Maximum Value Set"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -944,6 +1954,31 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="CodeSystem-HistoGrade.html"/>
+               <title value="Histopathologische Grading Codes"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-obds-strahlentherapie-intention-cs.html"/>
+               <title value="Intention der Strahlentherapie"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="CodeSystem-obds-op-komplikation-cs.html"/>
+               <title value="oBDS Operation Komplikation Codesystem"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-ECOGExample.html"/>
+               <title value="ECOGExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="Observation-Histologie-Example.html"/>
+               <title value="HistologieExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Practitioner-Melder-example-1.html"/>
                <title value="Melder-example-1"/>
                <generation value="generated"/>
@@ -954,18 +1989,28 @@
                <generation value="generated"/>
             </page>
             <page>
+               <nameUrl value="Procedure-OperationEinzelprozedurExample.html"/>
+               <title value="OperationEinzelprozedurExample"/>
+               <generation value="generated"/>
+            </page>
+            <page>
                <nameUrl value="Procedure-OperationExample.html"/>
                <title value="OperationExample"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Procedure-OperationOpsCodeExample.html"/>
-               <title value="OperationOpsCodeExample"/>
+               <nameUrl value="Organization-Organisation-example-1.html"/>
+               <title value="Organisation-example-1"/>
                <generation value="generated"/>
             </page>
             <page>
-               <nameUrl value="Organization-Organisation-example-1.html"/>
-               <title value="Organisation-example-1"/>
+               <nameUrl value="Specimen-Tumor-Example.html"/>
+               <title value="Tumor-Example"/>
+               <generation value="generated"/>
+            </page>
+            <page>
+               <nameUrl value="EpisodeOfCare-TumorErkrankungExample.html"/>
+               <title value="TumorErkrankungExample"/>
                <generation value="generated"/>
             </page>
             <page>
@@ -1073,7 +2118,7 @@
       </parameter>
       <parameter>
          <code value="path-history"/>
-         <value value="http://krebsregister-rlp.de/fhir/tumorboard/history.html"/>
+         <value value="http://idg-rlp.de/fhir/tumorkonferenzen/history.html"/>
       </parameter>
       <parameter>
          <code value="template-html"/>
@@ -1109,6 +2154,10 @@
       </parameter>
       <parameter>
          <code value="apply-version"/>
+         <value value="true"/>
+      </parameter>
+      <parameter>
+         <code value="apply-wg"/>
          <value value="true"/>
       </parameter>
       <parameter>
