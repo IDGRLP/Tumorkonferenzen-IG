@@ -116,8 +116,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "ValueSet-tnm-distant-metastases-category-max-vs.html" : "TNM Distant Metastases Maximum Value Set",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
+      "ValueSet-tnm-distant-metastases-category-max-vs.html" : "TNM Distant Metastases Maximum Value Set"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-staging-type-vs",
@@ -150,8 +150,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
+      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs",
@@ -184,8 +184,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
-      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set"
+      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set",
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs",
@@ -230,8 +230,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set",
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
+      "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-staging-method-vs",
@@ -243,10 +243,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
       "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
     },
     {
       "url" : "http://loinc.org/vs/LL529-9",
