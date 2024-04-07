@@ -135,11 +135,6 @@
         "mustSupport": true
       },
       {
-        "id": "Condition.code.coding.extension:Seitenlokalisation.extension",
-        "path": "Condition.code.coding.extension.extension",
-        "max": "0"
-      },
-      {
         "id": "Condition.code.coding.extension:Seitenlokalisation.value[x]",
         "path": "Condition.code.coding.extension.value[x]",
         "mustSupport": true
