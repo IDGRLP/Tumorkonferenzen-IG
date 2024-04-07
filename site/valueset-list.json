@@ -1,7 +1,7 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-stage-group-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "CancerStageVS",
@@ -10,7 +10,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-method-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "CancerStagingMethodVS",
@@ -19,7 +19,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "CancerStagingTypeVS",
@@ -28,7 +28,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "ICDO3Morphologie",
@@ -37,19 +37,30 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/obds-op-komplikation-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-op-komplikation-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "ObdsOpKomplikationVS",
       "title" : "oBDS Operation Komplikation Value Set",
       "description" : "Komplikation gemäß Vorgabe oBDS.",
       "systems" : [
-        "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
-        "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+        "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs"
       ]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-strahlentherapie-intention-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObdsStrahlentherapieIntentionVS",
+      "title" : "Intention der Strahlentherapie",
+      "description" : "Die Intention der Strahlentherapie",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs"
+      ]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMDistantMetastasesCategoryMaxVS",
@@ -58,7 +69,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMDistantMetastasesCategoryVS",
@@ -67,7 +78,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMDistantMetastasesStagingTypeVS",
@@ -76,7 +87,7 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMPrimaryTumorCategoryMaxVS",
@@ -85,7 +96,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMPrimaryTumorCategoryVS",
@@ -94,7 +105,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMPrimaryTumorStagingTypeVS",
@@ -103,7 +114,7 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-category-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMRegionalNodesCategoryMaxVS",
@@ -112,7 +123,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-category-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMRegionalNodesCategoryVS",
@@ -121,7 +132,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMRegionalNodesStagingTypeVS",
@@ -130,7 +141,7 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStageGroupMaxVS",
@@ -139,7 +150,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStageGroupStagingTypeVS",
@@ -148,7 +159,7 @@
       "systems" : ["http://loinc.org"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStageGroupVS",
@@ -157,7 +168,7 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-staging-method-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStagingMethodVS",

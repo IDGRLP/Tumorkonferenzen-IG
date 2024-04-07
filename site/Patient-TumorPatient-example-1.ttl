@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://krebsregister-rlp.de/fhir/tumorboard/Patient/TumorPatient-example-1> a fhir:Patient ;
+<http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatient-example-1> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "TumorPatient-example-1"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient"^^xsd:anyURI ;
-       fhir:link <http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/TumorPatient>
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Martina Mustermann (OFFICIAL)</b> female, DoB: 1965-04-03 ( Gesetzliche Krankenversicherung: GkvKvid10#A123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Musterfrau (MAIDEN)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Musterweg 22 Musterstadt 12345 DE </td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Martina Mustermann (OFFICIAL)</b> female, DoB: 1965-04-03 ( Gesetzliche Krankenversicherung/A123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Musterfrau (MAIDEN)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Musterweg 22 Musterstadt 12345 DE </td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:type [

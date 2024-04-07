@@ -5,23 +5,23 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  1222592004 (American Joint Committee on Cancer clinical stage group allowable value)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  1222593009 (American Joint Committee on Cancer pathological stage group allowable value (qualifier value))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  1222594003 (American Joint Committee on Cancer yp stage group allowable value (qualifier value))</li></ul></div>"
   },
-  "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs",
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-vs",
   "version" : "0.1.0",
   "name" : "TNMStageGroupVS",
   "title" : "TNM Stage Group Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2024-02-29T10:35:30+00:00",
+  "date" : "2024-04-07T13:52:57+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.krebsregister-rlp.de/"
+      "value" : "https://www.idg-rlp.de/"
     },
     {
       "system" : "email",
-      "value" : "info@krebsregister-rlp.de"
+      "value" : "info@idg-rlp.de"
     }]
   }],
   "description" : "Result values for cancer stage group using TNM staging. This value set contains SNOMED-CT equivalents of UICC codes for Stage Group, according to TNM staging rules.",

@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://krebsregister-rlp.de/fhir/tumorboard/Specimen/Tumor-Example> a fhir:Specimen ;
+<http://idg-rlp.de/fhir/tumorkonferenzen/Specimen/Tumor-Example> a fhir:Specimen ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "Tumor-Example"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumor"^^xsd:anyURI ;
-       fhir:link <http://krebsregister-rlp.de/fhir/tumorboard/StructureDefinition/tumor>
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"Tumor-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;Tumor-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor.html\">Tumor</a></p></div><p><b>identifier</b>: id: 1234567890</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2023-08-16 04:49:38+0000</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"Tumor-Example\"> </a><a name=\"hcTumor-Example\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;Tumor-Example&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor.html\">Tumor</a></p></div><p><b>identifier</b>: <code>http://example.org/identifier</code>/1234567890</p><h3>Collections</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Collected[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>2023-08-16 04:49:38+0000</td></tr></table></div>"
   ] ; # 
   fhir:identifier ( [
      fhir:system [ fhir:v "http://example.org/identifier"^^xsd:anyURI ] ;

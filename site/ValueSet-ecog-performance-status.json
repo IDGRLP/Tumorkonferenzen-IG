@@ -10,17 +10,17 @@
   "name" : "ECOGPerformanceStatusVS",
   "title" : "ECOG",
   "status" : "draft",
-  "date" : "2024-02-29T10:35:30+00:00",
+  "date" : "2024-04-07T13:52:57+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.krebsregister-rlp.de/"
+      "value" : "https://www.idg-rlp.de/"
     },
     {
       "system" : "email",
-      "value" : "info@krebsregister-rlp.de"
+      "value" : "info@idg-rlp.de"
     }]
   }],
   "description" : "ECOG Performance Status (Level 0-5).",

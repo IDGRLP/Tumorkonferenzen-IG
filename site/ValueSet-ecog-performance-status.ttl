@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/ecog-performance-status> a fhir:ValueSet ;
+<http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ecog-performance-status"] ; # 
   fhir:text [
@@ -17,16 +17,16 @@
   fhir:name [ fhir:v "ECOGPerformanceStatusVS"] ; # 
   fhir:title [ fhir:v "ECOG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-29T10:35:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-07T13:52:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.krebsregister-rlp.de/" ]
+       fhir:value [ fhir:v "https://www.idg-rlp.de/" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "info@krebsregister-rlp.de" ]
+       fhir:value [ fhir:v "info@idg-rlp.de" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "ECOG Performance Status (Level 0-5)."] ; # 

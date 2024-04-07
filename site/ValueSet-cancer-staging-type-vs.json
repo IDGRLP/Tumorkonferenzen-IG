@@ -5,23 +5,23 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  371508000 (Tumor stage (observable entity))</li></ul></div>"
   },
-  "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs",
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-type-vs",
   "version" : "0.1.0",
   "name" : "CancerStagingTypeVS",
   "title" : "Cancer Staging Type Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2024-02-29T10:35:30+00:00",
+  "date" : "2024-04-07T13:52:57+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.krebsregister-rlp.de/"
+      "value" : "https://www.idg-rlp.de/"
     },
     {
       "system" : "email",
-      "value" : "info@krebsregister-rlp.de"
+      "value" : "info@idg-rlp.de"
     }]
   }],
   "description" : "Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables.",

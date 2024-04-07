@@ -1,6 +1,20 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-tumorErkrankung.html" : "Tumorerkrankung"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
       "version" : "4.0.1",
       "status" : "active",
@@ -13,7 +27,7 @@
       "StructureDefinition-TumorPatient.html" : "Tumor-Patient"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-stage-group-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "CancerStageVS",
@@ -25,7 +39,7 @@
       "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-method-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-method-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "CancerStagingMethodVS",
@@ -37,7 +51,7 @@
       "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/cancer-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "CancerStagingTypeVS",
@@ -49,7 +63,7 @@
       "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "ICDO3Morphologie",
@@ -58,22 +72,33 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/obds-op-komplikation-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-op-komplikation-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "ObdsOpKomplikationVS",
       "title" : "oBDS Operation Komplikation Value Set",
       "description" : "Komplikation gemäß Vorgabe oBDS.",
       "systems" : [
-        "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
-        "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+        "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs"
       ],
       "uses" : {
       },
       "StructureDefinition-operation.html" : "Operation"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-strahlentherapie-intention-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObdsStrahlentherapieIntentionVS",
+      "title" : "Intention der Strahlentherapie",
+      "description" : "Die Intention der Strahlentherapie",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs"
+      ]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMDistantMetastasesCategoryMaxVS",
@@ -82,7 +107,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-category-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMDistantMetastasesCategoryVS",
@@ -95,7 +120,7 @@
       "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-distant-metastases-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMDistantMetastasesStagingTypeVS",
@@ -107,7 +132,7 @@
       "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMPrimaryTumorCategoryMaxVS",
@@ -116,7 +141,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-category-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMPrimaryTumorCategoryVS",
@@ -129,7 +154,7 @@
       "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-primary-tumor-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMPrimaryTumorStagingTypeVS",
@@ -141,7 +166,7 @@
       "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-category-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMRegionalNodesCategoryMaxVS",
@@ -150,7 +175,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-category-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-category-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMRegionalNodesCategoryVS",
@@ -163,7 +188,7 @@
       "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-regional-nodes-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMRegionalNodesStagingTypeVS",
@@ -175,7 +200,7 @@
       "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStageGroupMaxVS",
@@ -184,7 +209,7 @@
       "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-staging-type-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-staging-type-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStageGroupStagingTypeVS",
@@ -196,7 +221,7 @@
       "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStageGroupVS",
@@ -209,7 +234,7 @@
       "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-staging-method-vs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-staging-method-vs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "TNMStagingMethodVS",
@@ -218,10 +243,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
       "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
       "url" : "http://loinc.org/vs/LL529-9",

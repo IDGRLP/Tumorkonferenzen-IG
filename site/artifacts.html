@@ -83,7 +83,7 @@
     <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="tb.html">Tumorboard</a>
+    <a href="tb.html">tumorkonferenzen</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -117,7 +117,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">TumorBoardRLP - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://krebsregister-rlp.de/fhir/tumorboard/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">TumorkonferenzenIDG - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://idg-rlp.de/fhir/tumorkonferenzen/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -132,13 +132,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Terminology: Value Sets</a>
+         <a href="#2">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#3">Terminology: Code Systems</a>
+         <a href="#3">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -154,6 +157,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-befund-dokument.html"
+                  title="StructureDefinition/befund-dokument">BefundDokument</a>
+            </td>
+            <td>
+<p>Metadaten zu einem Befunddokument bzw. Bildbefund.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-status-lymphknoten.html"
+                  title="StructureDefinition/status-lymphknoten">Beurteilung Primärtumor</a>
+            </td>
+            <td>
+<p>Beurteilung des Lymphknoten-Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-cancer-stage-group.html"
                   title="StructureDefinition/cancer-stage-group">Cancer Stage Group Profile</a>
             </td>
@@ -167,6 +188,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Allgemeiner Leistungszustand: ECOG</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-familienanamnese.html"
+                  title="StructureDefinition/familienanamnese">Familienanamnese</a>
+            </td>
+            <td>
+<p>Familienanamnese</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-gesamtbeurteilung.html"
+                  title="StructureDefinition/gesamtbeurteilung">Gesamtbeurteilung</a>
+            </td>
+            <td>
+<p>Gesamtbeurteilung des Tumorgeschehens</p>
 </td>
          </tr>
          <tr>
@@ -198,6 +237,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-nebenwirkung.html"
+                  title="StructureDefinition/nebenwirkung">Nebenwirkung</a>
+            </td>
+            <td>
+<p>Nebenwirkung Strahlentherapie und systemische Therapie nach CTCAE</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-operation.html"
                   title="StructureDefinition/operation">Operation</a>
             </td>
@@ -221,6 +269,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Organisation (Krankenhaus, Praxis)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-status-primaertumor.html"
+                  title="StructureDefinition/status-primaertumor">Status Primärtumor</a>
+            </td>
+            <td>
+<p>Beurteilung des Primärtumor-Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-status-fernmetastasen.html"
+                  title="StructureDefinition/status-fernmetastasen">StatusFernmetastasen</a>
+            </td>
+            <td>
+<p>Beurteilung des Fernmetastasen-Status</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-strahlentherapie.html"
+                  title="StructureDefinition/strahlentherapie">Strahlentherapie</a>
+            </td>
+            <td>
+<p>Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in ihrer Gesamtheit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-systemische-therapie.html"
+                  title="StructureDefinition/systemische-therapie">SystemischeTherapie</a>
+            </td>
+            <td>
+<p>Systemische Therapie</p>
 </td>
          </tr>
          <tr>
@@ -294,9 +378,116 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Tumorerkrankung/Fall, dient als Klammer der Krebserkrankung</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorkonferenz.html"
+                  title="StructureDefinition/tumorkonferenz">Tumorkonferenz</a>
+            </td>
+            <td>
+<p>Dieses Profil repräsentiert die Tumorkonferenz zu einem Patienten. Fragestellungen und Informationen, die speziell im Kontext der Tumorkonferenz erstellt werden, referenzieren auf eine entsprechende Tumorkonferenz-Instanz.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorkonferenz-bemerkung.html"
+                  title="StructureDefinition/tumorkonferenz-bemerkung">TumorkonferenzBemerkung</a>
+            </td>
+            <td>
+<p>Tumorkonferenz: Bemerkung</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorkonferenz-fragestellung.html"
+                  title="StructureDefinition/tumorkonferenz-fragestellung">TumorkonferenzFragestellung</a>
+            </td>
+            <td>
+<p>Tumorkonferenz: Fragestellung</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorkonferenz-fragestellung-radiologie.html"
+                  title="StructureDefinition/tumorkonferenz-fragestellung-radiologie">TumorkonferenzFragestellungRadiologie</a>
+            </td>
+            <td>
+<p>Tumorkonferenz: Fragestellung an die Radiologie</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorkonferenz-situation.html"
+                  title="StructureDefinition/tumorkonferenz-situation">TumorkonferenzSituation</a>
+            </td>
+            <td>
+<p>Tumorkonferenz: Beschreibung der aktuelle Situation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorkonferenz-termin.html"
+                  title="StructureDefinition/tumorkonferenz-termin">TumorkonferenzTermin</a>
+            </td>
+            <td>
+<p>Termin für die Tumorkonferenz.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-tumorkonferenz-therapie-verlauf.html"
+                  title="StructureDefinition/tumorkonferenz-therapie-verlauf">TumorkonferenzTherapieVerlauf</a>
+            </td>
+            <td>
+<p>Tumorkonferenz: Beschreibung von Therapie und Verlauf</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-verlauf.html"
+                  title="StructureDefinition/verlauf">Verlauf</a>
+            </td>
+            <td>
+<p>Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-watchful-waiting.html"
+                  title="StructureDefinition/watchful-waiting">WatchfulWaiting</a>
+            </td>
+            <td>
+<p>Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-strahlentherapie-details.html"
+                  title="StructureDefinition/strahlentherapie-details">StrahlentherapieDetails</a>
+            </td>
+            <td>
+<p>Detailinformationen zur Strahlentherapie.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-systemische-therapie-details.html"
+                  title="StructureDefinition/systemische-therapie-details">SystemischeTherapieDetails</a>
+            </td>
+            <td>
+<p>Detailinformationen zur systemischen Therapie.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -336,6 +527,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ECOG Performance Status (Level 0-5).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-obds-strahlentherapie-intention-vs.html"
+                  title="ValueSet/obds-strahlentherapie-intention-vs">Intention der Strahlentherapie</a>
+            </td>
+            <td>
+<p>Die Intention der Strahlentherapie</p>
 </td>
          </tr>
          <tr>
@@ -475,7 +675,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -484,6 +684,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-HistoGrade.html" title="CodeSystem/HistoGrade">Histopathologische Grading Codes</a>
+            </td>
+            <td>
+<p>Die histopathologische Einstufung des invasiven Karzinoms</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-obds-strahlentherapie-intention-cs.html"
+                  title="CodeSystem/obds-strahlentherapie-intention-cs">Intention der Strahlentherapie</a>
             </td>
             <td>
 <p>Die histopathologische Einstufung des invasiven Karzinoms</p>
@@ -500,7 +709,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -620,7 +829,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.krebsregister-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.krebsregister-rlp.tumorboard#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 29, 2024 10:35+0000">2024-02-29</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Apr 7, 2024 13:52+0000">2024-04-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

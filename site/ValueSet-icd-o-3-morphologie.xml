@@ -5,22 +5,22 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a> where concept  matches (by regex)  ^\d\S*$</li></ul></div>
   </text>
-  <url value="http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/icd-o-3-morphologie"/>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie"/>
   <version value="0.1.0"/>
   <name value="ICDO3Morphologie"/>
   <title value="Morphologie Codes des ICD-O-3 CodeSystems."/>
   <status value="draft"/>
-  <date value="2024-02-29T10:35:30+00:00"/>
+  <date value="2024-04-07T13:52:57+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.krebsregister-rlp.de/"/>
+      <value value="https://www.idg-rlp.de/"/>
     </telecom>
     <telecom>
       <system value="email"/>
-      <value value="info@krebsregister-rlp.de"/>
+      <value value="info@idg-rlp.de"/>
     </telecom>
   </contact>
   <compose>

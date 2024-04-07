@@ -2,7 +2,7 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-      "version" : "1.4.0",
+      "version" : "1.5.0-ballot",
       "status" : "active",
       "name" : "ICD10GM",
       "title" : null,
@@ -12,7 +12,7 @@
       "ValueSet-obds-op-komplikation-vs.html" : "oBDS Operation Komplikation Value Set"
     },
     {
-      "url" : "http://krebsregister-rlp.de/fhir/tumorboard/CodeSystem/obds-op-komplikation-cs",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs",
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "ObdsOpKomplikationCS",
@@ -21,6 +21,17 @@
       "uses" : {
       },
       "ValueSet-obds-op-komplikation-vs.html" : "oBDS Operation Komplikation Value Set"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObdsStrahlentherapieIntentionCS",
+      "title" : "Intention der Strahlentherapie",
+      "description" : "Die histopathologische Einstufung des invasiven Karzinoms ",
+      "uses" : {
+      },
+      "ValueSet-obds-strahlentherapie-intention-vs.html" : "Intention der Strahlentherapie"
     },
     {
       "url" : "http://loinc.org",
@@ -33,9 +44,9 @@
       "uses" : {
       },
       "ValueSet-tnm-primary-tumor-staging-type-vs.html" : "TNM Primary Tumor Staging Type Value Set",
+      "ValueSet-tnm-distant-metastases-staging-type-vs.html" : "TNM Distant Metastases Staging Type Value Set",
       "ValueSet-ecog-performance-status.html" : "ECOG",
       "ValueSet-tnm-regional-nodes-staging-type-vs.html" : "TNM Regional Nodes Staging Type Value Set",
-      "ValueSet-tnm-distant-metastases-staging-type-vs.html" : "TNM Distant Metastases Staging Type Value Set",
       "ValueSet-tnm-stage-group-staging-type-vs.html" : "TNM Stage Group Staging Type Value Set"
     },
     {
@@ -48,14 +59,26 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-cancer-staging-type-vs.html" : "Cancer Staging Type Value Set",
-      "ValueSet-tnm-primary-tumor-category-vs.html" : "TNM Primary Tumor Category Value Set",
-      "ValueSet-tnm-distant-metastases-category-vs.html" : "TNM Distant Metastases Category Value Set",
-      "ValueSet-tnm-regional-nodes-category-vs.html" : "TNM Regional Nodes Category Value Set",
+      "ValueSet-tnm-stage-group-vs.html" : "TNM Stage Group Value Set",
       "ValueSet-cancer-stage-group-vs.html" : "Cancer Stage Group Value Set",
       "ValueSet-cancer-staging-method-vs.html" : "Cancer Staging Method Value Set",
       "ValueSet-tnm-staging-method-vs.html" : "TNM Staging Method Value Set",
-      "ValueSet-tnm-stage-group-vs.html" : "TNM Stage Group Value Set"
+      "ValueSet-tnm-primary-tumor-category-vs.html" : "TNM Primary Tumor Category Value Set",
+      "ValueSet-tnm-regional-nodes-category-vs.html" : "TNM Regional Nodes Category Value Set",
+      "ValueSet-cancer-staging-type-vs.html" : "Cancer Staging Type Value Set",
+      "ValueSet-tnm-distant-metastases-category-vs.html" : "TNM Distant Metastases Category Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+      "version" : "0.1.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "Diagnosis Role",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1054"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-diagnosis-role.html" : "DiagnosisRole"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",

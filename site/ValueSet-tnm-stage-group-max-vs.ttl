@@ -5,37 +5,37 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs> a fhir:ValueSet ;
+<http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-max-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "tnm-stage-group-max-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-tnm-stage-group-vs.html\">TNM Stage Group Value Set</a></li><li>Include all codes defined in <code>https://www.uicc.org/resources/tnm</code></li></ul></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-max-vs"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-max-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TNMStageGroupMaxVS"] ; # 
   fhir:title [ fhir:v "TNM Stage Group Maximum Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-02-29T10:35:30+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-07T13:52:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "https://www.krebsregister-rlp.de/" ]
+       fhir:value [ fhir:v "https://www.idg-rlp.de/" ]
      ] [
        fhir:system [ fhir:v "email" ] ;
-       fhir:value [ fhir:v "info@krebsregister-rlp.de" ]
+       fhir:value [ fhir:v "info@idg-rlp.de" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Values for TNM stage group must be selected from this value set, which includes all codes from UICC and all codes from TNMStageGroupVS."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:valueSet ( [
-         fhir:v "http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs"^^xsd:anyURI ;
-         fhir:link <http://krebsregister-rlp.de/fhir/tumorboard/ValueSet/tnm-stage-group-vs>
+         fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-vs"^^xsd:anyURI ;
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-vs>
        ] )
      ] [
        fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ]
