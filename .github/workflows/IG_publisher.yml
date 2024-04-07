@@ -33,13 +33,12 @@ jobs:
           fhir install hl7.fhir.us.mcode@2.1.0
           echo "Run the IG publisher..."
           java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
-          unzip resources/output/full-ig.zip -d upload/
 
       - name: Upload Artifacts 🔺 # The project is then uploaded as an artifact named 'site'.
         uses: actions/upload-artifact@v1
         with:
           name: ig
-          path: upload
+          path: output
 
   deploy:
     concurrency: ci-${{ github.ref }}

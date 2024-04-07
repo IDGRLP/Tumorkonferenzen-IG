@@ -12,7 +12,7 @@
    <version value="0.1.0"/>
    <name value="TumorkonferenzenIDG"/>
    <status value="draft"/>
-   <date value="2024-04-07T14:40:20+02:00"/>
+   <date value="2024-04-07T16:08:45+02:00"/>
    <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
    <contact>
       <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -47,7 +47,7 @@
    <dependsOn id="de_basisprofil_r4">
       <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
       <packageId value="de.basisprofil.r4"/>
-      <version value="1.4.0"/>
+      <version value="1.5.0-ballot2"/>
    </dependsOn>
    <dependsOn id="hl7_fhir_us_mcode">
       <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
