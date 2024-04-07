@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "obds-strahlentherapie-intention-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">K<a name=\"obds-strahlentherapie-intention-cs-K\"> </a></td><td>kurativ</td></tr><tr><td style=\"white-space:nowrap\">P<a name=\"obds-strahlentherapie-intention-cs-P\"> </a></td><td>palliativ</td></tr><tr><td style=\"white-space:nowrap\">O<a name=\"obds-strahlentherapie-intention-cs-O\"> </a></td><td>lokal kurativ bei Oligometastasierung</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"obds-strahlentherapie-intention-cs-S\"> </a></td><td>sonstiges</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"obds-strahlentherapie-intention-cs-X\"> </a></td><td>keine Angabe</td></tr></table></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs",
+  "version" : "0.1.0",
+  "name" : "ObdsStrahlentherapieIntentionCS",
+  "title" : "Intention der Strahlentherapie",
+  "status" : "draft",
+  "date" : "2024-04-07T14:26:09+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "Die histopathologische Einstufung des invasiven Karzinoms ",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "K",
+    "display" : "kurativ"
+  },
+  {
+    "code" : "P",
+    "display" : "palliativ"
+  },
+  {
+    "code" : "O",
+    "display" : "lokal kurativ bei Oligometastasierung"
+  },
+  {
+    "code" : "S",
+    "display" : "sonstiges"
+  },
+  {
+    "code" : "X",
+    "display" : "keine Angabe"
+  }]
+}

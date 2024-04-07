@@ -1,0 +1,234 @@
+TumorkonferenzenIDG : Validation Results
+=========================================
+
+err = 13, warn = 61, info = 11
+IG Publisher Version: 1.6.3 Out of date - current version is 1.6.4
+Generated Sun Apr 07 14:27:58 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
+ Build Errors : 0 / 11 / 0
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-HistoGrade : 0 / 2 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-obds-op-komplikation-cs : 0 / 2 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-obds-strahlentherapie-intention-cs : 0 / 2 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/EpisodeOfCare-TumorErkrankungExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ImplementationGuide-de.idg-rlp.tumorkonferenzen : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-ECOGExample : 4 / 2 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-Histologie-Example : 0 / 3 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Organization-Organisation-example-1 : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Patient-TumorPatient-example-1 : 2 / 0 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Practitioner-Melder-example-1 : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/PractitionerRole-MelderInOrganisation-example-1 : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Procedure-OperationEinzelprozedurExample : 0 / 0 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Procedure-OperationExample : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Specimen-Tumor-Example : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-Diagnose : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-Melder : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-MelderInOrganisation : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-Organisation : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TumorPatient : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-befund-dokument : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-cancer-stage-group : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-ecog : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-familienanamnese : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-gesamtbeurteilung : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-histologie : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-nebenwirkung : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-operation : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-operation-einzelprozedur : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-status-fernmetastasen : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-status-lymphknoten : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-status-primaertumor : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-strahlentherapie : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-strahlentherapie-details : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-systemische-therapie : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-systemische-therapie-details : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-distant-metastases-category : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-primary-tumor-category : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-regional-nodes-category : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-stage-group : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumor : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorErkrankung : 0 / 2 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz : 0 / 1 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-bemerkung : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung-radiologie : 0 / 1 / 3
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-situation : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-termin : 0 / 1 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-therapie-verlauf : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-verlauf : 0 / 1 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-watchful-waiting : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-cancer-stage-group-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-cancer-staging-method-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-cancer-staging-type-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-ecog-performance-status : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-icd-o-3-morphologie : 3 / 2 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-obds-op-komplikation-vs : 0 / 2 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-obds-strahlentherapie-intention-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-distant-metastases-category-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-distant-metastases-category-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-distant-metastases-staging-type-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-primary-tumor-category-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-primary-tumor-category-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-primary-tumor-staging-type-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-regional-nodes-category-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-regional-nodes-category-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-regional-nodes-staging-type-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-staging-type-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-vs : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-staging-method-vs : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/icd-o-3-morphologie.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/Melder-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource PractitionerRole/MelderInOrganisation-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/OperationEinzelprozedurExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Procedure/OperationExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/Organisation-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/TumorPatient-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CodeSystem-HistoGrade.json ==
+INFORMATION: CodeSystem/HistoGrade: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/HistoGrade: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/HistoGrade: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-obds-op-komplikation-cs.json ==
+INFORMATION: CodeSystem/obds-op-komplikation-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/obds-op-komplikation-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/obds-op-komplikation-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-obds-strahlentherapie-intention-cs.json ==
+INFORMATION: CodeSystem/obds-strahlentherapie-intention-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/obds-strahlentherapie-intention-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/obds-strahlentherapie-intention-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/EpisodeOfCare-TumorErkrankungExample.json ==
+ERROR: EpisodeOfCare/TumorErkrankungExample: EpisodeOfCare.text.div: The URL is not valid because '(URL contains 2 Invalid Characters (["]))': https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&canonical=http://fhir.org/packages/de.basisprofil.r4/"TODO-INSTANZs"
+WARNING: EpisodeOfCare/TumorErkrankungExample: EpisodeOfCare.type[0].coding[0].code: Unknown Code 'C16213' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+ERROR: EpisodeOfCare/TumorErkrankungExample: EpisodeOfCare.diagnosis[0].condition: Unable to resolve resource with reference '"TODO-INSTANZs"'
+== fsh-generated/resources/ImplementationGuide-de.idg-rlp.tumorkonferenzen.json ==
+== fsh-generated/resources/Observation-ECOGExample.json ==
+ERROR: Observation/ECOGExample: Observation.extension[0].value.ofType(Reference): Unable to resolve resource with reference 'Tumorerkrankung'
+ERROR: Observation/ECOGExample: Observation.subject: Unable to resolve resource with reference 'Beispielpatient'
+ERROR: Observation/ECOGExample: Observation.value.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)' for http://loinc.org#LA9623-5. Valid display is 'Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work' (en-US) (for the language(s) '--')
+ERROR: Observation/ECOGExample: Observation.value.ofType(CodeableConcept): None of the codings provided are in the value set 'ECOG' (http://loinc.org/vs/LL529-9|0.1.0), and a coding from this value set is required) (codes = http://loinc.org#LA9623-5)
+WARNING: Observation/ECOGExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/ECOGExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-Histologie-Example.json ==
+WARNING: Observation/Histologie-Example: Observation.code.coding[0].code: Unknown Code '' in the system 'http://terminology.hl7.org/CodeSystem/icd-o-3' version '2000' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+INFORMATION: Observation/Histologie-Example: Observation.code.coding[1]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+WARNING: Observation/Histologie-Example: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/Histologie-Example: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Organization-Organisation-example-1.json ==
+== fsh-generated/resources/Patient-TumorPatient-example-1.json ==
+ERROR: Patient/TumorPatient-example-1: Patient.identifier[0].type: The pattern [system http://fhir.de/CodeSystem/identifier-type-de-basis, code KVZ10, and display 'null'] defined in the profile http://fhir.de/StructureDefinition/identifier-kvid-10|1.5.0-ballot not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Patient.identifier[0].type.coding.code,message=Value is 'GKV' but must be 'KVZ10']]
+INFORMATION: Patient/TumorPatient-example-1: Patient.identifier[0].type.code: The code 'GKV' is valid but is retired
+ERROR: Patient/TumorPatient-example-1: Patient.identifier[0].type: The pattern [system http://fhir.de/CodeSystem/identifier-type-de-basis, code KVZ10, and display 'null'] defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient|0.1.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Patient.identifier[0].type.coding.code,message=Value is 'GKV' but must be 'KVZ10']]
+== fsh-generated/resources/Practitioner-Melder-example-1.json ==
+== fsh-generated/resources/PractitionerRole-MelderInOrganisation-example-1.json ==
+== fsh-generated/resources/Procedure-OperationEinzelprozedurExample.json ==
+INFORMATION: Procedure/OperationEinzelprozedurExample: Procedure.code.coding[0].system: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/ops' version '2023' could not be found, so the code cannot be validated. Valid versions: []
+== fsh-generated/resources/Procedure-OperationExample.json ==
+== fsh-generated/resources/Specimen-Tumor-Example.json ==
+== fsh-generated/resources/StructureDefinition-Diagnose.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Melder.json ==
+== fsh-generated/resources/StructureDefinition-MelderInOrganisation.json ==
+== fsh-generated/resources/StructureDefinition-Organisation.json ==
+== fsh-generated/resources/StructureDefinition-TumorPatient.json ==
+== fsh-generated/resources/StructureDefinition-befund-dokument.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/befund-dokument'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-cancer-stage-group.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/cancer-stage-group'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-ecog.json ==
+== fsh-generated/resources/StructureDefinition-familienanamnese.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/familienanamnese'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-gesamtbeurteilung.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/gesamtbeurteilung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-histologie.json ==
+== fsh-generated/resources/StructureDefinition-nebenwirkung.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/nebenwirkung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-operation.json ==
+== fsh-generated/resources/StructureDefinition-operation-einzelprozedur.json ==
+== fsh-generated/resources/StructureDefinition-status-fernmetastasen.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/status-fernmetastasen'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-status-lymphknoten.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/status-lymphknoten'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-status-primaertumor.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/status-primaertumor'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-strahlentherapie.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-strahlentherapie-details.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie-details'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-systemische-therapie.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/systemische-therapie'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-systemische-therapie-details.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/systemische-therapie-details'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-tnm-distant-metastases-category.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-distant-metastases-category'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tnm-primary-tumor-category.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tnm-regional-nodes-category.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tnm-stage-group.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tumor.json ==
+== fsh-generated/resources/StructureDefinition-tumorErkrankung.json ==
+WARNING: StructureDefinition/tumorErkrankung: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C16213' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+WARNING: StructureDefinition/tumorErkrankung: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C16213' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+== fsh-generated/resources/StructureDefinition-tumorkonferenz.json ==
+INFORMATION: StructureDefinition/tumorkonferenz: StructureDefinition.snapshot.element[24].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tumorkonferenz-bemerkung.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-bemerkung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung-radiologie.json ==
+INFORMATION: StructureDefinition/tumorkonferenz-fragestellung-radiologie: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Not validated against the Machine Readable Concept Model (MRCM)
+INFORMATION: StructureDefinition/tumorkonferenz-fragestellung-radiologie: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Not validated against the Machine Readable Concept Model (MRCM)
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung-radiologie'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tumorkonferenz-situation.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-situation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tumorkonferenz-termin.json ==
+INFORMATION: StructureDefinition/tumorkonferenz-termin: StructureDefinition.snapshot.element[12].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-termin'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-tumorkonferenz-therapie-verlauf.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-therapie-verlauf'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-verlauf.json ==
+INFORMATION: StructureDefinition/verlauf: StructureDefinition.snapshot.element[24].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-watchful-waiting.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/watchful-waiting'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-cancer-stage-group-vs.json ==
+== fsh-generated/resources/ValueSet-cancer-staging-method-vs.json ==
+== fsh-generated/resources/ValueSet-cancer-staging-type-vs.json ==
+== fsh-generated/resources/ValueSet-ecog-performance-status.json ==
+ERROR: ValueSet.where(url = 'http://loinc.org/vs/LL529-9'): Conformance resource /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-ecog-performance-status.json - the canonical URL (http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status) does not match the URL (http://loinc.org/vs/LL529-9)
+WARNING: ValueSet/ecog-performance-status: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+ERROR: /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-ecog-performance-status: URL Mismatch http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status vs http://loinc.org/vs/LL529-9
+== fsh-generated/resources/ValueSet-icd-o-3-morphologie.json ==
+ERROR: ValueSet/icd-o-3-morphologie: ValueSet.compose.include[0].filter[0]: The operation 'regex' is not allowed for property 'concept'. Allowed ops: =,is-a,descendent-of,is-not-a,in,not-in,descendent-leaf
+ERROR: ValueSet/icd-o-3-morphologie: ValueSet.compose.include[0].filter[0]: Cannot apply a regex filter to the property 'concept' (usually regex filters are applied to the codes, or a named property of the code system)
+WARNING: ValueSet/icd-o-3-morphologie: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet/icd-o-3-morphologie: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.description is mandatory, but it is not present
+ERROR: ValueSet.where(id = 'icd-o-3-morphologie'): Error from http://tx.fhir.org/r4: The filter "concept regex ^\d\S*$" from the value set http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie was not understood in the context of http://terminology.hl7.org/CodeSystem/icd-o-3
+== fsh-generated/resources/ValueSet-obds-op-komplikation-vs.json ==
+WARNING: ValueSet/obds-op-komplikation-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'obds-op-komplikation-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://fhir.de/CodeSystem/bfarm/icd-10-gm
+== fsh-generated/resources/ValueSet-obds-strahlentherapie-intention-vs.json ==
+WARNING: ValueSet/obds-strahlentherapie-intention-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-tnm-distant-metastases-category-max-vs.json ==
+WARNING: ValueSet.where(id = 'tnm-distant-metastases-category-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
+== fsh-generated/resources/ValueSet-tnm-distant-metastases-category-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-distant-metastases-staging-type-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-primary-tumor-category-max-vs.json ==
+WARNING: ValueSet.where(id = 'tnm-primary-tumor-category-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
+== fsh-generated/resources/ValueSet-tnm-primary-tumor-category-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-primary-tumor-staging-type-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-regional-nodes-category-max-vs.json ==
+WARNING: ValueSet.where(id = 'tnm-regional-nodes-category-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
+== fsh-generated/resources/ValueSet-tnm-regional-nodes-category-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-regional-nodes-staging-type-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-stage-group-max-vs.json ==
+WARNING: ValueSet.where(id = 'tnm-stage-group-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
+== fsh-generated/resources/ValueSet-tnm-stage-group-staging-type-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-stage-group-vs.json ==
+== fsh-generated/resources/ValueSet-tnm-staging-method-vs.json ==

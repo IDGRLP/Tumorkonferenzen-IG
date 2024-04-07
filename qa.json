@@ -1,0 +1,19 @@
+{
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen",
+  "name" : "TumorkonferenzenIDG",
+  "title" : null,
+  "description" : null,
+  "status" : "draft",
+  "package-id" : "de.idg-rlp.tumorkonferenzen",
+  "ig-ver" : "0.1.0",
+  "date" : "Sun, 07 Apr, 2024 14:26:09 +0000",
+  "dateISO8601" : "2024-04-07T14:26:09+00:00",
+  "errs" : 13,
+  "warnings" : 61,
+  "hints" : 11,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 4183523192
+}
