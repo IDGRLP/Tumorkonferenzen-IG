@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "WatchfulWaiting"] ; # 
   fhir:title [ fhir:v "WatchfulWaiting"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-07T14:26:09+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-07T14:51:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

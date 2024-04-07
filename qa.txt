@@ -3,7 +3,7 @@ TumorkonferenzenIDG : Validation Results
 
 err = 13, warn = 61, info = 11
 IG Publisher Version: 1.6.3 Out of date - current version is 1.6.4
-Generated Sun Apr 07 14:27:58 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
+Generated Sun Apr 07 14:53:25 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
  Build Errors : 0 / 11 / 0
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-HistoGrade : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-obds-op-komplikation-cs : 0 / 2 / 2
