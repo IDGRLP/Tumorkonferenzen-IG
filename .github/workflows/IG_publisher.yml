@@ -31,13 +31,14 @@ jobs:
         run: |
           fhir install de.basisprofil.r4@1.5.0-ballot2
           fhir install hl7.fhir.us.mcode@2.1.0
-          echo "Run the IG publisher..."
-          java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
+#          echo "Run the IG publisher..."
+#          java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
           unzip resources/output/full-ig.zip -d upload/
       - name: Install rsync & git 📚
         run: |
           apt-get update && apt-get install -y rsync
           apt-get update && apt-get install -y git
+          git --version
     
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
