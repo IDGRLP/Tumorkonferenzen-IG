@@ -29,7 +29,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Build IG
         run: |
-          fhir install de.basisprofil.r4@1.4.0
+          fhir install de.basisprofil.r4@1.5.0-ballot2
+          fhir install hl7.fhir.us.mcode@3.0.0
           echo "Run the IG publisher..."
           java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
           unzip resources/output/full-ig.zip -d upload/
