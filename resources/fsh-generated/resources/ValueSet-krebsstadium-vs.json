@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "KrebsstadiumVS",
+  "id": "krebsstadium-vs",
+  "title": "Krebsstadium ValueSet",
+  "description": "KrebsstadiumVS",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"
+      }
+    ]
+  }
+}

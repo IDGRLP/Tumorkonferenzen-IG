@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PerineuraleInvasionVS",
+  "id": "perineurale-invasion-vs",
+  "title": "Perineurale Invasion ValueSet",
+  "description": "PerineuraleInvasionVS",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs"
+      }
+    ]
+  }
+}

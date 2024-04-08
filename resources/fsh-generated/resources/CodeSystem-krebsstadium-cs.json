@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KrebsstadiumCS",
+  "id": "krebsstadium-cs",
+  "title": "Krebsstadium CodeSystem",
+  "description": "KrebsstadiumCS",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
+  "concept": [
+    {
+      "code": "stadium0",
+      "display": "Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen"
+    },
+    {
+      "code": "stadiumI",
+      "display": "Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen"
+    },
+    {
+      "code": "stadiumII",
+      "display": "Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen"
+    },
+    {
+      "code": "stadiumIII",
+      "display": "Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen"
+    },
+    {
+      "code": "stadiumIV",
+      "display": "Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen"
+    }
+  ],
+  "count": 5
+}

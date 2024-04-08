@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PerineuraleInvasionCS",
+  "id": "perineurale-invasion-cs",
+  "title": "Perineurale Invasion CodeSystem",
+  "description": "PerineuraleInvasionCS",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs",
+  "concept": [
+    {
+      "code": "PNX",
+      "display": "Perineurale Invasion kann nicht beurteilt werden"
+    },
+    {
+      "code": "PN0",
+      "display": "Keine perineurale Invasion"
+    },
+    {
+      "code": "PN1",
+      "display": "Perineurale Invasion"
+    }
+  ],
+  "count": 3
+}

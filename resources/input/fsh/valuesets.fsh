@@ -20,3 +20,45 @@ Id: obds-strahlentherapie-intention-vs
 Title: "Intention der Strahlentherapie"
 Description: "Die Intention der Strahlentherapie"
 * include codes from system ObdsStrahlentherapieIntentionCS
+
+ValueSet: HistoGradeVS
+Id: HistoGradeVS
+Title: "HistoGradeVS"
+Description: "HistoGradeVS"
+* include codes from system HistoGradeCS
+
+ValueSet: MultiplePrimaerTumorenVS
+Id: multiple-primaer-tumoren-vs
+Title: "Multiple PrimärTumoren ValueSet"
+Description: "MultiplePrimärTumorenVS"
+* include codes from system MultiplePrimaerTumorenCS
+
+ValueSet: LymphgefaessinvasionVS
+Id: Lymphgefaessinvasion-vs
+Title: "Lymphgefäßinvasion ValueSet"
+Description: "LymphgefäßinvasionVS"
+* include codes from system LymphgefaessinvasionCS
+
+ValueSet: VeneninvasionVS
+Id: veneninvasion-vs
+Title: "Veneninvasion ValueSet"
+Description: "VeneninvasionVS"
+* include codes from system VeneninvasionCS
+
+ValueSet: PerineuraleInvasionVS
+Id: perineurale-invasion-vs
+Title: "Perineurale Invasion ValueSet"
+Description: "PerineuraleInvasionVS"
+* include codes from system PerineuraleInvasionCS
+
+ValueSet: SerumTumorMarkerUICCVS
+Id: SerumTumorMarkerUICCVS
+Title: "SerumTumorMarkerUICCVS"
+Description: "SerumTumorMarkerUICCVS"
+* include codes from system SerumTumorMarkerUICCCS
+
+ValueSet: KrebsstadiumVS
+Id: krebsstadium-vs
+Title: "Krebsstadium ValueSet"
+Description: "KrebsstadiumVS"
+* include codes from system KrebsstadiumCS

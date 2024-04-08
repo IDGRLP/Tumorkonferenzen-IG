@@ -131,6 +131,29 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/grading"
+        },
+        "name": "Grading",
+        "description": "Gibt den Differenzierungsgrad des Tumors entsprechend der aktuellen TNM-Auflage an.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/GradingExample"
+        },
+        "name": "GradingExample",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/HistoGradeVS"
+        },
+        "name": "HistoGradeVS",
+        "description": "HistoGradeVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/histologie"
         },
         "name": "Histologie",
@@ -147,10 +170,25 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/HistoGrade"
+          "reference": "StructureDefinition/HistologieLymphknoten"
         },
-        "name": "Histopathologische Grading Codes",
-        "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
+        "name": "HistologieLymphknoten",
+        "description": "HistologieLymphknoten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/HistologieLymphknotenExample"
+        },
+        "name": "HistologieLymphknotenExample",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/HistoGradeCS"
+        },
+        "name": "Histopathologische Grading Codes oBDS",
+        "description": "oBDS Grading Codes",
         "exampleBoolean": false
       },
       {
@@ -167,6 +205,38 @@
         },
         "name": "Intention der Strahlentherapie",
         "description": "Die histopathologische Einstufung des invasiven Karzinoms ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/krebsstadium-cs"
+        },
+        "name": "Krebsstadium CodeSystem",
+        "description": "KrebsstadiumCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/krebsstadium-vs"
+        },
+        "name": "Krebsstadium ValueSet",
+        "description": "KrebsstadiumVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/Lymphgefaessinvasion-cs"
+        },
+        "name": "Lymphgefäßinvasion CodeSystem",
+        "description": "LymphgefäßinvasionCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Lymphgefaessinvasion-vs"
+        },
+        "name": "Lymphgefäßinvasion ValueSet",
+        "description": "LymphgefäßinvasionVS",
         "exampleBoolean": false
       },
       {
@@ -204,6 +274,22 @@
           "reference": "ValueSet/icd-o-3-morphologie"
         },
         "name": "Morphologie Codes des ICD-O-3 CodeSystems.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/multiple-primaer-tumoren-cs"
+        },
+        "name": "Multiple PrimärTumoren CodeSystem",
+        "description": "MultiplePrimärTumorenCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/multiple-primaer-tumoren-vs"
+        },
+        "name": "Multiple PrimärTumoren ValueSet",
+        "description": "MultiplePrimärTumorenVS",
         "exampleBoolean": false
       },
       {
@@ -274,6 +360,38 @@
         },
         "name": "Organisation-example-1",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/perineurale-invasion-cs"
+        },
+        "name": "Perineurale Invasion CodeSystem",
+        "description": "PerineuraleInvasionCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/perineurale-invasion-vs"
+        },
+        "name": "Perineurale Invasion ValueSet",
+        "description": "PerineuraleInvasionVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/SerumTumorMarkerUICCCS"
+        },
+        "name": "SerumTumorMarkerUICCCS",
+        "description": "SerumTumorMarkerUICCCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/SerumTumorMarkerUICCVS"
+        },
+        "name": "SerumTumorMarkerUICCVS",
+        "description": "SerumTumorMarkerUICCVS",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -461,6 +579,78 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/TNMASymbol"
+        },
+        "name": "TNMASymbol",
+        "description": "TNMASymbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMLKategorie"
+        },
+        "name": "TNMLKategorie",
+        "description": "TNMLKategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMmSymbol"
+        },
+        "name": "TNMmSymbol",
+        "description": "TNMmSymbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMPnKategorie"
+        },
+        "name": "TNMPnKategorie",
+        "description": "TNMPnKategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMRSymbol"
+        },
+        "name": "TNMRSymbol",
+        "description": "TNMRSymbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMSKategorie"
+        },
+        "name": "TNMSKategorie",
+        "description": "TNMSKategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMVKategorie"
+        },
+        "name": "TNMVKategorie",
+        "description": "TNMVKategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMYSmbol"
+        },
+        "name": "TNMYSmbol",
+        "description": "TNMYSmbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/TNMYSymbol"
+        },
+        "name": "TNMYSymbol",
+        "description": "TNMYSymbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/tumor"
         },
         "name": "Tumor",
@@ -572,11 +762,34 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/veneninvasion-cs"
+        },
+        "name": "Veneninvasion CodeSystem",
+        "description": "VeneninvasionCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/veneninvasion-vs"
+        },
+        "name": "Veneninvasion ValueSet",
+        "description": "VeneninvasionVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/verlauf"
         },
         "name": "Verlauf",
         "description": "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/VerlaufExample"
+        },
+        "name": "VerlaufExample",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf"
       },
       {
         "reference": {

@@ -1,0 +1,83 @@
+{
+  "resourceType": "Observation",
+  "id": "HistologieLymphknotenExample",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "364108009",
+        "system": "http://snomed.info/sct",
+        "display": "Lymph node observable"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21894-1",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueInteger": 15
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21893-3",
+            "system": "http://loinc.org"
+          }
+        ]
+      },
+      "valueInteger": 3
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "444411008",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "valueInteger": 5
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "1264491009",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "valueInteger": 1
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "371524004",
+            "system": "http://snomed.info/sct"
+          }
+        ]
+      },
+      "valueString": "Befundtext"
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "TumorPatientExample"
+  },
+  "encounter": {
+    "reference": "Encounter/VerlaufExample"
+  },
+  "effectiveDateTime": "2023-04-05T14:30:00Z"
+}

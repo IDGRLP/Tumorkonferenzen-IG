@@ -1,0 +1,35 @@
+{
+  "resourceType": "Observation",
+  "id": "GradingExample",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "33732-9",
+        "system": "http://loinc.org",
+        "display": "Histology grade [Identifier] in Cancer specimen"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/TumorPatient-example-1"
+  },
+  "encounter": {
+    "reference": "Encounter/VerlaufExample"
+  },
+  "effectiveDateTime": "2023-04-05T14:30:00Z",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "2",
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS",
+        "display": "Mäßig differenziert"
+      }
+    ]
+  }
+}

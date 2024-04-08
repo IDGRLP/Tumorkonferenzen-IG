@@ -83,22 +83,23 @@ Description: "Komplikation gemäß Vorgabe oBDS."
 * #WUH "Wundhämatom (konservativ therapiert)"
 * #WSS "Wundheilungsstörung, subkutane"
 
-CodeSystem: HistoGrade
-Title: "Histopathologische Grading Codes"
-Description: "Die histopathologische Einstufung des invasiven Karzinoms "
+CodeSystem: HistoGradeCS
+Title: "Histopathologische Grading Codes oBDS"
+Description: "oBDS Grading Codes"
 * ^content = #complete
-* #G0 "Grading nicht vorgesehen"
-* #G1 "gut differenziert" "hochdifferenzierter Tumor mit niederem Malignitätsgrad"
-* #G2 "mäßig differenziert" "mittelhochdifferenzierter Tumor mit mittlerem Malignitätsgrad"
-* #G3 "schlecht / gering differenziert" "wenig differenzierter Tumor mit hohem Malignitätsgrad"
-* #G4 "undifferenzierter Tumor mit sehr hohem Malignitätsgrad" "nicht bei allen Tumorentitäten"
-* #GX "nicht bestimmbar"
-* #GL "low grade (G1 oder G2)"
-* #GM "intermediate (G2 oder G3)"
-* #GH "high grade (G3 oder G4)"
-* #GB "Borderline"
-* #U "unbekannt"
-* #T "trifft nicht zu"
+* #0 "Primär erworbene Melanose ohne zelluläre Atypien"
+* #1 "Gut differenziert"
+* #2 "Mäßig differenziert"
+* #3 "Schlecht differenziert"
+* #4 "Undifferenziert"
+* #5 "Nur für C61, TNM8"
+* #X "Nicht bestimmbar"
+* #L "Low grade (G1 oder G2)"
+* #M "Intermediate grade (G2 oder G3)"
+* #H "High grade (G3 oder G4)"
+* #B "Borderline"
+* #U "Unbekannt"
+* #T "Trifft nicht zu"
 
 CodeSystem: ObdsStrahlentherapieIntentionCS
 Id: obds-strahlentherapie-intention-cs
@@ -110,3 +111,61 @@ Description: "Die histopathologische Einstufung des invasiven Karzinoms "
 * #O "lokal kurativ bei Oligometastasierung"
 * #S "sonstiges"
 * #X "keine Angabe"
+
+CodeSystem: MultiplePrimaerTumorenCS
+Id: multiple-primaer-tumoren-cs
+Title: "Multiple PrimärTumoren CodeSystem"
+Description: "MultiplePrimärTumorenCS"
+* #m "Kennzeichnet Vorhandensein multipler Primärtumoren in einem Bezirk"
+* #2 "(2) simultane Tumoren"
+* #3 "(3) simultane Tumoren"
+* #4 "(4) simultane Tumoren"
+* #5 "(5) simultane Tumoren"
+* #6 "(6) simultane Tumoren"
+* #7 "(7) simultane Tumoren"
+* #8 "(8) simultane Tumoren"
+* #9 "(9) simultane Tumoren"
+
+CodeSystem: LymphgefaessinvasionCS
+Id: Lymphgefaessinvasion-cs
+Title: "Lymphgefäßinvasion CodeSystem"
+Description: "LymphgefäßinvasionCS"
+* #LX "Lymphgefäßinvasion kann nicht beurteilt werden"
+* #L0 "Keine Lymphgefäßinvasion"
+* #L1 "Lymphgefäßinvasion"
+
+CodeSystem: VeneninvasionCS
+Id: veneninvasion-cs
+Title: "Veneninvasion CodeSystem"
+Description: "VeneninvasionCS"
+* #VX "Veneninvasion kann nicht beurteilt werden"
+* #V0 "Keine Veneninvasion"
+* #V1 "Mikroskopische Veneninvasion"
+* #V2 "Makroskopische Veneninvasion"
+
+CodeSystem: PerineuraleInvasionCS
+Id: perineurale-invasion-cs
+Title: "Perineurale Invasion CodeSystem"
+Description: "PerineuraleInvasionCS"
+* #PNX "Perineurale Invasion kann nicht beurteilt werden"
+* #PN0 "Keine perineurale Invasion"
+* #PN1 "Perineurale Invasion"
+
+CodeSystem: SerumTumorMarkerUICCCS
+Id: SerumTumorMarkerUICCCS
+Title: "SerumTumorMarkerUICCCS"
+Description: "SerumTumorMarkerUICCCS"
+* #S0 "S0"
+* #S1 "S1"
+* #S2 "S2"
+* #S3 "S3"
+
+CodeSystem: KrebsstadiumCS
+Id: krebsstadium-cs
+Title: "Krebsstadium CodeSystem"
+Description: "KrebsstadiumCS"
+* #stadium0 "Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen"
+* #stadiumI "Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen"
+* #stadiumII "Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen"
+* #stadiumIII "Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen"
+* #stadiumIV "Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen"

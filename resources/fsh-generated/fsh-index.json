@@ -1,11 +1,43 @@
 [
   {
-    "outputFile": "CodeSystem-HistoGrade.json",
-    "fshName": "HistoGrade",
+    "outputFile": "CodeSystem-HistoGradeCS.json",
+    "fshName": "HistoGradeCS",
     "fshType": "CodeSystem",
     "fshFile": "codesystems.fsh",
     "startLine": 86,
-    "endLine": 101
+    "endLine": 102
+  },
+  {
+    "outputFile": "CodeSystem-Lymphgefaessinvasion-cs.json",
+    "fshName": "LymphgefaessinvasionCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 129,
+    "endLine": 135
+  },
+  {
+    "outputFile": "CodeSystem-SerumTumorMarkerUICCCS.json",
+    "fshName": "SerumTumorMarkerUICCCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 154,
+    "endLine": 161
+  },
+  {
+    "outputFile": "CodeSystem-krebsstadium-cs.json",
+    "fshName": "KrebsstadiumCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 163,
+    "endLine": 171
+  },
+  {
+    "outputFile": "CodeSystem-multiple-primaer-tumoren-cs.json",
+    "fshName": "MultiplePrimaerTumorenCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 115,
+    "endLine": 127
   },
   {
     "outputFile": "CodeSystem-obds-op-komplikation-cs.json",
@@ -20,8 +52,32 @@
     "fshName": "ObdsStrahlentherapieIntentionCS",
     "fshType": "CodeSystem",
     "fshFile": "codesystems.fsh",
-    "startLine": 103,
-    "endLine": 112
+    "startLine": 104,
+    "endLine": 113
+  },
+  {
+    "outputFile": "CodeSystem-perineurale-invasion-cs.json",
+    "fshName": "PerineuraleInvasionCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 146,
+    "endLine": 152
+  },
+  {
+    "outputFile": "CodeSystem-veneninvasion-cs.json",
+    "fshName": "VeneninvasionCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 137,
+    "endLine": 144
+  },
+  {
+    "outputFile": "Encounter-VerlaufExample.json",
+    "fshName": "VerlaufExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Verlauf.fsh",
+    "startLine": 16,
+    "endLine": 24
   },
   {
     "outputFile": "EpisodeOfCare-TumorErkrankungExample.json",
@@ -40,12 +96,28 @@
     "endLine": 20
   },
   {
+    "outputFile": "Observation-GradingExample.json",
+    "fshName": "GradingExample",
+    "fshType": "Instance",
+    "fshFile": "profile-TumorGrading.fsh",
+    "startLine": 24,
+    "endLine": 32
+  },
+  {
     "outputFile": "Observation-Histologie-Example.json",
     "fshName": "Histologie-Example",
     "fshType": "Instance",
     "fshFile": "profile-Histologie.fsh",
     "startLine": 23,
     "endLine": 31
+  },
+  {
+    "outputFile": "Observation-HistologieLymphknotenExample.json",
+    "fshName": "HistologieLymphknotenExample",
+    "fshType": "Instance",
+    "fshFile": "profile-HistologieLymphknoten.fsh",
+    "startLine": 48,
+    "endLine": 61
   },
   {
     "outputFile": "Organization-Organisation-example-1.json",
@@ -112,6 +184,14 @@
     "endLine": 48
   },
   {
+    "outputFile": "StructureDefinition-HistologieLymphknoten.json",
+    "fshName": "HistologieLymphknoten",
+    "fshType": "Profile",
+    "fshFile": "profile-HistologieLymphknoten.fsh",
+    "startLine": 1,
+    "endLine": 46
+  },
+  {
     "outputFile": "StructureDefinition-Melder.json",
     "fshName": "Melder",
     "fshType": "Profile",
@@ -134,6 +214,78 @@
     "fshFile": "profile-Organisation.fsh",
     "startLine": 1,
     "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-TNMASymbol.json",
+    "fshName": "TNMASymbol",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 169,
+    "endLine": 186
+  },
+  {
+    "outputFile": "StructureDefinition-TNMLKategorie.json",
+    "fshName": "TNMLKategorie",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 207,
+    "endLine": 224
+  },
+  {
+    "outputFile": "StructureDefinition-TNMPnKategorie.json",
+    "fshName": "TNMPnKategorie",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 245,
+    "endLine": 262
+  },
+  {
+    "outputFile": "StructureDefinition-TNMRSymbol.json",
+    "fshName": "TNMRSymbol",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 150,
+    "endLine": 167
+  },
+  {
+    "outputFile": "StructureDefinition-TNMSKategorie.json",
+    "fshName": "TNMSKategorie",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 264,
+    "endLine": 283
+  },
+  {
+    "outputFile": "StructureDefinition-TNMVKategorie.json",
+    "fshName": "TNMVKategorie",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 226,
+    "endLine": 243
+  },
+  {
+    "outputFile": "StructureDefinition-TNMYSmbol.json",
+    "fshName": "TNMYSmbol",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 114,
+    "endLine": 130
+  },
+  {
+    "outputFile": "StructureDefinition-TNMYSymbol.json",
+    "fshName": "TNMYSymbol",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 132,
+    "endLine": 148
+  },
+  {
+    "outputFile": "StructureDefinition-TNMmSymbol.json",
+    "fshName": "TNMmSymbol",
+    "fshType": "Profile",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 188,
+    "endLine": 205
   },
   {
     "outputFile": "StructureDefinition-TumorPatient.json",
@@ -182,6 +334,14 @@
     "fshFile": "profile-Gesamtbeurteilung.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-grading.json",
+    "fshName": "Grading",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorGrading.fsh",
+    "startLine": 1,
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-histologie.json",
@@ -276,24 +436,24 @@
     "fshName": "TNMDistantMetastasesCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 82,
-    "endLine": 92
+    "startLine": 83,
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-tnm-primary-tumor-category.json",
     "fshName": "TNMPrimaryTumorCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 58,
-    "endLine": 68
+    "startLine": 59,
+    "endLine": 69
   },
   {
     "outputFile": "StructureDefinition-tnm-regional-nodes-category.json",
     "fshName": "TNMRegionalNodesCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 70,
-    "endLine": 80
+    "startLine": 71,
+    "endLine": 81
   },
   {
     "outputFile": "StructureDefinition-tnm-stage-group.json",
@@ -301,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
     "startLine": 24,
-    "endLine": 55
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-tumor.json",
@@ -392,6 +552,30 @@
     "endLine": 31
   },
   {
+    "outputFile": "ValueSet-HistoGradeVS.json",
+    "fshName": "HistoGradeVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 24,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-Lymphgefaessinvasion-vs.json",
+    "fshName": "LymphgefaessinvasionVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 36,
+    "endLine": 40
+  },
+  {
+    "outputFile": "ValueSet-SerumTumorMarkerUICCVS.json",
+    "fshName": "SerumTumorMarkerUICCVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 54,
+    "endLine": 58
+  },
+  {
     "outputFile": "ValueSet-cancer-stage-group-vs.json",
     "fshName": "CancerStageVS",
     "fshType": "ValueSet",
@@ -432,6 +616,22 @@
     "endLine": 4
   },
   {
+    "outputFile": "ValueSet-krebsstadium-vs.json",
+    "fshName": "KrebsstadiumVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 60,
+    "endLine": 64
+  },
+  {
+    "outputFile": "ValueSet-multiple-primaer-tumoren-vs.json",
+    "fshName": "MultiplePrimaerTumorenVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 30,
+    "endLine": 34
+  },
+  {
     "outputFile": "ValueSet-obds-op-komplikation-vs.json",
     "fshName": "ObdsOpKomplikationVS",
     "fshType": "ValueSet",
@@ -446,6 +646,14 @@
     "fshFile": "valuesets.fsh",
     "startLine": 18,
     "endLine": 22
+  },
+  {
+    "outputFile": "ValueSet-perineurale-invasion-vs.json",
+    "fshName": "PerineuraleInvasionVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 48,
+    "endLine": 52
   },
   {
     "outputFile": "ValueSet-tnm-distant-metastases-category-max-vs.json",
@@ -550,5 +758,13 @@
     "fshFile": "valueSet-Staging.fsh",
     "startLine": 69,
     "endLine": 76
+  },
+  {
+    "outputFile": "ValueSet-veneninvasion-vs.json",
+    "fshName": "VeneninvasionVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 42,
+    "endLine": 46
   }
 ]

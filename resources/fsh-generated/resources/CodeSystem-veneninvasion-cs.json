@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VeneninvasionCS",
+  "id": "veneninvasion-cs",
+  "title": "Veneninvasion CodeSystem",
+  "description": "VeneninvasionCS",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
+  "concept": [
+    {
+      "code": "VX",
+      "display": "Veneninvasion kann nicht beurteilt werden"
+    },
+    {
+      "code": "V0",
+      "display": "Keine Veneninvasion"
+    },
+    {
+      "code": "V1",
+      "display": "Mikroskopische Veneninvasion"
+    },
+    {
+      "code": "V2",
+      "display": "Makroskopische Veneninvasion"
+    }
+  ],
+  "count": 4
+}

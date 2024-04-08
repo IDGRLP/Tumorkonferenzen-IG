@@ -34,8 +34,8 @@
         "short": "The stage group",
         "definition": "The overall cancer stage, such as stage group IIA.",
         "binding": {
-          "strength": "preferred",
-          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-vs",
+          "strength": "required",
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet",
@@ -120,6 +120,22 @@
             "code": "Reference",
             "targetProfile": [
               "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-distant-metastases-category"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnm-y-symbol",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-y-symbol",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"
             ]
           }
         ],

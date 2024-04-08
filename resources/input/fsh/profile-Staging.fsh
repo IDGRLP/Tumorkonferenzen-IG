@@ -28,7 +28,7 @@ Title: "TNM Stage Group Profile"
 Description: "The extent of cancer represented by the stage group, based on a TNM staging system."
 * insert NotUsed(component)
 * code from TNMStageGroupStagingTypeVS (required)
-* value[x] from TNMStageGroupVS (preferred)
+* value[x] from KrebsstadiumVS
 * value[x] ^short = "The stage group"
 * value[x] ^definition = "The overall cancer stage, such as stage group IIA."
 * value[x] ^binding.extension[http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet].valueCanonical = Canonical(TNMStageGroupMaxVS)
@@ -40,7 +40,8 @@ Description: "The extent of cancer represented by the stage group, based on a TN
 * hasMember contains
     tnmPrimaryTumorCategory 0..1 MS and
     tnmRegionalNodesCategory 0..1 MS and
-    tnmDistantMetastasesCategory 0..1 MS
+    tnmDistantMetastasesCategory 0..1 MS and
+    tnm-y-symbol 0..1 MS
 * hasMember[tnmPrimaryTumorCategory] only Reference(TNMPrimaryTumorCategory)
 * hasMember[tnmPrimaryTumorCategory] ^short = "TNM Primary Tumor Category"
 * hasMember[tnmPrimaryTumorCategory] ^definition = "Category of the primary tumor, based on its size and extent, and based on evidence such as physical examination, imaging, and/or biopsy."
@@ -53,7 +54,7 @@ Description: "The extent of cancer represented by the stage group, based on a TN
 * hasMember[tnmDistantMetastasesCategory] ^short = "TNM  Distant Metastases Category"
 * hasMember[tnmDistantMetastasesCategory] ^definition = "Category describing the presence or absence of metastases in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy."
 * hasMember[tnmDistantMetastasesCategory] ^comment = "When using this element, the Observation must validate against the specified profile."
-
+* hasMember[tnm-y-symbol] only Reference(TNMYSymbol)
 
 Profile:  TNMPrimaryTumorCategory
 Id: tnm-primary-tumor-category
@@ -90,3 +91,193 @@ Description: "Category describing the extent of a tumor metastasis in remote ana
 * code from TNMDistantMetastasesStagingTypeVS (required)
 * value[x] from TNMDistantMetastasesCategoryVS (preferred)
 * value[x] ^binding.extension[http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet].valueCanonical = Canonical(TNMDistantMetastasesCategoryMaxVS)
+
+
+* status MS
+* code MS
+* code = LNC#33732-9 // aus MCODE: Histology grade [Identifier] in Cancer specimen  (could be 21858-6 Grade Cancer)
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only CodeableConcept
+* valueCodeableConcept 1.. MS
+  * coding 1.. MS
+    * system 1.. MS
+    * code 1.. MS
+* valueCodeableConcept from HistoGradeVS
+
+Profile: TNMYSmbol
+Parent: Observation
+Id: TNMYSmbol
+Title: "TNMYSmbol"
+Description: "TNMYSmbol"
+* status MS
+* code MS
+* code = LNC#59479-6 //Collaborative staging post treatment extension Cancer
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* valueBoolean MS
+
+Profile: TNMYSymbol
+Parent: Observation
+Id: TNMYSymbol
+Title: "TNMYSymbol"
+Description: "TNMYSymbol"
+* status MS
+* code MS
+* code = LNC#59479-6 //Collaborative staging post treatment extension Cancer
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* valueBoolean MS
+
+Profile: TNMRSymbol
+Parent: Observation
+Id: TNMRSymbol
+Title: "TNMRSymbol"
+Description: "TNMRSymbol"
+* status MS
+* code MS
+* code = LNC#21983-2 //Recurrence type first episode Cancer
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only boolean
+* valueBoolean MS
+
+Profile: TNMASymbol
+Parent: Observation
+Id: TNMASymbol
+Title: "TNMASymbol"
+Description: "TNMASymbol"
+* status MS
+* code MS
+* code = LNC#101660-9 //Cancer staging during autopsy
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only boolean
+* valueBoolean MS
+
+Profile: TNMmSymbol
+Parent: Observation
+Id: TNMmSymbol
+Title: "TNMmSymbol"
+Description: "TNMmSymbol"
+* status MS
+* code MS
+* code = LNC#101660-9 //Cancer staging during autopsy
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from MultiplePrimaerTumorenVS
+
+Profile: TNMLKategorie
+Parent: Observation
+Id: TNMLKategorie
+Title: "TNMLKategorie"
+Description: "TNMLKategorie"
+* status MS
+* code MS
+* code = LNC#33739-4 //Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from LymphgefaessinvasionVS
+
+Profile: TNMVKategorie
+Parent: Observation
+Id: TNMVKategorie
+Title: "TNMVKategorie"
+Description: "TNMVKategorie"
+* status MS
+* code MS
+* code = LNC#33740-2 //Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from VeneninvasionVS
+
+Profile: TNMPnKategorie
+Parent: Observation
+Id: TNMPnKategorie
+Title: "TNMPnKategorie"
+Description: "TNMPnKategorie"
+* status MS
+* code MS
+* code = LNC#92837-4 //Perineural invasion [Presence] in Cancer specimen
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from PerineuraleInvasionVS
+
+Profile: TNMSKategorie
+Parent: Observation
+Id: TNMSKategorie
+Title: "TNMSKategorie"
+Description: "TNMSKategorie"
+* status MS
+* code MS
+* code = SCT#399424006 //Serum tumor marker category (observable entity)
+* subject 1.. MS
+* subject only Reference(TumorPatient)
+* encounter MS
+* encounter only Reference(Verlauf)
+* effective[x] MS
+* effective[x] only dateTime
+* effectiveDateTime MS
+* value[x] MS
+* value[x] only CodeableConcept
+* value[x] MS
+* value[x] only CodeableConcept
+* valueCodeableConcept from SerumTumorMarkerUICCVS

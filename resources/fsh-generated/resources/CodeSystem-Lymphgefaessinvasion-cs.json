@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "LymphgefaessinvasionCS",
+  "id": "Lymphgefaessinvasion-cs",
+  "title": "Lymphgefäßinvasion CodeSystem",
+  "description": "LymphgefäßinvasionCS",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs",
+  "concept": [
+    {
+      "code": "LX",
+      "display": "Lymphgefäßinvasion kann nicht beurteilt werden"
+    },
+    {
+      "code": "L0",
+      "display": "Keine Lymphgefäßinvasion"
+    },
+    {
+      "code": "L1",
+      "display": "Lymphgefäßinvasion"
+    }
+  ],
+  "count": 3
+}
