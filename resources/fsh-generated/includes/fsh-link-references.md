@@ -73,7 +73,6 @@
 [TNMRSymbol]: StructureDefinition-TNMRSymbol.html
 [TNMSKategorie]: StructureDefinition-TNMSKategorie.html
 [TNMVKategorie]: StructureDefinition-TNMVKategorie.html
-[TNMYSmbol]: StructureDefinition-TNMYSmbol.html
 [TNMYSymbol]: StructureDefinition-TNMYSymbol.html
 [Tumor]: StructureDefinition-tumor.html
 [Tumor-Example]: Specimen-Tumor-Example.html

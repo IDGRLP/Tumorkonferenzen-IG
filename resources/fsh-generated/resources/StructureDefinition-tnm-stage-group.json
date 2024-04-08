@@ -142,6 +142,118 @@
         "mustSupport": true
       },
       {
+        "id": "Observation.hasMember:tnm-r-symbol",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-r-symbol",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnm-a-symbol",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-a-symbol",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnm-m-symbol",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-m-symbol",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnm-l-kategorie",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-l-kategorie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnm-v-kategorie",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-v-kategorie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnm-pn-kategorie",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-pn-kategorie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.hasMember:tnm-s-kategorie",
+        "path": "Observation.hasMember",
+        "sliceName": "tnm-s-kategorie",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.component",
         "path": "Observation.component",
         "short": "Wird in diesem Profil nicht genutzt",

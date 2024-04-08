@@ -41,7 +41,14 @@ Description: "The extent of cancer represented by the stage group, based on a TN
     tnmPrimaryTumorCategory 0..1 MS and
     tnmRegionalNodesCategory 0..1 MS and
     tnmDistantMetastasesCategory 0..1 MS and
-    tnm-y-symbol 0..1 MS
+    tnm-y-symbol 0..1 MS and
+    tnm-r-symbol 0..1 MS and
+    tnm-a-symbol 0..1 MS and
+    tnm-m-symbol 0..1 MS and
+    tnm-l-kategorie 0..1 MS and
+    tnm-v-kategorie 0..1 MS and
+    tnm-pn-kategorie 0..1 MS and
+    tnm-s-kategorie 0..1 MS
 * hasMember[tnmPrimaryTumorCategory] only Reference(TNMPrimaryTumorCategory)
 * hasMember[tnmPrimaryTumorCategory] ^short = "TNM Primary Tumor Category"
 * hasMember[tnmPrimaryTumorCategory] ^definition = "Category of the primary tumor, based on its size and extent, and based on evidence such as physical examination, imaging, and/or biopsy."
@@ -55,6 +62,13 @@ Description: "The extent of cancer represented by the stage group, based on a TN
 * hasMember[tnmDistantMetastasesCategory] ^definition = "Category describing the presence or absence of metastases in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy."
 * hasMember[tnmDistantMetastasesCategory] ^comment = "When using this element, the Observation must validate against the specified profile."
 * hasMember[tnm-y-symbol] only Reference(TNMYSymbol)
+* hasMember[tnm-r-symbol] only Reference(TNMRSymbol)
+* hasMember[tnm-a-symbol] only Reference(TNMASymbol)
+* hasMember[tnm-m-symbol] only Reference(TNMmSymbol)
+* hasMember[tnm-l-kategorie] only Reference(TNMLKategorie)
+* hasMember[tnm-v-kategorie] only Reference(TNMVKategorie)
+* hasMember[tnm-pn-kategorie] only Reference(TNMPnKategorie)
+* hasMember[tnm-s-kategorie] only Reference(TNMSKategorie)
 
 Profile:  TNMPrimaryTumorCategory
 Id: tnm-primary-tumor-category
@@ -91,8 +105,6 @@ Description: "Category describing the extent of a tumor metastasis in remote ana
 * code from TNMDistantMetastasesStagingTypeVS (required)
 * value[x] from TNMDistantMetastasesCategoryVS (preferred)
 * value[x] ^binding.extension[http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet].valueCanonical = Canonical(TNMDistantMetastasesCategoryMaxVS)
-
-
 * status MS
 * code MS
 * code = LNC#33732-9 // aus MCODE: Histology grade [Identifier] in Cancer specimen  (could be 21858-6 Grade Cancer)
@@ -110,24 +122,6 @@ Description: "Category describing the extent of a tumor metastasis in remote ana
     * system 1.. MS
     * code 1.. MS
 * valueCodeableConcept from HistoGradeVS
-
-Profile: TNMYSmbol
-Parent: Observation
-Id: TNMYSmbol
-Title: "TNMYSmbol"
-Description: "TNMYSmbol"
-* status MS
-* code MS
-* code = LNC#59479-6 //Collaborative staging post treatment extension Cancer
-* subject 1.. MS
-* subject only Reference(TumorPatient)
-* encounter MS
-* encounter only Reference(Verlauf)
-* effective[x] MS
-* effective[x] only dateTime
-* effectiveDateTime MS
-* value[x] MS
-* valueBoolean MS
 
 Profile: TNMYSymbol
 Parent: Observation

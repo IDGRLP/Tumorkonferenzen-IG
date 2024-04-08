@@ -635,14 +635,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/TNMYSmbol"
-        },
-        "name": "TNMYSmbol",
-        "description": "TNMYSmbol",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/TNMYSymbol"
         },
         "name": "TNMYSymbol",

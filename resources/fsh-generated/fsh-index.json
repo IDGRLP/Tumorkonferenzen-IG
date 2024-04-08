@@ -220,72 +220,64 @@
     "fshName": "TNMASymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 169,
-    "endLine": 186
+    "startLine": 163,
+    "endLine": 180
   },
   {
     "outputFile": "StructureDefinition-TNMLKategorie.json",
     "fshName": "TNMLKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 207,
-    "endLine": 224
+    "startLine": 201,
+    "endLine": 218
   },
   {
     "outputFile": "StructureDefinition-TNMPnKategorie.json",
     "fshName": "TNMPnKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 245,
-    "endLine": 262
+    "startLine": 239,
+    "endLine": 256
   },
   {
     "outputFile": "StructureDefinition-TNMRSymbol.json",
     "fshName": "TNMRSymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 150,
-    "endLine": 167
+    "startLine": 144,
+    "endLine": 161
   },
   {
     "outputFile": "StructureDefinition-TNMSKategorie.json",
     "fshName": "TNMSKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 264,
-    "endLine": 283
+    "startLine": 258,
+    "endLine": 277
   },
   {
     "outputFile": "StructureDefinition-TNMVKategorie.json",
     "fshName": "TNMVKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 226,
-    "endLine": 243
-  },
-  {
-    "outputFile": "StructureDefinition-TNMYSmbol.json",
-    "fshName": "TNMYSmbol",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 114,
-    "endLine": 130
+    "startLine": 220,
+    "endLine": 237
   },
   {
     "outputFile": "StructureDefinition-TNMYSymbol.json",
     "fshName": "TNMYSymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 132,
-    "endLine": 148
+    "startLine": 126,
+    "endLine": 142
   },
   {
     "outputFile": "StructureDefinition-TNMmSymbol.json",
     "fshName": "TNMmSymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 188,
-    "endLine": 205
+    "startLine": 182,
+    "endLine": 199
   },
   {
     "outputFile": "StructureDefinition-TumorPatient.json",
@@ -436,24 +428,24 @@
     "fshName": "TNMDistantMetastasesCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 83,
-    "endLine": 112
+    "startLine": 97,
+    "endLine": 124
   },
   {
     "outputFile": "StructureDefinition-tnm-primary-tumor-category.json",
     "fshName": "TNMPrimaryTumorCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 59,
-    "endLine": 69
+    "startLine": 73,
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-tnm-regional-nodes-category.json",
     "fshName": "TNMRegionalNodesCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 71,
-    "endLine": 81
+    "startLine": 85,
+    "endLine": 95
   },
   {
     "outputFile": "StructureDefinition-tnm-stage-group.json",
@@ -461,7 +453,7 @@
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
     "startLine": 24,
-    "endLine": 57
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-tumor.json",
