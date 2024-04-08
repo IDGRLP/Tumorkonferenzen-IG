@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="Lymphgefaessinvasion-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">LX<a name="Lymphgefaessinvasion-cs-LX"> </a></td><td>Lymphgefäßinvasion kann nicht beurteilt werden</td></tr><tr><td style="white-space:nowrap">L0<a name="Lymphgefaessinvasion-cs-L0"> </a></td><td>Keine Lymphgefäßinvasion</td></tr><tr><td style="white-space:nowrap">L1<a name="Lymphgefaessinvasion-cs-L1"> </a></td><td>Lymphgefäßinvasion</td></tr></table></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs"/>
+  <version value="0.1.0"/>
+  <name value="LymphgefaessinvasionCS"/>
+  <title value="Lymphgefäßinvasion CodeSystem"/>
+  <status value="draft"/>
+  <date value="2024-04-08T16:49:27+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="LymphgefäßinvasionCS"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="LX"/>
+    <display value="Lymphgefäßinvasion kann nicht beurteilt werden"/>
+  </concept>
+  <concept>
+    <code value="L0"/>
+    <display value="Keine Lymphgefäßinvasion"/>
+  </concept>
+  <concept>
+    <code value="L1"/>
+    <display value="Lymphgefäßinvasion"/>
+  </concept>
+</CodeSystem>

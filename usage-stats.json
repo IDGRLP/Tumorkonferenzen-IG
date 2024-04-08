@@ -171,6 +171,12 @@
         "title": "Nebenwirkung"
       }
     ],
+    "Observation": [
+      {
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-therapie-verlauf",
+        "title": "TumorkonferenzTherapieVerlauf"
+      }
+    ],
     "Practitioner": [
       {
         "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder",
@@ -199,12 +205,6 @@
       {
         "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/befund-dokument",
         "title": "BefundDokument"
-      }
-    ],
-    "Observation": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-therapie-verlauf",
-        "title": "TumorkonferenzTherapieVerlauf"
       }
     ],
     "FamilyMemberHistory": [

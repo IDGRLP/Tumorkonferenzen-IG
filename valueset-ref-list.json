@@ -27,6 +27,49 @@
       "StructureDefinition-TumorPatient.html" : "Tumor-Patient"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/HistoGradeVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HistoGradeVS",
+      "title" : "HistoGradeVS",
+      "description" : "HistoGradeVS",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-grading.html" : "Grading",
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LymphgefaessinvasionVS",
+      "title" : "Lymphgefäßinvasion ValueSet",
+      "description" : "LymphgefäßinvasionVS",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TNMLKategorie.html" : "TNMLKategorie"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SerumTumorMarkerUICCVS",
+      "title" : "SerumTumorMarkerUICCVS",
+      "description" : "SerumTumorMarkerUICCVS",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TNMSKategorie.html" : "TNMSKategorie"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -72,6 +115,34 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KrebsstadiumVS",
+      "title" : "Krebsstadium ValueSet",
+      "description" : "KrebsstadiumVS",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MultiplePrimaerTumorenVS",
+      "title" : "Multiple PrimärTumoren ValueSet",
+      "description" : "MultiplePrimärTumorenVS",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TNMmSymbol.html" : "TNMmSymbol"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-op-komplikation-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -98,6 +169,20 @@
       ]
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PerineuraleInvasionVS",
+      "title" : "Perineurale Invasion ValueSet",
+      "description" : "PerineuraleInvasionVS",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TNMPnKategorie.html" : "TNMPnKategorie"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-max-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -116,7 +201,6 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
       "ValueSet-tnm-distant-metastases-category-max-vs.html" : "TNM Distant Metastases Maximum Value Set"
     },
     {
@@ -150,8 +234,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set"
+      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs",
@@ -230,7 +314,6 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
       "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set"
     },
     {
@@ -243,10 +326,24 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
       "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
       "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VeneninvasionVS",
+      "title" : "Veneninvasion ValueSet",
+      "description" : "VeneninvasionVS",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-TNMVKategorie.html" : "TNMVKategorie"
     },
     {
       "url" : "http://loinc.org/vs/LL529-9",

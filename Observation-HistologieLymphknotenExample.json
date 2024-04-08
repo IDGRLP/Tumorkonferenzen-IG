@@ -1,0 +1,71 @@
+{
+  "resourceType" : "Observation",
+  "id" : "HistologieLymphknotenExample",
+  "meta" : {
+    "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"HistologieLymphknotenExample\"> </a><a name=\"hcHistologieLymphknotenExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;HistologieLymphknotenExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-HistologieLymphknoten.html\">HistologieLymphknoten</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Lymph node observable <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#364108009)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/TumorPatientExample\">TumorPatientExample</a></p><p><b>encounter</b>: <a href=\"Encounter-VerlaufExample.html\">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2023-04-05 14:30:00+0000</p><blockquote><p><b>component</b></p><p><b>code</b>: Reg LN examined Spec <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21894-1)</span></p><p><b>value</b>: 15</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Reg LN positive Spec <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21893-3)</span></p><p><b>value</b>: 3</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Number of sentinel lymph nodes examined <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#444411008)</span></p><p><b>value</b>: 5</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Number of sentinel lymph nodes containing metastatic neoplasm in excised specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1264491009)</span></p><p><b>value</b>: 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Clinical report <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371524004)</span></p><p><b>value</b>: Befundtext</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "364108009",
+      "display" : "Lymph node observable"
+    }]
+  },
+  "subject" : {
+    "reference" : "TumorPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/VerlaufExample"
+  },
+  "effectiveDateTime" : "2023-04-05T14:30:00Z",
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "21894-1"
+      }]
+    },
+    "valueInteger" : 15
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "21893-3"
+      }]
+    },
+    "valueInteger" : 3
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "444411008"
+      }]
+    },
+    "valueInteger" : 5
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "1264491009"
+      }]
+    },
+    "valueInteger" : 1
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "371524004"
+      }]
+    },
+    "valueString" : "Befundtext"
+  }]
+}

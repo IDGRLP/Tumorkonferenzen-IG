@@ -1,11 +1,442 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="efb627d6-9852-414b-81bf-822d63d0d795"/>
+  <id value="b72a4ada-8a36-4d9c-a696-d9870e9f4b51"/>
   <meta>
-    <lastUpdated value="2024-04-08T13:30:59.456+00:00"/>
+    <lastUpdated value="2024-04-08T16:49:27.009+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/HistoGradeVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-HistoGradeCS.html">codesystem Histopathologische Grading Codes oBDS v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 13 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-0"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-0">0</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Primär erworbene Melanose ohne zelluläre Atypien</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-1"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-1">1</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Gut differenziert</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-2"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-2">2</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Mäßig differenziert</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-3"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-3">3</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Schlecht differenziert</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-4"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-4">4</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Undifferenziert</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-5"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-5">5</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Nur für C61, TNM8</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-X"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-X">X</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Nicht bestimmbar</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-L"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-L">L</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Low grade (G1 oder G2)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-M"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-M">M</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Intermediate grade (G2 oder G3)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-H"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-H">H</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>High grade (G3 oder G4)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-B"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-B">B</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Borderline</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-U"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-U">U</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Unbekannt</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-HistoGradeCS-T"> </a>  
+                  <a href="CodeSystem-HistoGradeCS.html#HistoGradeCS-T">T</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</td>
+                <td>Trifft nicht zu</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/HistoGradeVS"/>
+        <version value="0.1.0"/>
+        <name value="HistoGradeVS"/>
+        <title value="HistoGradeVS"/>
+        <status value="draft"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:9ba0150c-a2f6-4d20-90d9-ff24398da889"/>
+          <timestamp value="2024-04-08T16:50:43+00:00"/>
+          <total value="13"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="0"/>
+            <display value="Primär erworbene Melanose ohne zelluläre Atypien"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="1"/>
+            <display value="Gut differenziert"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="2"/>
+            <display value="Mäßig differenziert"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="3"/>
+            <display value="Schlecht differenziert"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="4"/>
+            <display value="Undifferenziert"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="5"/>
+            <display value="Nur für C61, TNM8"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="X"/>
+            <display value="Nicht bestimmbar"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="L"/>
+            <display value="Low grade (G1 oder G2)"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="M"/>
+            <display value="Intermediate grade (G2 oder G3)"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="H"/>
+            <display value="High grade (G3 oder G4)"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="B"/>
+            <display value="Borderline"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="U"/>
+            <display value="Unbekannt"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+            <code value="T"/>
+            <display value="Trifft nicht zu"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-Lymphgefaessinvasion-cs.html">codesystem Lymphgefäßinvasion CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-Lymphgefaessinvasion-cs-LX"> </a>  
+                  <a href="CodeSystem-Lymphgefaessinvasion-cs.html#Lymphgefaessinvasion-cs-LX">LX</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs</td>
+                <td>Lymphgefäßinvasion kann nicht beurteilt werden</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-Lymphgefaessinvasion-cs-L0"> </a>  
+                  <a href="CodeSystem-Lymphgefaessinvasion-cs.html#Lymphgefaessinvasion-cs-L0">L0</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs</td>
+                <td>Keine Lymphgefäßinvasion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-Lymphgefaessinvasion-cs-L1"> </a>  
+                  <a href="CodeSystem-Lymphgefaessinvasion-cs.html#Lymphgefaessinvasion-cs-L1">L1</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs</td>
+                <td>Lymphgefäßinvasion</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs"/>
+        <version value="0.1.0"/>
+        <name value="LymphgefaessinvasionVS"/>
+        <title value="Lymphgefäßinvasion ValueSet"/>
+        <status value="draft"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:2fbae924-4666-4961-9b42-bb7d3367519d"/>
+          <timestamp value="2024-04-08T16:50:43+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs"/>
+            <code value="LX"/>
+            <display value="Lymphgefäßinvasion kann nicht beurteilt werden"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs"/>
+            <code value="L0"/>
+            <display value="Keine Lymphgefäßinvasion"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs"/>
+            <code value="L1"/>
+            <display value="Lymphgefäßinvasion"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-SerumTumorMarkerUICCCS.html">codesystem SerumTumorMarkerUICCCS v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-SerumTumorMarkerUICCCS-S0"> </a>  
+                  <a href="CodeSystem-SerumTumorMarkerUICCCS.html#SerumTumorMarkerUICCCS-S0">S0</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</td>
+                <td>S0</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-SerumTumorMarkerUICCCS-S1"> </a>  
+                  <a href="CodeSystem-SerumTumorMarkerUICCCS.html#SerumTumorMarkerUICCCS-S1">S1</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</td>
+                <td>S1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-SerumTumorMarkerUICCCS-S2"> </a>  
+                  <a href="CodeSystem-SerumTumorMarkerUICCCS.html#SerumTumorMarkerUICCCS-S2">S2</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</td>
+                <td>S2</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-SerumTumorMarkerUICCCS-S3"> </a>  
+                  <a href="CodeSystem-SerumTumorMarkerUICCCS.html#SerumTumorMarkerUICCCS-S3">S3</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</td>
+                <td>S3</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS"/>
+        <version value="0.1.0"/>
+        <name value="SerumTumorMarkerUICCVS"/>
+        <title value="SerumTumorMarkerUICCVS"/>
+        <status value="draft"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5276f466-a589-4c51-a81c-bf25e07dde15"/>
+          <timestamp value="2024-04-08T16:50:43+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"/>
+            <code value="S0"/>
+            <display value="S0"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"/>
+            <code value="S1"/>
+            <display value="S1"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"/>
+            <code value="S2"/>
+            <display value="S2"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"/>
+            <code value="S3"/>
+            <display value="S3"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs"/>
     <resource>
@@ -3676,13 +4107,13 @@
         <title value="Cancer Stage Group Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:d9b68139-187c-474d-a465-84b12693b19b"/>
-          <timestamp value="2024-04-08T13:32:00+00:00"/>
+          <identifier value="urn:uuid:a824bfb8-1973-4b85-ba3a-23725d1570bd"/>
+          <timestamp value="2024-04-08T16:50:44+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -6493,13 +6924,13 @@
         <title value="Cancer Staging Method Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:c996a6ae-cd79-4123-bae9-0716c4fa2377"/>
-          <timestamp value="2024-04-08T13:32:02+00:00"/>
+          <identifier value="urn:uuid:526863e2-fef7-4533-8882-346513141702"/>
+          <timestamp value="2024-04-08T16:50:45+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -6874,13 +7305,13 @@
         <title value="Cancer Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:5239fa3b-23a5-47f8-b823-0a9c74eae1f9"/>
-          <timestamp value="2024-04-08T13:32:02+00:00"/>
+          <identifier value="urn:uuid:c46c2968-fa25-4556-aa45-9c6e8ddd1682"/>
+          <timestamp value="2024-04-08T16:50:46+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -6997,10 +7428,10 @@
         <name value="ECOGPerformanceStatusVS"/>
         <title value="ECOG"/>
         <status value="draft"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:5ce5cb24-458c-4559-9ab0-b6128233fe03"/>
-          <timestamp value="2024-04-08T13:32:02+00:00"/>
+          <identifier value="urn:uuid:785eb10e-e63c-4876-a12c-1c71716e51aa"/>
+          <timestamp value="2024-04-08T16:50:46+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -7056,6 +7487,302 @@
             <system value="http://loinc.org"/>
             <code value="LA9627-6"/>
             <display value="Dead"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-krebsstadium-cs.html">codesystem Krebsstadium CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 5 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-krebsstadium-cs-stadium0"> </a>  
+                  <a href="CodeSystem-krebsstadium-cs.html#krebsstadium-cs-stadium0">stadium0</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</td>
+                <td>Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-krebsstadium-cs-stadiumI"> </a>  
+                  <a href="CodeSystem-krebsstadium-cs.html#krebsstadium-cs-stadiumI">stadiumI</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</td>
+                <td>Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-krebsstadium-cs-stadiumII"> </a>  
+                  <a href="CodeSystem-krebsstadium-cs.html#krebsstadium-cs-stadiumII">stadiumII</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</td>
+                <td>Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-krebsstadium-cs-stadiumIII"> </a>  
+                  <a href="CodeSystem-krebsstadium-cs.html#krebsstadium-cs-stadiumIII">stadiumIII</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</td>
+                <td>Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-krebsstadium-cs-stadiumIV"> </a>  
+                  <a href="CodeSystem-krebsstadium-cs.html#krebsstadium-cs-stadiumIV">stadiumIV</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</td>
+                <td>Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs"/>
+        <version value="0.1.0"/>
+        <name value="KrebsstadiumVS"/>
+        <title value="Krebsstadium ValueSet"/>
+        <status value="draft"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:3d0000a1-8f0f-4ab5-89f7-c5d79158fb9d"/>
+          <timestamp value="2024-04-08T16:50:46+00:00"/>
+          <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"/>
+            <code value="stadium0"/>
+            <display value="Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"/>
+            <code value="stadiumI"/>
+            <display value="Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"/>
+            <code value="stadiumII"/>
+            <display value="Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"/>
+            <code value="stadiumIII"/>
+            <display value="Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"/>
+            <code value="stadiumIV"/>
+            <display value="Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-multiple-primaer-tumoren-cs.html">codesystem Multiple PrimärTumoren CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 9 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-m"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-m">m</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>Kennzeichnet Vorhandensein multipler Primärtumoren in einem Bezirk</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-2"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-2">2</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(2) simultane Tumoren</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-3"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-3">3</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(3) simultane Tumoren</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-4"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-4">4</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(4) simultane Tumoren</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-5"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-5">5</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(5) simultane Tumoren</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-6"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-6">6</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(6) simultane Tumoren</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-7"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-7">7</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(7) simultane Tumoren</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-8"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-8">8</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(8) simultane Tumoren</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-multiple-primaer-tumoren-cs-9"> </a>  
+                  <a href="CodeSystem-multiple-primaer-tumoren-cs.html#multiple-primaer-tumoren-cs-9">9</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</td>
+                <td>(9) simultane Tumoren</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs"/>
+        <version value="0.1.0"/>
+        <name value="MultiplePrimaerTumorenVS"/>
+        <title value="Multiple PrimärTumoren ValueSet"/>
+        <status value="draft"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:aae4c8b5-91e1-4166-9205-120bd389e62a"/>
+          <timestamp value="2024-04-08T16:50:46+00:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="m"/>
+            <display value="Kennzeichnet Vorhandensein multipler Primärtumoren in einem Bezirk"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="2"/>
+            <display value="(2) simultane Tumoren"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="3"/>
+            <display value="(3) simultane Tumoren"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="4"/>
+            <display value="(4) simultane Tumoren"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="5"/>
+            <display value="(5) simultane Tumoren"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="6"/>
+            <display value="(6) simultane Tumoren"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="7"/>
+            <display value="(7) simultane Tumoren"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="8"/>
+            <display value="(8) simultane Tumoren"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+            <code value="9"/>
+            <display value="(9) simultane Tumoren"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -7132,10 +7859,10 @@
         <name value="ObdsStrahlentherapieIntentionVS"/>
         <title value="Intention der Strahlentherapie"/>
         <status value="draft"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f28b4308-1354-4374-80c0-6c873e3ac62b"/>
-          <timestamp value="2024-04-08T13:32:03+00:00"/>
+          <identifier value="urn:uuid:d9996c16-ef0d-43d4-a004-bb59ca456bcf"/>
+          <timestamp value="2024-04-08T16:50:47+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -7178,6 +7905,102 @@
             <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs"/>
             <code value="X"/>
             <display value="keine Angabe"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-perineurale-invasion-cs.html">codesystem Perineurale Invasion CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-perineurale-invasion-cs-PNX"> </a>  
+                  <a href="CodeSystem-perineurale-invasion-cs.html#perineurale-invasion-cs-PNX">PNX</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs</td>
+                <td>Perineurale Invasion kann nicht beurteilt werden</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-perineurale-invasion-cs-PN0"> </a>  
+                  <a href="CodeSystem-perineurale-invasion-cs.html#perineurale-invasion-cs-PN0">PN0</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs</td>
+                <td>Keine perineurale Invasion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-perineurale-invasion-cs-PN1"> </a>  
+                  <a href="CodeSystem-perineurale-invasion-cs.html#perineurale-invasion-cs-PN1">PN1</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs</td>
+                <td>Perineurale Invasion</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs"/>
+        <version value="0.1.0"/>
+        <name value="PerineuraleInvasionVS"/>
+        <title value="Perineurale Invasion ValueSet"/>
+        <status value="draft"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:0a3febbc-65fe-41f4-990b-7d86d948311f"/>
+          <timestamp value="2024-04-08T16:50:47+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs"/>
+            <code value="PNX"/>
+            <display value="Perineurale Invasion kann nicht beurteilt werden"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs"/>
+            <code value="PN0"/>
+            <display value="Keine perineurale Invasion"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs"/>
+            <code value="PN1"/>
+            <display value="Perineurale Invasion"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -7437,13 +8260,13 @@
         <title value="TNM Distant Metastases Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:b396a315-d5a7-43ad-ad25-205871ab35cf"/>
-          <timestamp value="2024-04-08T13:32:03+00:00"/>
+          <identifier value="urn:uuid:d82e0830-af41-47d6-9b54-2a5e4292a5bc"/>
+          <timestamp value="2024-04-08T16:50:48+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -7671,10 +8494,10 @@
         <title value="TNM Distant Metastases Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8d42fafd-fa50-42df-90fc-ba9e25c00d03"/>
-          <timestamp value="2024-04-08T13:32:04+00:00"/>
+          <identifier value="urn:uuid:5477d9ec-dcd5-4aca-8e32-9c86ff05a588"/>
+          <timestamp value="2024-04-08T16:50:48+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -8694,13 +9517,13 @@
         <title value="TNM Primary Tumor Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:9800f837-1426-48a0-a2de-6873e29e582e"/>
-          <timestamp value="2024-04-08T13:32:04+00:00"/>
+          <identifier value="urn:uuid:59b8625c-f682-48b1-b703-ff97af2c81fd"/>
+          <timestamp value="2024-04-08T16:50:48+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -9378,10 +10201,10 @@
         <title value="TNM Primary Tumor Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:16f3931d-5269-4792-8d91-49ca026bddba"/>
-          <timestamp value="2024-04-08T13:32:04+00:00"/>
+          <identifier value="urn:uuid:9794b9fb-165c-47a0-bc09-6962e54310b7"/>
+          <timestamp value="2024-04-08T16:50:49+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -9929,13 +10752,13 @@
         <title value="TNM Regional Nodes Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:196d2478-1278-448c-9bc1-4a30867af0a9"/>
-          <timestamp value="2024-04-08T13:32:04+00:00"/>
+          <identifier value="urn:uuid:c4e730bb-12f9-4fba-827a-c21e8f737eb1"/>
+          <timestamp value="2024-04-08T16:50:49+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -10318,10 +11141,10 @@
         <title value="TNM Regional Nodes Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:3af2af7b-d44b-4cc2-89d1-c3b51f7a1d27"/>
-          <timestamp value="2024-04-08T13:32:05+00:00"/>
+          <identifier value="urn:uuid:44d22c52-0d9f-4268-acf9-50e52ac3d20e"/>
+          <timestamp value="2024-04-08T16:50:49+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -10421,10 +11244,10 @@
         <title value="TNM Stage Group Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:16a29b68-31ad-415c-b8e3-21cb8c72712a"/>
-          <timestamp value="2024-04-08T13:32:05+00:00"/>
+          <identifier value="urn:uuid:ea4901e2-9a62-4fc3-843f-c5fcf30ef9a0"/>
+          <timestamp value="2024-04-08T16:50:50+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11628,13 +12451,13 @@
         <title value="TNM Stage Group Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:8d787fb9-d430-4293-803a-3be9232046f7"/>
-          <timestamp value="2024-04-08T13:32:05+00:00"/>
+          <identifier value="urn:uuid:810d3d76-d212-4d33-8ac2-e8dc580a866e"/>
+          <timestamp value="2024-04-08T16:50:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -12427,10 +13250,10 @@
         <title value="TNM Staging Method Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-04-08T13:30:59+00:00"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:28fd9527-bcf0-4db8-955c-f6f0db2ff6b3"/>
-          <timestamp value="2024-04-08T13:32:05+00:00"/>
+          <identifier value="urn:uuid:384f2985-695a-4b72-bf59-bc7589a2ec2f"/>
+          <timestamp value="2024-04-08T16:50:50+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -12471,6 +13294,115 @@
             <system value="http://snomed.info/sct"/>
             <code value="897275008"/>
             <display value="American Joint Commission on Cancer, Cancer Staging Manual, 8th edition tumor staging system"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-veneninvasion-cs.html">codesystem Veneninvasion CodeSystem v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 4 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-veneninvasion-cs-VX"> </a>  
+                  <a href="CodeSystem-veneninvasion-cs.html#veneninvasion-cs-VX">VX</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs</td>
+                <td>Veneninvasion kann nicht beurteilt werden</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-veneninvasion-cs-V0"> </a>  
+                  <a href="CodeSystem-veneninvasion-cs.html#veneninvasion-cs-V0">V0</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs</td>
+                <td>Keine Veneninvasion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-veneninvasion-cs-V1"> </a>  
+                  <a href="CodeSystem-veneninvasion-cs.html#veneninvasion-cs-V1">V1</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs</td>
+                <td>Mikroskopische Veneninvasion</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-veneninvasion-cs-V2"> </a>  
+                  <a href="CodeSystem-veneninvasion-cs.html#veneninvasion-cs-V2">V2</a>
+                </td>
+                <td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs</td>
+                <td>Makroskopische Veneninvasion</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs"/>
+        <version value="0.1.0"/>
+        <name value="VeneninvasionVS"/>
+        <title value="Veneninvasion ValueSet"/>
+        <status value="draft"/>
+        <date value="2024-04-08T16:49:27+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:8e96d907-7afa-49dd-aefc-dc5c79a587af"/>
+          <timestamp value="2024-04-08T16:50:50+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"/>
+            <code value="VX"/>
+            <display value="Veneninvasion kann nicht beurteilt werden"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"/>
+            <code value="V0"/>
+            <display value="Keine Veneninvasion"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"/>
+            <code value="V1"/>
+            <display value="Mikroskopische Veneninvasion"/>
+          </contains>
+          <contains>
+            <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"/>
+            <code value="V2"/>
+            <display value="Makroskopische Veneninvasion"/>
           </contains>
         </expansion>
       </ValueSet>

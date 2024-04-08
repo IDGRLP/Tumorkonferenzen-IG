@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="GradingExample"/>
+  <meta>
+    <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="GradingExample"> </a><a name="hcGradingExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;GradingExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-grading.html">Grading</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Histology grade [Identifier] in Cancer specimen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#33732-9)</span></p><p><b>subject</b>: <a href="Patient-TumorPatient-example-1.html">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2023-04-05 14:30:00+0000</p><p><b>value</b>: Mäßig differenziert <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-HistoGradeCS.html">Histopathologische Grading Codes oBDS</a>#2)</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="33732-9"/>
+      <display value="Histology grade [Identifier] in Cancer specimen"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TumorPatient-example-1"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/VerlaufExample"/>
+  </encounter>
+  <effectiveDateTime value="2023-04-05T14:30:00Z"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"/>
+      <code value="2"/>
+      <display value="Mäßig differenziert"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

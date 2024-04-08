@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="multiple-primaer-tumoren-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-multiple-primaer-tumoren-cs.html"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs"/>
+  <version value="0.1.0"/>
+  <name value="MultiplePrimaerTumorenVS"/>
+  <title value="Multiple PrimärTumoren ValueSet"/>
+  <status value="draft"/>
+  <date value="2024-04-08T16:49:27+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="MultiplePrimärTumorenVS"/>
+  <compose>
+    <include>
+      <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+    </include>
+  </compose>
+</ValueSet>

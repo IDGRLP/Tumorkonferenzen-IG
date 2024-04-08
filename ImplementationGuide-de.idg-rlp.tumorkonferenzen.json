@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TumorkonferenzenIDG",
   "status" : "draft",
-  "date" : "2024-04-08T13:30:59+00:00",
+  "date" : "2024-04-08T16:49:27+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -750,6 +750,41 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/grading"
+      },
+      "name" : "Grading",
+      "description" : "Gibt den Differenzierungsgrad des Tumors entsprechend der aktuellen TNM-Auflage an.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/GradingExample"
+      },
+      "name" : "GradingExample",
+      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/HistoGradeVS"
+      },
+      "name" : "HistoGradeVS",
+      "description" : "HistoGradeVS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/histologie"
       },
       "name" : "Histologie",
@@ -771,13 +806,36 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/HistologieLymphknoten"
+      },
+      "name" : "HistologieLymphknoten",
+      "description" : "HistologieLymphknoten",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HistologieLymphknotenExample"
+      },
+      "name" : "HistologieLymphknotenExample",
+      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "CodeSystem/HistoGrade"
+        "reference" : "CodeSystem/HistoGradeCS"
       },
-      "name" : "Histopathologische Grading Codes",
-      "description" : "Die histopathologische Einstufung des invasiven Karzinoms",
+      "name" : "Histopathologische Grading Codes oBDS",
+      "description" : "oBDS Grading Codes",
       "exampleBoolean" : false
     },
     {
@@ -802,6 +860,54 @@
       },
       "name" : "Intention der Strahlentherapie",
       "description" : "Die histopathologische Einstufung des invasiven Karzinoms",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/krebsstadium-cs"
+      },
+      "name" : "Krebsstadium CodeSystem",
+      "description" : "KrebsstadiumCS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/krebsstadium-vs"
+      },
+      "name" : "Krebsstadium ValueSet",
+      "description" : "KrebsstadiumVS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/Lymphgefaessinvasion-cs"
+      },
+      "name" : "Lymphgefäßinvasion CodeSystem",
+      "description" : "LymphgefäßinvasionCS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/Lymphgefaessinvasion-vs"
+      },
+      "name" : "Lymphgefäßinvasion ValueSet",
+      "description" : "LymphgefäßinvasionVS",
       "exampleBoolean" : false
     },
     {
@@ -859,6 +965,30 @@
         "reference" : "ValueSet/icd-o-3-morphologie"
       },
       "name" : "Morphologie Codes des ICD-O-3 CodeSystems.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/multiple-primaer-tumoren-cs"
+      },
+      "name" : "Multiple PrimärTumoren CodeSystem",
+      "description" : "MultiplePrimärTumorenCS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/multiple-primaer-tumoren-vs"
+      },
+      "name" : "Multiple PrimärTumoren ValueSet",
+      "description" : "MultiplePrimärTumorenVS",
       "exampleBoolean" : false
     },
     {
@@ -965,6 +1095,54 @@
       },
       "name" : "Organisation-example-1",
       "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/perineurale-invasion-cs"
+      },
+      "name" : "Perineurale Invasion CodeSystem",
+      "description" : "PerineuraleInvasionCS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/perineurale-invasion-vs"
+      },
+      "name" : "Perineurale Invasion ValueSet",
+      "description" : "PerineuraleInvasionVS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/SerumTumorMarkerUICCCS"
+      },
+      "name" : "SerumTumorMarkerUICCCS",
+      "description" : "SerumTumorMarkerUICCCS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/SerumTumorMarkerUICCVS"
+      },
+      "name" : "SerumTumorMarkerUICCVS",
+      "description" : "SerumTumorMarkerUICCVS",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1248,6 +1426,114 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/TNMASymbol"
+      },
+      "name" : "TNMASymbol",
+      "description" : "TNMASymbol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMLKategorie"
+      },
+      "name" : "TNMLKategorie",
+      "description" : "TNMLKategorie",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMmSymbol"
+      },
+      "name" : "TNMmSymbol",
+      "description" : "TNMmSymbol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMPnKategorie"
+      },
+      "name" : "TNMPnKategorie",
+      "description" : "TNMPnKategorie",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMRSymbol"
+      },
+      "name" : "TNMRSymbol",
+      "description" : "TNMRSymbol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMSKategorie"
+      },
+      "name" : "TNMSKategorie",
+      "description" : "TNMSKategorie",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMVKategorie"
+      },
+      "name" : "TNMVKategorie",
+      "description" : "TNMVKategorie",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMYSmbol"
+      },
+      "name" : "TNMYSmbol",
+      "description" : "TNMYSmbol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/TNMYSymbol"
+      },
+      "name" : "TNMYSymbol",
+      "description" : "TNMYSymbol",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/tumor"
       },
       "name" : "Tumor",
@@ -1412,6 +1698,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/veneninvasion-cs"
+      },
+      "name" : "Veneninvasion CodeSystem",
+      "description" : "VeneninvasionCS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/veneninvasion-vs"
+      },
+      "name" : "Veneninvasion ValueSet",
+      "description" : "VeneninvasionVS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1420,6 +1730,17 @@
       "name" : "Verlauf",
       "description" : "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/VerlaufExample"
+      },
+      "name" : "VerlaufExample",
+      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf"
     },
     {
       "extension" : [{

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SerumTumorMarkerUICCCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">S0<a name="SerumTumorMarkerUICCCS-S0"> </a></td></tr><tr><td style="white-space:nowrap">S1<a name="SerumTumorMarkerUICCCS-S1"> </a></td></tr><tr><td style="white-space:nowrap">S2<a name="SerumTumorMarkerUICCCS-S2"> </a></td></tr><tr><td style="white-space:nowrap">S3<a name="SerumTumorMarkerUICCCS-S3"> </a></td></tr></table></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"/>
+  <version value="0.1.0"/>
+  <name value="SerumTumorMarkerUICCCS"/>
+  <title value="SerumTumorMarkerUICCCS"/>
+  <status value="draft"/>
+  <date value="2024-04-08T16:49:27+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="SerumTumorMarkerUICCCS"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="S0"/>
+    <display value="S0"/>
+  </concept>
+  <concept>
+    <code value="S1"/>
+    <display value="S1"/>
+  </concept>
+  <concept>
+    <code value="S2"/>
+    <display value="S2"/>
+  </concept>
+  <concept>
+    <code value="S3"/>
+    <display value="S3"/>
+  </concept>
+</CodeSystem>

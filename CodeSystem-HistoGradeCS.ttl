@@ -1,0 +1,77 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HistoGradeCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"HistoGradeCS-0\"> </a></td><td>Primär erworbene Melanose ohne zelluläre Atypien</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"HistoGradeCS-1\"> </a></td><td>Gut differenziert</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"HistoGradeCS-2\"> </a></td><td>Mäßig differenziert</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"HistoGradeCS-3\"> </a></td><td>Schlecht differenziert</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"HistoGradeCS-4\"> </a></td><td>Undifferenziert</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"HistoGradeCS-5\"> </a></td><td>Nur für C61, TNM8</td></tr><tr><td style=\"white-space:nowrap\">X<a name=\"HistoGradeCS-X\"> </a></td><td>Nicht bestimmbar</td></tr><tr><td style=\"white-space:nowrap\">L<a name=\"HistoGradeCS-L\"> </a></td><td>Low grade (G1 oder G2)</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"HistoGradeCS-M\"> </a></td><td>Intermediate grade (G2 oder G3)</td></tr><tr><td style=\"white-space:nowrap\">H<a name=\"HistoGradeCS-H\"> </a></td><td>High grade (G3 oder G4)</td></tr><tr><td style=\"white-space:nowrap\">B<a name=\"HistoGradeCS-B\"> </a></td><td>Borderline</td></tr><tr><td style=\"white-space:nowrap\">U<a name=\"HistoGradeCS-U\"> </a></td><td>Unbekannt</td></tr><tr><td style=\"white-space:nowrap\">T<a name=\"HistoGradeCS-T\"> </a></td><td>Trifft nicht zu</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HistoGradeCS"] ; # 
+  fhir:title [ fhir:v "Histopathologische Grading Codes oBDS"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-04-08T16:49:27+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.idg-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@idg-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "oBDS Grading Codes"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "13"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "Primär erworbene Melanose ohne zelluläre Atypien" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Gut differenziert" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Mäßig differenziert" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Schlecht differenziert" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Undifferenziert" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Nur für C61, TNM8" ]
+  ] [
+     fhir:code [ fhir:v "X" ] ;
+     fhir:display [ fhir:v "Nicht bestimmbar" ]
+  ] [
+     fhir:code [ fhir:v "L" ] ;
+     fhir:display [ fhir:v "Low grade (G1 oder G2)" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Intermediate grade (G2 oder G3)" ]
+  ] [
+     fhir:code [ fhir:v "H" ] ;
+     fhir:display [ fhir:v "High grade (G3 oder G4)" ]
+  ] [
+     fhir:code [ fhir:v "B" ] ;
+     fhir:display [ fhir:v "Borderline" ]
+  ] [
+     fhir:code [ fhir:v "U" ] ;
+     fhir:display [ fhir:v "Unbekannt" ]
+  ] [
+     fhir:code [ fhir:v "T" ] ;
+     fhir:display [ fhir:v "Trifft nicht zu" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

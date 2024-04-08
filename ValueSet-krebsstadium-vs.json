@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "krebsstadium-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-krebsstadium-cs.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</code></a></li></ul></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
+  "version" : "0.1.0",
+  "name" : "KrebsstadiumVS",
+  "title" : "Krebsstadium ValueSet",
+  "status" : "draft",
+  "date" : "2024-04-08T16:49:27+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "KrebsstadiumVS",
+  "compose" : {
+    "include" : [{
+      "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"
+    }]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "krebsstadium-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">stadium0<a name=\"krebsstadium-cs-stadium0\"> </a></td><td>Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumI<a name=\"krebsstadium-cs-stadiumI\"> </a></td><td>Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumII<a name=\"krebsstadium-cs-stadiumII\"> </a></td><td>Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumIII<a name=\"krebsstadium-cs-stadiumIII\"> </a></td><td>Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumIV<a name=\"krebsstadium-cs-stadiumIV\"> </a></td><td>Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen</td></tr></table></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
+  "version" : "0.1.0",
+  "name" : "KrebsstadiumCS",
+  "title" : "Krebsstadium CodeSystem",
+  "status" : "draft",
+  "date" : "2024-04-08T16:49:27+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "KrebsstadiumCS",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "stadium0",
+    "display" : "Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen"
+  },
+  {
+    "code" : "stadiumI",
+    "display" : "Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen"
+  },
+  {
+    "code" : "stadiumII",
+    "display" : "Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen"
+  },
+  {
+    "code" : "stadiumIII",
+    "display" : "Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen"
+  },
+  {
+    "code" : "stadiumIV",
+    "display" : "Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen"
+  }]
+}

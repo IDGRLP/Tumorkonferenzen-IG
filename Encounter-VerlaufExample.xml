@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="VerlaufExample"/>
+  <meta>
+    <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Encounter</b><a name="VerlaufExample"> </a><a name="hcVerlaufExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter &quot;VerlaufExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-verlauf.html">Verlauf</a></p></div><p><b>status</b>: final</p><p><b>class</b>: virtual (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code VR = 'virtual', stated as 'null')</p><p><b>type</b>: Cancer follow-up visit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#185389009)</span></p><p><b>subject</b>: <a href="Patient-TumorPatient-example-1.html">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>episodeOfCare</b>: <a href="EpisodeOfCare-TumorErkrankungExample.html">EpisodeOfCare/TumorErkrankungExample</a></p><p><b>period</b>: 2023-04-05 08:00:00+0000 --&gt; (ongoing)</p></div>
+  </text>
+  <status value="final"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="VR"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="185389009"/>
+      <display value="Cancer follow-up visit"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/TumorPatient-example-1"/>
+  </subject>
+  <episodeOfCare>
+    <reference value="EpisodeOfCare/TumorErkrankungExample"/>
+  </episodeOfCare>
+  <period>
+    <start value="2023-04-05T08:00:00Z"/>
+  </period>
+</Encounter>

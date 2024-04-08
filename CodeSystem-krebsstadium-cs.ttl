@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "krebsstadium-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">stadium0<a name=\"krebsstadium-cs-stadium0\"> </a></td><td>Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumI<a name=\"krebsstadium-cs-stadiumI\"> </a></td><td>Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumII<a name=\"krebsstadium-cs-stadiumII\"> </a></td><td>Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumIII<a name=\"krebsstadium-cs-stadiumIII\"> </a></td><td>Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumIV<a name=\"krebsstadium-cs-stadiumIV\"> </a></td><td>Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KrebsstadiumCS"] ; # 
+  fhir:title [ fhir:v "Krebsstadium CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-04-08T16:49:27+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.idg-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@idg-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "KrebsstadiumCS"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "stadium0" ] ;
+     fhir:display [ fhir:v "Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen" ]
+  ] [
+     fhir:code [ fhir:v "stadiumI" ] ;
+     fhir:display [ fhir:v "Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen" ]
+  ] [
+     fhir:code [ fhir:v "stadiumII" ] ;
+     fhir:display [ fhir:v "Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen" ]
+  ] [
+     fhir:code [ fhir:v "stadiumIII" ] ;
+     fhir:display [ fhir:v "Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen" ]
+  ] [
+     fhir:code [ fhir:v "stadiumIV" ] ;
+     fhir:display [ fhir:v "Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

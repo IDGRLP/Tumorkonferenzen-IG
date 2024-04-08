@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="veneninvasion-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">VX<a name="veneninvasion-cs-VX"> </a></td><td>Veneninvasion kann nicht beurteilt werden</td></tr><tr><td style="white-space:nowrap">V0<a name="veneninvasion-cs-V0"> </a></td><td>Keine Veneninvasion</td></tr><tr><td style="white-space:nowrap">V1<a name="veneninvasion-cs-V1"> </a></td><td>Mikroskopische Veneninvasion</td></tr><tr><td style="white-space:nowrap">V2<a name="veneninvasion-cs-V2"> </a></td><td>Makroskopische Veneninvasion</td></tr></table></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"/>
+  <version value="0.1.0"/>
+  <name value="VeneninvasionCS"/>
+  <title value="Veneninvasion CodeSystem"/>
+  <status value="draft"/>
+  <date value="2024-04-08T16:49:27+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="VeneninvasionCS"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="VX"/>
+    <display value="Veneninvasion kann nicht beurteilt werden"/>
+  </concept>
+  <concept>
+    <code value="V0"/>
+    <display value="Keine Veneninvasion"/>
+  </concept>
+  <concept>
+    <code value="V1"/>
+    <display value="Mikroskopische Veneninvasion"/>
+  </concept>
+  <concept>
+    <code value="V2"/>
+    <display value="Makroskopische Veneninvasion"/>
+  </concept>
+</CodeSystem>

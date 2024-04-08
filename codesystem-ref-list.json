@@ -12,6 +12,61 @@
       "ValueSet-obds-op-komplikation-vs.html" : "oBDS Operation Komplikation Value Set"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HistoGradeCS",
+      "title" : "Histopathologische Grading Codes oBDS",
+      "description" : "oBDS Grading Codes",
+      "uses" : {
+      },
+      "ValueSet-HistoGradeVS.html" : "HistoGradeVS"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LymphgefaessinvasionCS",
+      "title" : "Lymphgefäßinvasion CodeSystem",
+      "description" : "LymphgefäßinvasionCS",
+      "uses" : {
+      },
+      "ValueSet-Lymphgefaessinvasion-vs.html" : "Lymphgefäßinvasion ValueSet"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SerumTumorMarkerUICCCS",
+      "title" : "SerumTumorMarkerUICCCS",
+      "description" : "SerumTumorMarkerUICCCS",
+      "uses" : {
+      },
+      "ValueSet-SerumTumorMarkerUICCVS.html" : "SerumTumorMarkerUICCVS"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KrebsstadiumCS",
+      "title" : "Krebsstadium CodeSystem",
+      "description" : "KrebsstadiumCS",
+      "uses" : {
+      },
+      "ValueSet-krebsstadium-vs.html" : "Krebsstadium ValueSet"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MultiplePrimaerTumorenCS",
+      "title" : "Multiple PrimärTumoren CodeSystem",
+      "description" : "MultiplePrimärTumorenCS",
+      "uses" : {
+      },
+      "ValueSet-multiple-primaer-tumoren-vs.html" : "Multiple PrimärTumoren ValueSet"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -34,6 +89,28 @@
       "ValueSet-obds-strahlentherapie-intention-vs.html" : "Intention der Strahlentherapie"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PerineuraleInvasionCS",
+      "title" : "Perineurale Invasion CodeSystem",
+      "description" : "PerineuraleInvasionCS",
+      "uses" : {
+      },
+      "ValueSet-perineurale-invasion-vs.html" : "Perineurale Invasion ValueSet"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VeneninvasionCS",
+      "title" : "Veneninvasion CodeSystem",
+      "description" : "VeneninvasionCS",
+      "uses" : {
+      },
+      "ValueSet-veneninvasion-vs.html" : "Veneninvasion ValueSet"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -43,11 +120,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-tnm-regional-nodes-staging-type-vs.html" : "TNM Regional Nodes Staging Type Value Set",
-      "ValueSet-tnm-stage-group-staging-type-vs.html" : "TNM Stage Group Staging Type Value Set",
-      "ValueSet-tnm-distant-metastases-staging-type-vs.html" : "TNM Distant Metastases Staging Type Value Set",
       "ValueSet-ecog-performance-status.html" : "ECOG",
-      "ValueSet-tnm-primary-tumor-staging-type-vs.html" : "TNM Primary Tumor Staging Type Value Set"
+      "ValueSet-tnm-primary-tumor-staging-type-vs.html" : "TNM Primary Tumor Staging Type Value Set",
+      "ValueSet-tnm-distant-metastases-staging-type-vs.html" : "TNM Distant Metastases Staging Type Value Set",
+      "ValueSet-tnm-stage-group-staging-type-vs.html" : "TNM Stage Group Staging Type Value Set",
+      "ValueSet-tnm-regional-nodes-staging-type-vs.html" : "TNM Regional Nodes Staging Type Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -59,14 +136,14 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-tnm-stage-group-vs.html" : "TNM Stage Group Value Set",
-      "ValueSet-cancer-staging-method-vs.html" : "Cancer Staging Method Value Set",
-      "ValueSet-tnm-distant-metastases-category-vs.html" : "TNM Distant Metastases Category Value Set",
-      "ValueSet-cancer-stage-group-vs.html" : "Cancer Stage Group Value Set",
-      "ValueSet-tnm-staging-method-vs.html" : "TNM Staging Method Value Set",
-      "ValueSet-tnm-primary-tumor-category-vs.html" : "TNM Primary Tumor Category Value Set",
       "ValueSet-tnm-regional-nodes-category-vs.html" : "TNM Regional Nodes Category Value Set",
-      "ValueSet-cancer-staging-type-vs.html" : "Cancer Staging Type Value Set"
+      "ValueSet-cancer-staging-type-vs.html" : "Cancer Staging Type Value Set",
+      "ValueSet-tnm-primary-tumor-category-vs.html" : "TNM Primary Tumor Category Value Set",
+      "ValueSet-tnm-distant-metastases-category-vs.html" : "TNM Distant Metastases Category Value Set",
+      "ValueSet-cancer-staging-method-vs.html" : "Cancer Staging Method Value Set",
+      "ValueSet-tnm-staging-method-vs.html" : "TNM Staging Method Value Set",
+      "ValueSet-cancer-stage-group-vs.html" : "Cancer Stage Group Value Set",
+      "ValueSet-tnm-stage-group-vs.html" : "TNM Stage Group Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",

@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Encounter/VerlaufExample> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "VerlaufExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"VerlaufExample\"> </a><a name=\"hcVerlaufExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;VerlaufExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-verlauf.html\">Verlauf</a></p></div><p><b>status</b>: final</p><p><b>class</b>: virtual (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code VR = 'virtual', stated as 'null')</p><p><b>type</b>: Cancer follow-up visit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#185389009)</span></p><p><b>subject</b>: <a href=\"Patient-TumorPatient-example-1.html\">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare-TumorErkrankungExample.html\">EpisodeOfCare/TumorErkrankungExample</a></p><p><b>period</b>: 2023-04-05 08:00:00+0000 --&gt; (ongoing)</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "VR" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:185389009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "185389009" ] ;
+       fhir:display [ fhir:v "Cancer follow-up visit" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatient-example-1> ;
+     fhir:reference [ fhir:v "Patient/TumorPatient-example-1" ]
+  ] ; # 
+  fhir:episodeOfCare ( [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/EpisodeOfCare/TumorErkrankungExample> ;
+     fhir:reference [ fhir:v "EpisodeOfCare/TumorErkrankungExample" ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-04-05T08:00:00Z"^^xsd:dateTime ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="multiple-primaer-tumoren-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">m<a name="multiple-primaer-tumoren-cs-m"> </a></td><td>Kennzeichnet Vorhandensein multipler Primärtumoren in einem Bezirk</td></tr><tr><td style="white-space:nowrap">2<a name="multiple-primaer-tumoren-cs-2"> </a></td><td>(2) simultane Tumoren</td></tr><tr><td style="white-space:nowrap">3<a name="multiple-primaer-tumoren-cs-3"> </a></td><td>(3) simultane Tumoren</td></tr><tr><td style="white-space:nowrap">4<a name="multiple-primaer-tumoren-cs-4"> </a></td><td>(4) simultane Tumoren</td></tr><tr><td style="white-space:nowrap">5<a name="multiple-primaer-tumoren-cs-5"> </a></td><td>(5) simultane Tumoren</td></tr><tr><td style="white-space:nowrap">6<a name="multiple-primaer-tumoren-cs-6"> </a></td><td>(6) simultane Tumoren</td></tr><tr><td style="white-space:nowrap">7<a name="multiple-primaer-tumoren-cs-7"> </a></td><td>(7) simultane Tumoren</td></tr><tr><td style="white-space:nowrap">8<a name="multiple-primaer-tumoren-cs-8"> </a></td><td>(8) simultane Tumoren</td></tr><tr><td style="white-space:nowrap">9<a name="multiple-primaer-tumoren-cs-9"> </a></td><td>(9) simultane Tumoren</td></tr></table></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"/>
+  <version value="0.1.0"/>
+  <name value="MultiplePrimaerTumorenCS"/>
+  <title value="Multiple PrimärTumoren CodeSystem"/>
+  <status value="draft"/>
+  <date value="2024-04-08T16:49:27+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="MultiplePrimärTumorenCS"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="m"/>
+    <display value="Kennzeichnet Vorhandensein multipler Primärtumoren in einem Bezirk"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="(2) simultane Tumoren"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="(3) simultane Tumoren"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="(4) simultane Tumoren"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="(5) simultane Tumoren"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="(6) simultane Tumoren"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="(7) simultane Tumoren"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="(8) simultane Tumoren"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="(9) simultane Tumoren"/>
+  </concept>
+</CodeSystem>

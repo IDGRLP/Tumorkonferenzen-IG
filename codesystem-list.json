@@ -1,12 +1,44 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGrade",
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "HistoGrade",
-      "title" : "Histopathologische Grading Codes",
-      "description" : "Die histopathologische Einstufung des invasiven Karzinoms "
+      "name" : "HistoGradeCS",
+      "title" : "Histopathologische Grading Codes oBDS",
+      "description" : "oBDS Grading Codes"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "LymphgefaessinvasionCS",
+      "title" : "Lymphgefäßinvasion CodeSystem",
+      "description" : "LymphgefäßinvasionCS"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "SerumTumorMarkerUICCCS",
+      "title" : "SerumTumorMarkerUICCCS",
+      "description" : "SerumTumorMarkerUICCCS"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KrebsstadiumCS",
+      "title" : "Krebsstadium CodeSystem",
+      "description" : "KrebsstadiumCS"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MultiplePrimaerTumorenCS",
+      "title" : "Multiple PrimärTumoren CodeSystem",
+      "description" : "MultiplePrimärTumorenCS"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs",
@@ -23,6 +55,22 @@
       "name" : "ObdsStrahlentherapieIntentionCS",
       "title" : "Intention der Strahlentherapie",
       "description" : "Die histopathologische Einstufung des invasiven Karzinoms "
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PerineuraleInvasionCS",
+      "title" : "Perineurale Invasion CodeSystem",
+      "description" : "PerineuraleInvasionCS"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VeneninvasionCS",
+      "title" : "Veneninvasion CodeSystem",
+      "description" : "VeneninvasionCS"
     }
   ]
 }

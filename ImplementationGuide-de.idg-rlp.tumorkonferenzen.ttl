@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TumorkonferenzenIDG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-08T13:30:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-08T16:49:27+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
@@ -668,6 +668,44 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading> ;
+         fhir:reference [ fhir:v "StructureDefinition/grading" ]
+       ] ;
+       fhir:name [ fhir:v "Grading" ] ;
+       fhir:description [ fhir:v "Gibt den Differenzierungsgrad des Tumors entsprechend der aktuellen TNM-Auflage an." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample> ;
+         fhir:reference [ fhir:v "Observation/GradingExample" ]
+       ] ;
+       fhir:name [ fhir:v "GradingExample" ] ;
+       fhir:example [
+         fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"^^xsd:anyURI ;
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/HistoGradeVS> ;
+         fhir:reference [ fhir:v "ValueSet/HistoGradeVS" ]
+       ] ;
+       fhir:name [ fhir:v "HistoGradeVS" ] ;
+       fhir:description [ fhir:v "HistoGradeVS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie> ;
          fhir:reference [ fhir:v "StructureDefinition/histologie" ]
        ] ;
@@ -692,14 +730,40 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten> ;
+         fhir:reference [ fhir:v "StructureDefinition/HistologieLymphknoten" ]
+       ] ;
+       fhir:name [ fhir:v "HistologieLymphknoten" ] ;
+       fhir:description [ fhir:v "HistologieLymphknoten" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieLymphknotenExample> ;
+         fhir:reference [ fhir:v "Observation/HistologieLymphknotenExample" ]
+       ] ;
+       fhir:name [ fhir:v "HistologieLymphknotenExample" ] ;
+       fhir:example [
+         fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten"^^xsd:anyURI ;
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGrade> ;
-         fhir:reference [ fhir:v "CodeSystem/HistoGrade" ]
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS> ;
+         fhir:reference [ fhir:v "CodeSystem/HistoGradeCS" ]
        ] ;
-       fhir:name [ fhir:v "Histopathologische Grading Codes" ] ;
-       fhir:description [ fhir:v "Die histopathologische Einstufung des invasiven Karzinoms" ] ;
+       fhir:name [ fhir:v "Histopathologische Grading Codes oBDS" ] ;
+       fhir:description [ fhir:v "oBDS Grading Codes" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -724,6 +788,54 @@
        ] ;
        fhir:name [ fhir:v "Intention der Strahlentherapie" ] ;
        fhir:description [ fhir:v "Die histopathologische Einstufung des invasiven Karzinoms" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/krebsstadium-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Krebsstadium CodeSystem" ] ;
+       fhir:description [ fhir:v "KrebsstadiumCS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs> ;
+         fhir:reference [ fhir:v "ValueSet/krebsstadium-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Krebsstadium ValueSet" ] ;
+       fhir:description [ fhir:v "KrebsstadiumVS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/Lymphgefaessinvasion-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Lymphgefäßinvasion CodeSystem" ] ;
+       fhir:description [ fhir:v "LymphgefäßinvasionCS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs> ;
+         fhir:reference [ fhir:v "ValueSet/Lymphgefaessinvasion-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Lymphgefäßinvasion ValueSet" ] ;
+       fhir:description [ fhir:v "LymphgefäßinvasionVS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -787,6 +899,30 @@
          fhir:reference [ fhir:v "ValueSet/icd-o-3-morphologie" ]
        ] ;
        fhir:name [ fhir:v "Morphologie Codes des ICD-O-3 CodeSystems." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/multiple-primaer-tumoren-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Multiple PrimärTumoren CodeSystem" ] ;
+       fhir:description [ fhir:v "MultiplePrimärTumorenCS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs> ;
+         fhir:reference [ fhir:v "ValueSet/multiple-primaer-tumoren-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Multiple PrimärTumoren ValueSet" ] ;
+       fhir:description [ fhir:v "MultiplePrimärTumorenVS" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -902,6 +1038,54 @@
          fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"^^xsd:anyURI ;
          fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/perineurale-invasion-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Perineurale Invasion CodeSystem" ] ;
+       fhir:description [ fhir:v "PerineuraleInvasionCS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs> ;
+         fhir:reference [ fhir:v "ValueSet/perineurale-invasion-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Perineurale Invasion ValueSet" ] ;
+       fhir:description [ fhir:v "PerineuraleInvasionVS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS> ;
+         fhir:reference [ fhir:v "CodeSystem/SerumTumorMarkerUICCCS" ]
+       ] ;
+       fhir:name [ fhir:v "SerumTumorMarkerUICCCS" ] ;
+       fhir:description [ fhir:v "SerumTumorMarkerUICCCS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS> ;
+         fhir:reference [ fhir:v "ValueSet/SerumTumorMarkerUICCVS" ]
+       ] ;
+       fhir:name [ fhir:v "SerumTumorMarkerUICCVS" ] ;
+       fhir:description [ fhir:v "SerumTumorMarkerUICCVS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1184,6 +1368,114 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMASymbol" ]
+       ] ;
+       fhir:name [ fhir:v "TNMASymbol" ] ;
+       fhir:description [ fhir:v "TNMASymbol" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMLKategorie" ]
+       ] ;
+       fhir:name [ fhir:v "TNMLKategorie" ] ;
+       fhir:description [ fhir:v "TNMLKategorie" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMmSymbol" ]
+       ] ;
+       fhir:name [ fhir:v "TNMmSymbol" ] ;
+       fhir:description [ fhir:v "TNMmSymbol" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMPnKategorie" ]
+       ] ;
+       fhir:name [ fhir:v "TNMPnKategorie" ] ;
+       fhir:description [ fhir:v "TNMPnKategorie" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMRSymbol" ]
+       ] ;
+       fhir:name [ fhir:v "TNMRSymbol" ] ;
+       fhir:description [ fhir:v "TNMRSymbol" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMSKategorie" ]
+       ] ;
+       fhir:name [ fhir:v "TNMSKategorie" ] ;
+       fhir:description [ fhir:v "TNMSKategorie" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMVKategorie" ]
+       ] ;
+       fhir:name [ fhir:v "TNMVKategorie" ] ;
+       fhir:description [ fhir:v "TNMVKategorie" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSmbol> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMYSmbol" ]
+       ] ;
+       fhir:name [ fhir:v "TNMYSmbol" ] ;
+       fhir:description [ fhir:v "TNMYSmbol" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol> ;
+         fhir:reference [ fhir:v "StructureDefinition/TNMYSymbol" ]
+       ] ;
+       fhir:name [ fhir:v "TNMYSymbol" ] ;
+       fhir:description [ fhir:v "TNMYSymbol" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor> ;
          fhir:reference [ fhir:v "StructureDefinition/tumor" ]
        ] ;
@@ -1357,6 +1649,30 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/veneninvasion-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Veneninvasion CodeSystem" ] ;
+       fhir:description [ fhir:v "VeneninvasionCS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs> ;
+         fhir:reference [ fhir:v "ValueSet/veneninvasion-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Veneninvasion ValueSet" ] ;
+       fhir:description [ fhir:v "VeneninvasionVS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1366,6 +1682,20 @@
        fhir:name [ fhir:v "Verlauf" ] ;
        fhir:description [ fhir:v "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Encounter/VerlaufExample> ;
+         fhir:reference [ fhir:v "Encounter/VerlaufExample" ]
+       ] ;
+       fhir:name [ fhir:v "VerlaufExample" ] ;
+       fhir:example [
+         fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf"^^xsd:anyURI ;
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

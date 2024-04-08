@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SerumTumorMarkerUICCCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">S0<a name=\"SerumTumorMarkerUICCCS-S0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S1<a name=\"SerumTumorMarkerUICCCS-S1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S2<a name=\"SerumTumorMarkerUICCCS-S2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S3<a name=\"SerumTumorMarkerUICCCS-S3\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
+  "version" : "0.1.0",
+  "name" : "SerumTumorMarkerUICCCS",
+  "title" : "SerumTumorMarkerUICCCS",
+  "status" : "draft",
+  "date" : "2024-04-08T16:49:27+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "SerumTumorMarkerUICCCS",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "S0",
+    "display" : "S0"
+  },
+  {
+    "code" : "S1",
+    "display" : "S1"
+  },
+  {
+    "code" : "S2",
+    "display" : "S2"
+  },
+  {
+    "code" : "S3",
+    "display" : "S3"
+  }]
+}

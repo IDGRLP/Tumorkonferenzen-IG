@@ -1,10 +1,38 @@
 [
   {
-    "id" : "HistoGrade",
+    "id" : "HistoGradeCS",
     "type" : "CodeSystem",
-    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGrade",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS",
     "version" : "0.1.0",
-    "name" : "HistoGrade"
+    "name" : "HistoGradeCS"
+  },
+  {
+    "id" : "Lymphgefaessinvasion-cs",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs",
+    "version" : "0.1.0",
+    "name" : "LymphgefaessinvasionCS"
+  },
+  {
+    "id" : "SerumTumorMarkerUICCCS",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
+    "version" : "0.1.0",
+    "name" : "SerumTumorMarkerUICCCS"
+  },
+  {
+    "id" : "krebsstadium-cs",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
+    "version" : "0.1.0",
+    "name" : "KrebsstadiumCS"
+  },
+  {
+    "id" : "multiple-primaer-tumoren-cs",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs",
+    "version" : "0.1.0",
+    "name" : "MultiplePrimaerTumorenCS"
   },
   {
     "id" : "obds-op-komplikation-cs",
@@ -21,6 +49,20 @@
     "name" : "ObdsStrahlentherapieIntentionCS"
   },
   {
+    "id" : "perineurale-invasion-cs",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs",
+    "version" : "0.1.0",
+    "name" : "PerineuraleInvasionCS"
+  },
+  {
+    "id" : "veneninvasion-cs",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
+    "version" : "0.1.0",
+    "name" : "VeneninvasionCS"
+  },
+  {
     "id" : "de.idg-rlp.tumorkonferenzen",
     "type" : "ImplementationGuide",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen",
@@ -33,6 +75,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose",
     "version" : "0.1.0",
     "name" : "TumorDiagnose"
+  },
+  {
+    "id" : "HistologieLymphknoten",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten",
+    "version" : "0.1.0",
+    "name" : "HistologieLymphknoten"
   },
   {
     "id" : "Melder",
@@ -54,6 +103,69 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation",
     "version" : "0.1.0",
     "name" : "Organisation"
+  },
+  {
+    "id" : "TNMASymbol",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol",
+    "version" : "0.1.0",
+    "name" : "TNMASymbol"
+  },
+  {
+    "id" : "TNMLKategorie",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie",
+    "version" : "0.1.0",
+    "name" : "TNMLKategorie"
+  },
+  {
+    "id" : "TNMPnKategorie",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie",
+    "version" : "0.1.0",
+    "name" : "TNMPnKategorie"
+  },
+  {
+    "id" : "TNMRSymbol",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol",
+    "version" : "0.1.0",
+    "name" : "TNMRSymbol"
+  },
+  {
+    "id" : "TNMSKategorie",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie",
+    "version" : "0.1.0",
+    "name" : "TNMSKategorie"
+  },
+  {
+    "id" : "TNMVKategorie",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie",
+    "version" : "0.1.0",
+    "name" : "TNMVKategorie"
+  },
+  {
+    "id" : "TNMYSmbol",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSmbol",
+    "version" : "0.1.0",
+    "name" : "TNMYSmbol"
+  },
+  {
+    "id" : "TNMYSymbol",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol",
+    "version" : "0.1.0",
+    "name" : "TNMYSymbol"
+  },
+  {
+    "id" : "TNMmSymbol",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol",
+    "version" : "0.1.0",
+    "name" : "TNMmSymbol"
   },
   {
     "id" : "TumorPatient",
@@ -96,6 +208,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/gesamtbeurteilung",
     "version" : "0.1.0",
     "name" : "Gesamtbeurteilung"
+  },
+  {
+    "id" : "grading",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading",
+    "version" : "0.1.0",
+    "name" : "Grading"
   },
   {
     "id" : "histologie",
@@ -280,6 +399,27 @@
     "name" : "WatchfulWaiting"
   },
   {
+    "id" : "HistoGradeVS",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/HistoGradeVS",
+    "version" : "0.1.0",
+    "name" : "HistoGradeVS"
+  },
+  {
+    "id" : "Lymphgefaessinvasion-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs",
+    "version" : "0.1.0",
+    "name" : "LymphgefaessinvasionVS"
+  },
+  {
+    "id" : "SerumTumorMarkerUICCVS",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS",
+    "version" : "0.1.0",
+    "name" : "SerumTumorMarkerUICCVS"
+  },
+  {
     "id" : "cancer-stage-group-vs",
     "type" : "ValueSet",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
@@ -308,6 +448,20 @@
     "name" : "ICDO3Morphologie"
   },
   {
+    "id" : "krebsstadium-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
+    "version" : "0.1.0",
+    "name" : "KrebsstadiumVS"
+  },
+  {
+    "id" : "multiple-primaer-tumoren-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs",
+    "version" : "0.1.0",
+    "name" : "MultiplePrimaerTumorenVS"
+  },
+  {
     "id" : "obds-op-komplikation-vs",
     "type" : "ValueSet",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-op-komplikation-vs",
@@ -320,6 +474,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-strahlentherapie-intention-vs",
     "version" : "0.1.0",
     "name" : "ObdsStrahlentherapieIntentionVS"
+  },
+  {
+    "id" : "perineurale-invasion-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs",
+    "version" : "0.1.0",
+    "name" : "PerineuraleInvasionVS"
   },
   {
     "id" : "tnm-distant-metastases-category-max-vs",
@@ -411,6 +572,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-staging-method-vs",
     "version" : "0.1.0",
     "name" : "TNMStagingMethodVS"
+  },
+  {
+    "id" : "veneninvasion-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",
+    "version" : "0.1.0",
+    "name" : "VeneninvasionVS"
   },
   {
     "id" : "ecog-performance-status",
