@@ -1,9 +1,9 @@
 TumorkonferenzenIDG : Validation Results
 =========================================
 
-err = 17, warn = 93, info = 17
+err = 17, warn = 92, info = 17
 IG Publisher Version: 1.6.3 Out of date - current version is 1.6.4
-Generated Mon Apr 08 16:51:42 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
+Generated Mon Apr 08 17:00:48 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
  Build Errors : 1 / 14 / 0
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-HistoGradeCS : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-Lymphgefaessinvasion-cs : 0 / 2 / 2
@@ -39,7 +39,6 @@ Generated Mon Apr 08 16:51:42 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMRSymbol : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMSKategorie : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMVKategorie : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMYSmbol : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMYSymbol : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMmSymbol : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TumorPatient : 0 / 0 / 1
@@ -209,8 +208,6 @@ WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenze
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMVKategorie.json ==
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie'): The Implementation Guide contains no examples for this profile
-== fsh-generated/resources/StructureDefinition-TNMYSmbol.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSmbol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMYSymbol.json ==
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMmSymbol.json ==

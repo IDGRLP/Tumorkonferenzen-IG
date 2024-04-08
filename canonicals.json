@@ -147,13 +147,6 @@
     "name" : "TNMVKategorie"
   },
   {
-    "id" : "TNMYSmbol",
-    "type" : "StructureDefinition",
-    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSmbol",
-    "version" : "0.1.0",
-    "name" : "TNMYSmbol"
-  },
-  {
     "id" : "TNMYSymbol",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol",

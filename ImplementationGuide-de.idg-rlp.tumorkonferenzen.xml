@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TumorkonferenzenIDG"/>
   <status value="draft"/>
-  <date value="2024-04-08T16:49:27+00:00"/>
+  <date value="2024-04-08T16:58:24+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -1270,17 +1270,6 @@
       </reference>
       <name value="TNMVKategorie"/>
       <description value="TNMVKategorie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMYSmbol"/>
-      </reference>
-      <name value="TNMYSmbol"/>
-      <description value="TNMYSmbol"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

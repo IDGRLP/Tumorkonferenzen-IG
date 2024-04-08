@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TumorkonferenzenIDG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-08T16:49:27+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-08T16:58:24+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
@@ -1445,18 +1445,6 @@
        ] ;
        fhir:name [ fhir:v "TNMVKategorie" ] ;
        fhir:description [ fhir:v "TNMVKategorie" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSmbol> ;
-         fhir:reference [ fhir:v "StructureDefinition/TNMYSmbol" ]
-       ] ;
-       fhir:name [ fhir:v "TNMYSmbol" ] ;
-       fhir:description [ fhir:v "TNMYSmbol" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

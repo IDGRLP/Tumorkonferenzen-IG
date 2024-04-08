@@ -72,7 +72,6 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMRSymbol.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMSKategorie.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMVKategorie.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
-/__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMYSmbol.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMYSymbol.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMmSymbol.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-befund-dokument.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
@@ -129,5 +128,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-max-vs.json: line 0, col 0, Warning - Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm (EXCEPTION)
 /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-veneninvasion-vs.json: line 1, col 907, Warning - Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present (REQUIRED)
 
-err = 17, warn = 93, info = 17
+err = 17, warn = 92, info = 17
 IG Publisher Version: 1.6.3

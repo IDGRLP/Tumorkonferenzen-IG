@@ -268,8 +268,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
+      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs",
