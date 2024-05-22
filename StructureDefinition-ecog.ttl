@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "ECOG"] ; # 
   fhir:title [ fhir:v "ECOG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-08T16:58:24+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-22T07:04:28+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
@@ -411,7 +411,7 @@
        fhir:path [ fhir:v "Observation.extension" ] ;
        fhir:sliceName [ fhir:v "episodeOfCare" ] ;
        fhir:short [ fhir:v "Associated Encounter episode of care" ] ;
-       fhir:definition [ fhir:v "The episode(s) of care that establishes the context for this {{title}}." ] ;
+       fhir:definition [ fhir:v "Identifies the episode(s) of care that this resource is relevant to.  Establishes the EpisodeOfCare as a 'grouper' of resources that are relevant to that episode." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -426,13 +426,11 @@
            fhir:link <http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare>
          ] )
        ] ) ;
-       fhir:condition ( [ fhir:v "ele-1" ] ) ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
          fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
-         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
@@ -442,7 +440,6 @@
          fhir:severity [ fhir:v "error" ] ;
          fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
          fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
-         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ] ;
          fhir:source [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>

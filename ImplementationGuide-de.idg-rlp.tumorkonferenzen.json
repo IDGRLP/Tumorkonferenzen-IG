@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TumorkonferenzenIDG",
   "status" : "draft",
-  "date" : "2024-04-08T16:58:24+00:00",
+  "date" : "2024-05-22T07:04:28+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -33,7 +33,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.3.0"
+    "version" : "5.5.0"
   },
   {
     "id" : "hl7ext",
@@ -43,7 +43,7 @@
     }],
     "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
     "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "1.0.0"
+    "version" : "5.1.0"
   },
   {
     "id" : "de_basisprofil_r4",
@@ -618,6 +618,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/AnmeldeBundleMinimal"
+      },
+      "name" : "AnmeldeBundleMinimal",
+      "description" : "AnmeldeBundleMinimal",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/befund-dokument"
       },
       "name" : "BefundDokument",
@@ -723,6 +735,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ExampleTumorDiagnose"
+      },
+      "name" : "Example Tumordiagnose",
+      "description" : "Example instance of a Tumordiagnose resource",
+      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -742,6 +766,18 @@
       },
       "name" : "Gesamtbeurteilung",
       "description" : "Gesamtbeurteilung des Tumorgeschehens",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ResidualstatusGesamtbeurteilungVS"
+      },
+      "name" : "Gesamtbeurteilung des Residualstatus",
+      "description" : "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
       "exampleBoolean" : false
     },
     {
@@ -1025,6 +1061,18 @@
       },
       "name" : "oBDS Operation Komplikation Value Set",
       "description" : "Komplikation gemäß Vorgabe oBDS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ResidualstatusCS"
+      },
+      "name" : "Onkologie Residualstatus CS",
+      "description" : "oBDS-spezifisches Codesystem für R-Klassifikation",
       "exampleBoolean" : false
     },
     {
@@ -1558,7 +1606,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Diagnose"
+        "reference" : "StructureDefinition/TumorDiagnose"
       },
       "name" : "Tumordiagnose",
       "description" : "Diagnoseinformationen (Primärtumor, frühere Tumore)",

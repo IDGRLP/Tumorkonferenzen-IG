@@ -14,6 +14,13 @@
     "name" : "LymphgefaessinvasionCS"
   },
   {
+    "id" : "ResidualstatusCS",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+    "version" : "0.1.0",
+    "name" : "ResidualstatusCS"
+  },
+  {
     "id" : "SerumTumorMarkerUICCCS",
     "type" : "CodeSystem",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
@@ -70,11 +77,11 @@
     "name" : "TumorkonferenzenIDG"
   },
   {
-    "id" : "Diagnose",
+    "id" : "AnmeldeBundleMinimal",
     "type" : "StructureDefinition",
-    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal",
     "version" : "0.1.0",
-    "name" : "TumorDiagnose"
+    "name" : "AnmeldeBundleMinimal"
   },
   {
     "id" : "HistologieLymphknoten",
@@ -159,6 +166,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol",
     "version" : "0.1.0",
     "name" : "TNMmSymbol"
+  },
+  {
+    "id" : "TumorDiagnose",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose",
+    "version" : "0.1.0",
+    "name" : "TumorDiagnose"
   },
   {
     "id" : "TumorPatient",
@@ -404,6 +418,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs",
     "version" : "0.1.0",
     "name" : "LymphgefaessinvasionVS"
+  },
+  {
+    "id" : "ResidualstatusGesamtbeurteilungVS",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS",
+    "version" : "0.1.0",
+    "name" : "ResidualstatusGesamtbeurteilungVS"
   },
   {
     "id" : "SerumTumorMarkerUICCVS",

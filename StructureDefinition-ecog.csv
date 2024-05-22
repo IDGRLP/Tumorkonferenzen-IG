@@ -26,8 +26,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Observation.extension:episodeOfCare","Observation.extension","episodeOfCare","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare]]} {[]}
-","Associated Encounter episode of care","The episode(s) of care that establishes the context for this {{title}}.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Associated Encounter episode of care","Identifies the episode(s) of care that this resource is relevant to.  Establishes the EpisodeOfCare as a 'grouper' of resources that are relevant to that episode.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}",".inboundRelationship(typeCode=COMP].source[classCode<=PCPR, moodCode=EVN]"
 "Observation.modifierExtension","Observation.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}

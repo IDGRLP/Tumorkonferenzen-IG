@@ -1,0 +1,56 @@
+{
+  "resourceType" : "Condition",
+  "id" : "ExampleTumorDiagnose",
+  "meta" : {
+    "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"ExampleTumorDiagnose\"> </a><a name=\"hcExampleTumorDiagnose\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;ExampleTumorDiagnose&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TumorDiagnose.html\">Tumordiagnose</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.5.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed; FIXME#provisional)</span></p><p><b>code</b>: Malignant neoplasm of upper lobe, bronchus or lung <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ICD10GM[2024]#C34.1)</span></p><p><b>bodySite</b>: 39607008 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT[2023]</a>#39607008)</span></p><p><b>subject</b>: <a href=\"Patient-TumorPatient-example-1.html\">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>onset</b>: 2023-05-20 00:00:00+0000</p><p><b>note</b>: Primary tumor diagnosed with no previous history of tumors.</p></div>"
+  },
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
+  },
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    },
+    {
+      "system" : "https://fix.me/FIXME",
+      "code" : "provisional"
+    }]
+  },
+  "code" : {
+    "coding" : [{
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+        "valueCoding" : {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+          "code" : "L"
+        }
+      }],
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2024",
+      "code" : "C34.1"
+    }],
+    "text" : "Malignant neoplasm of upper lobe, bronchus or lung"
+  },
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "version" : "2023",
+      "code" : "39607008"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/TumorPatient-example-1"
+  },
+  "onsetDateTime" : "2023-05-20T00:00:00Z",
+  "note" : [{
+    "text" : "Primary tumor diagnosed with no previous history of tumors."
+  }]
+}

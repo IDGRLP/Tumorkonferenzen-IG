@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TumorkonferenzenIDG"/>
   <status value="draft"/>
-  <date value="2024-04-08T16:58:24+00:00"/>
+  <date value="2024-05-22T07:04:28+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -31,7 +31,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.3.0"/>
+    <version value="5.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -39,7 +39,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <dependsOn id="de_basisprofil_r4">
     <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
@@ -460,6 +460,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/AnmeldeBundleMinimal"/>
+      </reference>
+      <name value="AnmeldeBundleMinimal"/>
+      <description value="AnmeldeBundleMinimal"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/befund-dokument"/>
       </reference>
       <name value="BefundDokument"/>
@@ -556,6 +567,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ExampleTumorDiagnose"/>
+      </reference>
+      <name value="Example Tumordiagnose"/>
+      <description value="Example instance of a Tumordiagnose resource"/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -574,6 +596,17 @@
       </reference>
       <name value="Gesamtbeurteilung"/>
       <description value="Gesamtbeurteilung des Tumorgeschehens"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ResidualstatusGesamtbeurteilungVS"/>
+      </reference>
+      <name value="Gesamtbeurteilung des Residualstatus"/>
+      <description value="Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -833,6 +866,17 @@
       </reference>
       <name value="oBDS Operation Komplikation Value Set"/>
       <description value="Komplikation gemäß Vorgabe oBDS."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ResidualstatusCS"/>
+      </reference>
+      <name value="Onkologie Residualstatus CS"/>
+      <description value="oBDS-spezifisches Codesystem für R-Klassifikation"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1321,7 +1365,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Diagnose"/>
+        <reference value="StructureDefinition/TumorDiagnose"/>
       </reference>
       <name value="Tumordiagnose"/>
       <description value="Diagnoseinformationen (Primärtumor, frühere Tumore)"/>

@@ -165,10 +165,10 @@
     }
   ],
   "profiles": {
-    "Condition": [
+    "Bundle": [
       {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/nebenwirkung",
-        "title": "Nebenwirkung"
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal",
+        "title": "AnmeldeBundleMinimal"
       }
     ],
     "Observation": [
@@ -193,6 +193,12 @@
       {
         "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation",
         "title": "Organisation"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/nebenwirkung",
+        "title": "Nebenwirkung"
       }
     ],
     "Patient": [

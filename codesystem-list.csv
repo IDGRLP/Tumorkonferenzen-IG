@@ -1,6 +1,7 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Used
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS,0.1.0,draft,,HistoGradeCS,Histopathologische Grading Codes oBDS,"oBDS Grading Codes",
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs,0.1.0,draft,,LymphgefaessinvasionCS,Lymphgefäßinvasion CodeSystem,"LymphgefäßinvasionCS",
+http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS,0.1.0,draft,,ResidualstatusCS,Onkologie Residualstatus CS,"oBDS-spezifisches Codesystem für R-Klassifikation",
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS,0.1.0,draft,,SerumTumorMarkerUICCCS,SerumTumorMarkerUICCCS,"SerumTumorMarkerUICCCS",
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs,0.1.0,draft,,KrebsstadiumCS,Krebsstadium CodeSystem,"KrebsstadiumCS",
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs,0.1.0,draft,,MultiplePrimaerTumorenCS,Multiple PrimärTumoren CodeSystem,"MultiplePrimärTumorenCS",

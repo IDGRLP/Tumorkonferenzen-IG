@@ -1,6 +1,7 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
 http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/HistoGradeVS,0.1.0,draft,,HistoGradeVS,HistoGradeVS,"HistoGradeVS",,"Internal"
 http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs,0.1.0,draft,,LymphgefaessinvasionVS,Lymphgefäßinvasion ValueSet,"LymphgefäßinvasionVS",,"Internal"
+http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS,0.1.0,draft,,ResidualstatusGesamtbeurteilungVS,Gesamtbeurteilung des Residualstatus,"Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",,"Internal"
 http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS,0.1.0,draft,,SerumTumorMarkerUICCVS,SerumTumorMarkerUICCVS,"SerumTumorMarkerUICCVS",,"Internal"
 http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs,0.1.0,draft,,CancerStageVS,Cancer Stage Group Value Set,"The result of cancer staging, i.e., the stage or category of the cancer.",,"SCT"
 http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-method-vs,0.1.0,draft,,CancerStagingMethodVS,Cancer Staging Method Value Set,"System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems.",,"SCT"

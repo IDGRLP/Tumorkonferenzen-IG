@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ResidualstatusGesamtbeurteilungVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-ResidualstatusCS.html"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R0">R0</a></td><td>Kein Residualtumor</td></tr><tr><td><a href="CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1">R1</a></td><td>Mikroskopischer Residualtumor</td></tr><tr><td><a href="CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40is.41">R1(is)</a></td><td>In-Situ-Rest</td></tr><tr><td><a href="CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40cy.43.41">R1(cy+)</a></td><td>Cytologischer Rest</td></tr><tr><td><a href="CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R2">R2</a></td><td>Makroskopischer Residualtumor</td></tr><tr><td><a href="CodeSystem-ResidualstatusCS.html#ResidualstatusCS-RX">RX</a></td><td>Vorhandensein von Residualtumor kann nicht beurteilt werden</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS"/>
+  <version value="0.1.0"/>
+  <name value="ResidualstatusGesamtbeurteilungVS"/>
+  <title value="Gesamtbeurteilung des Residualstatus"/>
+  <status value="draft"/>
+  <date value="2024-05-22T07:04:28+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus"/>
+  <compose>
+    <include>
+      <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS"/>
+      <concept>
+        <code value="R0"/>
+        <display value="Kein Residualtumor"/>
+      </concept>
+      <concept>
+        <code value="R1"/>
+        <display value="Mikroskopischer Residualtumor"/>
+      </concept>
+      <concept>
+        <code value="R1(is)"/>
+        <display value="In-Situ-Rest"/>
+      </concept>
+      <concept>
+        <code value="R1(cy+)"/>
+        <display value="Cytologischer Rest"/>
+      </concept>
+      <concept>
+        <code value="R2"/>
+        <display value="Makroskopischer Residualtumor"/>
+      </concept>
+      <concept>
+        <code value="RX"/>
+        <display value="Vorhandensein von Residualtumor kann nicht beurteilt werden"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -17,6 +17,14 @@
       "description" : "LymphgefäßinvasionCS"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResidualstatusCS",
+      "title" : "Onkologie Residualstatus CS",
+      "description" : "oBDS-spezifisches Codesystem für R-Klassifikation"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
       "version" : "0.1.0",
       "status" : "draft",

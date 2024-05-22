@@ -20,7 +20,7 @@
   <name value="ECOG"/>
   <title value="ECOG"/>
   <status value="draft"/>
-  <date value="2024-04-08T16:58:24+00:00"/>
+  <date value="2024-05-22T07:04:28+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -386,7 +386,7 @@
       <path value="Observation.extension"/>
       <sliceName value="episodeOfCare"/>
       <short value="Associated Encounter episode of care"/>
-      <definition value="The episode(s) of care that establishes the context for this {{title}}."/>
+      <definition value="Identifies the episode(s) of care that this resource is relevant to.  Establishes the EpisodeOfCare as a 'grouper' of resources that are relevant to that episode."/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -398,13 +398,11 @@
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"/>
       </type>
-      <condition value="ele-1"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
         <human value="All FHIR elements must have a @value or children"/>
         <expression value="hasValue() or (children().count() &gt; id.count())"/>
-        <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
       <constraint>
@@ -412,7 +410,6 @@
         <severity value="error"/>
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
-        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
       </constraint>
       <isModifier value="false"/>

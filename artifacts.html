@@ -157,6 +157,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-AnmeldeBundleMinimal.html"
+                  title="StructureDefinition/AnmeldeBundleMinimal">AnmeldeBundleMinimal</a>
+            </td>
+            <td>
+<p>AnmeldeBundleMinimal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-befund-dokument.html"
                   title="StructureDefinition/befund-dokument">BefundDokument</a>
             </td>
@@ -452,8 +461,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Diagnose.html"
-                  title="StructureDefinition/Diagnose">Tumordiagnose</a>
+               <a href="StructureDefinition-TumorDiagnose.html"
+                  title="StructureDefinition/TumorDiagnose">Tumordiagnose</a>
             </td>
             <td>
 <p>Diagnoseinformationen (Primärtumor, frühere Tumore)</p>
@@ -617,6 +626,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ECOG Performance Status (Level 0-5).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-ResidualstatusGesamtbeurteilungVS.html"
+                  title="ValueSet/ResidualstatusGesamtbeurteilungVS">Gesamtbeurteilung des Residualstatus</a>
+            </td>
+            <td>
+<p>Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus</p>
 </td>
          </tr>
          <tr>
@@ -877,6 +895,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-ResidualstatusCS.html"
+                  title="CodeSystem/ResidualstatusCS">Onkologie Residualstatus CS</a>
+            </td>
+            <td>
+<p>oBDS-spezifisches Codesystem für R-Klassifikation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-perineurale-invasion-cs.html"
                   title="CodeSystem/perineurale-invasion-cs">Perineurale Invasion CodeSystem</a>
             </td>
@@ -925,6 +952,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Beispielinstanz einer Observation welche einen ECOG Wert enthält.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ExampleTumorDiagnose.html"
+                  title="Condition/ExampleTumorDiagnose">Example Tumordiagnose</a>
+            </td>
+            <td>
+<p>Example instance of a Tumordiagnose resource</p>
 </td>
          </tr>
          <tr>
@@ -1046,20 +1082,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 8, 2024 16:58+0000">2024-04-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 22, 2024 07:04+0000">2024-05-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
@@ -1086,16 +1116,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-
-<!-- / feedback form  -->
-
   <!-- Analytics Below
   ================================================== -->
   </body>

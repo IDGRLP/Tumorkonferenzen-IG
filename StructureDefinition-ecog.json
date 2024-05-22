@@ -10,7 +10,7 @@
   "name" : "ECOG",
   "title" : "ECOG",
   "status" : "draft",
-  "date" : "2024-04-08T16:58:24+00:00",
+  "date" : "2024-05-22T07:04:28+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -390,7 +390,7 @@
       "path" : "Observation.extension",
       "sliceName" : "episodeOfCare",
       "short" : "Associated Encounter episode of care",
-      "definition" : "The episode(s) of care that establishes the context for this {{title}}.",
+      "definition" : "Identifies the episode(s) of care that this resource is relevant to.  Establishes the EpisodeOfCare as a 'grouper' of resources that are relevant to that episode.",
       "min" : 0,
       "max" : "1",
       "base" : {
@@ -402,13 +402,11 @@
         "code" : "Extension",
         "profile" : ["http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"]
       }],
-      "condition" : ["ele-1"],
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",
         "human" : "All FHIR elements must have a @value or children",
         "expression" : "hasValue() or (children().count() > id.count())",
-        "xpath" : "@value|f:*|h:div",
         "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       },
       {
@@ -416,7 +414,6 @@
         "severity" : "error",
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
-        "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
         "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
       }],
       "isModifier" : false,

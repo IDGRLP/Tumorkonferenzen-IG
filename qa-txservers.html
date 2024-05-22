@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for TumorkonferenzenIDG</h1>
- <p>Generated Mon Apr 08 17:00:48 UTC 2024, FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = <a href="http://idg-rlp.de/fhir/tumorkonferenzen">http://idg-rlp.de/fhir/tumorkonferenzen</a> (<a href="http://idg-rlp.de/fhir/tumorkonferenzen/history.html">history</a>))</p>
+ <p>Generated Wed May 22 07:06:56 UTC 2024, FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = <a href="http://idg-rlp.de/fhir/tumorkonferenzen">http://idg-rlp.de/fhir/tumorkonferenzen</a> (<a href="http://idg-rlp.de/fhir/tumorkonferenzen/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -23,6 +23,8 @@
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
 <ul>
   <li>Request for system [http://fhir.de/CodeSystem/bfarm/ops|2023] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>Request for system [https://fix.me/FIXME] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>Request for system [http://fhir.de/CodeSystem/bfarm/icd-10-gm|2024] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [http://fhir.de/CodeSystem/bfarm/ops|2023] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>null uses the system [http://fhir.de/CodeSystem/bfarm/icd-10-gm] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-op-komplikation-vs|0.1.0 includes multiple systems [http://fhir.de/CodeSystem/bfarm/icd-10-gm, http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs] best handled by multiple servers: [auth = , candidates=, auth = , candidates=]. Using master @ 'http://tx.fhir.org/r4'</li>
@@ -33,7 +35,7 @@
   <li>http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-max-vs|0.1.0 includes multiple systems [https://www.uicc.org/resources/tnm, http://snomed.info/sct] best handled by multiple servers: [auth = , candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
 <h2>Primary Server: http://tx.fhir.org/r4</h2>
-<p>Use Count: 173. Code Systems used: </p>
+<p>Use Count: 182. Code Systems used: </p>
 <table class="grid">
   <tr>
     <th>
@@ -58,6 +60,12 @@
     </td>
   </tr>
   <tr>
+    <td>http://fhir.de/CodeSystem/bfarm/icd-10-gm|2024</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>http://fhir.de/CodeSystem/bfarm/ops|2023</td>
     <td>0</td>
     <td>2</td>
@@ -74,9 +82,9 @@
   <tr>
     <td>http://loinc.org</td>
     <td>10</td>
-    <td>44</td>
+    <td>46</td>
     <td>
-      <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
+      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a>
     </td>
   </tr>
   <tr>
@@ -90,10 +98,16 @@
   <tr>
     <td>http://snomed.info/sct</td>
     <td>34</td>
-    <td>73</td>
+    <td>76</td>
     <td>
       <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
     </td>
+  </tr>
+  <tr>
+    <td>http://snomed.info/sct|2023</td>
+    <td>0</td>
+    <td>2</td>
+    <td></td>
   </tr>
   <tr>
     <td>http://terminology.hl7.org/CodeSystem/icd-o-3</td>
@@ -102,6 +116,12 @@
     <td>
       <a href="http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html">International Classification of Diseases for Oncology, version 3.</a>
     </td>
+  </tr>
+  <tr>
+    <td>https://fix.me/FIXME</td>
+    <td>0</td>
+    <td>1</td>
+    <td></td>
   </tr>
   <tr>
     <td>https://www.uicc.org/resources/tnm</td>

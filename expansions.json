@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "59342037-3fdd-4e0d-985a-a4467570ad11",
+  "id" : "570aa76d-16a7-4466-a352-045fd8967580",
   "meta" : {
-    "lastUpdated" : "2024-04-08T16:58:24.869+00:00"
+    "lastUpdated" : "2024-05-22T07:04:28.216+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,10 +18,10 @@
       "name" : "HistoGradeVS",
       "title" : "HistoGradeVS",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:1b006be7-285c-4ac3-840d-2d30c1a2bf79",
-        "timestamp" : "2024-04-08T16:59:46+00:00",
+        "identifier" : "urn:uuid:d737eed6-262b-48de-a37d-d5a1b3af41f4",
+        "timestamp" : "2024-05-22T07:05:50+00:00",
         "total" : 13,
         "offset" : 0,
         "parameter" : [{
@@ -121,10 +121,10 @@
       "name" : "LymphgefaessinvasionVS",
       "title" : "Lymphgefäßinvasion ValueSet",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:ec2e01ac-5c49-4ab1-8210-1894d2352da9",
-        "timestamp" : "2024-04-08T16:59:46+00:00",
+        "identifier" : "urn:uuid:09eed0b3-669e-4f10-ab56-0b275a8de2f0",
+        "timestamp" : "2024-05-22T07:05:50+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -162,6 +162,74 @@
     }
   },
   {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ResidualstatusCS.html\">codesystem Onkologie Residualstatus CS v0.1.0 (CodeSystem)</a></p><p>This value set contains 6 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-ResidualstatusCS-R0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R0\">R0</a></td><td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</td><td>Kein Residualtumor</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-ResidualstatusCS-R1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1\">R1</a></td><td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</td><td>Mikroskopischer Residualtumor</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-ResidualstatusCS-R1-is-\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40is.41\">R1(is)</a></td><td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</td><td>In-Situ-Rest</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-ResidualstatusCS-R1-cy--\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40cy.43.41\">R1(cy+)</a></td><td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</td><td>Cytologischer Rest</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-ResidualstatusCS-R2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R2\">R2</a></td><td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</td><td>Makroskopischer Residualtumor</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---idg-rlp.de-fhir-tumorkonferenzen-CodeSystem-ResidualstatusCS-RX\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-RX\">RX</a></td><td>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</td><td>Vorhandensein von Residualtumor kann nicht beurteilt werden</td></tr></table></div>"
+      },
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS",
+      "version" : "0.1.0",
+      "name" : "ResidualstatusGesamtbeurteilungVS",
+      "title" : "Gesamtbeurteilung des Residualstatus",
+      "status" : "draft",
+      "date" : "2024-05-22T07:04:28+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:a4116fa2-1f5b-4562-af84-0e9a7e96c83c",
+        "timestamp" : "2024-05-22T07:05:50+00:00",
+        "total" : 6,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+          "code" : "R0",
+          "display" : "Kein Residualtumor"
+        },
+        {
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+          "code" : "R1",
+          "display" : "Mikroskopischer Residualtumor"
+        },
+        {
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+          "code" : "R1(is)",
+          "display" : "In-Situ-Rest"
+        },
+        {
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+          "code" : "R1(cy+)",
+          "display" : "Cytologischer Rest"
+        },
+        {
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+          "code" : "R2",
+          "display" : "Makroskopischer Residualtumor"
+        },
+        {
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS",
+          "code" : "RX",
+          "display" : "Vorhandensein von Residualtumor kann nicht beurteilt werden"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -174,10 +242,10 @@
       "name" : "SerumTumorMarkerUICCVS",
       "title" : "SerumTumorMarkerUICCVS",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2efbe46f-ee1e-4d78-a293-02a6598b2663",
-        "timestamp" : "2024-04-08T16:59:46+00:00",
+        "identifier" : "urn:uuid:687183dd-9615-41ea-8c8b-5c50cf8bae4e",
+        "timestamp" : "2024-05-22T07:05:50+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -233,14 +301,14 @@
       "title" : "Cancer Stage Group Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:90c14860-8463-4f99-b03a-f07111186b07",
-        "timestamp" : "2024-04-08T16:59:46+00:00",
+        "identifier" : "urn:uuid:ae0fa2ee-aba8-4598-ace7-86999a04cee9",
+        "timestamp" : "2024-05-22T07:05:50+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -2562,14 +2630,14 @@
       "title" : "Cancer Staging Method Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:cf2b7232-ecdc-4f85-a5bb-7e024ffd592b",
-        "timestamp" : "2024-04-08T16:59:49+00:00",
+        "identifier" : "urn:uuid:395e080a-b27a-479b-861a-1204ccdddfe5",
+        "timestamp" : "2024-05-22T07:05:53+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -2911,14 +2979,14 @@
       "title" : "Cancer Staging Type Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:be2268c0-db85-4090-81f0-7552448aec64",
-        "timestamp" : "2024-04-08T16:59:49+00:00",
+        "identifier" : "urn:uuid:80cdb880-9878-48c2-b775-c02350645818",
+        "timestamp" : "2024-05-22T07:05:53+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -2970,10 +3038,10 @@
       "name" : "ECOGPerformanceStatusVS",
       "title" : "ECOG",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:797f23f9-9adb-47f6-b946-e8d57a746be4",
-        "timestamp" : "2024-04-08T16:59:49+00:00",
+        "identifier" : "urn:uuid:e82197ee-5071-4bae-bef2-50df27980927",
+        "timestamp" : "2024-05-22T07:05:53+00:00",
         "total" : 6,
         "offset" : 0,
         "parameter" : [{
@@ -3046,10 +3114,10 @@
       "name" : "KrebsstadiumVS",
       "title" : "Krebsstadium ValueSet",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:bca925d3-074a-4fd2-b5e4-21ab7d95bdcc",
-        "timestamp" : "2024-04-08T16:59:50+00:00",
+        "identifier" : "urn:uuid:a9e24eed-ff0c-4ee2-8e3c-f9fc6a57c91f",
+        "timestamp" : "2024-05-22T07:05:54+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -3109,10 +3177,10 @@
       "name" : "MultiplePrimaerTumorenVS",
       "title" : "Multiple PrimärTumoren ValueSet",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e93f08b6-39b1-49e6-bac9-4449d0aede4a",
-        "timestamp" : "2024-04-08T16:59:50+00:00",
+        "identifier" : "urn:uuid:5ecbcb45-9b23-4831-91e9-dfd5b19b201e",
+        "timestamp" : "2024-05-22T07:05:54+00:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -3192,10 +3260,10 @@
       "name" : "ObdsStrahlentherapieIntentionVS",
       "title" : "Intention der Strahlentherapie",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2bd54a8e-1a4c-437f-9485-a119d27eb079",
-        "timestamp" : "2024-04-08T16:59:51+00:00",
+        "identifier" : "urn:uuid:328e2ae9-d7c3-4bb0-8882-5bbd0413ab72",
+        "timestamp" : "2024-05-22T07:05:55+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -3255,10 +3323,10 @@
       "name" : "PerineuraleInvasionVS",
       "title" : "Perineurale Invasion ValueSet",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fc613a29-f251-4cd0-a196-cafff3c588e9",
-        "timestamp" : "2024-04-08T16:59:51+00:00",
+        "identifier" : "urn:uuid:37634175-ce0e-4adc-975c-0e938bd34801",
+        "timestamp" : "2024-05-22T07:05:55+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -3309,14 +3377,14 @@
       "title" : "TNM Distant Metastases Category Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:58d82543-259f-43b2-9144-e0cd65171802",
-        "timestamp" : "2024-04-08T16:59:52+00:00",
+        "identifier" : "urn:uuid:f5ada954-540a-4bfe-b657-dccb4375fa6c",
+        "timestamp" : "2024-05-22T07:05:56+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -3503,10 +3571,10 @@
       "title" : "TNM Distant Metastases Staging Type Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:d2a0f460-47fe-4cd9-85df-2653552dc77a",
-        "timestamp" : "2024-04-08T16:59:52+00:00",
+        "identifier" : "urn:uuid:603509d0-7d9f-4ff5-865a-e15cea1adcc8",
+        "timestamp" : "2024-05-22T07:05:56+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -3565,14 +3633,14 @@
       "title" : "TNM Primary Tumor Category Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:22e6d036-ceff-4644-8cf4-6d3bd30f8ded",
-        "timestamp" : "2024-04-08T16:59:53+00:00",
+        "identifier" : "urn:uuid:95d166fe-9af9-444e-b0e1-62807a6ca4be",
+        "timestamp" : "2024-05-22T07:05:56+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -4209,10 +4277,10 @@
       "title" : "TNM Primary Tumor Staging Type Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:5f8e8a17-a28a-40c1-bfb3-b6929b2dffd8",
-        "timestamp" : "2024-04-08T16:59:53+00:00",
+        "identifier" : "urn:uuid:71905999-0321-4b61-9b16-9a1bfe1b9eca",
+        "timestamp" : "2024-05-22T07:05:57+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4271,14 +4339,14 @@
       "title" : "TNM Regional Nodes Category Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:4b9bd5b6-2a4d-4e20-9f14-40d3d036b8ce",
-        "timestamp" : "2024-04-08T16:59:54+00:00",
+        "identifier" : "urn:uuid:6325d96b-4be0-4ff2-a21c-f0bd7d405b42",
+        "timestamp" : "2024-05-22T07:05:57+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -4620,10 +4688,10 @@
       "title" : "TNM Regional Nodes Staging Type Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:43287efb-034a-406c-b94f-146d7dbb5555",
-        "timestamp" : "2024-04-08T16:59:54+00:00",
+        "identifier" : "urn:uuid:5d581f61-bc6f-4bf7-b3de-cae72c3f8440",
+        "timestamp" : "2024-05-22T07:05:57+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4682,10 +4750,10 @@
       "title" : "TNM Stage Group Staging Type Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b6636229-3ab5-4848-82ac-d80d32c4bbc2",
-        "timestamp" : "2024-04-08T16:59:55+00:00",
+        "identifier" : "urn:uuid:2fb4c400-ffe3-4079-9478-ef1ae16fb856",
+        "timestamp" : "2024-05-22T07:05:58+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -4744,14 +4812,14 @@
       "title" : "TNM Stage Group Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:8e1f1a81-5b11-46b5-b618-466feeaae46c",
-        "timestamp" : "2024-04-08T16:59:55+00:00",
+        "identifier" : "urn:uuid:403d8534-27bc-4ade-afd6-6064fc40728a",
+        "timestamp" : "2024-05-22T07:05:58+00:00",
         "offset" : 0,
         "parameter" : [{
           "name" : "count",
@@ -5503,10 +5571,10 @@
       "title" : "TNM Staging Method Value Set",
       "status" : "draft",
       "experimental" : false,
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:a76400ed-7e87-4dcc-9af8-3537b3166795",
-        "timestamp" : "2024-04-08T16:59:55+00:00",
+        "identifier" : "urn:uuid:e176698e-87ae-488d-9b13-27127c6f68e2",
+        "timestamp" : "2024-05-22T07:05:58+00:00",
         "total" : 3,
         "offset" : 0,
         "parameter" : [{
@@ -5564,10 +5632,10 @@
       "name" : "VeneninvasionVS",
       "title" : "Veneninvasion ValueSet",
       "status" : "draft",
-      "date" : "2024-04-08T16:58:24+00:00",
+      "date" : "2024-05-22T07:04:28+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:86c39c17-f9a3-4358-bce0-f1c57e06333e",
-        "timestamp" : "2024-04-08T16:59:55+00:00",
+        "identifier" : "urn:uuid:c43252e4-5e5d-4c6f-80c3-53f5d1c93751",
+        "timestamp" : "2024-05-22T07:05:59+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{

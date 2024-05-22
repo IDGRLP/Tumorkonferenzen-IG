@@ -56,6 +56,17 @@
       "StructureDefinition-TNMLKategorie.html" : "TNMLKategorie"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResidualstatusGesamtbeurteilungVS",
+      "title" : "Gesamtbeurteilung des Residualstatus",
+      "description" : "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS"
+      ]
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS",
       "version" : "0.1.0",
       "status" : "draft",
@@ -234,8 +245,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
+      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs",
@@ -326,10 +337,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
       "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
       "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",

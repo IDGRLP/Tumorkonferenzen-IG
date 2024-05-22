@@ -23,6 +23,17 @@
       ]
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResidualstatusGesamtbeurteilungVS",
+      "title" : "Gesamtbeurteilung des Residualstatus",
+      "description" : "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS"
+      ]
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS",
       "version" : "0.1.0",
       "status" : "draft",

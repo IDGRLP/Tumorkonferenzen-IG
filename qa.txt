@@ -1,12 +1,13 @@
 TumorkonferenzenIDG : Validation Results
 =========================================
 
-err = 17, warn = 92, info = 17
-IG Publisher Version: 1.6.3 Out of date - current version is 1.6.4
-Generated Mon Apr 08 17:00:48 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
+err = 17, warn = 97, info = 21
+IG Publisher Version: 1.6.6 Out of date - current version is 1.6.8
+Generated Wed May 22 07:06:56 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
  Build Errors : 1 / 14 / 0
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-HistoGradeCS : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-Lymphgefaessinvasion-cs : 0 / 2 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-ResidualstatusCS : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-SerumTumorMarkerUICCCS : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-krebsstadium-cs : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-multiple-primaer-tumoren-cs : 0 / 2 / 2
@@ -14,6 +15,7 @@ Generated Mon Apr 08 17:00:48 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-obds-strahlentherapie-intention-cs : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-perineurale-invasion-cs : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-veneninvasion-cs : 0 / 2 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Condition-ExampleTumorDiagnose : 0 / 2 / 4
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Encounter-VerlaufExample : 2 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/EpisodeOfCare-TumorErkrankungExample : 2 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ImplementationGuide-de.idg-rlp.tumorkonferenzen : 0 / 0 / 1
@@ -28,7 +30,7 @@ Generated Mon Apr 08 17:00:48 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Procedure-OperationEinzelprozedurExample : 0 / 0 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Procedure-OperationExample : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Specimen-Tumor-Example : 0 / 0 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-Diagnose : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-AnmeldeBundleMinimal : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-HistologieLymphknoten : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-Melder : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-MelderInOrganisation : 0 / 0 / 1
@@ -41,6 +43,7 @@ Generated Mon Apr 08 17:00:48 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMVKategorie : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMYSymbol : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMmSymbol : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TumorDiagnose : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TumorPatient : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-befund-dokument : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-cancer-stage-group : 0 / 1 / 1
@@ -76,6 +79,7 @@ Generated Mon Apr 08 17:00:48 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-watchful-waiting : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-HistoGradeVS : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-Lymphgefaessinvasion-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-ResidualstatusGesamtbeurteilungVS : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-SerumTumorMarkerUICCVS : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-cancer-stage-group-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-cancer-staging-method-vs : 0 / 0 / 1
@@ -126,6 +130,10 @@ WARNING: CodeSystem/HistoGradeCS: CodeSystem: Published code systems SHOULD conf
 INFORMATION: CodeSystem/Lymphgefaessinvasion-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/Lymphgefaessinvasion-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/Lymphgefaessinvasion-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-ResidualstatusCS.json ==
+INFORMATION: CodeSystem/ResidualstatusCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ResidualstatusCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/ResidualstatusCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-SerumTumorMarkerUICCCS.json ==
 INFORMATION: CodeSystem/SerumTumorMarkerUICCCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/SerumTumorMarkerUICCCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -154,6 +162,12 @@ WARNING: CodeSystem/perineurale-invasion-cs: CodeSystem: Published code systems 
 INFORMATION: CodeSystem/veneninvasion-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/veneninvasion-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/veneninvasion-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/Condition-ExampleTumorDiagnose.json ==
+WARNING: Condition/ExampleTumorDiagnose: Condition.verificationStatus.coding[1].system: A definition for CodeSystem 'https://fix.me/FIXME' could not be found, so the code cannot be validated
+INFORMATION: Condition/ExampleTumorDiagnose: Condition.code.coding[0].system: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' version '2024' could not be found, so the code cannot be validated. Valid versions: []
+WARNING: Condition/ExampleTumorDiagnose: Condition.code.coding[0].extension[0].value.ofType(Coding): ValueSet 'https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION' not found
+INFORMATION: Condition/ExampleTumorDiagnose: Condition.code.coding[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION' could not be found, so the code cannot be validated
+INFORMATION: Condition/ExampleTumorDiagnose: Condition.bodySite[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct' version '2023' could not be found, so the code cannot be validated. Valid versions: [http://snomed.info/sct/11000146104/version/20230331,http://snomed.info/sct/11000172109/version/20231115,http://snomed.info/sct/2011000195101/version/20230607,http://snomed.info/sct/20611000087101/version/20220930,http://snomed.info/sct/32506021000036107/version/20230731,http://snomed.info/sct/45991000052106/version/20220531,http://snomed.info/sct/45991000052106/version/20231130,http://snomed.info/sct/554471000005108/version/20210930,http://snomed.info/sct/731000124108/version/20230901,http://snomed.info/sct/827022005/version/20221130,http://snomed.info/sct/83821000000107/version/20230412,http://snomed.info/sct/900000000000207008/version/20230131,http://snomed.info/sct/900000000000207008/version/20230731,http://snomed.info/sct/900000000000207008/version/20240201]
 == fsh-generated/resources/Encounter-VerlaufExample.json ==
 ERROR: Encounter/VerlaufExample: Encounter.status: The value provided ('final') was not found in the value set 'EncounterStatus' (http://hl7.org/fhir/ValueSet/encounter-status|4.0.1), and a code is required from this value set  (error message = The System URI could not be determined for the code 'final' in the ValueSet 'http://hl7.org/fhir/ValueSet/encounter-status|4.0.1'; The provided code '#final' was not found in the value set 'http://hl7.org/fhir/ValueSet/encounter-status|4.0.1')
 ERROR: Encounter/VerlaufExample: Encounter.type[0].coding[0].display: Wrong Display Name 'Cancer follow-up visit' for http://snomed.info/sct#185389009. Valid display is one of 2 choices: 'Follow-up visit' or 'Follow-up visit (procedure)' (for the language(s) '--')
@@ -190,8 +204,8 @@ ERROR: Patient/TumorPatient-example-1: Patient.identifier[0].type: The pattern [
 INFORMATION: Procedure/OperationEinzelprozedurExample: Procedure.code.coding[0].system: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/ops' version '2023' could not be found, so the code cannot be validated. Valid versions: []
 == fsh-generated/resources/Procedure-OperationExample.json ==
 == fsh-generated/resources/Specimen-Tumor-Example.json ==
-== fsh-generated/resources/StructureDefinition-Diagnose.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-AnmeldeBundleMinimal.json ==
+WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-HistologieLymphknoten.json ==
 == fsh-generated/resources/StructureDefinition-Melder.json ==
 == fsh-generated/resources/StructureDefinition-MelderInOrganisation.json ==
@@ -212,6 +226,7 @@ WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenze
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMmSymbol.json ==
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-TumorDiagnose.json ==
 == fsh-generated/resources/StructureDefinition-TumorPatient.json ==
 == fsh-generated/resources/StructureDefinition-befund-dokument.json ==
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/befund-dokument'): The Implementation Guide contains no examples for this profile
@@ -280,6 +295,8 @@ WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenze
 WARNING: ValueSet/HistoGradeVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-Lymphgefaessinvasion-vs.json ==
 WARNING: ValueSet/Lymphgefaessinvasion-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+== fsh-generated/resources/ValueSet-ResidualstatusGesamtbeurteilungVS.json ==
+WARNING: ValueSet/ResidualstatusGesamtbeurteilungVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-SerumTumorMarkerUICCVS.json ==
 WARNING: ValueSet/SerumTumorMarkerUICCVS: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-cancer-stage-group-vs.json ==
