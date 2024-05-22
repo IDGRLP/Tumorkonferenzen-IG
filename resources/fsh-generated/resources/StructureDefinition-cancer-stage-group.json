@@ -53,7 +53,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose"
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"
             ]
           }
         ],

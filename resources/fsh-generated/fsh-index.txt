@@ -1,6 +1,7 @@
 Output File                                                       Name                                   Type        FSH File                                           Lines
 CodeSystem-HistoGradeCS.json                                      HistoGradeCS                           CodeSystem  codesystems.fsh                                    86 - 102
 CodeSystem-Lymphgefaessinvasion-cs.json                           LymphgefaessinvasionCS                 CodeSystem  codesystems.fsh                                    129 - 135
+CodeSystem-ResidualstatusCS.json                                  ResidualstatusCS                       CodeSystem  codesystems.fsh                                    173 - 183
 CodeSystem-SerumTumorMarkerUICCCS.json                            SerumTumorMarkerUICCCS                 CodeSystem  codesystems.fsh                                    154 - 161
 CodeSystem-krebsstadium-cs.json                                   KrebsstadiumCS                         CodeSystem  codesystems.fsh                                    163 - 171
 CodeSystem-multiple-primaer-tumoren-cs.json                       MultiplePrimaerTumorenCS               CodeSystem  codesystems.fsh                                    115 - 127
@@ -8,6 +9,7 @@ CodeSystem-obds-op-komplikation-cs.json                           ObdsOpKomplika
 CodeSystem-obds-strahlentherapie-intention-cs.json                ObdsStrahlentherapieIntentionCS        CodeSystem  codesystems.fsh                                    104 - 113
 CodeSystem-perineurale-invasion-cs.json                           PerineuraleInvasionCS                  CodeSystem  codesystems.fsh                                    146 - 152
 CodeSystem-veneninvasion-cs.json                                  VeneninvasionCS                        CodeSystem  codesystems.fsh                                    137 - 144
+Condition-ExampleTumorDiagnose.json                               ExampleTumorDiagnose                   Instance    profile-TumorDiagnose.fsh                          50 - 72
 Encounter-VerlaufExample.json                                     VerlaufExample                         Instance    profile-Verlauf.fsh                                16 - 24
 EpisodeOfCare-TumorErkrankungExample.json                         TumorErkrankungExample                 Instance    profile-TumorErkrankung.fsh                        19 - 25
 Observation-ECOGExample.json                                      ECOGExample                            Instance    profile-Allgemeiner_Leistungszustand.fsh           14 - 20
@@ -21,7 +23,7 @@ PractitionerRole-MelderInOrganisation-example-1.json              MelderInOrgani
 Procedure-OperationEinzelprozedurExample.json                     OperationEinzelprozedurExample         Instance    profile-Operation.fsh                              58 - 67
 Procedure-OperationExample.json                                   OperationExample                       Instance    profile-Operation.fsh                              50 - 55
 Specimen-Tumor-Example.json                                       Tumor-Example                          Instance    profile-Histologie.fsh                             43 - 51
-StructureDefinition-Diagnose.json                                 TumorDiagnose                          Profile     profile-TumorDiagnose.fsh                          1 - 48
+StructureDefinition-AnmeldeBundleMinimal.json                     AnmeldeBundleMinimal                   Profile     profile-MinimalesAnmeldeBundle.fsh                 1 - 22
 StructureDefinition-HistologieLymphknoten.json                    HistologieLymphknoten                  Profile     profile-HistologieLymphknoten.fsh                  1 - 46
 StructureDefinition-Melder.json                                   Melder                                 Profile     profile-Melder.fsh                                 1 - 15
 StructureDefinition-MelderInOrganisation.json                     MelderInOrganisation                   Profile     profile-MelderInOrganisation.fsh                   1 - 13
@@ -34,6 +36,7 @@ StructureDefinition-TNMSKategorie.json                            TNMSKategorie 
 StructureDefinition-TNMVKategorie.json                            TNMVKategorie                          Profile     profile-Staging.fsh                                220 - 237
 StructureDefinition-TNMYSymbol.json                               TNMYSymbol                             Profile     profile-Staging.fsh                                126 - 142
 StructureDefinition-TNMmSymbol.json                               TNMmSymbol                             Profile     profile-Staging.fsh                                182 - 199
+StructureDefinition-TumorDiagnose.json                            TumorDiagnose                          Profile     profile-TumorDiagnose.fsh                          1 - 48
 StructureDefinition-TumorPatient.json                             TumorPatient                           Profile     profile-TumorPatient.fsh                           1 - 57
 StructureDefinition-befund-dokument.json                          BefundDokument                         Profile     profile-BefundDokument.fsh                         1 - 14
 StructureDefinition-cancer-stage-group.json                       CancerStageGroup                       Profile     profile-Staging.fsh                                1 - 21
@@ -69,6 +72,7 @@ StructureDefinition-verlauf.json                                  Verlauf       
 StructureDefinition-watchful-waiting.json                         WatchfulWaiting                        Profile     profile-WatchfulWaiting.fsh                        1 - 31
 ValueSet-HistoGradeVS.json                                        HistoGradeVS                           ValueSet    valuesets.fsh                                      24 - 28
 ValueSet-Lymphgefaessinvasion-vs.json                             LymphgefaessinvasionVS                 ValueSet    valuesets.fsh                                      36 - 40
+ValueSet-ResidualstatusGesamtbeurteilungVS.json                   ResidualstatusGesamtbeurteilungVS      ValueSet    valuesets.fsh                                      66 - 75
 ValueSet-SerumTumorMarkerUICCVS.json                              SerumTumorMarkerUICCVS                 ValueSet    valuesets.fsh                                      54 - 58
 ValueSet-cancer-stage-group-vs.json                               CancerStageVS                          ValueSet    valueSet-Staging.fsh                               38 - 67
 ValueSet-cancer-staging-method-vs.json                            CancerStagingMethodVS                  ValueSet    valueSet-Staging.fsh                               3 - 23

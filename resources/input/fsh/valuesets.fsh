@@ -62,3 +62,14 @@ Id: krebsstadium-vs
 Title: "Krebsstadium ValueSet"
 Description: "KrebsstadiumVS"
 * include codes from system KrebsstadiumCS
+
+ValueSet: ResidualstatusGesamtbeurteilungVS
+Id: ResidualstatusGesamtbeurteilungVS
+Title: "Gesamtbeurteilung des Residualstatus"
+Description: "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus"
+* ResidualstatusCS#R0 "Kein Residualtumor"
+* ResidualstatusCS#R1 "Mikroskopischer Residualtumor"
+* ResidualstatusCS#R1(is) "In-Situ-Rest"
+* ResidualstatusCS#R1(cy+) "Cytologischer Rest"
+* ResidualstatusCS#R2 "Makroskopischer Residualtumor"
+* ResidualstatusCS#RX "Vorhandensein von Residualtumor kann nicht beurteilt werden"

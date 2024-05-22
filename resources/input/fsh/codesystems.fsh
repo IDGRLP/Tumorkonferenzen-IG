@@ -169,3 +169,15 @@ Description: "KrebsstadiumCS"
 * #stadiumII "Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen"
 * #stadiumIII "Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen"
 * #stadiumIV "Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen"
+
+CodeSystem: ResidualstatusCS
+Id: ResidualstatusCS
+Title: "Onkologie Residualstatus CS"
+Description: "oBDS-spezifisches Codesystem für R-Klassifikation"
+* #R0 "Kein Residualtumor"
+* #R1 "Mikroskopischer Residualtumor"
+* #R1(is) "In-Situ-Rest"
+* #R1(cy+) "Cytologischer Rest"
+* #R2 "Makroskopischer Residualtumor"
+* #RX "Vorhandensein von Residualtumor kann nicht beurteilt werden"
+* #U "Residualtumorstatus ist nicht bekannt"

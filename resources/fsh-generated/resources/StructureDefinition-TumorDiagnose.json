@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "Diagnose",
-  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Diagnose",
+  "id": "TumorDiagnose",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose",
   "name": "TumorDiagnose",
   "title": "Tumordiagnose",
   "status": "draft",

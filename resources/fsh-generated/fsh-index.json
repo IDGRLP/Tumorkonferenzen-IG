@@ -16,6 +16,14 @@
     "endLine": 135
   },
   {
+    "outputFile": "CodeSystem-ResidualstatusCS.json",
+    "fshName": "ResidualstatusCS",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems.fsh",
+    "startLine": 173,
+    "endLine": 183
+  },
+  {
     "outputFile": "CodeSystem-SerumTumorMarkerUICCCS.json",
     "fshName": "SerumTumorMarkerUICCCS",
     "fshType": "CodeSystem",
@@ -70,6 +78,14 @@
     "fshFile": "codesystems.fsh",
     "startLine": 137,
     "endLine": 144
+  },
+  {
+    "outputFile": "Condition-ExampleTumorDiagnose.json",
+    "fshName": "ExampleTumorDiagnose",
+    "fshType": "Instance",
+    "fshFile": "profile-TumorDiagnose.fsh",
+    "startLine": 50,
+    "endLine": 72
   },
   {
     "outputFile": "Encounter-VerlaufExample.json",
@@ -176,12 +192,12 @@
     "endLine": 51
   },
   {
-    "outputFile": "StructureDefinition-Diagnose.json",
-    "fshName": "TumorDiagnose",
+    "outputFile": "StructureDefinition-AnmeldeBundleMinimal.json",
+    "fshName": "AnmeldeBundleMinimal",
     "fshType": "Profile",
-    "fshFile": "profile-TumorDiagnose.fsh",
+    "fshFile": "profile-MinimalesAnmeldeBundle.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-HistologieLymphknoten.json",
@@ -278,6 +294,14 @@
     "fshFile": "profile-Staging.fsh",
     "startLine": 182,
     "endLine": 199
+  },
+  {
+    "outputFile": "StructureDefinition-TumorDiagnose.json",
+    "fshName": "TumorDiagnose",
+    "fshType": "Profile",
+    "fshFile": "profile-TumorDiagnose.fsh",
+    "startLine": 1,
+    "endLine": 48
   },
   {
     "outputFile": "StructureDefinition-TumorPatient.json",
@@ -558,6 +582,14 @@
     "fshFile": "valuesets.fsh",
     "startLine": 36,
     "endLine": 40
+  },
+  {
+    "outputFile": "ValueSet-ResidualstatusGesamtbeurteilungVS.json",
+    "fshName": "ResidualstatusGesamtbeurteilungVS",
+    "fshType": "ValueSet",
+    "fshFile": "valuesets.fsh",
+    "startLine": 66,
+    "endLine": 75
   },
   {
     "outputFile": "ValueSet-SerumTumorMarkerUICCVS.json",

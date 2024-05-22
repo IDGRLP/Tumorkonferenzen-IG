@@ -43,6 +43,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/AnmeldeBundleMinimal"
+        },
+        "name": "AnmeldeBundleMinimal",
+        "description": "AnmeldeBundleMinimal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/befund-dokument"
         },
         "name": "BefundDokument",
@@ -115,6 +123,14 @@
       },
       {
         "reference": {
+          "reference": "Condition/ExampleTumorDiagnose"
+        },
+        "name": "Example Tumordiagnose",
+        "description": "Example instance of a Tumordiagnose resource",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/familienanamnese"
         },
         "name": "Familienanamnese",
@@ -127,6 +143,14 @@
         },
         "name": "Gesamtbeurteilung",
         "description": "Gesamtbeurteilung des Tumorgeschehens",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ResidualstatusGesamtbeurteilungVS"
+        },
+        "name": "Gesamtbeurteilung des Residualstatus",
+        "description": "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
         "exampleBoolean": false
       },
       {
@@ -314,6 +338,14 @@
         },
         "name": "oBDS Operation Komplikation Value Set",
         "description": "Komplikation gemäß Vorgabe oBDS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ResidualstatusCS"
+        },
+        "name": "Onkologie Residualstatus CS",
+        "description": "oBDS-spezifisches Codesystem für R-Klassifikation",
         "exampleBoolean": false
       },
       {
@@ -667,7 +699,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/Diagnose"
+          "reference": "StructureDefinition/TumorDiagnose"
         },
         "name": "Tumordiagnose",
         "description": "Diagnoseinformationen (Primärtumor, frühere Tumore)",

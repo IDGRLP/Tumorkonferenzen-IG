@@ -1,3 +1,4 @@
+[AnmeldeBundleMinimal]: StructureDefinition-AnmeldeBundleMinimal.html
 [BefundDokument]: StructureDefinition-befund-dokument.html
 [StatusLymphknoten]: StructureDefinition-status-lymphknoten.html
 [CancerStageGroup]: StructureDefinition-cancer-stage-group.html
@@ -7,8 +8,10 @@
 [ECOG]: StructureDefinition-ecog.html
 [ECOGPerformanceStatusVS]: ValueSet-ecog-performance-status.html
 [ECOGExample]: Observation-ECOGExample.html
+[ExampleTumorDiagnose]: Condition-ExampleTumorDiagnose.html
 [Familienanamnese]: StructureDefinition-familienanamnese.html
 [Gesamtbeurteilung]: StructureDefinition-gesamtbeurteilung.html
+[ResidualstatusGesamtbeurteilungVS]: ValueSet-ResidualstatusGesamtbeurteilungVS.html
 [Grading]: StructureDefinition-grading.html
 [GradingExample]: Observation-GradingExample.html
 [HistoGradeVS]: ValueSet-HistoGradeVS.html
@@ -33,6 +36,7 @@
 [Nebenwirkung]: StructureDefinition-nebenwirkung.html
 [ObdsOpKomplikationCS]: CodeSystem-obds-op-komplikation-cs.html
 [ObdsOpKomplikationVS]: ValueSet-obds-op-komplikation-vs.html
+[ResidualstatusCS]: CodeSystem-ResidualstatusCS.html
 [Operation]: StructureDefinition-operation.html
 [OperationEinzelprozedur]: StructureDefinition-operation-einzelprozedur.html
 [OperationEinzelprozedurExample]: Procedure-OperationEinzelprozedurExample.html
@@ -77,7 +81,7 @@
 [Tumor]: StructureDefinition-tumor.html
 [Tumor-Example]: Specimen-Tumor-Example.html
 [TumorPatient]: StructureDefinition-TumorPatient.html
-[TumorDiagnose]: StructureDefinition-Diagnose.html
+[TumorDiagnose]: StructureDefinition-TumorDiagnose.html
 [TumorErkrankung]: StructureDefinition-tumorErkrankung.html
 [TumorErkrankungExample]: EpisodeOfCare-TumorErkrankungExample.html
 [Tumorkonferenz]: StructureDefinition-tumorkonferenz.html
