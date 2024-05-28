@@ -4,8 +4,8 @@
     "fshName": "AnmeldeBundleMinimal",
     "fshType": "Instance",
     "fshFile": "profile-MinimalesAnmeldeBundle.fsh",
-    "startLine": 58,
-    "endLine": 77
+    "startLine": 57,
+    "endLine": 76
   },
   {
     "outputFile": "CodeSystem-HistoGradeCS.json",

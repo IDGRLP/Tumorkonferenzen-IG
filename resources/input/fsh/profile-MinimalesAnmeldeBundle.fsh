@@ -54,7 +54,6 @@ Description: "AnmeldeBundleMinimal"
 * entry[fragestellung]
   * resource only TumorkonferenzFragestellung
 
-
 Instance: AnmeldeBundleMinimal
 InstanceOf: AnmeldeBundleMinimal
 Usage: #example

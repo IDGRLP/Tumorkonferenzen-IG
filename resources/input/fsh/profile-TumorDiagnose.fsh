@@ -52,10 +52,10 @@ InstanceOf: TumorDiagnose
 Title: "Example Tumordiagnose"
 Description: "Example instance of a Tumordiagnose resource"
 * clinicalStatus = ConditionClinicalStatusCodes#active
-* verificationStatus.coding[0].system = $csConditionVerificationStatus
-* verificationStatus.coding[0].code = #confirmed
-* verificationStatus.coding[1].system = "https://fix.me/FIXME"
-* verificationStatus.coding[1].code = #provisional
+* verificationStatus.coding[conditionVerificationStatus].system = $csConditionVerificationStatus
+* verificationStatus.coding[conditionVerificationStatus].code = #confirmed
+* verificationStatus.coding[diagnosesicherung].system = "https://fix.me/FIXME"
+* verificationStatus.coding[diagnosesicherung].code = #provisional
 * code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[0].version = "2024"
 * code.coding[0].code = #C34.1

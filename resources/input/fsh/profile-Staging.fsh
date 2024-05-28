@@ -218,8 +218,8 @@ Title: "Example TNMYSymbol Observation"
 Description: "An example of an Observation conforming to the TNMYSymbol profile."
 * status = #final
 * code = $lnc#59479-6 "Collaborative staging post treatment extension Cancer"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueBoolean = true
 
@@ -248,8 +248,8 @@ Title: "Example TNMRSymbol Observation"
 Description: "An example of an Observation conforming to the TNMRSymbol profile."
 * status = #final
 * code = $lnc#21983-2 "Recurrence type first episode Cancer"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueBoolean = true
 
@@ -278,8 +278,8 @@ Title: "Example TNMASymbol Observation"
 Description: "An example of an Observation conforming to the TNMASymbol profile."
 * status = #final
 * code = $lnc#101660-9 "Cancer staging during autopsy"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueBoolean = true
 
@@ -309,8 +309,8 @@ Title: "Example TNMmSymbol Observation"
 Description: "An example of an Observation conforming to the TNMmSymbol profile."
 * status = #final
 * code = $sct#277650004 "m - Multiple tumors (tumor staging)"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueCodeableConcept = MultiplePrimaerTumorenCS#2 "(2) simultane Tumoren"
 
@@ -339,8 +339,8 @@ Title: "Example TNMLKategorie Observation"
 Description: "An example of an Observation conforming to the TNMLKategorie profile."
 * status = #final
 * code = $lnc#33739-4 "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueCodeableConcept = LymphgefaessinvasionCS#L0 "Keine Lymphgefäßinvasion"
 
@@ -369,8 +369,8 @@ Title: "Example TNMVKategorie Observation"
 Description: "An example of an Observation conforming to the TNMVKategorie profile."
 * status = #final
 * code = $lnc#33740-2 "Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueCodeableConcept = VeneninvasionCS#V0 "Keine Veneninvasion"
 
@@ -399,8 +399,8 @@ Title: "Example TNMPnKategorie Observation"
 Description: "An example of an Observation conforming to the TNMPnKategorie profile."
 * status = #final
 * code = $lnc#92837-4 "Perineural invasion [Presence] in Cancer specimen"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueCodeableConcept = PerineuraleInvasionCS#PN0 "Keine perineurale Invasion"
 
@@ -431,7 +431,7 @@ Title: "Example TNMSKategorie Observation"
 Description: "An example of an Observation conforming to the TNMSKategorie profile."
 * status = #final
 * code = $sct#399424006 "Serum tumor marker category (observable entity)"
-* subject.reference = "Patient/example-tumor-patient"
-* encounter.reference = "Encounter/example-verlauf"
+* subject = Reference(TumorPatient-example-1)
+* encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2024-05-27T12:00:00Z"
 * valueCodeableConcept = SerumTumorMarkerUICCCS#S0 "S0"
