@@ -1,5 +1,5 @@
-Alias: LNC = http://loinc.org
-Alias: SCT = http://snomed.info/sct
+Alias: $lnc = http://loinc.org
+Alias: $sct = http://snomed.info/sct
 Alias: UICC = https://www.uicc.org/resources/tnm
 Alias: $OPS = http://fhir.de/CodeSystem/bfarm/ops
 Alias: ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3

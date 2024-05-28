@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "TNMRSymbolExample",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "21983-2",
+        "system": "http://loinc.org",
+        "display": "Recurrence type first episode Cancer"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/example-tumor-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/example-verlauf"
+  },
+  "effectiveDateTime": "2024-05-27T12:00:00Z",
+  "valueBoolean": true
+}

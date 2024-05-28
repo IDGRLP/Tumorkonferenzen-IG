@@ -4,7 +4,7 @@ Id: status-fernmetastasen
 Description: "Beurteilung des Fernmetastasen-Status"
 * status MS
 * code MS
-* code = LNC#42085-1
+* code = $lnc#42085-1
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter MS

@@ -1,0 +1,27 @@
+{
+  "resourceType": "Observation",
+  "id": "TNMASymbolExample",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "101660-9",
+        "system": "http://loinc.org",
+        "display": "Cancer staging during autopsy"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/example-tumor-patient"
+  },
+  "encounter": {
+    "reference": "Encounter/example-verlauf"
+  },
+  "effectiveDateTime": "2024-05-27T12:00:00Z",
+  "valueBoolean": true
+}

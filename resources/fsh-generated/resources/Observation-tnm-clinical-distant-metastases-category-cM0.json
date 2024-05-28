@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "tnm-clinical-distant-metastases-category-cM0",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "399387003",
+        "system": "http://snomed.info/sct",
+        "display": "cM category"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/cancer-patient-john-anyperson"
+  },
+  "effectiveDateTime": "2019-04-01",
+  "performer": [
+    {
+      "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1229901006",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Committee on Cancer cM0 (qualifier value)"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "897275008",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+      }
+    ]
+  }
+}

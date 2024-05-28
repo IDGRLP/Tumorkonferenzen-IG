@@ -5,7 +5,7 @@ Title: "Gesamtbeurteilung"
 Description: "Gesamtbeurteilung des Tumorgeschehens"
 * status MS
 * code MS
-* code = LNC#72135-7
+* code = $lnc#72135-7
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter MS

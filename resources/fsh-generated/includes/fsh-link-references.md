@@ -1,4 +1,5 @@
 [AnmeldeBundleMinimal]: StructureDefinition-AnmeldeBundleMinimal.html
+[AnmeldeBundleMinimal]: Bundle-AnmeldeBundleMinimal.html
 [BefundDokument]: StructureDefinition-befund-dokument.html
 [StatusLymphknoten]: StructureDefinition-status-lymphknoten.html
 [CancerStageGroup]: StructureDefinition-cancer-stage-group.html
@@ -8,7 +9,17 @@
 [ECOG]: StructureDefinition-ecog.html
 [ECOGPerformanceStatusVS]: ValueSet-ecog-performance-status.html
 [ECOGExample]: Observation-ECOGExample.html
+[TNMStageGroupClinicalExample]: Observation-TNMStageGroupClinicalExample.html
+[TNMASymbolExample]: Observation-TNMASymbolExample.html
+[TNMLKategorieExample]: Observation-TNMLKategorieExample.html
+[TNMmSymbolExample]: Observation-TNMmSymbolExample.html
+[TNMPnKategorieExample]: Observation-TNMPnKategorieExample.html
+[TNMRSymbolExample]: Observation-TNMRSymbolExample.html
+[TNMSKategorieExample]: Observation-TNMSKategorieExample.html
+[TNMVKategorieExample]: Observation-TNMVKategorieExample.html
+[TNMYSymbolExample]: Observation-TNMYSymbolExample.html
 [ExampleTumorDiagnose]: Condition-ExampleTumorDiagnose.html
+[TumorkonferenzFragestellungExample]: Observation-TumorkonferenzFragestellungExample.html
 [Familienanamnese]: StructureDefinition-familienanamnese.html
 [Gesamtbeurteilung]: StructureDefinition-gesamtbeurteilung.html
 [ResidualstatusGesamtbeurteilungVS]: ValueSet-ResidualstatusGesamtbeurteilungVS.html
@@ -70,6 +81,9 @@
 [TNMStageGroupStagingTypeVS]: ValueSet-tnm-stage-group-staging-type-vs.html
 [TNMStageGroupVS]: ValueSet-tnm-stage-group-vs.html
 [TNMStagingMethodVS]: ValueSet-tnm-staging-method-vs.html
+[tnm-clinical-distant-metastases-category-cM0]: Observation-tnm-clinical-distant-metastases-category-cM0.html
+[tnm-clinical-primary-tumor-category-cT3]: Observation-tnm-clinical-primary-tumor-category-cT3.html
+[tnm-clinical-regional-nodes-category-cN3]: Observation-tnm-clinical-regional-nodes-category-cN3.html
 [TNMASymbol]: StructureDefinition-TNMASymbol.html
 [TNMLKategorie]: StructureDefinition-TNMLKategorie.html
 [TNMmSymbol]: StructureDefinition-TNMmSymbol.html

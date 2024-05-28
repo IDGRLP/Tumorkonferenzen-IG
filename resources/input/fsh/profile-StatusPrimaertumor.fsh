@@ -5,7 +5,7 @@ Title: "Status Primärtumor"
 Description: "Beurteilung des Primärtumor-Status"
 * status MS
 * code MS
-* code = LNC#22035-0
+* code = $lnc#22035-0
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter MS

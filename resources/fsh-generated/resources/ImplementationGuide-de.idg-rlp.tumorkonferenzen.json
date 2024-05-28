@@ -51,6 +51,14 @@
       },
       {
         "reference": {
+          "reference": "Bundle/AnmeldeBundleMinimal"
+        },
+        "name": "AnmeldeBundleMinimal",
+        "description": "AnmeldeBundleMinimal",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/befund-dokument"
         },
         "name": "BefundDokument",
@@ -123,11 +131,91 @@
       },
       {
         "reference": {
+          "reference": "Observation/TNMStageGroupClinicalExample"
+        },
+        "name": "Example TNM Stage Group Observation",
+        "description": "An example of an Observation conforming to the TNMStageGroup profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMASymbolExample"
+        },
+        "name": "Example TNMASymbol Observation",
+        "description": "An example of an Observation conforming to the TNMASymbol profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMLKategorieExample"
+        },
+        "name": "Example TNMLKategorie Observation",
+        "description": "An example of an Observation conforming to the TNMLKategorie profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMmSymbolExample"
+        },
+        "name": "Example TNMmSymbol Observation",
+        "description": "An example of an Observation conforming to the TNMmSymbol profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMPnKategorieExample"
+        },
+        "name": "Example TNMPnKategorie Observation",
+        "description": "An example of an Observation conforming to the TNMPnKategorie profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMRSymbolExample"
+        },
+        "name": "Example TNMRSymbol Observation",
+        "description": "An example of an Observation conforming to the TNMRSymbol profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMSKategorieExample"
+        },
+        "name": "Example TNMSKategorie Observation",
+        "description": "An example of an Observation conforming to the TNMSKategorie profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMVKategorieExample"
+        },
+        "name": "Example TNMVKategorie Observation",
+        "description": "An example of an Observation conforming to the TNMVKategorie profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNMYSymbolExample"
+        },
+        "name": "Example TNMYSymbol Observation",
+        "description": "An example of an Observation conforming to the TNMYSymbol profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"
+      },
+      {
+        "reference": {
           "reference": "Condition/ExampleTumorDiagnose"
         },
         "name": "Example Tumordiagnose",
         "description": "Example instance of a Tumordiagnose resource",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"
+      },
+      {
+        "reference": {
+          "reference": "Observation/TumorkonferenzFragestellungExample"
+        },
+        "name": "Example TumorkonferenzFragestellung Observation",
+        "description": "An example of an Observation conforming to the TumorkonferenzFragestellung profile.",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung"
       },
       {
         "reference": {
@@ -608,6 +696,27 @@
         "name": "TNM Staging Method Value Set",
         "description": "Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition.",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/tnm-clinical-distant-metastases-category-cM0"
+        },
+        "name": "tnm-clinical-distant-metastases-category-cM0",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/tnm-clinical-primary-tumor-category-cT3"
+        },
+        "name": "tnm-clinical-primary-tumor-category-cT3",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category"
+      },
+      {
+        "reference": {
+          "reference": "Observation/tnm-clinical-regional-nodes-category-cN3"
+        },
+        "name": "tnm-clinical-regional-nodes-category-cN3",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category"
       },
       {
         "reference": {

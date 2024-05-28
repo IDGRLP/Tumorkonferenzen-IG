@@ -40,7 +40,7 @@ Description: "Einzelprozedur als Teil einer Operation. Typischerweise mittels OP
   * coding[ops] MS
     * ^patternCoding.system = $OPS
   * coding[loinc]
-    * ^patternCoding.system = LNC
+    * ^patternCoding.system = $lnc
 * subject MS
 * subject only Reference(TumorPatient)
 * performed[x] only dateTime

@@ -25,8 +25,8 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "101660-9",
-              "system": "http://loinc.org"
+              "code": "277650004",
+              "system": "http://snomed.info/sct"
             }
           ]
         },

@@ -5,7 +5,7 @@ Title: "TumorkonferenzSituation"
 Description: "Tumorkonferenz: Beschreibung der aktuelle Situation"
 * status MS
 * code MS
-* code = SCT#276099005
+* code = $sct#276099005
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter 1.. MS

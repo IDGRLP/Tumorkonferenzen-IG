@@ -6,7 +6,7 @@ Description: "HistologieLymphknoten"
 //TODO: add extension to EpisodeOfCare
 * status MS
 * code MS
-* code = SCT#364108009 // "Lymph node observable (observable entity)"
+* code = $sct#364108009 // "Lymph node observable (observable entity)"
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter MS
@@ -25,23 +25,23 @@ Description: "HistologieLymphknoten"
   befallene-sentinel-lymphknoten 0..1 MS and
   befund 0..1 MS
 * component[untersuchte-lymphknoten]
-  * code = LNC#21894-1 // "Regional lymph nodes examined [#] Specimen"
+  * code = $lnc#21894-1 // "Regional lymph nodes examined [#] Specimen"
   * value[x] only integer
   * valueInteger 1.. MS
 * component[befallene-lymphknoten]
-  * code = LNC#21893-3 // "Regional lymph nodes positive [#] Specimen"
+  * code = $lnc#21893-3 // "Regional lymph nodes positive [#] Specimen"
   * value[x] only integer
   * valueInteger 1.. MS
 * component[untersuchte-sentinel-lymphknoten]
-  * code = SCT#444411008 // "Number of sentinel lymph nodes examined by microscopy in excised tissue specimen (observable entity)" //TODO: alles auf SCT umstellen?
+  * code = $sct#444411008 // "Number of sentinel lymph nodes examined by microscopy in excised tissue specimen (observable entity)" //TODO: alles auf $sct umstellen?
   * value[x] only integer
   * valueInteger 1.. MS
 * component[befallene-sentinel-lymphknoten]
-  * code = SCT#1264491009 // "Number of sentinel lymph nodes containing metastatic neoplasm in excised specimen (observable entity)" //TODO: alles auf SCT umstellen?
+  * code = $sct#1264491009 // "Number of sentinel lymph nodes containing metastatic neoplasm in excised specimen (observable entity)" //TODO: alles auf $sct umstellen?
   * value[x] only integer
   * valueInteger 1.. MS
 * component[befund]
-  * code = SCT#371524004 // "Clinical report (record artifact)" //TODO: alles auf SCT umstellen?
+  * code = $sct#371524004 // "Clinical report (record artifact)" //TODO: alles auf $sct umstellen?
   * value[x] only string
   * valueString 1.. MS
 
@@ -50,7 +50,7 @@ InstanceOf: HistologieLymphknoten
 Usage: #example
 //TODO: add extension to EpisodeOfCare
 * status = #final
-* code = SCT#364108009 "Lymph node observable"
+* code = $sct#364108009 "Lymph node observable"
 * subject = Reference(TumorPatientExample)
 * encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2023-04-05T14:30:00Z"

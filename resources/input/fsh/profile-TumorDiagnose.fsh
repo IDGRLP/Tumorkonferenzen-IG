@@ -59,7 +59,7 @@ Description: "Example instance of a Tumordiagnose resource"
 * code.coding[0].system = "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
 * code.coding[0].version = "2024"
 * code.coding[0].code = #C34.1
-// * code.coding[0].display = "Bösartige Neubildung: Oberlappen (-Bronchus)"
+* code.coding[0].display = "Bösartige Neubildung: Oberlappen (-Bronchus)"
 * code.coding[0].extension[0].url = "http://fhir.de/StructureDefinition/seitenlokalisation"
 * code.coding[0].extension[0].valueCoding.system = "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"
 * code.coding[0].extension[0].valueCoding.code = #L

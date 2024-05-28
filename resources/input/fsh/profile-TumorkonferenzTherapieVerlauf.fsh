@@ -5,7 +5,7 @@ Title: "TumorkonferenzTherapieVerlauf"
 Description: "Tumorkonferenz: Beschreibung von Therapie und Verlauf"
 * status MS
 * code MS
-* code = SCT#308273005
+* code = $sct#308273005
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter 1.. MS

@@ -5,7 +5,7 @@ Description: "Gibt den Differenzierungsgrad des Tumors entsprechend der aktuelle
 //TODO: add extension to EpisodeOfCare
 * status MS
 * code MS
-* code = LNC#33732-9 // aus MCODE: Histology grade [Identifier] in Cancer specimen  (could be 21858-6 Grade Cancer)
+* code = $lnc#33732-9 // aus MCODE: Histology grade [Identifier] in Cancer specimen  (could be 21858-6 Grade Cancer)
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter MS
@@ -25,7 +25,7 @@ Instance: GradingExample
 InstanceOf: Grading
 Usage: #example
 * status = #final
-* code = LNC#33732-9 "Histology grade [Identifier] in Cancer specimen"
+* code = $lnc#33732-9 "Histology grade [Identifier] in Cancer specimen"
 * subject = Reference(TumorPatient-example-1)
 * encounter = Reference(VerlaufExample)
 * effectiveDateTime = "2023-04-05T14:30:00Z"

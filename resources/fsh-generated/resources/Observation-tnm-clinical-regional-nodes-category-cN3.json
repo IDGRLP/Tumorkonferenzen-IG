@@ -1,0 +1,46 @@
+{
+  "resourceType": "Observation",
+  "id": "tnm-clinical-regional-nodes-category-cN3",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "399534004",
+        "system": "http://snomed.info/sct",
+        "display": "cN category"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/cancer-patient-john-anyperson"
+  },
+  "effectiveDateTime": "2019-04-01",
+  "performer": [
+    {
+      "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+    }
+  ],
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1229984001",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Committee on Cancer cN3 (qualifier value)"
+      }
+    ]
+  },
+  "method": {
+    "coding": [
+      {
+        "code": "897275008",
+        "system": "http://snomed.info/sct",
+        "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+      }
+    ]
+  }
+}

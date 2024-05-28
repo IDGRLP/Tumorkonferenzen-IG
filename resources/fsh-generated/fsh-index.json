@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "Bundle-AnmeldeBundleMinimal.json",
+    "fshName": "AnmeldeBundleMinimal",
+    "fshType": "Instance",
+    "fshFile": "profile-MinimalesAnmeldeBundle.fsh",
+    "startLine": 58,
+    "endLine": 77
+  },
+  {
     "outputFile": "CodeSystem-HistoGradeCS.json",
     "fshName": "HistoGradeCS",
     "fshType": "CodeSystem",
@@ -20,8 +28,8 @@
     "fshName": "ResidualstatusCS",
     "fshType": "CodeSystem",
     "fshFile": "codesystems.fsh",
-    "startLine": 173,
-    "endLine": 183
+    "startLine": 200,
+    "endLine": 210
   },
   {
     "outputFile": "CodeSystem-SerumTumorMarkerUICCCS.json",
@@ -37,7 +45,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems.fsh",
     "startLine": 163,
-    "endLine": 171
+    "endLine": 198
   },
   {
     "outputFile": "CodeSystem-multiple-primaer-tumoren-cs.json",
@@ -136,6 +144,110 @@
     "endLine": 61
   },
   {
+    "outputFile": "Observation-TNMASymbolExample.json",
+    "fshName": "TNMASymbolExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 275,
+    "endLine": 284
+  },
+  {
+    "outputFile": "Observation-TNMLKategorieExample.json",
+    "fshName": "TNMLKategorieExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 336,
+    "endLine": 345
+  },
+  {
+    "outputFile": "Observation-TNMPnKategorieExample.json",
+    "fshName": "TNMPnKategorieExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 396,
+    "endLine": 405
+  },
+  {
+    "outputFile": "Observation-TNMRSymbolExample.json",
+    "fshName": "TNMRSymbolExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 245,
+    "endLine": 254
+  },
+  {
+    "outputFile": "Observation-TNMSKategorieExample.json",
+    "fshName": "TNMSKategorieExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 428,
+    "endLine": 437
+  },
+  {
+    "outputFile": "Observation-TNMStageGroupClinicalExample.json",
+    "fshName": "TNMStageGroupClinicalExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 73,
+    "endLine": 106
+  },
+  {
+    "outputFile": "Observation-TNMVKategorieExample.json",
+    "fshName": "TNMVKategorieExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 366,
+    "endLine": 375
+  },
+  {
+    "outputFile": "Observation-TNMYSymbolExample.json",
+    "fshName": "TNMYSymbolExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 215,
+    "endLine": 224
+  },
+  {
+    "outputFile": "Observation-TNMmSymbolExample.json",
+    "fshName": "TNMmSymbolExample",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 306,
+    "endLine": 315
+  },
+  {
+    "outputFile": "Observation-TumorkonferenzFragestellungExample.json",
+    "fshName": "TumorkonferenzFragestellungExample",
+    "fshType": "Instance",
+    "fshFile": "profile-TumorkonferenzFragestellung.fsh",
+    "startLine": 17,
+    "endLine": 25
+  },
+  {
+    "outputFile": "Observation-tnm-clinical-distant-metastases-category-cM0.json",
+    "fshName": "tnm-clinical-distant-metastases-category-cM0",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 185,
+    "endLine": 195
+  },
+  {
+    "outputFile": "Observation-tnm-clinical-primary-tumor-category-cT3.json",
+    "fshName": "tnm-clinical-primary-tumor-category-cT3",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 122,
+    "endLine": 131
+  },
+  {
+    "outputFile": "Observation-tnm-clinical-regional-nodes-category-cN3.json",
+    "fshName": "tnm-clinical-regional-nodes-category-cN3",
+    "fshType": "Instance",
+    "fshFile": "profile-Staging.fsh",
+    "startLine": 145,
+    "endLine": 154
+  },
+  {
     "outputFile": "Organization-Organisation-example-1.json",
     "fshName": "Organisation-example-1",
     "fshType": "Instance",
@@ -197,7 +309,7 @@
     "fshType": "Profile",
     "fshFile": "profile-MinimalesAnmeldeBundle.fsh",
     "startLine": 1,
-    "endLine": 22
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-HistologieLymphknoten.json",
@@ -236,64 +348,64 @@
     "fshName": "TNMASymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 163,
-    "endLine": 180
+    "startLine": 256,
+    "endLine": 273
   },
   {
     "outputFile": "StructureDefinition-TNMLKategorie.json",
     "fshName": "TNMLKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 201,
-    "endLine": 218
+    "startLine": 317,
+    "endLine": 334
   },
   {
     "outputFile": "StructureDefinition-TNMPnKategorie.json",
     "fshName": "TNMPnKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 239,
-    "endLine": 256
+    "startLine": 377,
+    "endLine": 394
   },
   {
     "outputFile": "StructureDefinition-TNMRSymbol.json",
     "fshName": "TNMRSymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 144,
-    "endLine": 161
+    "startLine": 226,
+    "endLine": 243
   },
   {
     "outputFile": "StructureDefinition-TNMSKategorie.json",
     "fshName": "TNMSKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 258,
-    "endLine": 277
+    "startLine": 407,
+    "endLine": 426
   },
   {
     "outputFile": "StructureDefinition-TNMVKategorie.json",
     "fshName": "TNMVKategorie",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 220,
-    "endLine": 237
+    "startLine": 347,
+    "endLine": 364
   },
   {
     "outputFile": "StructureDefinition-TNMYSymbol.json",
     "fshName": "TNMYSymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 126,
-    "endLine": 142
+    "startLine": 197,
+    "endLine": 213
   },
   {
     "outputFile": "StructureDefinition-TNMmSymbol.json",
     "fshName": "TNMmSymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 182,
-    "endLine": 199
+    "startLine": 286,
+    "endLine": 304
   },
   {
     "outputFile": "StructureDefinition-TumorDiagnose.json",
@@ -452,24 +564,24 @@
     "fshName": "TNMDistantMetastasesCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 97,
-    "endLine": 124
+    "startLine": 156,
+    "endLine": 183
   },
   {
     "outputFile": "StructureDefinition-tnm-primary-tumor-category.json",
     "fshName": "TNMPrimaryTumorCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 73,
-    "endLine": 83
+    "startLine": 110,
+    "endLine": 120
   },
   {
     "outputFile": "StructureDefinition-tnm-regional-nodes-category.json",
     "fshName": "TNMRegionalNodesCategory",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
-    "startLine": 85,
-    "endLine": 95
+    "startLine": 133,
+    "endLine": 143
   },
   {
     "outputFile": "StructureDefinition-tnm-stage-group.json",

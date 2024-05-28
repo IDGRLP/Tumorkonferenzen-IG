@@ -5,7 +5,7 @@ Title: "Beurteilung Primärtumor"
 Description: "Beurteilung des Lymphknoten-Status"
 * status MS
 * code MS
-* code = LNC#21892-5
+* code = $lnc#21892-5
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter MS

@@ -1,0 +1,686 @@
+{
+  "resourceType": "Bundle",
+  "id": "AnmeldeBundleMinimal",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "TumorPatient-example-1",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+          ]
+        },
+        "identifier": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "code": "GKV",
+                  "system": "http://fhir.de/CodeSystem/identifier-type-de-basis"
+                }
+              ]
+            },
+            "system": "http://fhir.de/sid/gkv/kvid-10",
+            "value": "A123456789"
+          }
+        ],
+        "name": [
+          {
+            "use": "official",
+            "family": "Mustermann",
+            "given": [
+              "Martina"
+            ]
+          },
+          {
+            "use": "maiden",
+            "family": "Musterfrau"
+          }
+        ],
+        "address": [
+          {
+            "line": [
+              "Musterweg 22"
+            ],
+            "_line": [
+              {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                    "valueString": "Musterweg"
+                  },
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                    "valueString": "22"
+                  }
+                ]
+              }
+            ],
+            "city": "Musterstadt",
+            "postalCode": "12345",
+            "country": "DE"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1965-04-03"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "ExampleTumorDiagnose",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            },
+            {
+              "system": "https://fix.me/FIXME",
+              "code": "provisional"
+            }
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "version": "2024",
+              "code": "C34.1",
+              "display": "Bösartige Neubildung: Oberlappen (-Bronchus)",
+              "extension": [
+                {
+                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+                  "valueCoding": {
+                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+                    "code": "L"
+                  }
+                }
+              ]
+            }
+          ],
+          "text": "Malignant neoplasm of upper lobe, bronchus or lung"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active",
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+            }
+          ]
+        },
+        "bodySite": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "version": "2023",
+                "code": "39607008"
+              }
+            ]
+          }
+        ],
+        "subject": {
+          "reference": "Patient/TumorPatient-example-1"
+        },
+        "onsetDateTime": "2023-05-20T00:00:00Z",
+        "note": [
+          {
+            "text": "Primary tumor diagnosed with no previous history of tumors."
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMStageGroupClinicalExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "21908-9",
+              "system": "http://loinc.org",
+              "display": "Stage group.clinical Cancer"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatient-example-1"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "II",
+              "system": "https://www.uicc.org/resources/tnm",
+              "display": "Stadium II"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "443830009",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)"
+            }
+          ],
+          "text": "Example TNM Staging Method"
+        },
+        "focus": [
+          {
+            "reference": "Condition/example"
+          }
+        ],
+        "hasMember": [
+          {
+            "reference": "Observation/tnm-primary-tumor-category",
+            "display": "TNM Primary Tumor Category"
+          },
+          {
+            "reference": "Observation/tnm-regional-nodes-category",
+            "display": "TNM Regional Nodes Category"
+          },
+          {
+            "reference": "Observation/tnm-distant-metastases-category",
+            "display": "TNM Distant Metastases Category"
+          },
+          {
+            "reference": "Observation/tnm-y-symbol",
+            "display": "TNM Y Symbol"
+          },
+          {
+            "reference": "Observation/tnm-r-symbol",
+            "display": "TNM R Symbol"
+          },
+          {
+            "reference": "Observation/tnm-a-symbol",
+            "display": "TNM A Symbol"
+          },
+          {
+            "reference": "Observation/tnm-m-symbol",
+            "display": "TNM M Symbol"
+          },
+          {
+            "reference": "Observation/tnm-l-kategorie",
+            "display": "TNM L Kategorie"
+          },
+          {
+            "reference": "Observation/tnm-v-kategorie",
+            "display": "TNM V Kategorie"
+          },
+          {
+            "reference": "Observation/tnm-pn-kategorie",
+            "display": "TNM Pn Kategorie"
+          },
+          {
+            "reference": "Observation/tnm-s-kategorie",
+            "display": "TNM S Kategorie"
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-clinical-primary-tumor-category-cT3",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "399504009",
+              "system": "http://snomed.info/sct",
+              "display": "cT category"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-john-anyperson"
+        },
+        "effectiveDateTime": "2019-04-01",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "1228938002",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Committee on Cancer cT3 (qualifier value)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-clinical-regional-nodes-category-cN3",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "399534004",
+              "system": "http://snomed.info/sct",
+              "display": "cN category"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-john-anyperson"
+        },
+        "effectiveDateTime": "2019-04-01",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "1229984001",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Committee on Cancer cN3 (qualifier value)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "tnm-clinical-distant-metastases-category-cM0",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-tnm-distant-metastases-category"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "399387003",
+              "system": "http://snomed.info/sct",
+              "display": "cM category"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/cancer-patient-john-anyperson"
+        },
+        "effectiveDateTime": "2019-04-01",
+        "performer": [
+          {
+            "reference": "Practitioner/us-core-practitioner-kyle-anydoc"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "1229901006",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Committee on Cancer cM0 (qualifier value)"
+            }
+          ]
+        },
+        "method": {
+          "coding": [
+            {
+              "code": "897275008",
+              "system": "http://snomed.info/sct",
+              "display": "American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMYSymbolExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "59479-6",
+              "system": "http://loinc.org",
+              "display": "Collaborative staging post treatment extension Cancer"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMRSymbolExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "21983-2",
+              "system": "http://loinc.org",
+              "display": "Recurrence type first episode Cancer"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMASymbolExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "101660-9",
+              "system": "http://loinc.org",
+              "display": "Cancer staging during autopsy"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueBoolean": true
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMmSymbolExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "277650004",
+              "system": "http://snomed.info/sct",
+              "display": "m - Multiple tumors (tumor staging)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "2",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs",
+              "display": "(2) simultane Tumoren"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMLKategorieExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "33739-4",
+              "system": "http://loinc.org",
+              "display": "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "L0",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs",
+              "display": "Keine Lymphgefäßinvasion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMVKategorieExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "33740-2",
+              "system": "http://loinc.org",
+              "display": "Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "V0",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
+              "display": "Keine Veneninvasion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMPnKategorieExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "92837-4",
+              "system": "http://loinc.org",
+              "display": "Perineural invasion [Presence] in Cancer specimen"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "PN0",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs",
+              "display": "Keine perineurale Invasion"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMSKategorieExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "399424006",
+              "system": "http://snomed.info/sct",
+              "display": "Serum tumor marker category (observable entity)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-verlauf"
+        },
+        "effectiveDateTime": "2024-05-27T12:00:00Z",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "S0",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
+              "display": "S0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TumorkonferenzFragestellungExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "103320006",
+              "system": "http://snomed.info/sct",
+              "display": "Request for"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/example-tumor-patient"
+        },
+        "encounter": {
+          "reference": "Encounter/example-tumorkonferenz"
+        },
+        "valueString": "Request for discussion in tumor board regarding treatment options."
+      }
+    }
+  ]
+}

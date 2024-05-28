@@ -12,11 +12,11 @@
 //     obds 1..1 MS and
 //     loinc 0..1 MS and
 //     snomed 0..1
-// * code.coding[obds] = LNC#84892-9    
-// * code.coding[loinc] = LNC#84892-9
+// * code.coding[obds] = $lnc#84892-9    
+// * code.coding[loinc] = $lnc#84892-9
 // * code.coding[loinc].system 1.. MS
 // * code.coding[loinc].code 1.. MS
-// * code.coding[snomed] = SCT#445200009
+// * code.coding[snomed] = $sct#445200009
 // * code.coding[snomed].system 1..
 // * code.coding[snomed].code 1..
 // * subject 1.. MS

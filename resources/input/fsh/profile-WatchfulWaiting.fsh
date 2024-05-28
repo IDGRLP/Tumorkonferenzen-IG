@@ -15,7 +15,7 @@ Description: "Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)
   * coding MS
     * system 1.. MS
     * code 1.. MS
-* code = SCT#373818007
+* code = $sct#373818007
 * subject MS
 * subject only Reference(TumorPatient)
 * performed[x] MS

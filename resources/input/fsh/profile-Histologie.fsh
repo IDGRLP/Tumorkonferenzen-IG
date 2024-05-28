@@ -5,7 +5,7 @@ Title: "Histologie"
 Description: "Histologie"
 * status MS
 * code MS
-* code = LNC#59847-4
+* code = $lnc#59847-4
   * text MS
     * ^short = "Morphologie-Freitext" 
   * coding ^slicing.discriminator.type = #pattern

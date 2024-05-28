@@ -31,7 +31,7 @@
           ],
           "rules": "open"
         },
-        "min": 4
+        "min": 15
       },
       {
         "id": "Bundle.entry:patient",
@@ -89,6 +89,226 @@
             "code": "Observation",
             "profile": [
               "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnmPrimaryTumorCategory",
+        "path": "Bundle.entry",
+        "sliceName": "tnmPrimaryTumorCategory",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnmPrimaryTumorCategory.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnmRegionalNodesCategory",
+        "path": "Bundle.entry",
+        "sliceName": "tnmRegionalNodesCategory",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnmRegionalNodesCategory.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnmDistantMetastasesCategory",
+        "path": "Bundle.entry",
+        "sliceName": "tnmDistantMetastasesCategory",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnmDistantMetastasesCategory.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-distant-metastases-category"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-y-symbol",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-y-symbol",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-y-symbol.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-r-symbol",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-r-symbol",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-r-symbol.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-a-symbol",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-a-symbol",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-a-symbol.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-m-symbol",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-m-symbol",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-m-symbol.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-l-kategorie",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-l-kategorie",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-l-kategorie.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-v-kategorie",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-v-kategorie",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-v-kategorie.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-pn-kategorie",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-pn-kategorie",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-pn-kategorie.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-s-kategorie",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-s-kategorie",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-s-kategorie.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"
             ]
           }
         ]

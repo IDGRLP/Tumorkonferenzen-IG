@@ -5,7 +5,7 @@ Title:          "TumorkonferenzTermin"
 Description:    "Termin für die Tumorkonferenz."
 * status 1.. MS
 * serviceCategory 1.. MS
-* serviceCategory = SCT#287051000000107
+* serviceCategory = $sct#287051000000107
 * supportingInformation 1.. MS
 * supportingInformation only Reference(Tumorkonferenz)
 * start MS

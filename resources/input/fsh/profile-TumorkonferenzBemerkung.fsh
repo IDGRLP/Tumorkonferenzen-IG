@@ -5,7 +5,7 @@ Title: "TumorkonferenzBemerkung"
 Description: "Tumorkonferenz: Bemerkung"
 * status MS
 * code MS
-* code = SCT#703852005
+* code = $sct#703852005
 * subject 1.. MS
 * subject only Reference(TumorPatient)
 * encounter 1.. MS
