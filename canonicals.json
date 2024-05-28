@@ -28,13 +28,6 @@
     "name" : "SerumTumorMarkerUICCCS"
   },
   {
-    "id" : "krebsstadium-cs",
-    "type" : "CodeSystem",
-    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
-    "version" : "0.1.0",
-    "name" : "KrebsstadiumCS"
-  },
-  {
     "id" : "multiple-primaer-tumoren-cs",
     "type" : "CodeSystem",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs",
@@ -600,5 +593,12 @@
     "url" : "http://loinc.org/vs/LL529-9",
     "version" : "0.1.0",
     "name" : "ECOGPerformanceStatusVS"
+  },
+  {
+    "id" : "krebsstadium-cs",
+    "type" : "CodeSystem",
+    "url" : "https://www.uicc.org/resources/tnm",
+    "version" : "0.1.0",
+    "name" : "KrebsstadiumCS"
   }
 ]

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "Strahlentherapie"] ; # 
   fhir:title [ fhir:v "Strahlentherapie"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-22T07:04:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-28T11:23:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

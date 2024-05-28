@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="TumorkonferenzFragestellungExample"/>
+  <meta>
+    <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="TumorkonferenzFragestellungExample"> </a><a name="hcTumorkonferenzFragestellungExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TumorkonferenzFragestellungExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tumorkonferenz-fragestellung.html">TumorkonferenzFragestellung</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Request for <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#103320006)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-tumorkonferenz">Encounter/example-tumorkonferenz</a></p><p><b>value</b>: Request for discussion in tumor board regarding treatment options.</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103320006"/>
+      <display value="Request for"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-tumor-patient"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/example-tumorkonferenz"/>
+  </encounter>
+  <valueString value="Request for discussion in tumor board regarding treatment options."/>
+</Observation>

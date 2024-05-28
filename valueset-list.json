@@ -87,9 +87,7 @@
       "name" : "KrebsstadiumVS",
       "title" : "Krebsstadium ValueSet",
       "description" : "KrebsstadiumVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"
-      ]
+      "systems" : ["https://www.uicc.org/resources/tnm"]
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs",

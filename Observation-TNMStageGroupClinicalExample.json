@@ -1,0 +1,85 @@
+{
+  "resourceType" : "Observation",
+  "id" : "TNMStageGroupClinicalExample",
+  "meta" : {
+    "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"TNMStageGroupClinicalExample\"> </a><a name=\"hcTNMStageGroupClinicalExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;TNMStageGroupClinicalExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tnm-stage-group.html\">TNM Stage Group Profile</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Stage group.clinical Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21908-9)</span></p><p><b>subject</b>: <a href=\"Patient-TumorPatient-example-1.html\">Patient/TumorPatient-example-1</a> &quot; MUSTERMANN&quot;</p><p><b>focus</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Condition/example\">Condition/example</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: Stadium II <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-krebsstadium-cs.html\">Krebsstadium CodeSystem</a>#II)</span></p><p><b>method</b>: Example TNM Staging Method <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#443830009 &quot;American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)&quot;)</span></p><p><b>hasMember</b>: </p><ul><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-primary-tumor-category\">Observation/tnm-primary-tumor-category: TNM Primary Tumor Category</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-regional-nodes-category\">Observation/tnm-regional-nodes-category: TNM Regional Nodes Category</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-distant-metastases-category\">Observation/tnm-distant-metastases-category: TNM Distant Metastases Category</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-y-symbol\">Observation/tnm-y-symbol: TNM Y Symbol</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-r-symbol\">Observation/tnm-r-symbol: TNM R Symbol</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-a-symbol\">Observation/tnm-a-symbol: TNM A Symbol</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-m-symbol\">Observation/tnm-m-symbol: TNM M Symbol</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-l-kategorie\">Observation/tnm-l-kategorie: TNM L Kategorie</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-v-kategorie\">Observation/tnm-v-kategorie: TNM V Kategorie</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-pn-kategorie\">Observation/tnm-pn-kategorie: TNM Pn Kategorie</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-s-kategorie\">Observation/tnm-s-kategorie: TNM S Kategorie</a></li></ul></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "21908-9",
+      "display" : "Stage group.clinical Cancer"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/TumorPatient-example-1"
+  },
+  "focus" : [{
+    "reference" : "Condition/example"
+  }],
+  "effectiveDateTime" : "2024-05-27T12:00:00Z",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://www.uicc.org/resources/tnm",
+      "code" : "II",
+      "display" : "Stadium II"
+    }]
+  },
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "443830009",
+      "display" : "American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)"
+    }],
+    "text" : "Example TNM Staging Method"
+  },
+  "hasMember" : [{
+    "reference" : "Observation/tnm-primary-tumor-category",
+    "display" : "TNM Primary Tumor Category"
+  },
+  {
+    "reference" : "Observation/tnm-regional-nodes-category",
+    "display" : "TNM Regional Nodes Category"
+  },
+  {
+    "reference" : "Observation/tnm-distant-metastases-category",
+    "display" : "TNM Distant Metastases Category"
+  },
+  {
+    "reference" : "Observation/tnm-y-symbol",
+    "display" : "TNM Y Symbol"
+  },
+  {
+    "reference" : "Observation/tnm-r-symbol",
+    "display" : "TNM R Symbol"
+  },
+  {
+    "reference" : "Observation/tnm-a-symbol",
+    "display" : "TNM A Symbol"
+  },
+  {
+    "reference" : "Observation/tnm-m-symbol",
+    "display" : "TNM M Symbol"
+  },
+  {
+    "reference" : "Observation/tnm-l-kategorie",
+    "display" : "TNM L Kategorie"
+  },
+  {
+    "reference" : "Observation/tnm-v-kategorie",
+    "display" : "TNM V Kategorie"
+  },
+  {
+    "reference" : "Observation/tnm-pn-kategorie",
+    "display" : "TNM Pn Kategorie"
+  },
+  {
+    "reference" : "Observation/tnm-s-kategorie",
+    "display" : "TNM S Kategorie"
+  }]
+}

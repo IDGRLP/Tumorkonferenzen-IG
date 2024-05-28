@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMSKategorieExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TNMSKategorieExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"TNMSKategorieExample\"> </a><a name=\"hcTNMSKategorieExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;TNMSKategorieExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TNMSKategorie.html\">TNMSKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Serum tumor marker category (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#399424006)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient\">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf\">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: S0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-SerumTumorMarkerUICCCS.html\">SerumTumorMarkerUICCCS</a>#S0)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:399424006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "399424006" ] ;
+       fhir:display [ fhir:v "Serum tumor marker category (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/example-tumor-patient> ;
+     fhir:reference [ fhir:v "Patient/example-tumor-patient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Encounter/example-verlauf> ;
+     fhir:reference [ fhir:v "Encounter/example-verlauf" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-05-27T12:00:00Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "S0" ] ;
+       fhir:display [ fhir:v "S0" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

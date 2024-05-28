@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="krebsstadium-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-krebsstadium-cs.html"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-krebsstadium-cs.html"><code>https://www.uicc.org/resources/tnm</code></a></li></ul></div>
   </text>
   <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs"/>
   <version value="0.1.0"/>
   <name value="KrebsstadiumVS"/>
   <title value="Krebsstadium ValueSet"/>
   <status value="draft"/>
-  <date value="2024-05-22T07:04:28+00:00"/>
+  <date value="2024-05-28T11:23:31+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -26,7 +26,7 @@
   <description value="KrebsstadiumVS"/>
   <compose>
     <include>
-      <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"/>
+      <system value="https://www.uicc.org/resources/tnm"/>
     </include>
   </compose>
 </ValueSet>

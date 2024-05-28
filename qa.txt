@@ -1,15 +1,16 @@
 TumorkonferenzenIDG : Validation Results
 =========================================
 
-err = 17, warn = 97, info = 21
-IG Publisher Version: 1.6.6 Out of date - current version is 1.6.8
-Generated Wed May 22 07:06:56 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
- Build Errors : 1 / 14 / 0
+err = 237, warn = 119, info = 77
+IG Publisher Version: 1.6.6 Out of date - current version is 1.6.10
+Generated Tue May 28 11:25:53 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
+ Build Errors : 1 / 17 / 0
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Bundle-AnmeldeBundleMinimal : 185 / 26 / 72
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-HistoGradeCS : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-Lymphgefaessinvasion-cs : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-ResidualstatusCS : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-SerumTumorMarkerUICCCS : 0 / 2 / 2
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-krebsstadium-cs : 0 / 2 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-krebsstadium-cs : 2 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-multiple-primaer-tumoren-cs : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-obds-op-komplikation-cs : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-obds-strahlentherapie-intention-cs : 0 / 2 / 2
@@ -23,6 +24,19 @@ Generated Wed May 22 07:06:56 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-GradingExample : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-Histologie-Example : 0 / 3 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-HistologieLymphknotenExample : 1 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMASymbolExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMLKategorieExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMPnKategorieExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMRSymbolExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMSKategorieExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMStageGroupClinicalExample : 12 / 1 / 12
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMVKategorieExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMYSymbolExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMmSymbolExample : 2 / 1 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TumorkonferenzFragestellungExample : 2 / 2 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-tnm-clinical-distant-metastases-category-cM0 : 1 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-tnm-clinical-primary-tumor-category-cT3 : 1 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-tnm-clinical-regional-nodes-category-cN3 : 1 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Organization-Organisation-example-1 : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Patient-TumorPatient-example-1 : 2 / 0 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Practitioner-Melder-example-1 : 0 / 0 / 1
@@ -30,19 +44,19 @@ Generated Wed May 22 07:06:56 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Procedure-OperationEinzelprozedurExample : 0 / 0 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Procedure-OperationExample : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Specimen-Tumor-Example : 0 / 0 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-AnmeldeBundleMinimal : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-AnmeldeBundleMinimal : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-HistologieLymphknoten : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-Melder : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-MelderInOrganisation : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-Organisation : 0 / 0 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMASymbol : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMLKategorie : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMPnKategorie : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMRSymbol : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMSKategorie : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMVKategorie : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMYSymbol : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMmSymbol : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMASymbol : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMLKategorie : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMPnKategorie : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMRSymbol : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMSKategorie : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMVKategorie : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMYSymbol : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TNMmSymbol : 0 / 0 / 3
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TumorDiagnose : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-TumorPatient : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-befund-dokument : 0 / 1 / 1
@@ -62,15 +76,15 @@ Generated Wed May 22 07:06:56 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-strahlentherapie-details : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-systemische-therapie : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-systemische-therapie-details : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-distant-metastases-category : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-primary-tumor-category : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-regional-nodes-category : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-stage-group : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-distant-metastases-category : 0 / 0 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-primary-tumor-category : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-regional-nodes-category : 0 / 0 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tnm-stage-group : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumor : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorErkrankung : 0 / 2 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz : 0 / 1 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-bemerkung : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung-radiologie : 0 / 1 / 3
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-situation : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/StructureDefinition-tumorkonferenz-termin : 0 / 1 / 2
@@ -91,16 +105,16 @@ Generated Wed May 22 07:06:56 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-obds-op-komplikation-vs : 0 / 2 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-obds-strahlentherapie-intention-vs : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-perineurale-invasion-vs : 0 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-distant-metastases-category-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-distant-metastases-category-max-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-distant-metastases-category-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-distant-metastases-staging-type-vs : 0 / 0 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-primary-tumor-category-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-primary-tumor-category-max-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-primary-tumor-category-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-primary-tumor-staging-type-vs : 0 / 0 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-regional-nodes-category-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-regional-nodes-category-max-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-regional-nodes-category-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-regional-nodes-staging-type-vs : 0 / 0 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-max-vs : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-max-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-staging-type-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-stage-group-vs : 0 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/ValueSet-tnm-staging-method-vs : 0 / 0 / 1
@@ -117,11 +131,267 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/Organisation-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/TumorPatient-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/VerlaufExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/tnm-clinical-distant-metastases-category-cM0.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/tnm-clinical-primary-tumor-category-cT3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/tnm-clinical-regional-nodes-category-cN3.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: package.tgz: Error converting pacakge to R4B: Error processing example/Encounter-VerlaufExample.json: Unknown EncounterStatus code 'final'
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/Bundle-AnmeldeBundleMinimal.json ==
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[0]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[1]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[3]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[4]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[5]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[6]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[7]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[8]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[9]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[10]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[11]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[12]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[13]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[14]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:patient': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:diagnose': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnmPrimaryTumorCategory': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnmRegionalNodesCategory': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnmDistantMetastasesCategory': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-y-symbol': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-r-symbol': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-a-symbol': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-m-symbol': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-l-kategorie': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-v-kategorie': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-pn-kategorie': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:tnm-s-kategorie': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle: Slice 'Bundle.entry:fragestellung': a matching slice is required, but not found (from http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[0].resource.identifier[0].type: The pattern [system http://fhir.de/CodeSystem/identifier-type-de-basis, code KVZ10, and display 'null'] defined in the profile http://fhir.de/StructureDefinition/identifier-kvid-10|1.5.0-ballot not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Bundle.entry[0].resource.identifier[0].type.coding.code,message=Value is 'GKV' but must be 'KVZ10']]
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[0].resource.identifier[0].type.code: The code 'GKV' is valid but is retired
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[0].resource.identifier[0].type: The pattern [system http://fhir.de/CodeSystem/identifier-type-de-basis, code KVZ10, and display 'null'] defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient|0.1.0 not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Bundle.entry[0].resource.identifier[0].type.coding.code,message=Value is 'GKV' but must be 'KVZ10']]
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource/*Condition/ExampleTumorDiagnose*/.verificationStatus.coding[1].system: A definition for CodeSystem 'https://fix.me/FIXME' could not be found, so the code cannot be validated
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource/*Condition/ExampleTumorDiagnose*/.code.coding[0].system: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' version '2024' could not be found, so the code cannot be validated. Valid versions: []
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource/*Condition/ExampleTumorDiagnose*/.code.coding[0].extension[0].value.ofType(Coding): ValueSet 'https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION' not found
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource/*Condition/ExampleTumorDiagnose*/.code.coding[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION' could not be found, so the code cannot be validated
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource/*Condition/ExampleTumorDiagnose*/.bodySite[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct' version '2023' could not be found, so the code cannot be validated. Valid versions: [http://snomed.info/sct/11000146104/version/20230331,http://snomed.info/sct/11000172109/version/20231115,http://snomed.info/sct/2011000195101/version/20230607,http://snomed.info/sct/20611000087101/version/20220930,http://snomed.info/sct/32506021000036107/version/20230731,http://snomed.info/sct/45991000052106/version/20220531,http://snomed.info/sct/45991000052106/version/20231130,http://snomed.info/sct/554471000005108/version/20210930,http://snomed.info/sct/731000124108/version/20230901,http://snomed.info/sct/827022005/version/20221130,http://snomed.info/sct/83821000000107/version/20230412,http://snomed.info/sct/900000000000207008/version/20230131,http://snomed.info/sct/900000000000207008/version/20230731,http://snomed.info/sct/900000000000207008/version/20240201]
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[1]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource/*Condition/ExampleTumorDiagnose*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource.verificationStatus.coding[1].system: A definition for CodeSystem 'https://fix.me/FIXME' could not be found, so the code cannot be validated
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource.code.coding[0].system: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' version '2024' could not be found, so the code cannot be validated. Valid versions: []
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource.code.coding[0].extension[0].value.ofType(Coding): ValueSet 'https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION' not found
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource.code.coding[0].extension[0].value.ofType(Coding): A definition for CodeSystem 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION' could not be found, so the code cannot be validated
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource.bodySite[0].coding[0].system: A definition for CodeSystem 'http://snomed.info/sct' version '2023' could not be found, so the code cannot be validated. Valid versions: [http://snomed.info/sct/11000146104/version/20230331,http://snomed.info/sct/11000172109/version/20231115,http://snomed.info/sct/2011000195101/version/20230607,http://snomed.info/sct/20611000087101/version/20220930,http://snomed.info/sct/32506021000036107/version/20230731,http://snomed.info/sct/45991000052106/version/20220531,http://snomed.info/sct/45991000052106/version/20231130,http://snomed.info/sct/554471000005108/version/20210930,http://snomed.info/sct/731000124108/version/20230901,http://snomed.info/sct/827022005/version/20221130,http://snomed.info/sct/83821000000107/version/20230412,http://snomed.info/sct/900000000000207008/version/20230131,http://snomed.info/sct/900000000000207008/version/20230731,http://snomed.info/sct/900000000000207008/version/20240201]
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[1].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.focus[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.focus[0]: Unable to resolve resource with reference 'Condition/example'
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem https://www.uicc.org/resources/tnm|0.1.0
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[0]: Unable to resolve resource with reference 'Observation/tnm-primary-tumor-category'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[1]: Unable to resolve resource with reference 'Observation/tnm-regional-nodes-category'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[2]: Unable to resolve resource with reference 'Observation/tnm-distant-metastases-category'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[3]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[3]: Unable to resolve resource with reference 'Observation/tnm-y-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[4]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[4]: Unable to resolve resource with reference 'Observation/tnm-r-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[5]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[5]: Unable to resolve resource with reference 'Observation/tnm-a-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[6]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[6]: Unable to resolve resource with reference 'Observation/tnm-m-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[7]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[7]: Unable to resolve resource with reference 'Observation/tnm-l-kategorie'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[8]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[8]: Unable to resolve resource with reference 'Observation/tnm-v-kategorie'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[9]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[9]: Unable to resolve resource with reference 'Observation/tnm-pn-kategorie'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[10]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource/*Observation/TNMStageGroupClinicalExample*/.hasMember[10]: Unable to resolve resource with reference 'Observation/tnm-s-kategorie'
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[0]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[1]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[2]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[3]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[4]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[5]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[6]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[7]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[8]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[9]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[10]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.focus[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.focus[0]: Unable to resolve resource with reference 'Condition/example'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[0]: Unable to resolve resource with reference 'Observation/tnm-primary-tumor-category'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[1]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[1]: Unable to resolve resource with reference 'Observation/tnm-regional-nodes-category'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[2]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[2]: Unable to resolve resource with reference 'Observation/tnm-distant-metastases-category'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[3]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[3]: Unable to resolve resource with reference 'Observation/tnm-y-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[4]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[4]: Unable to resolve resource with reference 'Observation/tnm-r-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[5]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[5]: Unable to resolve resource with reference 'Observation/tnm-a-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[6]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[6]: Unable to resolve resource with reference 'Observation/tnm-m-symbol'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[7]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[7]: Unable to resolve resource with reference 'Observation/tnm-l-kategorie'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[8]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[8]: Unable to resolve resource with reference 'Observation/tnm-v-kategorie'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[9]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[9]: Unable to resolve resource with reference 'Observation/tnm-pn-kategorie'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[10]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource.hasMember[10]: Unable to resolve resource with reference 'Observation/tnm-s-kategorie'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[3]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[3].resource/*Observation/tnm-clinical-primary-tumor-category-cT3*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[3].resource/*Observation/tnm-clinical-primary-tumor-category-cT3*/.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[3].resource.code: None of the codings provided are in the value set 'TNM Primary Tumor Staging Type Value Set' (http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#399504009)
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[3].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[3].resource.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[4]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[4].resource/*Observation/tnm-clinical-regional-nodes-category-cN3*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[4].resource/*Observation/tnm-clinical-regional-nodes-category-cN3*/.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[4].resource.code: None of the codings provided are in the value set 'TNM Regional Nodes Staging Type Value Set' (http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#399534004)
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[4].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[4].resource.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5].resource/*Observation/tnm-clinical-distant-metastases-category-cM0*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5].resource/*Observation/tnm-clinical-distant-metastases-category-cM0*/.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5].resource.code: None of the codings provided are in the value set 'Staging Type Value Set (for Distant Metastases Category)' (http://hl7.org/fhir/us/mcode/ValueSet/mcode-observation-codes-distant-metastases-vs|2.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#399387003)
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5].resource.performer[0]: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.code.coding[0].code: The code '277650004' is valid but is not active
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs|0.1.0
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.code.coding[0].code: The code '277650004' is valid but is not active
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs|0.1.0
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs|0.1.0
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs|0.1.0
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS|0.1.0
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14]: Bundle entry missing fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-tumorkonferenz'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource.encounter: Unable to resolve resource with reference 'Encounter/example-tumorkonferenz'
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource: Best Practice Recommendation: In general, all observations should have a performer
+ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/CodeSystem-HistoGradeCS.json ==
 INFORMATION: CodeSystem/HistoGradeCS: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/HistoGradeCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -139,9 +409,11 @@ INFORMATION: CodeSystem/SerumTumorMarkerUICCCS: CodeSystem: CodeSystems SHOULD h
 WARNING: CodeSystem/SerumTumorMarkerUICCCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/SerumTumorMarkerUICCCS: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-krebsstadium-cs.json ==
+ERROR: CodeSystem.where(url = 'https://www.uicc.org/resources/tnm'): Conformance resource /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-krebsstadium-cs.json - the canonical URL (http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs) does not match the URL (https://www.uicc.org/resources/tnm)
 INFORMATION: CodeSystem/krebsstadium-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/krebsstadium-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/krebsstadium-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+ERROR: /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-krebsstadium-cs: URL Mismatch http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs vs https://www.uicc.org/resources/tnm
 == fsh-generated/resources/CodeSystem-multiple-primaer-tumoren-cs.json ==
 INFORMATION: CodeSystem/multiple-primaer-tumoren-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/multiple-primaer-tumoren-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -193,6 +465,75 @@ WARNING: Observation/Histologie-Example: Observation: Best Practice Recommendati
 == fsh-generated/resources/Observation-HistologieLymphknotenExample.json ==
 ERROR: Observation/HistologieLymphknotenExample: Observation.subject: Unable to resolve resource with reference 'TumorPatientExample'
 WARNING: Observation/HistologieLymphknotenExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMASymbolExample.json ==
+ERROR: Observation/TNMASymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMASymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMASymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMLKategorieExample.json ==
+ERROR: Observation/TNMLKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMLKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMLKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMPnKategorieExample.json ==
+ERROR: Observation/TNMPnKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMPnKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMPnKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMRSymbolExample.json ==
+ERROR: Observation/TNMRSymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMRSymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMRSymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMSKategorieExample.json ==
+ERROR: Observation/TNMSKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMSKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMSKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMStageGroupClinicalExample.json ==
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[0]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[1]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[2]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[3]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[4]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[5]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[6]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[7]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[8]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[9]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[10]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.focus[0]: Unable to resolve resource with reference 'Condition/example'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[0]: Unable to resolve resource with reference 'Observation/tnm-primary-tumor-category'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[1]: Unable to resolve resource with reference 'Observation/tnm-regional-nodes-category'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[2]: Unable to resolve resource with reference 'Observation/tnm-distant-metastases-category'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[3]: Unable to resolve resource with reference 'Observation/tnm-y-symbol'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[4]: Unable to resolve resource with reference 'Observation/tnm-r-symbol'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[5]: Unable to resolve resource with reference 'Observation/tnm-a-symbol'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[6]: Unable to resolve resource with reference 'Observation/tnm-m-symbol'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[7]: Unable to resolve resource with reference 'Observation/tnm-l-kategorie'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[8]: Unable to resolve resource with reference 'Observation/tnm-v-kategorie'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[9]: Unable to resolve resource with reference 'Observation/tnm-pn-kategorie'
+ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[10]: Unable to resolve resource with reference 'Observation/tnm-s-kategorie'
+WARNING: Observation/TNMStageGroupClinicalExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMVKategorieExample.json ==
+ERROR: Observation/TNMVKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMVKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMVKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMYSymbolExample.json ==
+ERROR: Observation/TNMYSymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMYSymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMYSymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TNMmSymbolExample.json ==
+INFORMATION: Observation/TNMmSymbolExample: Observation.code.coding[0].code: The code '277650004' is valid but is not active
+ERROR: Observation/TNMmSymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TNMmSymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
+WARNING: Observation/TNMmSymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+== fsh-generated/resources/Observation-TumorkonferenzFragestellungExample.json ==
+ERROR: Observation/TumorkonferenzFragestellungExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
+ERROR: Observation/TumorkonferenzFragestellungExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-tumorkonferenz'
+WARNING: Observation/TumorkonferenzFragestellungExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/TumorkonferenzFragestellungExample: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+== fsh-generated/resources/Observation-tnm-clinical-distant-metastases-category-cM0.json ==
+ERROR: Observation/tnm-clinical-distant-metastases-category-cM0: Observation.code: None of the codings provided are in the value set 'Staging Type Value Set (for Distant Metastases Category)' (http://hl7.org/fhir/us/mcode/ValueSet/mcode-observation-codes-distant-metastases-vs|2.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#399387003)
+== fsh-generated/resources/Observation-tnm-clinical-primary-tumor-category-cT3.json ==
+ERROR: Observation/tnm-clinical-primary-tumor-category-cT3: Observation.code: None of the codings provided are in the value set 'TNM Primary Tumor Staging Type Value Set' (http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#399504009)
+== fsh-generated/resources/Observation-tnm-clinical-regional-nodes-category-cN3.json ==
+ERROR: Observation/tnm-clinical-regional-nodes-category-cN3: Observation.code: None of the codings provided are in the value set 'TNM Regional Nodes Staging Type Value Set' (http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs|0.1.0), and a coding from this value set is required) (codes = http://snomed.info/sct#399534004)
 == fsh-generated/resources/Organization-Organisation-example-1.json ==
 == fsh-generated/resources/Patient-TumorPatient-example-1.json ==
 ERROR: Patient/TumorPatient-example-1: Patient.identifier[0].type: The pattern [system http://fhir.de/CodeSystem/identifier-type-de-basis, code KVZ10, and display 'null'] defined in the profile http://fhir.de/StructureDefinition/identifier-kvid-10|1.5.0-ballot not found. Issues: [ValidationMessage[level=ERROR,type=VALUE,location=Patient.identifier[0].type.coding.code,message=Value is 'GKV' but must be 'KVZ10']]
@@ -205,27 +546,20 @@ INFORMATION: Procedure/OperationEinzelprozedurExample: Procedure.code.coding[0].
 == fsh-generated/resources/Procedure-OperationExample.json ==
 == fsh-generated/resources/Specimen-Tumor-Example.json ==
 == fsh-generated/resources/StructureDefinition-AnmeldeBundleMinimal.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-HistologieLymphknoten.json ==
 == fsh-generated/resources/StructureDefinition-Melder.json ==
 == fsh-generated/resources/StructureDefinition-MelderInOrganisation.json ==
 == fsh-generated/resources/StructureDefinition-Organisation.json ==
 == fsh-generated/resources/StructureDefinition-TNMASymbol.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMLKategorie.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMPnKategorie.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMRSymbol.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMSKategorie.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMVKategorie.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMYSymbol.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-TNMmSymbol.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol'): The Implementation Guide contains no examples for this profile
+INFORMATION: StructureDefinition/TNMmSymbol: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: The code '277650004' is valid but is not active
+INFORMATION: StructureDefinition/TNMmSymbol: StructureDefinition.differential.element[1].pattern.ofType(CodeableConcept).coding[0].code: The code '277650004' is valid but is not active
 == fsh-generated/resources/StructureDefinition-TumorDiagnose.json ==
 == fsh-generated/resources/StructureDefinition-TumorPatient.json ==
 == fsh-generated/resources/StructureDefinition-befund-dokument.json ==
@@ -258,13 +592,10 @@ WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenze
 == fsh-generated/resources/StructureDefinition-systemische-therapie-details.json ==
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/systemische-therapie-details'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-tnm-distant-metastases-category.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-distant-metastases-category'): The Implementation Guide contains no examples for this profile
+INFORMATION: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-distant-metastases-category'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/StructureDefinition-tnm-primary-tumor-category.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tnm-regional-nodes-category.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tnm-stage-group.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tumor.json ==
 == fsh-generated/resources/StructureDefinition-tumorErkrankung.json ==
 WARNING: StructureDefinition/tumorErkrankung: StructureDefinition.snapshot.element[17].pattern.ofType(CodeableConcept).coding[0].code: Unknown Code 'C16213' in the system 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
@@ -275,7 +606,6 @@ WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenze
 == fsh-generated/resources/StructureDefinition-tumorkonferenz-bemerkung.json ==
 WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-bemerkung'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung.json ==
-WARNING: StructureDefinition.where(url = 'http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tumorkonferenz-fragestellung-radiologie.json ==
 INFORMATION: StructureDefinition/tumorkonferenz-fragestellung-radiologie: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0].code: Not validated against the Machine Readable Concept Model (MRCM)
 INFORMATION: StructureDefinition/tumorkonferenz-fragestellung-radiologie: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0].code: Not validated against the Machine Readable Concept Model (MRCM)
@@ -324,19 +654,15 @@ WARNING: ValueSet/obds-strahlentherapie-intention-vs: ValueSet: Published value 
 == fsh-generated/resources/ValueSet-perineurale-invasion-vs.json ==
 WARNING: ValueSet/perineurale-invasion-vs: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
 == fsh-generated/resources/ValueSet-tnm-distant-metastases-category-max-vs.json ==
-WARNING: ValueSet.where(id = 'tnm-distant-metastases-category-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
 == fsh-generated/resources/ValueSet-tnm-distant-metastases-category-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-distant-metastases-staging-type-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-primary-tumor-category-max-vs.json ==
-WARNING: ValueSet.where(id = 'tnm-primary-tumor-category-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
 == fsh-generated/resources/ValueSet-tnm-primary-tumor-category-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-primary-tumor-staging-type-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-regional-nodes-category-max-vs.json ==
-WARNING: ValueSet.where(id = 'tnm-regional-nodes-category-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
 == fsh-generated/resources/ValueSet-tnm-regional-nodes-category-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-regional-nodes-staging-type-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-stage-group-max-vs.json ==
-WARNING: ValueSet.where(id = 'tnm-stage-group-max-vs'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.uicc.org/resources/tnm
 == fsh-generated/resources/ValueSet-tnm-stage-group-staging-type-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-stage-group-vs.json ==
 == fsh-generated/resources/ValueSet-tnm-staging-method-vs.json ==

@@ -38,8 +38,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-grading.html" : "Grading",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
+      "StructureDefinition-grading.html" : "Grading"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs",
@@ -132,9 +132,7 @@
       "name" : "KrebsstadiumVS",
       "title" : "Krebsstadium ValueSet",
       "description" : "KrebsstadiumVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"
-      ],
+      "systems" : ["https://www.uicc.org/resources/tnm"],
       "uses" : {
       },
       "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
@@ -245,8 +243,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set"
+      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs",
@@ -337,10 +335,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
       "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",

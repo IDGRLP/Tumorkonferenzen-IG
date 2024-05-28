@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMmSymbolExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TNMmSymbolExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"^^xsd:anyURI ;
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"TNMmSymbolExample\"> </a><a name=\"hcTNMmSymbolExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;TNMmSymbolExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TNMmSymbol.html\">TNMmSymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: m - Multiple tumors (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#277650004)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient\">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf\">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: (2) simultane Tumoren <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-multiple-primaer-tumoren-cs.html\">Multiple PrimärTumoren CodeSystem</a>#2)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:277650004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "277650004" ] ;
+       fhir:display [ fhir:v "m - Multiple tumors (tumor staging)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/example-tumor-patient> ;
+     fhir:reference [ fhir:v "Patient/example-tumor-patient" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Encounter/example-verlauf> ;
+     fhir:reference [ fhir:v "Encounter/example-verlauf" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-05-27T12:00:00Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "2" ] ;
+       fhir:display [ fhir:v "(2) simultane Tumoren" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

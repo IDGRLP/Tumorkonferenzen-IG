@@ -1,0 +1,27 @@
+{
+  "resourceType" : "Observation",
+  "id" : "TNMASymbolExample",
+  "meta" : {
+    "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"TNMASymbolExample\"> </a><a name=\"hcTNMASymbolExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;TNMASymbolExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TNMASymbol.html\">TNMASymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cancer staging during autopsy <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#101660-9)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient\">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf\">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: true</p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "101660-9",
+      "display" : "Cancer staging during autopsy"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example-tumor-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/example-verlauf"
+  },
+  "effectiveDateTime" : "2024-05-27T12:00:00Z",
+  "valueBoolean" : true
+}

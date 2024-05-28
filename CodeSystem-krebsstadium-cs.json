@@ -3,14 +3,14 @@
   "id" : "krebsstadium-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">stadium0<a name=\"krebsstadium-cs-stadium0\"> </a></td><td>Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumI<a name=\"krebsstadium-cs-stadiumI\"> </a></td><td>Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumII<a name=\"krebsstadium-cs-stadiumII\"> </a></td><td>Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumIII<a name=\"krebsstadium-cs-stadiumIII\"> </a></td><td>Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen</td></tr><tr><td style=\"white-space:nowrap\">stadiumIV<a name=\"krebsstadium-cs-stadiumIV\"> </a></td><td>Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://www.uicc.org/resources/tnm</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">okk<a name=\"krebsstadium-cs-okk\"> </a></td><td>Stadium X</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"krebsstadium-cs-0\"> </a></td><td>Stadium 0</td></tr><tr><td style=\"white-space:nowrap\">0a<a name=\"krebsstadium-cs-0a\"> </a></td><td>Stadium 0a</td></tr><tr><td style=\"white-space:nowrap\">0is<a name=\"krebsstadium-cs-0is\"> </a></td><td>Stadium 0is</td></tr><tr><td style=\"white-space:nowrap\">I<a name=\"krebsstadium-cs-I\"> </a></td><td>Stadium I</td></tr><tr><td style=\"white-space:nowrap\">IA1<a name=\"krebsstadium-cs-IA1\"> </a></td><td>Stadium IA1</td></tr><tr><td style=\"white-space:nowrap\">IA2<a name=\"krebsstadium-cs-IA2\"> </a></td><td>Stadium IA2</td></tr><tr><td style=\"white-space:nowrap\">IA3<a name=\"krebsstadium-cs-IA3\"> </a></td><td>Stadium IA3</td></tr><tr><td style=\"white-space:nowrap\">IB<a name=\"krebsstadium-cs-IB\"> </a></td><td>Stadium IB</td></tr><tr><td style=\"white-space:nowrap\">IB1<a name=\"krebsstadium-cs-IB1\"> </a></td><td>Stadium IB1</td></tr><tr><td style=\"white-space:nowrap\">IB2<a name=\"krebsstadium-cs-IB2\"> </a></td><td>Stadium IB2</td></tr><tr><td style=\"white-space:nowrap\">IC<a name=\"krebsstadium-cs-IC\"> </a></td><td>Stadium IC</td></tr><tr><td style=\"white-space:nowrap\">IS<a name=\"krebsstadium-cs-IS\"> </a></td><td>Stadium IS</td></tr><tr><td style=\"white-space:nowrap\">II<a name=\"krebsstadium-cs-II\"> </a></td><td>Stadium II</td></tr><tr><td style=\"white-space:nowrap\">IIA<a name=\"krebsstadium-cs-IIA\"> </a></td><td>Stadium IIA</td></tr><tr><td style=\"white-space:nowrap\">IIA1<a name=\"krebsstadium-cs-IIA1\"> </a></td><td>Stadium IIA1</td></tr><tr><td style=\"white-space:nowrap\">IIA2<a name=\"krebsstadium-cs-IIA2\"> </a></td><td>Stadium IIA2</td></tr><tr><td style=\"white-space:nowrap\">IIB<a name=\"krebsstadium-cs-IIB\"> </a></td><td>Stadium IIB</td></tr><tr><td style=\"white-space:nowrap\">IIC<a name=\"krebsstadium-cs-IIC\"> </a></td><td>Stadium IIC</td></tr><tr><td style=\"white-space:nowrap\">III<a name=\"krebsstadium-cs-III\"> </a></td><td>Stadium III</td></tr><tr><td style=\"white-space:nowrap\">IIIA<a name=\"krebsstadium-cs-IIIA\"> </a></td><td>Stadium IIIA</td></tr><tr><td style=\"white-space:nowrap\">IIIA1<a name=\"krebsstadium-cs-IIIA1\"> </a></td><td>Stadium IIIA1</td></tr><tr><td style=\"white-space:nowrap\">IIIA2<a name=\"krebsstadium-cs-IIIA2\"> </a></td><td>Stadium IIIA2</td></tr><tr><td style=\"white-space:nowrap\">IIIB<a name=\"krebsstadium-cs-IIIB\"> </a></td><td>Stadium IIIB</td></tr><tr><td style=\"white-space:nowrap\">IIIC<a name=\"krebsstadium-cs-IIIC\"> </a></td><td>Stadium IIIC</td></tr><tr><td style=\"white-space:nowrap\">IIIC1<a name=\"krebsstadium-cs-IIIC1\"> </a></td><td>Stadium IIIC1</td></tr><tr><td style=\"white-space:nowrap\">IIIC2<a name=\"krebsstadium-cs-IIIC2\"> </a></td><td>Stadium IIIC2</td></tr><tr><td style=\"white-space:nowrap\">IV<a name=\"krebsstadium-cs-IV\"> </a></td><td>Stadium IV</td></tr><tr><td style=\"white-space:nowrap\">IVA<a name=\"krebsstadium-cs-IVA\"> </a></td><td>Stadium IVA</td></tr><tr><td style=\"white-space:nowrap\">IVB<a name=\"krebsstadium-cs-IVB\"> </a></td><td>Stadium IVB</td></tr><tr><td style=\"white-space:nowrap\">IVC<a name=\"krebsstadium-cs-IVC\"> </a></td><td>Stadium IVC</td></tr></table></div>"
   },
-  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
+  "url" : "https://www.uicc.org/resources/tnm",
   "version" : "0.1.0",
   "name" : "KrebsstadiumCS",
   "title" : "Krebsstadium CodeSystem",
   "status" : "draft",
-  "date" : "2024-05-22T07:04:28+00:00",
+  "date" : "2024-05-28T11:23:31+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -25,25 +25,129 @@
   }],
   "description" : "KrebsstadiumCS",
   "content" : "complete",
-  "count" : 5,
+  "count" : 31,
   "concept" : [{
-    "code" : "stadium0",
-    "display" : "Stadium 0: Tumore ohne Ausbreitung in das Bindegewebe unterhalb der Darmschleimhaut, ohne Lymphknotenbefall und Metastasen"
+    "code" : "okk",
+    "display" : "Stadium X"
   },
   {
-    "code" : "stadiumI",
-    "display" : "Stadium I: Kleine und mittelgroße Tumore (T1, T2) ohne Lymphknotenbefall und Metastasen"
+    "code" : "0",
+    "display" : "Stadium 0"
   },
   {
-    "code" : "stadiumII",
-    "display" : "Stadium II: Mittelgroße bis große Tumore (T3, T4) ohne Lymphknotenbefall und Metastasen"
+    "code" : "0a",
+    "display" : "Stadium 0a"
   },
   {
-    "code" : "stadiumIII",
-    "display" : "Stadium III: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung ohne Fern-Metastasen"
+    "code" : "0is",
+    "display" : "Stadium 0is"
   },
   {
-    "code" : "stadiumIV",
-    "display" : "Stadium IV: Tumore jeder Größe mit Metastasen in 1-4 Lymphknoten in der Umgebung mit Fern-Metastasen"
+    "code" : "I",
+    "display" : "Stadium I"
+  },
+  {
+    "code" : "IA1",
+    "display" : "Stadium IA1"
+  },
+  {
+    "code" : "IA2",
+    "display" : "Stadium IA2"
+  },
+  {
+    "code" : "IA3",
+    "display" : "Stadium IA3"
+  },
+  {
+    "code" : "IB",
+    "display" : "Stadium IB"
+  },
+  {
+    "code" : "IB1",
+    "display" : "Stadium IB1"
+  },
+  {
+    "code" : "IB2",
+    "display" : "Stadium IB2"
+  },
+  {
+    "code" : "IC",
+    "display" : "Stadium IC"
+  },
+  {
+    "code" : "IS",
+    "display" : "Stadium IS"
+  },
+  {
+    "code" : "II",
+    "display" : "Stadium II"
+  },
+  {
+    "code" : "IIA",
+    "display" : "Stadium IIA"
+  },
+  {
+    "code" : "IIA1",
+    "display" : "Stadium IIA1"
+  },
+  {
+    "code" : "IIA2",
+    "display" : "Stadium IIA2"
+  },
+  {
+    "code" : "IIB",
+    "display" : "Stadium IIB"
+  },
+  {
+    "code" : "IIC",
+    "display" : "Stadium IIC"
+  },
+  {
+    "code" : "III",
+    "display" : "Stadium III"
+  },
+  {
+    "code" : "IIIA",
+    "display" : "Stadium IIIA"
+  },
+  {
+    "code" : "IIIA1",
+    "display" : "Stadium IIIA1"
+  },
+  {
+    "code" : "IIIA2",
+    "display" : "Stadium IIIA2"
+  },
+  {
+    "code" : "IIIB",
+    "display" : "Stadium IIIB"
+  },
+  {
+    "code" : "IIIC",
+    "display" : "Stadium IIIC"
+  },
+  {
+    "code" : "IIIC1",
+    "display" : "Stadium IIIC1"
+  },
+  {
+    "code" : "IIIC2",
+    "display" : "Stadium IIIC2"
+  },
+  {
+    "code" : "IV",
+    "display" : "Stadium IV"
+  },
+  {
+    "code" : "IVA",
+    "display" : "Stadium IVA"
+  },
+  {
+    "code" : "IVB",
+    "display" : "Stadium IVB"
+  },
+  {
+    "code" : "IVC",
+    "display" : "Stadium IVC"
   }]
 }

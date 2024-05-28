@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "krebsstadium-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-krebsstadium-cs.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-krebsstadium-cs.html\"><code>https://www.uicc.org/resources/tnm</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "KrebsstadiumVS"] ; # 
   fhir:title [ fhir:v "Krebsstadium ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-22T07:04:28+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-28T11:23:31+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
@@ -32,7 +32,7 @@
   fhir:description [ fhir:v "KrebsstadiumVS"] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs"^^xsd:anyURI ]
+       fhir:system [ fhir:v "https://www.uicc.org/resources/tnm"^^xsd:anyURI ]
      ] )
   ] . # 
 

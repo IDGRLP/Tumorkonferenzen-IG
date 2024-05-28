@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TumorkonferenzenIDG"/>
   <status value="draft"/>
-  <date value="2024-05-22T07:04:28+00:00"/>
+  <date value="2024-05-28T11:23:31+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -468,6 +468,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/AnmeldeBundleMinimal"/>
+      </reference>
+      <name value="AnmeldeBundleMinimal"/>
+      <description value="AnmeldeBundleMinimal"/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -567,6 +578,105 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMStageGroupClinicalExample"/>
+      </reference>
+      <name value="Example TNM Stage Group Observation"/>
+      <description value="An example of an Observation conforming to the TNMStageGroup profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMASymbolExample"/>
+      </reference>
+      <name value="Example TNMASymbol Observation"/>
+      <description value="An example of an Observation conforming to the TNMASymbol profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMLKategorieExample"/>
+      </reference>
+      <name value="Example TNMLKategorie Observation"/>
+      <description value="An example of an Observation conforming to the TNMLKategorie profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMmSymbolExample"/>
+      </reference>
+      <name value="Example TNMmSymbol Observation"/>
+      <description value="An example of an Observation conforming to the TNMmSymbol profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMPnKategorieExample"/>
+      </reference>
+      <name value="Example TNMPnKategorie Observation"/>
+      <description value="An example of an Observation conforming to the TNMPnKategorie profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMRSymbolExample"/>
+      </reference>
+      <name value="Example TNMRSymbol Observation"/>
+      <description value="An example of an Observation conforming to the TNMRSymbol profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMSKategorieExample"/>
+      </reference>
+      <name value="Example TNMSKategorie Observation"/>
+      <description value="An example of an Observation conforming to the TNMSKategorie profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMVKategorieExample"/>
+      </reference>
+      <name value="Example TNMVKategorie Observation"/>
+      <description value="An example of an Observation conforming to the TNMVKategorie profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TNMYSymbolExample"/>
+      </reference>
+      <name value="Example TNMYSymbol Observation"/>
+      <description value="An example of an Observation conforming to the TNMYSymbol profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Condition"/>
       </extension>
       <reference>
@@ -575,6 +685,17 @@
       <name value="Example Tumordiagnose"/>
       <description value="Example instance of a Tumordiagnose resource"/>
       <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/TumorkonferenzFragestellungExample"/>
+      </reference>
+      <name value="Example TumorkonferenzFragestellung Observation"/>
+      <description value="An example of an Observation conforming to the TumorkonferenzFragestellung profile."/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1238,6 +1359,36 @@
       <name value="TNM Staging Method Value Set"/>
       <description value="Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tnm-clinical-distant-metastases-category-cM0"/>
+      </reference>
+      <name value="tnm-clinical-distant-metastases-category-cM0"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tnm-clinical-primary-tumor-category-cT3"/>
+      </reference>
+      <name value="tnm-clinical-primary-tumor-category-cT3"/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tnm-clinical-regional-nodes-category-cN3"/>
+      </reference>
+      <name value="tnm-clinical-regional-nodes-category-cN3"/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

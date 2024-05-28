@@ -264,6 +264,7 @@
       "Condition.code.coding"
     ],
     "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Bundle.entry.resource.code.coding",
       "Condition.code.coding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -286,6 +287,7 @@
       "Patient.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Bundle.entry.resource.address.line",
       "Patient.address.line",
       "StructureDefinition.snapshot.element.example.valueString"
     ],
@@ -296,6 +298,7 @@
       "Patient.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Bundle.entry.resource.address.line",
       "Patient.address.line",
       "StructureDefinition.snapshot.element.example.valueString"
     ],

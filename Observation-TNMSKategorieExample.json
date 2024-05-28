@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Observation",
+  "id" : "TNMSKategorieExample",
+  "meta" : {
+    "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"TNMSKategorieExample\"> </a><a name=\"hcTNMSKategorieExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;TNMSKategorieExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-TNMSKategorie.html\">TNMSKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Serum tumor marker category (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#399424006)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient\">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf\">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: S0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-SerumTumorMarkerUICCCS.html\">SerumTumorMarkerUICCCS</a>#S0)</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "399424006",
+      "display" : "Serum tumor marker category (observable entity)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example-tumor-patient"
+  },
+  "encounter" : {
+    "reference" : "Encounter/example-verlauf"
+  },
+  "effectiveDateTime" : "2024-05-27T12:00:00Z",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
+      "code" : "S0",
+      "display" : "S0"
+    }]
+  }
+}

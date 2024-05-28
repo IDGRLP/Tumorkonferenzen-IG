@@ -33,14 +33,6 @@
       "description" : "SerumTumorMarkerUICCCS"
     },
     {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/krebsstadium-cs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "KrebsstadiumCS",
-      "title" : "Krebsstadium CodeSystem",
-      "description" : "KrebsstadiumCS"
-    },
-    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -79,6 +71,14 @@
       "name" : "VeneninvasionCS",
       "title" : "Veneninvasion CodeSystem",
       "description" : "VeneninvasionCS"
+    },
+    {
+      "url" : "https://www.uicc.org/resources/tnm",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "KrebsstadiumCS",
+      "title" : "Krebsstadium CodeSystem",
+      "description" : "KrebsstadiumCS"
     }
   ]
 }
