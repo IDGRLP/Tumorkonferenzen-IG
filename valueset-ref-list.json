@@ -38,8 +38,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
-      "StructureDefinition-grading.html" : "Grading"
+      "StructureDefinition-grading.html" : "Grading",
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs",
@@ -277,8 +277,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
-      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set"
+      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set",
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs",
@@ -335,10 +335,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
       "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
       "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
+      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",

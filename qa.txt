@@ -1,11 +1,11 @@
 TumorkonferenzenIDG : Validation Results
 =========================================
 
-err = 237, warn = 119, info = 77
+err = 189, warn = 119, info = 77
 IG Publisher Version: 1.6.6 Out of date - current version is 1.6.10
-Generated Tue May 28 11:25:53 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
+Generated Tue May 28 11:51:01 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumorkonferenzen#0.1.0 (canonical = http://idg-rlp.de/fhir/tumorkonferenzen)
  Build Errors : 1 / 17 / 0
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Bundle-AnmeldeBundleMinimal : 185 / 26 / 72
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Bundle-AnmeldeBundleMinimal : 153 / 26 / 72
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-HistoGradeCS : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-Lymphgefaessinvasion-cs : 0 / 2 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/CodeSystem-ResidualstatusCS : 0 / 2 / 2
@@ -24,15 +24,15 @@ Generated Tue May 28 11:25:53 UTC 2024. FHIR version 4.0.1 for de.idg-rlp.tumork
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-GradingExample : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-Histologie-Example : 0 / 3 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-HistologieLymphknotenExample : 1 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMASymbolExample : 2 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMLKategorieExample : 2 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMPnKategorieExample : 2 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMRSymbolExample : 2 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMSKategorieExample : 2 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMASymbolExample : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMLKategorieExample : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMPnKategorieExample : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMRSymbolExample : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMSKategorieExample : 0 / 1 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMStageGroupClinicalExample : 12 / 1 / 12
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMVKategorieExample : 2 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMYSymbolExample : 2 / 1 / 1
- /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMmSymbolExample : 2 / 1 / 2
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMVKategorieExample : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMYSymbolExample : 0 / 1 / 1
+ /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TNMmSymbolExample : 0 / 1 / 2
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-TumorkonferenzFragestellungExample : 2 / 2 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-tnm-clinical-distant-metastases-category-cM0 : 1 / 0 / 1
  /__w/Tumorkonferenzen-IG/Tumorkonferenzen-IG/resources/fsh-generated/resources/Observation-tnm-clinical-primary-tumor-category-cT3 : 1 / 0 / 1
@@ -271,90 +271,58 @@ ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[5].resource.performer[0]: Relat
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource/*Observation/TNMYSymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[6].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource/*Observation/TNMRSymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[7].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource/*Observation/TNMASymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[8].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/: Best Practice Recommendation: In general, all observations should have a performer
 INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.code.coding[0].code: The code '277650004' is valid but is not active
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource/*Observation/TNMmSymbolExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs|0.1.0
 INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.code.coding[0].code: The code '277650004' is valid but is not active
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[9].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource/*Observation/TNMLKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs|0.1.0
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[10].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource/*Observation/TNMVKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs|0.1.0
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[11].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource/*Observation/TNMPnKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs|0.1.0
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[12].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/: Best Practice Recommendation: In general, all observations should have a performer
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13]: Bundle entry missing fullUrl
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 INFORMATION: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource/*Observation/TNMSKategorieExample*/.value.ofType(CodeableConcept): Reference to draft CodeSystem http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS|0.1.0
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.encounter: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[13].resource.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/: Best Practice Recommendation: In general, all observations should have a performer
 WARNING: Bundle/AnmeldeBundleMinimal: Bundle.entry[14].resource/*Observation/TumorkonferenzFragestellungExample*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/AnmeldeBundleMinimal: Bundle.entry[14]: Bundle entry missing fullUrl
@@ -466,24 +434,14 @@ WARNING: Observation/Histologie-Example: Observation: Best Practice Recommendati
 ERROR: Observation/HistologieLymphknotenExample: Observation.subject: Unable to resolve resource with reference 'TumorPatientExample'
 WARNING: Observation/HistologieLymphknotenExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMASymbolExample.json ==
-ERROR: Observation/TNMASymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMASymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMASymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMLKategorieExample.json ==
-ERROR: Observation/TNMLKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMLKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMLKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMPnKategorieExample.json ==
-ERROR: Observation/TNMPnKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMPnKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMPnKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMRSymbolExample.json ==
-ERROR: Observation/TNMRSymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMRSymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMRSymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMSKategorieExample.json ==
-ERROR: Observation/TNMSKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMSKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMSKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMStageGroupClinicalExample.json ==
 INFORMATION: Observation/TNMStageGroupClinicalExample: Observation.hasMember[0]: This element does not match any known slice defined in the profile http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -511,17 +469,11 @@ ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[9]: Unabl
 ERROR: Observation/TNMStageGroupClinicalExample: Observation.hasMember[10]: Unable to resolve resource with reference 'Observation/tnm-s-kategorie'
 WARNING: Observation/TNMStageGroupClinicalExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMVKategorieExample.json ==
-ERROR: Observation/TNMVKategorieExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMVKategorieExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMVKategorieExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMYSymbolExample.json ==
-ERROR: Observation/TNMYSymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMYSymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMYSymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TNMmSymbolExample.json ==
 INFORMATION: Observation/TNMmSymbolExample: Observation.code.coding[0].code: The code '277650004' is valid but is not active
-ERROR: Observation/TNMmSymbolExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'
-ERROR: Observation/TNMmSymbolExample: Observation.encounter: Unable to resolve resource with reference 'Encounter/example-verlauf'
 WARNING: Observation/TNMmSymbolExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-TumorkonferenzFragestellungExample.json ==
 ERROR: Observation/TumorkonferenzFragestellungExample: Observation.subject: Unable to resolve resource with reference 'Patient/example-tumor-patient'

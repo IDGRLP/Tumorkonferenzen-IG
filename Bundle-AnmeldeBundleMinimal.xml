@@ -332,7 +332,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMYSymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMYSymbolExample"> </a><a name="hcTNMYSymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMYSymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMYSymbol.html">TNMYSymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Collaborative staging post treatment extension Cancer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#59479-6)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: true</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMYSymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMYSymbolExample"> </a><a name="hcTNMYSymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMYSymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMYSymbol.html">TNMYSymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Collaborative staging post treatment extension Cancer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#59479-6)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: true</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -343,10 +343,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueBoolean value="true"/>
@@ -361,7 +361,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMRSymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMRSymbolExample"> </a><a name="hcTNMRSymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMRSymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMRSymbol.html">TNMRSymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Recurrence type first episode Cancer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#21983-2)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: true</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMRSymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMRSymbolExample"> </a><a name="hcTNMRSymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMRSymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMRSymbol.html">TNMRSymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Recurrence type first episode Cancer <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#21983-2)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: true</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -372,10 +372,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueBoolean value="true"/>
@@ -390,7 +390,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMASymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMASymbolExample"> </a><a name="hcTNMASymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMASymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMASymbol.html">TNMASymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cancer staging during autopsy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#101660-9)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: true</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMASymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMASymbolExample"> </a><a name="hcTNMASymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMASymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMASymbol.html">TNMASymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Cancer staging during autopsy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#101660-9)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: true</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -401,10 +401,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueBoolean value="true"/>
@@ -419,7 +419,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMmSymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMmSymbolExample"> </a><a name="hcTNMmSymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMmSymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMmSymbol.html">TNMmSymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: m - Multiple tumors (tumor staging) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#277650004)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: (2) simultane Tumoren <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-multiple-primaer-tumoren-cs.html">Multiple PrimärTumoren CodeSystem</a>#2)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMmSymbolExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMmSymbolExample"> </a><a name="hcTNMmSymbolExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMmSymbolExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMmSymbol.html">TNMmSymbol</a></p></div><p><b>status</b>: final</p><p><b>code</b>: m - Multiple tumors (tumor staging) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#277650004)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: (2) simultane Tumoren <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-multiple-primaer-tumoren-cs.html">Multiple PrimärTumoren CodeSystem</a>#2)</span></p></div>
         </text>
         <status value="final"/>
         <code>
@@ -430,10 +430,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueCodeableConcept>
@@ -454,7 +454,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMLKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMLKategorieExample"> </a><a name="hcTNMLKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMLKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMLKategorie.html">TNMLKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#33739-4)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: Keine Lymphgefäßinvasion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-Lymphgefaessinvasion-cs.html">Lymphgefäßinvasion CodeSystem</a>#L0)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMLKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMLKategorieExample"> </a><a name="hcTNMLKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMLKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMLKategorie.html">TNMLKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#33739-4)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: Keine Lymphgefäßinvasion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-Lymphgefaessinvasion-cs.html">Lymphgefäßinvasion CodeSystem</a>#L0)</span></p></div>
         </text>
         <status value="final"/>
         <code>
@@ -465,10 +465,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueCodeableConcept>
@@ -489,7 +489,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMVKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMVKategorieExample"> </a><a name="hcTNMVKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMVKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMVKategorie.html">TNMVKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#33740-2)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: Keine Veneninvasion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-veneninvasion-cs.html">Veneninvasion CodeSystem</a>#V0)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMVKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMVKategorieExample"> </a><a name="hcTNMVKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMVKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMVKategorie.html">TNMVKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#33740-2)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: Keine Veneninvasion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-veneninvasion-cs.html">Veneninvasion CodeSystem</a>#V0)</span></p></div>
         </text>
         <status value="final"/>
         <code>
@@ -500,10 +500,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueCodeableConcept>
@@ -524,7 +524,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMPnKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMPnKategorieExample"> </a><a name="hcTNMPnKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMPnKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMPnKategorie.html">TNMPnKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Perineural invasion [Presence] in Cancer specimen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#92837-4)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: Keine perineurale Invasion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-perineurale-invasion-cs.html">Perineurale Invasion CodeSystem</a>#PN0)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMPnKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMPnKategorieExample"> </a><a name="hcTNMPnKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMPnKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMPnKategorie.html">TNMPnKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Perineural invasion [Presence] in Cancer specimen <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://loinc.org/">LOINC</a>#92837-4)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: Keine perineurale Invasion <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-perineurale-invasion-cs.html">Perineurale Invasion CodeSystem</a>#PN0)</span></p></div>
         </text>
         <status value="final"/>
         <code>
@@ -535,10 +535,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueCodeableConcept>
@@ -559,7 +559,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMSKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMSKategorieExample"> </a><a name="hcTNMSKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMSKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMSKategorie.html">TNMSKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Serum tumor marker category (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#399424006)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example-tumor-patient">Patient/example-tumor-patient</a></p><p><b>encounter</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0-ballot2&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Encounter/example-verlauf">Encounter/example-verlauf</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: S0 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-SerumTumorMarkerUICCCS.html">SerumTumorMarkerUICCCS</a>#S0)</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_TNMSKategorieExample"> </a><p><b>Generated Narrative: Observation</b><a name="TNMSKategorieExample"> </a><a name="hcTNMSKategorieExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;TNMSKategorieExample&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-TNMSKategorie.html">TNMSKategorie</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Serum tumor marker category (observable entity) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#399424006)</span></p><p><b>subject</b>: See on this page: Patient/TumorPatient-example-1</p><p><b>encounter</b>: <a href="Encounter-VerlaufExample.html">Encounter/VerlaufExample</a></p><p><b>effective</b>: 2024-05-27 12:00:00+0000</p><p><b>value</b>: S0 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-SerumTumorMarkerUICCCS.html">SerumTumorMarkerUICCCS</a>#S0)</span></p></div>
         </text>
         <status value="final"/>
         <code>
@@ -570,10 +570,10 @@
           </coding>
         </code>
         <subject>
-          <reference value="Patient/example-tumor-patient"/>
+          <reference value="Patient/TumorPatient-example-1"/>
         </subject>
         <encounter>
-          <reference value="Encounter/example-verlauf"/>
+          <reference value="Encounter/VerlaufExample"/>
         </encounter>
         <effectiveDateTime value="2024-05-27T12:00:00Z"/>
         <valueCodeableConcept>
