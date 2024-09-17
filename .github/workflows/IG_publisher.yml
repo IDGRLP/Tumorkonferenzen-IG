@@ -35,7 +35,7 @@ jobs:
           java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
 
       - name: Upload Artifacts 🔺 # The project is then uploaded as an artifact named 'site'.
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: ig
           path: resources/output
