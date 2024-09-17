@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "TumorsituationVS",
+  "id": "tumorsituation-vs",
+  "title": "Tumorsituation ValueSet",
+  "description": "ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"
+      }
+    ]
+  }
+}

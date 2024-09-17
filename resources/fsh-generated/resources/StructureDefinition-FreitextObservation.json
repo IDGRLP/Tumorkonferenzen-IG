@@ -1,0 +1,39 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "FreitextObservation",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "name": "FreitextObservation",
+  "title": "FreitextObservation",
+  "status": "draft",
+  "description": "FreitextObservation",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}

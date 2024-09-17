@@ -1,0 +1,29 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Anmelder",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder",
+  "name": "Anmelder",
+  "title": "Anmelder",
+  "status": "draft",
+  "description": "Anmelder",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "mustSupport": true
+      }
+    ]
+  }
+}

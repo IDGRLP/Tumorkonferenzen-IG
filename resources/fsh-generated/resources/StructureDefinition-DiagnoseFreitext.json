@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DiagnoseFreitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext",
+  "name": "DiagnoseFreitext",
+  "title": "DiagnoseFreitext",
+  "status": "draft",
+  "description": "DiagnoseFreitext",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "diagnoseFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

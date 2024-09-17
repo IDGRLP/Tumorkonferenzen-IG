@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "HistologischeTypisierungVS",
+  "id": "histologische-typisierung-vs",
+  "title": "Histologische Typisierung ValueSet",
+  "description": "ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/histologische-typisierung-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "261665006",
+            "display": "Unbekannt"
+          },
+          {
+            "code": "254632001",
+            "display": "SCLC"
+          },
+          {
+            "code": "254637007",
+            "display": "NSCLC"
+          },
+          {
+            "code": "74964007",
+            "display": "Sonstige"
+          }
+        ]
+      }
+    ]
+  }
+}

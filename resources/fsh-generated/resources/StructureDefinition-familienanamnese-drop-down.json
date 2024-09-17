@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "familienanamnese-drop-down",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/familienanamnese-drop-down",
+  "name": "FamilienanamneseDropDown",
+  "title": "Familienanamnese DropDown",
+  "status": "draft",
+  "description": "Familienanamnese DropDown",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "familienanamnese",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/pos-neg-nask-vs"
+        }
+      }
+    ]
+  }
+}

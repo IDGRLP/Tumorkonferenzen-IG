@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "psa-verlauf-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/psa-verlauf-freitext",
+  "name": "PsaVerlaufFreitext",
+  "title": "PsaVerlaufFreitext",
+  "status": "draft",
+  "description": "Freitext für die Beschreibung des PSA-Verlaufs",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "psaVerlaufFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

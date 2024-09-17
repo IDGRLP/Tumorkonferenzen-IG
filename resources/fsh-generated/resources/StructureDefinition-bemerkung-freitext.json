@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "bemerkung-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/bemerkung-freitext",
+  "name": "BemerkungFreitext",
+  "title": "BemerkungFreitext",
+  "status": "draft",
+  "description": "Freitext für allgemeine Bemerkungen",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "bemerkungFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

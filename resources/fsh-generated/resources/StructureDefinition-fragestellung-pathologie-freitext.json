@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "fragestellung-pathologie-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-pathologie-freitext",
+  "name": "FragestellungPathologieFreitext",
+  "title": "FragestellungPathologieFreitext",
+  "status": "draft",
+  "description": "Freitext für die spezifische Fragestellung an die Pathologie",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "fragestellungPathologieFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

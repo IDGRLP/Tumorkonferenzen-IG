@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "TumorsituationCS",
+  "id": "tumorsituation-cs",
+  "title": "Tumorsituation CodeSystem",
+  "description": "Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs",
+  "concept": [
+    {
+      "code": "ED",
+      "display": "Erstdiagnose"
+    },
+    {
+      "code": "LR",
+      "display": "Lokalregionales Rezidiv"
+    },
+    {
+      "code": "M",
+      "display": "Metastasierung"
+    },
+    {
+      "code": "TV",
+      "display": "Therapieverlauf"
+    },
+    {
+      "code": "S",
+      "display": "Sonstige"
+    }
+  ],
+  "count": 5
+}

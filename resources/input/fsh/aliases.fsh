@@ -15,3 +15,5 @@ Alias: $vsIso3166-1-2 = http://hl7.org/fhir/ValueSet/iso3166-1-2
 
 Alias: $EpisodeOfCare = http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
 Alias: $obds = https://basisdatensatz.de/fhir/CodeSystem/feldNummer
+
+Alias: $customCodes = http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes

@@ -1,0 +1,418 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AnmeldeBundleMinimalFreitextLunge",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge",
+  "name": "AnmeldeBundleMinimalFreitextLunge",
+  "title": "AnmeldeBundleMinimalFreitextLunge",
+  "status": "draft",
+  "description": "AnmeldeBundleMinimalFreitextLunge",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "patternCode": "collection"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resource"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Bundle.entry:patient",
+        "path": "Bundle.entry",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:patient.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tumorBoardAnmeldung",
+        "path": "Bundle.entry",
+        "sliceName": "tumorBoardAnmeldung",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tumorBoardAnmeldung.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:histologischeTypisierungLunge",
+        "path": "Bundle.entry",
+        "sliceName": "histologischeTypisierungLunge",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:histologischeTypisierungLunge.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologische-typisierung-lunge"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:diagnoseFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "diagnoseFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:diagnoseFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:erstdiagnose",
+        "path": "Bundle.entry",
+        "sliceName": "erstdiagnose",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:erstdiagnose.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnmFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "tnmFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnmFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:ecog",
+        "path": "Bundle.entry",
+        "sliceName": "ecog",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:ecog.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:praxisPathologischesInstitutFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "praxisPathologischesInstitutFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:praxisPathologischesInstitutFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/praxis-pathologisches-institut-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:histologieMolPatFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "histologieMolPatFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:histologieMolPatFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:verlaufFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "verlaufFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:verlaufFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:relevanteNebendiagnosenFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "relevanteNebendiagnosenFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:relevanteNebendiagnosenFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:fragestellungTumorkonferenzFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "fragestellungTumorkonferenzFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:fragestellungTumorkonferenzFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:ctmrtSchaedel",
+        "path": "Bundle.entry",
+        "sliceName": "ctmrtSchaedel",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:ctmrtSchaedel.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:ctmrtAbdomen",
+        "path": "Bundle.entry",
+        "sliceName": "ctmrtAbdomen",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:ctmrtAbdomen.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-abdomen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:petCT",
+        "path": "Bundle.entry",
+        "sliceName": "petCT",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:petCT.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/pet-ct"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:skelettszintigraphie",
+        "path": "Bundle.entry",
+        "sliceName": "skelettszintigraphie",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:skelettszintigraphie.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/skelettszintigraphie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:lungenfunktionstest",
+        "path": "Bundle.entry",
+        "sliceName": "lungenfunktionstest",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:lungenfunktionstest.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/lungenfunktionstest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:fragestellungRadiologieFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "fragestellungRadiologieFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:fragestellungRadiologieFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:externeBilder",
+        "path": "Bundle.entry",
+        "sliceName": "externeBilder",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:externeBilder.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/externe-bilder"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

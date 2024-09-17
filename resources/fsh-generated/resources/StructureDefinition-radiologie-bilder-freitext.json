@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "radiologie-bilder-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/radiologie-bilder-freitext",
+  "name": "RadiologieBilderFreitext",
+  "title": "RadiologieBilderFreitext",
+  "status": "draft",
+  "description": "Freitext zur Beschreibung der an die Radiologie übermittelten Bilder",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "radiologieBilderFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

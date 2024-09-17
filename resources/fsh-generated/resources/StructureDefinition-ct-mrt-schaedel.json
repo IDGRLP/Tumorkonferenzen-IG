@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ct-mrt-schaedel",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel",
+  "name": "CTMRTSchaedel",
+  "title": "CT/MRT Schädel",
+  "status": "draft",
+  "description": "Profil zur Dokumentation des CT/MRT Schädel-Befunds.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "ctMRTSchaedel",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs"
+        }
+      }
+    ]
+  }
+}

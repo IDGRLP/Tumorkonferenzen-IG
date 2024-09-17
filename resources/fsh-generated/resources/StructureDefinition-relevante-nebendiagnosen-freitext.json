@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "relevante-nebendiagnosen-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext",
+  "name": "RelevanteNebendiagnosenFreitext",
+  "title": "RelevanteNebendiagnosenFreitext",
+  "status": "draft",
+  "description": "Freitext für die Beschreibung relevanter Nebendiagnosen",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "relevanteNebendiagnosenFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

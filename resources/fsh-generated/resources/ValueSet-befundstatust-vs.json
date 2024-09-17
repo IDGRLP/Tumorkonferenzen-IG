@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BefundstatusVS",
+  "id": "befundstatust-vs",
+  "title": "Befundstatus ValueSet",
+  "description": "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "concept": [
+          {
+            "code": "auffaellig",
+            "display": "auffällig"
+          },
+          {
+            "code": "unauffaellig",
+            "display": "unauffällig"
+          },
+          {
+            "code": "liegtNichtVor",
+            "display": "liegt nicht vor"
+          },
+          {
+            "code": "unbekannt",
+            "display": "unbekannt"
+          }
+        ]
+      }
+    ]
+  }
+}

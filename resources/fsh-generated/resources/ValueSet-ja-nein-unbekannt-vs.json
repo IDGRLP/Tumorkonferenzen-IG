@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "JaNeinUnbekanntVS",
+  "id": "ja-nein-unbekannt-vs",
+  "title": "Expanded Yes/No Indicator ValueSet",
+  "description": "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "373066001",
+            "display": "Ja"
+          },
+          {
+            "code": "373067005",
+            "display": "Nein"
+          },
+          {
+            "code": "261665006",
+            "display": "Unbekannt"
+          }
+        ]
+      }
+    ]
+  }
+}

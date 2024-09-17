@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "JaNeinBeratungVS",
+  "id": "ja-nein-beratung-vs",
+  "title": "Ja, Nein, Beratung schon erfolgt ValueSet",
+  "description": "Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-beratung-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "373066001",
+            "display": "Ja"
+          },
+          {
+            "code": "373067005",
+            "display": "Nein"
+          }
+        ]
+      },
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "concept": [
+          {
+            "code": "beratungSchonErfolgt",
+            "display": "Beratung schon erfolgt"
+          }
+        ]
+      }
+    ]
+  }
+}

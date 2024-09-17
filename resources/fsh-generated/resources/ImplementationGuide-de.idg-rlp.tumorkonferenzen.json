@@ -43,19 +43,27 @@
     "resource": [
       {
         "reference": {
-          "reference": "StructureDefinition/AnmeldeBundleMinimal"
+          "reference": "StructureDefinition/AnmeldeBundleMinimalFreitextLunge"
         },
-        "name": "AnmeldeBundleMinimal",
-        "description": "AnmeldeBundleMinimal",
+        "name": "AnmeldeBundleMinimalFreitextLunge",
+        "description": "AnmeldeBundleMinimalFreitextLunge",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "Bundle/AnmeldeBundleMinimal"
+          "reference": "StructureDefinition/AnmeldeBundleMinimalFreitextProstata"
         },
-        "name": "AnmeldeBundleMinimal",
-        "description": "AnmeldeBundleMinimal",
-        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal"
+        "name": "AnmeldeBundleMinimalFreitextProstata",
+        "description": "AnmeldeBundleMinimalFreitextProstata",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Anmelder"
+        },
+        "name": "Anmelder",
+        "description": "Anmelder",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -63,6 +71,22 @@
         },
         "name": "BefundDokument",
         "description": "Metadaten zu einem Befunddokument bzw. Bildbefund.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/befundstatust-vs"
+        },
+        "name": "Befundstatus ValueSet",
+        "description": "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/bemerkung-freitext"
+        },
+        "name": "BemerkungFreitext",
+        "description": "Freitext für allgemeine Bemerkungen",
         "exampleBoolean": false
       },
       {
@@ -107,6 +131,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ct-mrt-abdomen"
+        },
+        "name": "CT/MRT Abdomen",
+        "description": "Profil zur Dokumentation des CT/MRT Abdomen-Befunds.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ct-mrt-schaedel"
+        },
+        "name": "CT/MRT Schädel",
+        "description": "Profil zur Dokumentation des CT/MRT Schädel-Befunds.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DiagnoseFreitext"
+        },
+        "name": "DiagnoseFreitext",
+        "description": "DiagnoseFreitext",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ecog"
         },
         "name": "ECOG",
@@ -128,6 +176,14 @@
         "name": "ECOGExample",
         "description": "Beispielinstanz einer Observation welche einen ECOG Wert enthält.",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/Erstdiagnose"
+        },
+        "name": "Erstdiagnose",
+        "description": "Erstdiagnose",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -219,10 +275,82 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ja-nein-unbekannt-vs"
+        },
+        "name": "Expanded Yes/No Indicator ValueSet",
+        "description": "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/externe-bilder-vs"
+        },
+        "name": "Externe Bilder ValueSet",
+        "description": "ValueSet für externe Bilder mit den Antwortoptionen: sind eingelesen, werden elektronisch übermittelt, werden per Post gesendet.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/externe-bilder"
+        },
+        "name": "ExterneBilder",
+        "description": "Profil zur Dokumentation externer Bilder mit Antwortoptionen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/familienanamnese"
         },
         "name": "Familienanamnese",
         "description": "Familienanamnese",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/familienanamnese-drop-down"
+        },
+        "name": "Familienanamnese DropDown",
+        "description": "Familienanamnese DropDown",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FertilitaetsBehandlungEmpfohlen"
+        },
+        "name": "FertilitaetsBehandlungEmpfohlen",
+        "description": "FertilitaetsBehandlungEmpfohlen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fragestellung-pathologie-freitext"
+        },
+        "name": "FragestellungPathologieFreitext",
+        "description": "Freitext für die spezifische Fragestellung an die Pathologie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fragestellung-radiologie-freitext"
+        },
+        "name": "FragestellungRadiologieFreitext",
+        "description": "Freitext für die spezifische Fragestellung an die Radiologie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fragestellung-tumorkonferenz-freitext"
+        },
+        "name": "FragestellungTumorkonferenzFreitext",
+        "description": "Freitext für die Fragestellung im Kontext einer Tumorkonferenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/FreitextObservation"
+        },
+        "name": "FreitextObservation",
+        "description": "FreitextObservation",
         "exampleBoolean": false
       },
       {
@@ -239,6 +367,22 @@
         },
         "name": "Gesamtbeurteilung des Residualstatus",
         "description": "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/gewuenschte-teilnehmer"
+        },
+        "name": "Gewünschte Teilnehmer",
+        "description": "Profil zur Dokumentation der gewünschten Teilnehmer für ein medizinisches Treffen oder Konsil.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/gewuenschte-teilnehmer-vs"
+        },
+        "name": "Gewünschte Teilnehmer ValueSet",
+        "description": "ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.",
         "exampleBoolean": false
       },
       {
@@ -297,6 +441,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/HistologieMolPatFreitext"
+        },
+        "name": "HistologieMolPatFreitext",
+        "description": "HistologieMolPatFreitext",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/histologische-typisierung-lunge"
+        },
+        "name": "Histologische Typisierung Lunge",
+        "description": "Profil zur Dokumentation der histologischen Typisierung Lunge.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/histologische-typisierung-vs"
+        },
+        "name": "Histologische Typisierung ValueSet",
+        "description": "ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/HistoGradeCS"
         },
         "name": "Histopathologische Grading Codes oBDS",
@@ -321,6 +489,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ja-nein-beratung-vs"
+        },
+        "name": "Ja, Nein, Beratung schon erfolgt ValueSet",
+        "description": "Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/krebsstadium-cs"
         },
         "name": "Krebsstadium CodeSystem",
@@ -337,6 +513,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/lungenfunktionstest"
+        },
+        "name": "Lungenfunktionstest",
+        "description": "Profil zur Dokumentation des Lungenfunktionstest Befunds.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/Lymphgefaessinvasion-cs"
         },
         "name": "Lymphgefäßinvasion CodeSystem",
@@ -349,6 +533,14 @@
         },
         "name": "Lymphgefäßinvasion ValueSet",
         "description": "LymphgefäßinvasionVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/medikamentoese-therapie-freitext"
+        },
+        "name": "MedikamentöseTherapieFreitext",
+        "description": "Freitext für die Beschreibung der medikamentösen Therapie",
         "exampleBoolean": false
       },
       {
@@ -468,6 +660,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/OperativeTherapieFreitext"
+        },
+        "name": "OperativeTherapieFreitext",
+        "description": "OperativeTherapieFreitext",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/Organisation"
         },
         "name": "Organisation",
@@ -499,6 +699,54 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/pet-ct"
+        },
+        "name": "PetCT",
+        "description": "Profil zur Dokumentation des PetCT Befunds.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/pos-neg-nask-vs"
+        },
+        "name": "PosNegNask",
+        "description": "PosNegNask",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/praxis-pathologisches-institut-freitext"
+        },
+        "name": "PraxisPathologischesInstitutFreitext",
+        "description": "Freitext zur Dokumentation der Praxis oder des pathologischen Instituts des Patienten.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/psa-verlauf-freitext"
+        },
+        "name": "PsaVerlaufFreitext",
+        "description": "Freitext für die Beschreibung des PSA-Verlaufs",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/radiologie-bilder-freitext"
+        },
+        "name": "RadiologieBilderFreitext",
+        "description": "Freitext zur Beschreibung der an die Radiologie übermittelten Bilder",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/relevante-nebendiagnosen-freitext"
+        },
+        "name": "RelevanteNebendiagnosenFreitext",
+        "description": "Freitext für die Beschreibung relevanter Nebendiagnosen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/SerumTumorMarkerUICCCS"
         },
         "name": "SerumTumorMarkerUICCCS",
@@ -511,6 +759,14 @@
         },
         "name": "SerumTumorMarkerUICCVS",
         "description": "SerumTumorMarkerUICCVS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/skelettszintigraphie"
+        },
+        "name": "Skelettszintigraphie",
+        "description": "Profil zur Dokumentation des Skelettszintigraphie Befunds.",
         "exampleBoolean": false
       },
       {
@@ -543,6 +799,14 @@
         },
         "name": "StrahlentherapieDetails",
         "description": "Detailinformationen zur Strahlentherapie.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/StrahlenTherapieFreitext"
+        },
+        "name": "StrahlenTherapieFreitext",
+        "description": "StrahlenTherapieFreitext",
         "exampleBoolean": false
       },
       {
@@ -728,6 +992,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/TNMFreitext"
+        },
+        "name": "TNMFreitext",
+        "description": "TNMFreitext",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/TNMLKategorie"
         },
         "name": "TNMLKategorie",
@@ -804,6 +1076,14 @@
         },
         "name": "Tumor-Patient",
         "description": "Patienten-Stammdaten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor-board-anmeldung"
+        },
+        "name": "TumorBoardAnmeldung",
+        "description": "TumorBoardAnmeldung",
         "exampleBoolean": false
       },
       {
@@ -895,6 +1175,30 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/tumorsituation"
+        },
+        "name": "Tumorsituation",
+        "description": "Profil zur Erfassung der Tumorsituation.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/tumorsituation-cs"
+        },
+        "name": "Tumorsituation CodeSystem",
+        "description": "Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tumorsituation-vs"
+        },
+        "name": "Tumorsituation ValueSet",
+        "description": "ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/veneninvasion-cs"
         },
         "name": "Veneninvasion CodeSystem",
@@ -926,10 +1230,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/verlauf-freitext"
+        },
+        "name": "VerlaufFreitext",
+        "description": "Freitext für die Beschreibung des Verlaufs",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/watchful-waiting"
         },
         "name": "WatchfulWaiting",
         "description": "Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/weitere-gewuenschte-teilnehmer-freitext"
+        },
+        "name": "WeitereGewuenschteTeilnehmerFreitext",
+        "description": "Freitext für die Beschreibung weiterer gewünschter Teilnehmer, die nicht in den vordefinierten Optionen enthalten sind.",
         "exampleBoolean": false
       }
     ],

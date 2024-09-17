@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TNMFreitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext",
+  "name": "TNMFreitext",
+  "title": "TNMFreitext",
+  "status": "draft",
+  "description": "TNMFreitext",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "tnm-FreitextObservation",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

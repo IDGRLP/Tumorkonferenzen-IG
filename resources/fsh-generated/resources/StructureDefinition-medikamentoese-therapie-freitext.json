@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "medikamentoese-therapie-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/medikamentoese-therapie-freitext",
+  "name": "MedikamentoeseTherapieFreitext",
+  "title": "MedikamentöseTherapieFreitext",
+  "status": "draft",
+  "description": "Freitext für die Beschreibung der medikamentösen Therapie",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "medikamentoeseTherapieFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

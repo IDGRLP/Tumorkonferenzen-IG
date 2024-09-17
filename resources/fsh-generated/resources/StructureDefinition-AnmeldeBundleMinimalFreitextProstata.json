@@ -1,0 +1,538 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AnmeldeBundleMinimalFreitextProstata",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata",
+  "name": "AnmeldeBundleMinimalFreitextProstata",
+  "title": "AnmeldeBundleMinimalFreitextProstata",
+  "status": "draft",
+  "description": "AnmeldeBundleMinimalFreitextProstata",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Bundle",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Bundle",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Bundle.type",
+        "path": "Bundle.type",
+        "patternCode": "collection"
+      },
+      {
+        "id": "Bundle.entry",
+        "path": "Bundle.entry",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resource"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Bundle.entry:patient",
+        "path": "Bundle.entry",
+        "sliceName": "patient",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:patient.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Patient",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tumorBoardAnmeldung",
+        "path": "Bundle.entry",
+        "sliceName": "tumorBoardAnmeldung",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tumorBoardAnmeldung.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:anmelder",
+        "path": "Bundle.entry",
+        "sliceName": "anmelder",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:anmelder.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Practitioner",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:diagnoseFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "diagnoseFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:diagnoseFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:erstdiagnose",
+        "path": "Bundle.entry",
+        "sliceName": "erstdiagnose",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:erstdiagnose.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnmFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "tnmFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnmFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:ecog",
+        "path": "Bundle.entry",
+        "sliceName": "ecog",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:ecog.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:familienanamneseDropDown",
+        "path": "Bundle.entry",
+        "sliceName": "familienanamneseDropDown",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:familienanamneseDropDown.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/familienanamnese-drop-down"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:fertilitaetsBehandlungEmpfohlen",
+        "path": "Bundle.entry",
+        "sliceName": "fertilitaetsBehandlungEmpfohlen",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:fertilitaetsBehandlungEmpfohlen.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FertilitaetsBehandlungEmpfohlen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tumorsituation",
+        "path": "Bundle.entry",
+        "sliceName": "tumorsituation",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tumorsituation.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorsituation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:histologieMolPatFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "histologieMolPatFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:histologieMolPatFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:operativeTherapieFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "operativeTherapieFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:operativeTherapieFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/OperativeTherapieFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:strahlenTherapieFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "strahlenTherapieFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:strahlenTherapieFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/StrahlenTherapieFreitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:medikamentoeseTherapieFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "medikamentoeseTherapieFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:medikamentoeseTherapieFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/medikamentoese-therapie-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:verlaufFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "verlaufFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:verlaufFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:psaVerlaufFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "psaVerlaufFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:psaVerlaufFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/psa-verlauf-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:relevanteNebendiagnosenFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "relevanteNebendiagnosenFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:relevanteNebendiagnosenFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:fragestellungTumorkonferenzFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "fragestellungTumorkonferenzFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:fragestellungTumorkonferenzFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:fragestellungPathologieFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "fragestellungPathologieFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:fragestellungPathologieFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-pathologie-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:bemerkungFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "bemerkungFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:bemerkungFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/bemerkung-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:radiologieBilderFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "radiologieBilderFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:radiologieBilderFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/radiologie-bilder-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:fragestellungRadiologieFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "fragestellungRadiologieFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:fragestellungRadiologieFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:externeBilder",
+        "path": "Bundle.entry",
+        "sliceName": "externeBilder",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:externeBilder.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/externe-bilder"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:gewuenschteTeilnehmer",
+        "path": "Bundle.entry",
+        "sliceName": "gewuenschteTeilnehmer",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:gewuenschteTeilnehmer.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/gewuenschte-teilnehmer"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:weitereGewuenschteTeilnehmerFreitext",
+        "path": "Bundle.entry",
+        "sliceName": "weitereGewuenschteTeilnehmerFreitext",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:weitereGewuenschteTeilnehmerFreitext.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/weitere-gewuenschte-teilnehmer-freitext"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

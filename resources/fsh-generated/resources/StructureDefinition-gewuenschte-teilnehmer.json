@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "gewuenschte-teilnehmer",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/gewuenschte-teilnehmer",
+  "name": "GewuenschteTeilnehmer",
+  "title": "Gewünschte Teilnehmer",
+  "status": "draft",
+  "description": "Profil zur Dokumentation der gewünschten Teilnehmer für ein medizinisches Treffen oder Konsil.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "gewuenschteTeilnehmer",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/gewuenschte-teilnehmer-vs"
+        }
+      }
+    ]
+  }
+}

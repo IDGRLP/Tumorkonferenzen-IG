@@ -5,7 +5,7 @@
   "id": "ecog-performance-status",
   "title": "ECOG",
   "description": "ECOG Performance Status (Level 0-5).",
-  "url": "http://loinc.org/vs/LL529-9",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
   "compose": {
     "include": [
       {
@@ -34,6 +34,10 @@
           {
             "code": "LA9627-6",
             "display": "ECOG 5: (Tod)"
+          },
+          {
+            "code": "LA4489-6",
+            "display": "ECOG Status unbekannt"
           }
         ]
       }

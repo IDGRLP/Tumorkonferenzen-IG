@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "praxis-pathologisches-institut-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/praxis-pathologisches-institut-freitext",
+  "name": "PraxisPathologischesInstitutFreitext",
+  "title": "PraxisPathologischesInstitutFreitext",
+  "status": "draft",
+  "description": "Freitext zur Dokumentation der Praxis oder des pathologischen Instituts des Patienten.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "praxisPathologischesInstitutFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

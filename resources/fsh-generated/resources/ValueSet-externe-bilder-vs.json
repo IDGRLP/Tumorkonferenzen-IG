@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ExterneBilderVS",
+  "id": "externe-bilder-vs",
+  "title": "Externe Bilder ValueSet",
+  "description": "ValueSet für externe Bilder mit den Antwortoptionen: sind eingelesen, werden elektronisch übermittelt, werden per Post gesendet.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/externe-bilder-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "concept": [
+          {
+            "code": "eingelesen",
+            "display": "sind eingelesen"
+          },
+          {
+            "code": "elektronischUebermittelt",
+            "display": "werden elektronisch übermittelt"
+          },
+          {
+            "code": "perPostGesendet",
+            "display": "werden per Post gesendet"
+          }
+        ]
+      }
+    ]
+  }
+}

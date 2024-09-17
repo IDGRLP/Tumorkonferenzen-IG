@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "weitere-gewuenschte-teilnehmer-freitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/weitere-gewuenschte-teilnehmer-freitext",
+  "name": "WeitereGewuenschteTeilnehmerFreitext",
+  "title": "WeitereGewuenschteTeilnehmerFreitext",
+  "status": "draft",
+  "description": "Freitext für die Beschreibung weiterer gewünschter Teilnehmer, die nicht in den vordefinierten Optionen enthalten sind.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "weitereGewuenschteTeilnehmerFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "GewuenschteTeilnehmerVS",
+  "id": "gewuenschte-teilnehmer-vs",
+  "title": "Gewünschte Teilnehmer ValueSet",
+  "description": "ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/gewuenschte-teilnehmer-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "concept": [
+          {
+            "code": "allgemeinchirurgie",
+            "display": "Allgemeinchirurgie"
+          },
+          {
+            "code": "dermatologie",
+            "display": "Dermatologie"
+          },
+          {
+            "code": "endokrinologie",
+            "display": "Endokrinologie"
+          },
+          {
+            "code": "gastroenterologie",
+            "display": "Gastroenterologie"
+          },
+          {
+            "code": "giOnkologie",
+            "display": "GI-Onkologie"
+          },
+          {
+            "code": "gynaekologie",
+            "display": "Gynäkologie"
+          },
+          {
+            "code": "haematologie",
+            "display": "Hämatologie"
+          },
+          {
+            "code": "hno",
+            "display": "HNO"
+          },
+          {
+            "code": "humangenetik",
+            "display": "Humangenetik"
+          },
+          {
+            "code": "internistischeOnkologie",
+            "display": "Internistische Onkologie"
+          },
+          {
+            "code": "kinderchirurgie",
+            "display": "Kinderchirurgie"
+          },
+          {
+            "code": "mkgChirurgie",
+            "display": "MKG-Chirurgie"
+          },
+          {
+            "code": "neurochirurgie",
+            "display": "Neurochirurgie"
+          },
+          {
+            "code": "neurologie",
+            "display": "Neurologie"
+          },
+          {
+            "code": "neuropathologie",
+            "display": "Neuropathologie"
+          },
+          {
+            "code": "neuroradiologie",
+            "display": "Neuroradiologie"
+          },
+          {
+            "code": "nuklearmedizin",
+            "display": "Nuklearmedizin"
+          },
+          {
+            "code": "orthopaedie",
+            "display": "Orthopädie"
+          },
+          {
+            "code": "paediatrie",
+            "display": "Pädiatrie"
+          },
+          {
+            "code": "palliativmedizin",
+            "display": "Palliativmedizin"
+          },
+          {
+            "code": "pneumologie",
+            "display": "Pneumologie"
+          },
+          {
+            "code": "psychoonkologie",
+            "display": "Psychoonkologie/Psychosomatik"
+          },
+          {
+            "code": "thoraxChirurgie",
+            "display": "Thorax-Chirurgie"
+          }
+        ]
+      }
+    ]
+  }
+}

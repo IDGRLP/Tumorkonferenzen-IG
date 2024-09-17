@@ -1,0 +1,31 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "HistologieMolPatFreitext",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext",
+  "name": "HistologieMolPatFreitext",
+  "title": "HistologieMolPatFreitext",
+  "status": "draft",
+  "description": "HistologieMolPatFreitext",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "histologieMolPatFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

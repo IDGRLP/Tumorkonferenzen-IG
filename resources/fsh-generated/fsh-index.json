@@ -1,13 +1,5 @@
 [
   {
-    "outputFile": "Bundle-AnmeldeBundleMinimal.json",
-    "fshName": "AnmeldeBundleMinimal",
-    "fshType": "Instance",
-    "fshFile": "profile-MinimalesAnmeldeBundle.fsh",
-    "startLine": 57,
-    "endLine": 76
-  },
-  {
     "outputFile": "CodeSystem-HistoGradeCS.json",
     "fshName": "HistoGradeCS",
     "fshType": "CodeSystem",
@@ -78,6 +70,14 @@
     "fshFile": "codesystems.fsh",
     "startLine": 146,
     "endLine": 152
+  },
+  {
+    "outputFile": "CodeSystem-tumorsituation-cs.json",
+    "fshName": "TumorsituationCS",
+    "fshType": "CodeSystem",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 169,
+    "endLine": 177
   },
   {
     "outputFile": "CodeSystem-veneninvasion-cs.json",
@@ -304,12 +304,60 @@
     "endLine": 51
   },
   {
-    "outputFile": "StructureDefinition-AnmeldeBundleMinimal.json",
-    "fshName": "AnmeldeBundleMinimal",
+    "outputFile": "StructureDefinition-AnmeldeBundleMinimalFreitextLunge.json",
+    "fshName": "AnmeldeBundleMinimalFreitextLunge",
     "fshType": "Profile",
-    "fshFile": "profile-MinimalesAnmeldeBundle.fsh",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
     "startLine": 1,
-    "endLine": 55
+    "endLine": 67
+  },
+  {
+    "outputFile": "StructureDefinition-AnmeldeBundleMinimalFreitextProstata.json",
+    "fshName": "AnmeldeBundleMinimalFreitextProstata",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata.fsh",
+    "startLine": 1,
+    "endLine": 85
+  },
+  {
+    "outputFile": "StructureDefinition-Anmelder.json",
+    "fshName": "Anmelder",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 69,
+    "endLine": 75
+  },
+  {
+    "outputFile": "StructureDefinition-DiagnoseFreitext.json",
+    "fshName": "DiagnoseFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 96,
+    "endLine": 101
+  },
+  {
+    "outputFile": "StructureDefinition-Erstdiagnose.json",
+    "fshName": "Erstdiagnose",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 103,
+    "endLine": 125
+  },
+  {
+    "outputFile": "StructureDefinition-FertilitaetsBehandlungEmpfohlen.json",
+    "fshName": "FertilitaetsBehandlungEmpfohlen",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 141,
+    "endLine": 149
+  },
+  {
+    "outputFile": "StructureDefinition-FreitextObservation.json",
+    "fshName": "FreitextObservation",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 423,
+    "endLine": 431
   },
   {
     "outputFile": "StructureDefinition-HistologieLymphknoten.json",
@@ -318,6 +366,14 @@
     "fshFile": "profile-HistologieLymphknoten.fsh",
     "startLine": 1,
     "endLine": 46
+  },
+  {
+    "outputFile": "StructureDefinition-HistologieMolPatFreitext.json",
+    "fshName": "HistologieMolPatFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 185,
+    "endLine": 190
   },
   {
     "outputFile": "StructureDefinition-Melder.json",
@@ -336,6 +392,14 @@
     "endLine": 13
   },
   {
+    "outputFile": "StructureDefinition-OperativeTherapieFreitext.json",
+    "fshName": "OperativeTherapieFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 192,
+    "endLine": 197
+  },
+  {
     "outputFile": "StructureDefinition-Organisation.json",
     "fshName": "Organisation",
     "fshType": "Profile",
@@ -344,12 +408,28 @@
     "endLine": 15
   },
   {
+    "outputFile": "StructureDefinition-StrahlenTherapieFreitext.json",
+    "fshName": "StrahlenTherapieFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 199,
+    "endLine": 204
+  },
+  {
     "outputFile": "StructureDefinition-TNMASymbol.json",
     "fshName": "TNMASymbol",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
     "startLine": 256,
     "endLine": 273
+  },
+  {
+    "outputFile": "StructureDefinition-TNMFreitext.json",
+    "fshName": "TNMFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 127,
+    "endLine": 132
   },
   {
     "outputFile": "StructureDefinition-TNMLKategorie.json",
@@ -432,12 +512,36 @@
     "endLine": 14
   },
   {
+    "outputFile": "StructureDefinition-bemerkung-freitext.json",
+    "fshName": "BemerkungFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 248,
+    "endLine": 253
+  },
+  {
     "outputFile": "StructureDefinition-cancer-stage-group.json",
     "fshName": "CancerStageGroup",
     "fshType": "Profile",
     "fshFile": "profile-Staging.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-ct-mrt-abdomen.json",
+    "fshName": "CTMRTAbdomen",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 383,
+    "endLine": 391
+  },
+  {
+    "outputFile": "StructureDefinition-ct-mrt-schaedel.json",
+    "fshName": "CTMRTSchaedel",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 373,
+    "endLine": 381
   },
   {
     "outputFile": "StructureDefinition-ecog.json",
@@ -448,6 +552,22 @@
     "endLine": 11
   },
   {
+    "outputFile": "StructureDefinition-externe-bilder.json",
+    "fshName": "ExterneBilder",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 277,
+    "endLine": 285
+  },
+  {
+    "outputFile": "StructureDefinition-familienanamnese-drop-down.json",
+    "fshName": "FamilienanamneseDropDown",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata.fsh",
+    "startLine": 87,
+    "endLine": 95
+  },
+  {
     "outputFile": "StructureDefinition-familienanamnese.json",
     "fshName": "Familienanamnese",
     "fshType": "Profile",
@@ -456,12 +576,44 @@
     "endLine": 10
   },
   {
+    "outputFile": "StructureDefinition-fragestellung-pathologie-freitext.json",
+    "fshName": "FragestellungPathologieFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 241,
+    "endLine": 246
+  },
+  {
+    "outputFile": "StructureDefinition-fragestellung-radiologie-freitext.json",
+    "fshName": "FragestellungRadiologieFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 262,
+    "endLine": 267
+  },
+  {
+    "outputFile": "StructureDefinition-fragestellung-tumorkonferenz-freitext.json",
+    "fshName": "FragestellungTumorkonferenzFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 234,
+    "endLine": 239
+  },
+  {
     "outputFile": "StructureDefinition-gesamtbeurteilung.json",
     "fshName": "Gesamtbeurteilung",
     "fshType": "Profile",
     "fshFile": "profile-Gesamtbeurteilung.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-gewuenschte-teilnehmer.json",
+    "fshName": "GewuenschteTeilnehmer",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 315,
+    "endLine": 323
   },
   {
     "outputFile": "StructureDefinition-grading.json",
@@ -478,6 +630,30 @@
     "fshFile": "profile-Histologie.fsh",
     "startLine": 1,
     "endLine": 21
+  },
+  {
+    "outputFile": "StructureDefinition-histologische-typisierung-lunge.json",
+    "fshName": "HistologischeTypisierungLunge",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 86,
+    "endLine": 94
+  },
+  {
+    "outputFile": "StructureDefinition-lungenfunktionstest.json",
+    "fshName": "Lungenfunktionstest",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 413,
+    "endLine": 421
+  },
+  {
+    "outputFile": "StructureDefinition-medikamentoese-therapie-freitext.json",
+    "fshName": "MedikamentoeseTherapieFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 206,
+    "endLine": 211
   },
   {
     "outputFile": "StructureDefinition-nebenwirkung.json",
@@ -502,6 +678,54 @@
     "fshFile": "profile-Operation.fsh",
     "startLine": 1,
     "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-pet-ct.json",
+    "fshName": "PetCT",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 393,
+    "endLine": 401
+  },
+  {
+    "outputFile": "StructureDefinition-praxis-pathologisches-institut-freitext.json",
+    "fshName": "PraxisPathologischesInstitutFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 134,
+    "endLine": 139
+  },
+  {
+    "outputFile": "StructureDefinition-psa-verlauf-freitext.json",
+    "fshName": "PsaVerlaufFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 220,
+    "endLine": 225
+  },
+  {
+    "outputFile": "StructureDefinition-radiologie-bilder-freitext.json",
+    "fshName": "RadiologieBilderFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 255,
+    "endLine": 260
+  },
+  {
+    "outputFile": "StructureDefinition-relevante-nebendiagnosen-freitext.json",
+    "fshName": "RelevanteNebendiagnosenFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 227,
+    "endLine": 232
+  },
+  {
+    "outputFile": "StructureDefinition-skelettszintigraphie.json",
+    "fshName": "Skelettszintigraphie",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 403,
+    "endLine": 411
   },
   {
     "outputFile": "StructureDefinition-status-fernmetastasen.json",
@@ -592,6 +816,14 @@
     "endLine": 71
   },
   {
+    "outputFile": "StructureDefinition-tumor-board-anmeldung.json",
+    "fshName": "TumorBoardAnmeldung",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 332,
+    "endLine": 354
+  },
+  {
     "outputFile": "StructureDefinition-tumor.json",
     "fshName": "Tumor",
     "fshType": "Profile",
@@ -664,6 +896,22 @@
     "endLine": 16
   },
   {
+    "outputFile": "StructureDefinition-tumorsituation.json",
+    "fshName": "Tumorsituation",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 159,
+    "endLine": 167
+  },
+  {
+    "outputFile": "StructureDefinition-verlauf-freitext.json",
+    "fshName": "VerlaufFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 213,
+    "endLine": 218
+  },
+  {
     "outputFile": "StructureDefinition-verlauf.json",
     "fshName": "Verlauf",
     "fshType": "Profile",
@@ -678,6 +926,14 @@
     "fshFile": "profile-WatchfulWaiting.fsh",
     "startLine": 1,
     "endLine": 31
+  },
+  {
+    "outputFile": "StructureDefinition-weitere-gewuenschte-teilnehmer-freitext.json",
+    "fshName": "WeitereGewuenschteTeilnehmerFreitext",
+    "fshType": "Profile",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 325,
+    "endLine": 330
   },
   {
     "outputFile": "ValueSet-HistoGradeVS.json",
@@ -712,6 +968,14 @@
     "endLine": 58
   },
   {
+    "outputFile": "ValueSet-befundstatust-vs.json",
+    "fshName": "BefundstatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 364,
+    "endLine": 371
+  },
+  {
     "outputFile": "ValueSet-cancer-stage-group-vs.json",
     "fshName": "CancerStageVS",
     "fshType": "ValueSet",
@@ -744,12 +1008,52 @@
     "endLine": 16
   },
   {
+    "outputFile": "ValueSet-externe-bilder-vs.json",
+    "fshName": "ExterneBilderVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 269,
+    "endLine": 275
+  },
+  {
+    "outputFile": "ValueSet-gewuenschte-teilnehmer-vs.json",
+    "fshName": "GewuenschteTeilnehmerVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 287,
+    "endLine": 313
+  },
+  {
+    "outputFile": "ValueSet-histologische-typisierung-vs.json",
+    "fshName": "HistologischeTypisierungVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 77,
+    "endLine": 84
+  },
+  {
     "outputFile": "ValueSet-icd-o-3-morphologie.json",
     "fshName": "ICDO3Morphologie",
     "fshType": "ValueSet",
     "fshFile": "valuesets.fsh",
     "startLine": 1,
     "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-ja-nein-beratung-vs.json",
+    "fshName": "JaNeinBeratungVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 151,
+    "endLine": 157
+  },
+  {
+    "outputFile": "ValueSet-ja-nein-unbekannt-vs.json",
+    "fshName": "JaNeinUnbekanntVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 356,
+    "endLine": 362
   },
   {
     "outputFile": "ValueSet-krebsstadium-vs.json",
@@ -790,6 +1094,14 @@
     "fshFile": "valuesets.fsh",
     "startLine": 48,
     "endLine": 52
+  },
+  {
+    "outputFile": "ValueSet-pos-neg-nask-vs.json",
+    "fshName": "PosNegNaskVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata.fsh",
+    "startLine": 97,
+    "endLine": 103
   },
   {
     "outputFile": "ValueSet-tnm-distant-metastases-category-max-vs.json",
@@ -894,6 +1206,14 @@
     "fshFile": "valueSet-Staging.fsh",
     "startLine": 69,
     "endLine": 76
+  },
+  {
+    "outputFile": "ValueSet-tumorsituation-vs.json",
+    "fshName": "TumorsituationVS",
+    "fshType": "ValueSet",
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
+    "startLine": 179,
+    "endLine": 183
   },
   {
     "outputFile": "ValueSet-veneninvasion-vs.json",
