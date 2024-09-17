@@ -52,6 +52,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ig
+          path: ig
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
