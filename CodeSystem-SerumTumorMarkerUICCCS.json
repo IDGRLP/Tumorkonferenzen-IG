@@ -3,14 +3,14 @@
   "id" : "SerumTumorMarkerUICCCS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">S0<a name=\"SerumTumorMarkerUICCCS-S0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S1<a name=\"SerumTumorMarkerUICCCS-S1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S2<a name=\"SerumTumorMarkerUICCCS-S2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S3<a name=\"SerumTumorMarkerUICCCS-S3\"> </a></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem SerumTumorMarkerUICCCS</b></p><a name=\"SerumTumorMarkerUICCCS\"> </a><a name=\"hcSerumTumorMarkerUICCCS\"> </a><a name=\"SerumTumorMarkerUICCCS-en-US\"> </a><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">S0<a name=\"SerumTumorMarkerUICCCS-S0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S1<a name=\"SerumTumorMarkerUICCCS-S1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S2<a name=\"SerumTumorMarkerUICCCS-S2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">S3<a name=\"SerumTumorMarkerUICCCS-S3\"> </a></td></tr></table></div>"
   },
   "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS",
   "version" : "0.1.0",
   "name" : "SerumTumorMarkerUICCCS",
   "title" : "SerumTumorMarkerUICCCS",
   "status" : "draft",
-  "date" : "2024-05-28T11:48:18+00:00",
+  "date" : "2024-09-17T19:55:11+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",

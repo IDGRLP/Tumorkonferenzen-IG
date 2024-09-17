@@ -2,10 +2,10 @@
   "codeSystems" : [
     {
       "url" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-      "version" : "1.5.0-ballot",
+      "version" : null,
       "status" : "active",
       "name" : "ICD10GM",
-      "title" : null,
+      "title" : "ICD-10-GM",
       "description" : "ICD-10-GM Platzhalter-CodeSystem",
       "uses" : {
       },
@@ -100,6 +100,17 @@
       "ValueSet-perineurale-invasion-vs.html" : "Perineurale Invasion ValueSet"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorsituationCS",
+      "title" : "Tumorsituation CodeSystem",
+      "description" : "Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+      "uses" : {
+      },
+      "ValueSet-tumorsituation-vs.html" : "Tumorsituation ValueSet"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -120,11 +131,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-tnm-regional-nodes-staging-type-vs.html" : "TNM Regional Nodes Staging Type Value Set",
       "ValueSet-tnm-primary-tumor-staging-type-vs.html" : "TNM Primary Tumor Staging Type Value Set",
-      "ValueSet-tnm-stage-group-staging-type-vs.html" : "TNM Stage Group Staging Type Value Set",
+      "ValueSet-tnm-regional-nodes-staging-type-vs.html" : "TNM Regional Nodes Staging Type Value Set",
+      "ValueSet-tnm-distant-metastases-staging-type-vs.html" : "TNM Distant Metastases Staging Type Value Set",
       "ValueSet-ecog-performance-status.html" : "ECOG",
-      "ValueSet-tnm-distant-metastases-staging-type-vs.html" : "TNM Distant Metastases Staging Type Value Set"
+      "ValueSet-tnm-stage-group-staging-type-vs.html" : "TNM Stage Group Staging Type Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -136,19 +147,23 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-tnm-staging-method-vs.html" : "TNM Staging Method Value Set",
-      "ValueSet-tnm-primary-tumor-category-vs.html" : "TNM Primary Tumor Category Value Set",
-      "ValueSet-tnm-regional-nodes-category-vs.html" : "TNM Regional Nodes Category Value Set",
+      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask",
       "ValueSet-cancer-staging-type-vs.html" : "Cancer Staging Type Value Set",
       "ValueSet-cancer-staging-method-vs.html" : "Cancer Staging Method Value Set",
       "ValueSet-cancer-stage-group-vs.html" : "Cancer Stage Group Value Set",
+      "ValueSet-ja-nein-beratung-vs.html" : "Ja, Nein, Beratung schon erfolgt ValueSet",
+      "ValueSet-tnm-primary-tumor-category-vs.html" : "TNM Primary Tumor Category Value Set",
+      "ValueSet-histologische-typisierung-vs.html" : "Histologische Typisierung ValueSet",
+      "ValueSet-ja-nein-unbekannt-vs.html" : "Expanded Yes/No Indicator ValueSet",
+      "ValueSet-tnm-staging-method-vs.html" : "TNM Staging Method Value Set",
+      "ValueSet-tnm-regional-nodes-category-vs.html" : "TNM Regional Nodes Category Value Set",
       "ValueSet-tnm-distant-metastases-category-vs.html" : "TNM Distant Metastases Category Value Set",
       "ValueSet-tnm-stage-group-vs.html" : "TNM Stage Group Value Set"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
-      "version" : "1.1.0",
-      "status" : "draft",
+      "version" : "1.1.1",
+      "status" : "active",
       "name" : "DiagnosisRole",
       "title" : "Diagnosis Role",
       "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
@@ -170,6 +185,18 @@
       "ValueSet-icd-o-3-morphologie.html" : "Morphologie Codes des ICD-O-3 CodeSystems."
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask"
+    },
+    {
       "url" : "https://www.uicc.org/resources/tnm",
       "version" : "0.1.0",
       "status" : "draft",
@@ -179,8 +206,8 @@
       "uses" : {
       },
       "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set",
-      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
       "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set",
+      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
       "ValueSet-krebsstadium-vs.html" : "Krebsstadium ValueSet",
       "ValueSet-tnm-distant-metastases-category-max-vs.html" : "TNM Distant Metastases Maximum Value Set"
     },

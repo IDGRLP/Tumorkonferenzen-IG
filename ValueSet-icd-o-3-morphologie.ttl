@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "icd-o-3-morphologie"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a> where concept  matches (by regex)  ^\\d\\S*$</li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet icd-o-3-morphologie</b></p><a name=\"icd-o-3-morphologie\"> </a><a name=\"hcicd-o-3-morphologie\"> </a><a name=\"icd-o-3-morphologie-en-US\"> </a><ul><li>Include codes from<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a> where concept  matches (by regex) ^\\d\\S*$</li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ICDO3Morphologie"] ; # 
   fhir:title [ fhir:v "Morphologie Codes des ICD-O-3 CodeSystems."] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-28T11:48:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

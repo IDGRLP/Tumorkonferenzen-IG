@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ja-nein-unbekannt-vs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ja-nein-unbekannt-vs</b></p><a name=\"ja-nein-unbekannt-vs\"> </a><a name=\"hcja-nein-unbekannt-vs\"> </a><a name=\"ja-nein-unbekannt-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373066001\">373066001</a></td><td>Ja</td></tr><tr><td><a href=\"http://snomed.info/id/373067005\">373067005</a></td><td>Nein</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unbekannt</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "JaNeinUnbekanntVS"] ; # 
+  fhir:title [ fhir:v "Expanded Yes/No Indicator ValueSet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.idg-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@idg-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "373066001" ] ;
+         fhir:display [ fhir:v "Ja" ]
+       ] [
+         fhir:code [ fhir:v "373067005" ] ;
+         fhir:display [ fhir:v "Nein" ]
+       ] [
+         fhir:code [ fhir:v "261665006" ] ;
+         fhir:display [ fhir:v "Unbekannt" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

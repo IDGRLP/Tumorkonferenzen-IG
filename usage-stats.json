@@ -167,20 +167,24 @@
   "profiles": {
     "Bundle": [
       {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal",
-        "title": "AnmeldeBundleMinimal"
-      }
-    ],
-    "Observation": [
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge",
+        "title": "AnmeldeBundleMinimalFreitextLunge"
+      },
       {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-therapie-verlauf",
-        "title": "TumorkonferenzTherapieVerlauf"
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata",
+        "title": "AnmeldeBundleMinimalFreitextProstata"
       }
     ],
     "Practitioner": [
       {
         "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder",
         "title": "Melder"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/weitere-gewuenschte-teilnehmer-freitext",
+        "title": "WeitereGewuenschteTeilnehmerFreitext"
       }
     ],
     "PractitionerRole": [
@@ -264,7 +268,6 @@
       "Condition.code.coding"
     ],
     "http://fhir.de/StructureDefinition/seitenlokalisation": [
-      "Bundle.entry.resource.code.coding",
       "Condition.code.coding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
@@ -287,7 +290,6 @@
       "Patient.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
-      "Bundle.entry.resource.address.line",
       "Patient.address.line",
       "StructureDefinition.snapshot.element.example.valueString"
     ],
@@ -298,7 +300,6 @@
       "Patient.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
-      "Bundle.entry.resource.address.line",
       "Patient.address.line",
       "StructureDefinition.snapshot.element.example.valueString"
     ],

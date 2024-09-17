@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "befundstatust-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet befundstatust-vs</b></p><a name=\"befundstatust-vs\"> </a><a name=\"hcbefundstatust-vs\"> </a><a name=\"befundstatust-vs-en-US\"> </a><ul><li>Include these codes as defined in <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>auffaellig</td><td>auffällig</td></tr><tr><td>unauffaellig</td><td>unauffällig</td></tr><tr><td>liegtNichtVor</td><td>liegt nicht vor</td></tr><tr><td>unbekannt</td><td>unbekannt</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
+  "version" : "0.1.0",
+  "name" : "BefundstatusVS",
+  "title" : "Befundstatus ValueSet",
+  "status" : "draft",
+  "date" : "2024-09-17T19:55:11+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+      "concept" : [{
+        "code" : "auffaellig",
+        "display" : "auffällig"
+      },
+      {
+        "code" : "unauffaellig",
+        "display" : "unauffällig"
+      },
+      {
+        "code" : "liegtNichtVor",
+        "display" : "liegt nicht vor"
+      },
+      {
+        "code" : "unbekannt",
+        "display" : "unbekannt"
+      }]
+    }]
+  }
+}

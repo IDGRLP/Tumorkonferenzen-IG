@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "histologische-typisierung-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet histologische-typisierung-vs</b></p><a name=\"histologische-typisierung-vs\"> </a><a name=\"hchistologische-typisierung-vs\"> </a><a name=\"histologische-typisierung-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unbekannt</td></tr><tr><td><a href=\"http://snomed.info/id/254632001\">254632001</a></td><td>SCLC</td></tr><tr><td><a href=\"http://snomed.info/id/254637007\">254637007</a></td><td>NSCLC</td></tr><tr><td><a href=\"http://snomed.info/id/74964007\">74964007</a></td><td>Sonstige</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/histologische-typisierung-vs",
+  "version" : "0.1.0",
+  "name" : "HistologischeTypisierungVS",
+  "title" : "Histologische Typisierung ValueSet",
+  "status" : "draft",
+  "date" : "2024-09-17T19:55:11+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "261665006",
+        "display" : "Unbekannt"
+      },
+      {
+        "code" : "254632001",
+        "display" : "SCLC"
+      },
+      {
+        "code" : "254637007",
+        "display" : "NSCLC"
+      },
+      {
+        "code" : "74964007",
+        "display" : "Sonstige"
+      }]
+    }]
+  }
+}

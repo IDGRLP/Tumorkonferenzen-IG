@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "tnm-regional-nodes-category-max-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-tnm-regional-nodes-category-vs.html\">TNM Regional Nodes Category Value Set</a></li><li>Include all codes defined in <a href=\"CodeSystem-krebsstadium-cs.html\"><code>https://www.uicc.org/resources/tnm</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tnm-regional-nodes-category-max-vs</b></p><a name=\"tnm-regional-nodes-category-max-vs\"> </a><a name=\"hctnm-regional-nodes-category-max-vs\"> </a><a name=\"tnm-regional-nodes-category-max-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-tnm-regional-nodes-category-vs.html\">TNM Regional Nodes Category Value Set</a></li><li>Include all codes defined in <a href=\"CodeSystem-krebsstadium-cs.html\"><code>https://www.uicc.org/resources/tnm</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-category-max-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "TNM Regional Nodes Maximum Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-05-28T11:48:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

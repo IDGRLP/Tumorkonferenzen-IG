@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="tnm-distant-metastases-category-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222587001 (American Joint Committee on Cancer clinical M category allowable value (qualifier value))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  1222591006 (American Joint Committee on Cancer pathological M category allowable value (qualifier value))</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet tnm-distant-metastases-category-vs</b></p><a name="tnm-distant-metastases-category-vs"> </a><a name="hctnm-distant-metastases-category-vs"> </a><a name="tnm-distant-metastases-category-vs-en-US"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 1222587001 (American Joint Committee on Cancer clinical M category allowable value (qualifier value))</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from 1222591006 (American Joint Committee on Cancer pathological M category allowable value (qualifier value))</li></ul></div>
   </text>
   <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-vs"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="TNM Distant Metastases Category Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2024-05-28T11:48:18+00:00"/>
+  <date value="2024-09-17T19:55:11+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>

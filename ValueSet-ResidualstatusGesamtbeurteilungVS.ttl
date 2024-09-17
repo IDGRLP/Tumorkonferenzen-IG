@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "ResidualstatusGesamtbeurteilungVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-ResidualstatusCS.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R0\">R0</a></td><td>Kein Residualtumor</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1\">R1</a></td><td>Mikroskopischer Residualtumor</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40is.41\">R1(is)</a></td><td>In-Situ-Rest</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40cy.43.41\">R1(cy+)</a></td><td>Cytologischer Rest</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R2\">R2</a></td><td>Makroskopischer Residualtumor</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-RX\">RX</a></td><td>Vorhandensein von Residualtumor kann nicht beurteilt werden</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ResidualstatusGesamtbeurteilungVS</b></p><a name=\"ResidualstatusGesamtbeurteilungVS\"> </a><a name=\"hcResidualstatusGesamtbeurteilungVS\"> </a><a name=\"ResidualstatusGesamtbeurteilungVS-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-ResidualstatusCS.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R0\">R0</a></td><td>Kein Residualtumor</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1\">R1</a></td><td>Mikroskopischer Residualtumor</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40is.41\">R1(is)</a></td><td>In-Situ-Rest</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R1.40cy.43.41\">R1(cy+)</a></td><td>Cytologischer Rest</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-R2\">R2</a></td><td>Makroskopischer Residualtumor</td></tr><tr><td><a href=\"CodeSystem-ResidualstatusCS.html#ResidualstatusCS-RX\">RX</a></td><td>Vorhandensein von Residualtumor kann nicht beurteilt werden</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "ResidualstatusGesamtbeurteilungVS"] ; # 
   fhir:title [ fhir:v "Gesamtbeurteilung des Residualstatus"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-28T11:48:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

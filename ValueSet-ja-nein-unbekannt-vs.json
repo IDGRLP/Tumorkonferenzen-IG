@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ja-nein-unbekannt-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ja-nein-unbekannt-vs</b></p><a name=\"ja-nein-unbekannt-vs\"> </a><a name=\"hcja-nein-unbekannt-vs\"> </a><a name=\"ja-nein-unbekannt-vs-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/373066001\">373066001</a></td><td>Ja</td></tr><tr><td><a href=\"http://snomed.info/id/373067005\">373067005</a></td><td>Nein</td></tr><tr><td><a href=\"http://snomed.info/id/261665006\">261665006</a></td><td>Unbekannt</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs",
+  "version" : "0.1.0",
+  "name" : "JaNeinUnbekanntVS",
+  "title" : "Expanded Yes/No Indicator ValueSet",
+  "status" : "draft",
+  "date" : "2024-09-17T19:55:11+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "373066001",
+        "display" : "Ja"
+      },
+      {
+        "code" : "373067005",
+        "display" : "Nein"
+      },
+      {
+        "code" : "261665006",
+        "display" : "Unbekannt"
+      }]
+    }]
+  }
+}

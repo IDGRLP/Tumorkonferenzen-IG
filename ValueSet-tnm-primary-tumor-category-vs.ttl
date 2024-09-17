@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "tnm-primary-tumor-category-vs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  1222585009 (American Joint Committee on Cancer clinical T category allowable value (qualifier value))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  1222589003 (American Joint Committee on Cancer pathological T category allowable value (qualifier value))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  1222595002 (American Joint Committee on Cancer ypT category allowable value (qualifier value))</li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet tnm-primary-tumor-category-vs</b></p><a name=\"tnm-primary-tumor-category-vs\"> </a><a name=\"hctnm-primary-tumor-category-vs\"> </a><a name=\"tnm-primary-tumor-category-vs-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 1222585009 (American Joint Committee on Cancer clinical T category allowable value (qualifier value))</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 1222589003 (American Joint Committee on Cancer pathological T category allowable value (qualifier value))</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from 1222595002 (American Joint Committee on Cancer ypT category allowable value (qualifier value))</li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-vs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "TNM Primary Tumor Category Value Set"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-05-28T11:48:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

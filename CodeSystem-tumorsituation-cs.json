@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "tumorsituation-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tumorsituation-cs</b></p><a name=\"tumorsituation-cs\"> </a><a name=\"hctumorsituation-cs\"> </a><a name=\"tumorsituation-cs-en-US\"> </a><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ED<a name=\"tumorsituation-cs-ED\"> </a></td><td>Erstdiagnose</td></tr><tr><td style=\"white-space:nowrap\">LR<a name=\"tumorsituation-cs-LR\"> </a></td><td>Lokalregionales Rezidiv</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"tumorsituation-cs-M\"> </a></td><td>Metastasierung</td></tr><tr><td style=\"white-space:nowrap\">TV<a name=\"tumorsituation-cs-TV\"> </a></td><td>Therapieverlauf</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"tumorsituation-cs-S\"> </a></td><td>Sonstige</td></tr></table></div>"
+  },
+  "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs",
+  "version" : "0.1.0",
+  "name" : "TumorsituationCS",
+  "title" : "Tumorsituation CodeSystem",
+  "status" : "draft",
+  "date" : "2024-09-17T19:55:11+00:00",
+  "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+  "contact" : [{
+    "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.idg-rlp.de/"
+    },
+    {
+      "system" : "email",
+      "value" : "info@idg-rlp.de"
+    }]
+  }],
+  "description" : "Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "ED",
+    "display" : "Erstdiagnose"
+  },
+  {
+    "code" : "LR",
+    "display" : "Lokalregionales Rezidiv"
+  },
+  {
+    "code" : "M",
+    "display" : "Metastasierung"
+  },
+  {
+    "code" : "TV",
+    "display" : "Therapieverlauf"
+  },
+  {
+    "code" : "S",
+    "display" : "Sonstige"
+  }]
+}

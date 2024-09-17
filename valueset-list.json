@@ -45,6 +45,17 @@
       ]
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BefundstatusVS",
+      "title" : "Befundstatus ValueSet",
+      "description" : "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ]
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -72,6 +83,46 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ECOGPerformanceStatusVS",
+      "title" : "ECOG",
+      "description" : "ECOG Performance Status (Level 0-5).",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/externe-bilder-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ExterneBilderVS",
+      "title" : "Externe Bilder ValueSet",
+      "description" : "ValueSet für externe Bilder mit den Antwortoptionen: sind eingelesen, werden elektronisch übermittelt, werden per Post gesendet.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/gewuenschte-teilnehmer-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "GewuenschteTeilnehmerVS",
+      "title" : "Gewünschte Teilnehmer ValueSet",
+      "description" : "ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/histologische-typisierung-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HistologischeTypisierungVS",
+      "title" : "Histologische Typisierung ValueSet",
+      "description" : "ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie",
       "version" : "0.1.0",
       "status" : "draft",
@@ -79,6 +130,27 @@
       "title" : "Morphologie Codes des ICD-O-3 CodeSystems.",
       "description" : null,
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-beratung-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "JaNeinBeratungVS",
+      "title" : "Ja, Nein, Beratung schon erfolgt ValueSet",
+      "description" : "Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "JaNeinUnbekanntVS",
+      "title" : "Expanded Yes/No Indicator ValueSet",
+      "description" : "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält",
+      "systems" : ["http://snomed.info/sct"]
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
@@ -132,6 +204,18 @@
       "description" : "PerineuraleInvasionVS",
       "systems" : [
         "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs"
+      ]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/pos-neg-nask-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PosNegNaskVS",
+      "title" : "PosNegNask",
+      "description" : "PosNegNask",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
       ]
     },
     {
@@ -252,6 +336,17 @@
       "systems" : ["http://snomed.info/sct"]
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorsituationVS",
+      "title" : "Tumorsituation ValueSet",
+      "description" : "ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"
+      ]
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -261,15 +356,6 @@
       "systems" : [
         "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"
       ]
-    },
-    {
-      "url" : "http://loinc.org/vs/LL529-9",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ECOGPerformanceStatusVS",
-      "title" : "ECOG",
-      "description" : "ECOG Performance Status (Level 0-5).",
-      "systems" : ["http://loinc.org"]
     }
   ]
 }

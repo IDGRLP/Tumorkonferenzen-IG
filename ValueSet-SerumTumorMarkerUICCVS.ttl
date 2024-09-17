@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "SerumTumorMarkerUICCVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-SerumTumorMarkerUICCCS.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code></a></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SerumTumorMarkerUICCVS</b></p><a name=\"SerumTumorMarkerUICCVS\"> </a><a name=\"hcSerumTumorMarkerUICCVS\"> </a><a name=\"SerumTumorMarkerUICCVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-SerumTumorMarkerUICCCS.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "SerumTumorMarkerUICCVS"] ; # 
   fhir:title [ fhir:v "SerumTumorMarkerUICCVS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-05-28T11:48:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

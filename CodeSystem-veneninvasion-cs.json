@@ -3,14 +3,14 @@
   "id" : "veneninvasion-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VX<a name=\"veneninvasion-cs-VX\"> </a></td><td>Veneninvasion kann nicht beurteilt werden</td></tr><tr><td style=\"white-space:nowrap\">V0<a name=\"veneninvasion-cs-V0\"> </a></td><td>Keine Veneninvasion</td></tr><tr><td style=\"white-space:nowrap\">V1<a name=\"veneninvasion-cs-V1\"> </a></td><td>Mikroskopische Veneninvasion</td></tr><tr><td style=\"white-space:nowrap\">V2<a name=\"veneninvasion-cs-V2\"> </a></td><td>Makroskopische Veneninvasion</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem veneninvasion-cs</b></p><a name=\"veneninvasion-cs\"> </a><a name=\"hcveneninvasion-cs\"> </a><a name=\"veneninvasion-cs-en-US\"> </a><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">VX<a name=\"veneninvasion-cs-VX\"> </a></td><td>Veneninvasion kann nicht beurteilt werden</td></tr><tr><td style=\"white-space:nowrap\">V0<a name=\"veneninvasion-cs-V0\"> </a></td><td>Keine Veneninvasion</td></tr><tr><td style=\"white-space:nowrap\">V1<a name=\"veneninvasion-cs-V1\"> </a></td><td>Mikroskopische Veneninvasion</td></tr><tr><td style=\"white-space:nowrap\">V2<a name=\"veneninvasion-cs-V2\"> </a></td><td>Makroskopische Veneninvasion</td></tr></table></div>"
   },
   "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
   "version" : "0.1.0",
   "name" : "VeneninvasionCS",
   "title" : "Veneninvasion CodeSystem",
   "status" : "draft",
-  "date" : "2024-05-28T11:48:18+00:00",
+  "date" : "2024-09-17T19:55:11+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",

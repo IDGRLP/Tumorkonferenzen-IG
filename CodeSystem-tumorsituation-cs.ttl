@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tumorsituation-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem tumorsituation-cs</b></p><a name=\"tumorsituation-cs\"> </a><a name=\"hctumorsituation-cs\"> </a><a name=\"tumorsituation-cs-en-US\"> </a><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ED<a name=\"tumorsituation-cs-ED\"> </a></td><td>Erstdiagnose</td></tr><tr><td style=\"white-space:nowrap\">LR<a name=\"tumorsituation-cs-LR\"> </a></td><td>Lokalregionales Rezidiv</td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"tumorsituation-cs-M\"> </a></td><td>Metastasierung</td></tr><tr><td style=\"white-space:nowrap\">TV<a name=\"tumorsituation-cs-TV\"> </a></td><td>Therapieverlauf</td></tr><tr><td style=\"white-space:nowrap\">S<a name=\"tumorsituation-cs-S\"> </a></td><td>Sonstige</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TumorsituationCS"] ; # 
+  fhir:title [ fhir:v "Tumorsituation CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.idg-rlp.de/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@idg-rlp.de" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ED" ] ;
+     fhir:display [ fhir:v "Erstdiagnose" ]
+  ] [
+     fhir:code [ fhir:v "LR" ] ;
+     fhir:display [ fhir:v "Lokalregionales Rezidiv" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Metastasierung" ]
+  ] [
+     fhir:code [ fhir:v "TV" ] ;
+     fhir:display [ fhir:v "Therapieverlauf" ]
+  ] [
+     fhir:code [ fhir:v "S" ] ;
+     fhir:display [ fhir:v "Sonstige" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

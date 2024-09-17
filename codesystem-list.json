@@ -65,6 +65,14 @@
       "description" : "PerineuraleInvasionCS"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorsituationCS",
+      "title" : "Tumorsituation CodeSystem",
+      "description" : "Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S."
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
       "version" : "0.1.0",
       "status" : "draft",

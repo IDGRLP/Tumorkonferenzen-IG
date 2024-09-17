@@ -2,14 +2,14 @@
   "resourceType" : "ImplementationGuide",
   "id" : "de.idg-rlp.tumorkonferenzen",
   "text" : {
-    "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TumorkonferenzenIDG</h2><p>The official URL for this implementation guide is: </p><pre>http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen</pre></div>"
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide de.idg-rlp.tumorkonferenzen</b></p><a name=\"de.idg-rlp.tumorkonferenzen\"> </a><a name=\"hcde.idg-rlp.tumorkonferenzen\"> </a><a name=\"de.idg-rlp.tumorkonferenzen-en-US\"> </a><h2>TumorkonferenzenIDG</h2><p>The official URL for this implementation guide is: </p><pre>http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen</pre></div>"
   },
   "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ImplementationGuide/de.idg-rlp.tumorkonferenzen",
   "version" : "0.1.0",
   "name" : "TumorkonferenzenIDG",
   "status" : "draft",
-  "date" : "2024-05-28T11:48:18+00:00",
+  "date" : "2024-09-17T19:55:11+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -33,7 +33,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.5.0"
+    "version" : "6.0.2"
   },
   {
     "id" : "hl7ext",
@@ -49,7 +49,7 @@
     "id" : "de_basisprofil_r4",
     "uri" : "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
     "packageId" : "de.basisprofil.r4",
-    "version" : "1.5.0-ballot2"
+    "version" : "1.5.0"
   },
   {
     "id" : "hl7_fhir_us_mcode",
@@ -335,7 +335,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
     },
     {
       "extension" : [{
@@ -618,23 +618,35 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AnmeldeBundleMinimal"
+        "reference" : "StructureDefinition/AnmeldeBundleMinimalFreitextLunge"
       },
-      "name" : "AnmeldeBundleMinimal",
-      "description" : "AnmeldeBundleMinimal",
+      "name" : "AnmeldeBundleMinimalFreitextLunge",
+      "description" : "AnmeldeBundleMinimalFreitextLunge",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "Bundle/AnmeldeBundleMinimal"
+        "reference" : "StructureDefinition/AnmeldeBundleMinimalFreitextProstata"
       },
-      "name" : "AnmeldeBundleMinimal",
-      "description" : "AnmeldeBundleMinimal",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal"
+      "name" : "AnmeldeBundleMinimalFreitextProstata",
+      "description" : "AnmeldeBundleMinimalFreitextProstata",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Anmelder"
+      },
+      "name" : "Anmelder",
+      "description" : "Anmelder",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -646,6 +658,30 @@
       },
       "name" : "BefundDokument",
       "description" : "Metadaten zu einem Befunddokument bzw. Bildbefund.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/befundstatust-vs"
+      },
+      "name" : "Befundstatus ValueSet",
+      "description" : "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/bemerkung-freitext"
+      },
+      "name" : "BemerkungFreitext",
+      "description" : "Freitext für allgemeine Bemerkungen",
       "exampleBoolean" : false
     },
     {
@@ -714,6 +750,42 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/ct-mrt-abdomen"
+      },
+      "name" : "CT/MRT Abdomen",
+      "description" : "Profil zur Dokumentation des CT/MRT Abdomen-Befunds.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ct-mrt-schaedel"
+      },
+      "name" : "CT/MRT Schädel",
+      "description" : "Profil zur Dokumentation des CT/MRT Schädel-Befunds.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/DiagnoseFreitext"
+      },
+      "name" : "DiagnoseFreitext",
+      "description" : "DiagnoseFreitext",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ecog"
       },
       "name" : "ECOG",
@@ -743,6 +815,18 @@
       "name" : "ECOGExample",
       "description" : "Beispielinstanz einer Observation welche einen ECOG Wert enthält.",
       "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Erstdiagnose"
+      },
+      "name" : "Erstdiagnose",
+      "description" : "Erstdiagnose",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -879,6 +963,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ja-nein-unbekannt-vs"
+      },
+      "name" : "Expanded Yes/No Indicator ValueSet",
+      "description" : "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/externe-bilder-vs"
+      },
+      "name" : "Externe Bilder ValueSet",
+      "description" : "ValueSet für externe Bilder mit den Antwortoptionen: sind eingelesen, werden elektronisch übermittelt, werden per Post gesendet.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/externe-bilder"
+      },
+      "name" : "ExterneBilder",
+      "description" : "Profil zur Dokumentation externer Bilder mit Antwortoptionen.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -886,6 +1006,78 @@
       },
       "name" : "Familienanamnese",
       "description" : "Familienanamnese",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/familienanamnese-drop-down"
+      },
+      "name" : "Familienanamnese DropDown",
+      "description" : "Familienanamnese DropDown",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FertilitaetsBehandlungEmpfohlen"
+      },
+      "name" : "FertilitaetsBehandlungEmpfohlen",
+      "description" : "FertilitaetsBehandlungEmpfohlen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fragestellung-pathologie-freitext"
+      },
+      "name" : "FragestellungPathologieFreitext",
+      "description" : "Freitext für die spezifische Fragestellung an die Pathologie",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fragestellung-radiologie-freitext"
+      },
+      "name" : "FragestellungRadiologieFreitext",
+      "description" : "Freitext für die spezifische Fragestellung an die Radiologie",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fragestellung-tumorkonferenz-freitext"
+      },
+      "name" : "FragestellungTumorkonferenzFreitext",
+      "description" : "Freitext für die Fragestellung im Kontext einer Tumorkonferenz",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FreitextObservation"
+      },
+      "name" : "FreitextObservation",
+      "description" : "FreitextObservation",
       "exampleBoolean" : false
     },
     {
@@ -910,6 +1102,30 @@
       },
       "name" : "Gesamtbeurteilung des Residualstatus",
       "description" : "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/gewuenschte-teilnehmer"
+      },
+      "name" : "Gewünschte Teilnehmer",
+      "description" : "Profil zur Dokumentation der gewünschten Teilnehmer für ein medizinisches Treffen oder Konsil.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/gewuenschte-teilnehmer-vs"
+      },
+      "name" : "Gewünschte Teilnehmer ValueSet",
+      "description" : "ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.",
       "exampleBoolean" : false
     },
     {
@@ -997,6 +1213,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/HistologieMolPatFreitext"
+      },
+      "name" : "HistologieMolPatFreitext",
+      "description" : "HistologieMolPatFreitext",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/histologische-typisierung-lunge"
+      },
+      "name" : "Histologische Typisierung Lunge",
+      "description" : "Profil zur Dokumentation der histologischen Typisierung Lunge.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/histologische-typisierung-vs"
+      },
+      "name" : "Histologische Typisierung ValueSet",
+      "description" : "ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1033,6 +1285,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ja-nein-beratung-vs"
+      },
+      "name" : "Ja, Nein, Beratung schon erfolgt ValueSet",
+      "description" : "Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1057,6 +1321,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/lungenfunktionstest"
+      },
+      "name" : "Lungenfunktionstest",
+      "description" : "Profil zur Dokumentation des Lungenfunktionstest Befunds.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1076,6 +1352,18 @@
       },
       "name" : "Lymphgefäßinvasion ValueSet",
       "description" : "LymphgefäßinvasionVS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medikamentoese-therapie-freitext"
+      },
+      "name" : "MedikamentöseTherapieFreitext",
+      "description" : "Freitext für die Beschreibung der medikamentösen Therapie",
       "exampleBoolean" : false
     },
     {
@@ -1259,6 +1547,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/OperativeTherapieFreitext"
+      },
+      "name" : "OperativeTherapieFreitext",
+      "description" : "OperativeTherapieFreitext",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/Organisation"
       },
       "name" : "Organisation",
@@ -1303,6 +1603,78 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/pet-ct"
+      },
+      "name" : "PetCT",
+      "description" : "Profil zur Dokumentation des PetCT Befunds.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/pos-neg-nask-vs"
+      },
+      "name" : "PosNegNask",
+      "description" : "PosNegNask",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/praxis-pathologisches-institut-freitext"
+      },
+      "name" : "PraxisPathologischesInstitutFreitext",
+      "description" : "Freitext zur Dokumentation der Praxis oder des pathologischen Instituts des Patienten.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/psa-verlauf-freitext"
+      },
+      "name" : "PsaVerlaufFreitext",
+      "description" : "Freitext für die Beschreibung des PSA-Verlaufs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/radiologie-bilder-freitext"
+      },
+      "name" : "RadiologieBilderFreitext",
+      "description" : "Freitext zur Beschreibung der an die Radiologie übermittelten Bilder",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/relevante-nebendiagnosen-freitext"
+      },
+      "name" : "RelevanteNebendiagnosenFreitext",
+      "description" : "Freitext für die Beschreibung relevanter Nebendiagnosen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1322,6 +1694,18 @@
       },
       "name" : "SerumTumorMarkerUICCVS",
       "description" : "SerumTumorMarkerUICCVS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/skelettszintigraphie"
+      },
+      "name" : "Skelettszintigraphie",
+      "description" : "Profil zur Dokumentation des Skelettszintigraphie Befunds.",
       "exampleBoolean" : false
     },
     {
@@ -1370,6 +1754,18 @@
       },
       "name" : "StrahlentherapieDetails",
       "description" : "Detailinformationen zur Strahlentherapie.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/StrahlenTherapieFreitext"
+      },
+      "name" : "StrahlenTherapieFreitext",
+      "description" : "StrahlenTherapieFreitext",
       "exampleBoolean" : false
     },
     {
@@ -1651,6 +2047,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/TNMFreitext"
+      },
+      "name" : "TNMFreitext",
+      "description" : "TNMFreitext",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/TNMLKategorie"
       },
       "name" : "TNMLKategorie",
@@ -1763,6 +2171,18 @@
       },
       "name" : "Tumor-Patient",
       "description" : "Patienten-Stammdaten",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tumor-board-anmeldung"
+      },
+      "name" : "TumorBoardAnmeldung",
+      "description" : "TumorBoardAnmeldung",
       "exampleBoolean" : false
     },
     {
@@ -1899,6 +2319,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/tumorsituation"
+      },
+      "name" : "Tumorsituation",
+      "description" : "Profil zur Erfassung der Tumorsituation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/tumorsituation-cs"
+      },
+      "name" : "Tumorsituation CodeSystem",
+      "description" : "Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tumorsituation-vs"
+      },
+      "name" : "Tumorsituation ValueSet",
+      "description" : "ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CodeSystem"
       }],
       "reference" : {
@@ -1949,10 +2405,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/verlauf-freitext"
+      },
+      "name" : "VerlaufFreitext",
+      "description" : "Freitext für die Beschreibung des Verlaufs",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/watchful-waiting"
       },
       "name" : "WatchfulWaiting",
       "description" : "Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/weitere-gewuenschte-teilnehmer-freitext"
+      },
+      "name" : "WeitereGewuenschteTeilnehmerFreitext",
+      "description" : "Freitext für die Beschreibung weiterer gewünschter Teilnehmer, die nicht in den vordefinierten Optionen enthalten sind.",
       "exampleBoolean" : false
     }],
     "page" : {

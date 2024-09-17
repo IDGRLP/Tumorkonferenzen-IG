@@ -3,14 +3,14 @@
   "id" : "multiple-primaer-tumoren-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-multiple-primaer-tumoren-cs.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet multiple-primaer-tumoren-vs</b></p><a name=\"multiple-primaer-tumoren-vs\"> </a><a name=\"hcmultiple-primaer-tumoren-vs\"> </a><a name=\"multiple-primaer-tumoren-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-multiple-primaer-tumoren-cs.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs</code></a></li></ul></div>"
   },
   "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs",
   "version" : "0.1.0",
   "name" : "MultiplePrimaerTumorenVS",
   "title" : "Multiple PrimärTumoren ValueSet",
   "status" : "draft",
-  "date" : "2024-05-28T11:48:18+00:00",
+  "date" : "2024-09-17T19:55:11+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",

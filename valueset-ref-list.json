@@ -38,8 +38,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-grading.html" : "Grading",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
+      "StructureDefinition-grading.html" : "Grading"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs",
@@ -81,6 +81,24 @@
       "StructureDefinition-TNMSKategorie.html" : "TNMSKategorie"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "BefundstatusVS",
+      "title" : "Befundstatus ValueSet",
+      "description" : "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel",
+      "StructureDefinition-pet-ct.html" : "PetCT",
+      "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
+      "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest",
+      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -117,6 +135,58 @@
       "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
     },
     {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ECOGPerformanceStatusVS",
+      "title" : "ECOG",
+      "description" : "ECOG Performance Status (Level 0-5).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-ecog.html" : "ECOG"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/externe-bilder-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ExterneBilderVS",
+      "title" : "Externe Bilder ValueSet",
+      "description" : "ValueSet für externe Bilder mit den Antwortoptionen: sind eingelesen, werden elektronisch übermittelt, werden per Post gesendet.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-externe-bilder.html" : "ExterneBilder"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/gewuenschte-teilnehmer-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "GewuenschteTeilnehmerVS",
+      "title" : "Gewünschte Teilnehmer ValueSet",
+      "description" : "ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-gewuenschte-teilnehmer.html" : "Gewünschte Teilnehmer"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/histologische-typisierung-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "HistologischeTypisierungVS",
+      "title" : "Histologische Typisierung ValueSet",
+      "description" : "ValueSet für die histologische Typisierung mit den Antwortoptionen: Unbekannt, SCLC, NSCLC, Sonstige.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-histologische-typisierung-lunge.html" : "Histologische Typisierung Lunge"
+    },
+    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie",
       "version" : "0.1.0",
       "status" : "draft",
@@ -124,6 +194,33 @@
       "title" : "Morphologie Codes des ICD-O-3 CodeSystems.",
       "description" : null,
       "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-beratung-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "JaNeinBeratungVS",
+      "title" : "Ja, Nein, Beratung schon erfolgt ValueSet",
+      "description" : "Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FertilitaetsBehandlungEmpfohlen.html" : "FertilitaetsBehandlungEmpfohlen"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "JaNeinUnbekanntVS",
+      "title" : "Expanded Yes/No Indicator ValueSet",
+      "description" : "Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-board-anmeldung.html" : "TumorBoardAnmeldung"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
@@ -190,6 +287,21 @@
       "uses" : {
       },
       "StructureDefinition-TNMPnKategorie.html" : "TNMPnKategorie"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/pos-neg-nask-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "PosNegNaskVS",
+      "title" : "PosNegNask",
+      "description" : "PosNegNask",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-familienanamnese-drop-down.html" : "Familienanamnese DropDown"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-max-vs",
@@ -335,10 +447,24 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
       "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
+      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
+      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
+      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
+    },
+    {
+      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "TumorsituationVS",
+      "title" : "Tumorsituation ValueSet",
+      "description" : "ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
+      "systems" : [
+        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-tumorsituation.html" : "Tumorsituation"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",
@@ -353,18 +479,6 @@
       "uses" : {
       },
       "StructureDefinition-TNMVKategorie.html" : "TNMVKategorie"
-    },
-    {
-      "url" : "http://loinc.org/vs/LL529-9",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ECOGPerformanceStatusVS",
-      "title" : "ECOG",
-      "description" : "ECOG Performance Status (Level 0-5).",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-ecog.html" : "ECOG"
     }
   ]
 }

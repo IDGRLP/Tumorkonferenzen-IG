@@ -56,6 +56,13 @@
     "name" : "PerineuraleInvasionCS"
   },
   {
+    "id" : "tumorsituation-cs",
+    "type" : "CodeSystem",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs",
+    "version" : "0.1.0",
+    "name" : "TumorsituationCS"
+  },
+  {
     "id" : "veneninvasion-cs",
     "type" : "CodeSystem",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs",
@@ -70,11 +77,53 @@
     "name" : "TumorkonferenzenIDG"
   },
   {
-    "id" : "AnmeldeBundleMinimal",
+    "id" : "AnmeldeBundleMinimalFreitextLunge",
     "type" : "StructureDefinition",
-    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimal",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge",
     "version" : "0.1.0",
-    "name" : "AnmeldeBundleMinimal"
+    "name" : "AnmeldeBundleMinimalFreitextLunge"
+  },
+  {
+    "id" : "AnmeldeBundleMinimalFreitextProstata",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata",
+    "version" : "0.1.0",
+    "name" : "AnmeldeBundleMinimalFreitextProstata"
+  },
+  {
+    "id" : "Anmelder",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder",
+    "version" : "0.1.0",
+    "name" : "Anmelder"
+  },
+  {
+    "id" : "DiagnoseFreitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext",
+    "version" : "0.1.0",
+    "name" : "DiagnoseFreitext"
+  },
+  {
+    "id" : "Erstdiagnose",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose",
+    "version" : "0.1.0",
+    "name" : "Erstdiagnose"
+  },
+  {
+    "id" : "FertilitaetsBehandlungEmpfohlen",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FertilitaetsBehandlungEmpfohlen",
+    "version" : "0.1.0",
+    "name" : "FertilitaetsBehandlungEmpfohlen"
+  },
+  {
+    "id" : "FreitextObservation",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FreitextObservation",
+    "version" : "0.1.0",
+    "name" : "FreitextObservation"
   },
   {
     "id" : "HistologieLymphknoten",
@@ -82,6 +131,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten",
     "version" : "0.1.0",
     "name" : "HistologieLymphknoten"
+  },
+  {
+    "id" : "HistologieMolPatFreitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext",
+    "version" : "0.1.0",
+    "name" : "HistologieMolPatFreitext"
   },
   {
     "id" : "Melder",
@@ -98,6 +154,13 @@
     "name" : "MelderInOrganisation"
   },
   {
+    "id" : "OperativeTherapieFreitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/OperativeTherapieFreitext",
+    "version" : "0.1.0",
+    "name" : "OperativeTherapieFreitext"
+  },
+  {
     "id" : "Organisation",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation",
@@ -105,11 +168,25 @@
     "name" : "Organisation"
   },
   {
+    "id" : "StrahlenTherapieFreitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/StrahlenTherapieFreitext",
+    "version" : "0.1.0",
+    "name" : "StrahlenTherapieFreitext"
+  },
+  {
     "id" : "TNMASymbol",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol",
     "version" : "0.1.0",
     "name" : "TNMASymbol"
+  },
+  {
+    "id" : "TNMFreitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext",
+    "version" : "0.1.0",
+    "name" : "TNMFreitext"
   },
   {
     "id" : "TNMLKategorie",
@@ -182,11 +259,32 @@
     "name" : "BefundDokument"
   },
   {
+    "id" : "bemerkung-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/bemerkung-freitext",
+    "version" : "0.1.0",
+    "name" : "BemerkungFreitext"
+  },
+  {
     "id" : "cancer-stage-group",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/cancer-stage-group",
     "version" : "0.1.0",
     "name" : "CancerStageGroup"
+  },
+  {
+    "id" : "ct-mrt-abdomen",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-abdomen",
+    "version" : "0.1.0",
+    "name" : "CTMRTAbdomen"
+  },
+  {
+    "id" : "ct-mrt-schaedel",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel",
+    "version" : "0.1.0",
+    "name" : "CTMRTSchaedel"
   },
   {
     "id" : "ecog",
@@ -196,6 +294,13 @@
     "name" : "ECOG"
   },
   {
+    "id" : "externe-bilder",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/externe-bilder",
+    "version" : "0.1.0",
+    "name" : "ExterneBilder"
+  },
+  {
     "id" : "familienanamnese",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/familienanamnese",
@@ -203,11 +308,46 @@
     "name" : "Familienanamnese"
   },
   {
+    "id" : "familienanamnese-drop-down",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/familienanamnese-drop-down",
+    "version" : "0.1.0",
+    "name" : "FamilienanamneseDropDown"
+  },
+  {
+    "id" : "fragestellung-pathologie-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-pathologie-freitext",
+    "version" : "0.1.0",
+    "name" : "FragestellungPathologieFreitext"
+  },
+  {
+    "id" : "fragestellung-radiologie-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext",
+    "version" : "0.1.0",
+    "name" : "FragestellungRadiologieFreitext"
+  },
+  {
+    "id" : "fragestellung-tumorkonferenz-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext",
+    "version" : "0.1.0",
+    "name" : "FragestellungTumorkonferenzFreitext"
+  },
+  {
     "id" : "gesamtbeurteilung",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/gesamtbeurteilung",
     "version" : "0.1.0",
     "name" : "Gesamtbeurteilung"
+  },
+  {
+    "id" : "gewuenschte-teilnehmer",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/gewuenschte-teilnehmer",
+    "version" : "0.1.0",
+    "name" : "GewuenschteTeilnehmer"
   },
   {
     "id" : "grading",
@@ -222,6 +362,27 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie",
     "version" : "0.1.0",
     "name" : "Histologie"
+  },
+  {
+    "id" : "histologische-typisierung-lunge",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologische-typisierung-lunge",
+    "version" : "0.1.0",
+    "name" : "HistologischeTypisierungLunge"
+  },
+  {
+    "id" : "lungenfunktionstest",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/lungenfunktionstest",
+    "version" : "0.1.0",
+    "name" : "Lungenfunktionstest"
+  },
+  {
+    "id" : "medikamentoese-therapie-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/medikamentoese-therapie-freitext",
+    "version" : "0.1.0",
+    "name" : "MedikamentoeseTherapieFreitext"
   },
   {
     "id" : "nebenwirkung",
@@ -243,6 +404,48 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation-einzelprozedur",
     "version" : "0.1.0",
     "name" : "OperationEinzelprozedur"
+  },
+  {
+    "id" : "pet-ct",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/pet-ct",
+    "version" : "0.1.0",
+    "name" : "PetCT"
+  },
+  {
+    "id" : "praxis-pathologisches-institut-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/praxis-pathologisches-institut-freitext",
+    "version" : "0.1.0",
+    "name" : "PraxisPathologischesInstitutFreitext"
+  },
+  {
+    "id" : "psa-verlauf-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/psa-verlauf-freitext",
+    "version" : "0.1.0",
+    "name" : "PsaVerlaufFreitext"
+  },
+  {
+    "id" : "radiologie-bilder-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/radiologie-bilder-freitext",
+    "version" : "0.1.0",
+    "name" : "RadiologieBilderFreitext"
+  },
+  {
+    "id" : "relevante-nebendiagnosen-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext",
+    "version" : "0.1.0",
+    "name" : "RelevanteNebendiagnosenFreitext"
+  },
+  {
+    "id" : "skelettszintigraphie",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/skelettszintigraphie",
+    "version" : "0.1.0",
+    "name" : "Skelettszintigraphie"
   },
   {
     "id" : "status-fernmetastasen",
@@ -329,6 +532,13 @@
     "name" : "Tumor"
   },
   {
+    "id" : "tumor-board-anmeldung",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung",
+    "version" : "0.1.0",
+    "name" : "TumorBoardAnmeldung"
+  },
+  {
     "id" : "tumorErkrankung",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorErkrankung",
@@ -385,6 +595,13 @@
     "name" : "TumorkonferenzTherapieVerlauf"
   },
   {
+    "id" : "tumorsituation",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorsituation",
+    "version" : "0.1.0",
+    "name" : "Tumorsituation"
+  },
+  {
     "id" : "verlauf",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf",
@@ -392,11 +609,25 @@
     "name" : "Verlauf"
   },
   {
+    "id" : "verlauf-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext",
+    "version" : "0.1.0",
+    "name" : "VerlaufFreitext"
+  },
+  {
     "id" : "watchful-waiting",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/watchful-waiting",
     "version" : "0.1.0",
     "name" : "WatchfulWaiting"
+  },
+  {
+    "id" : "weitere-gewuenschte-teilnehmer-freitext",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/weitere-gewuenschte-teilnehmer-freitext",
+    "version" : "0.1.0",
+    "name" : "WeitereGewuenschteTeilnehmerFreitext"
   },
   {
     "id" : "HistoGradeVS",
@@ -427,6 +658,13 @@
     "name" : "SerumTumorMarkerUICCVS"
   },
   {
+    "id" : "befundstatust-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
+    "version" : "0.1.0",
+    "name" : "BefundstatusVS"
+  },
+  {
     "id" : "cancer-stage-group-vs",
     "type" : "ValueSet",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
@@ -448,11 +686,53 @@
     "name" : "CancerStagingTypeVS"
   },
   {
+    "id" : "ecog-performance-status",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
+    "version" : "0.1.0",
+    "name" : "ECOGPerformanceStatusVS"
+  },
+  {
+    "id" : "externe-bilder-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/externe-bilder-vs",
+    "version" : "0.1.0",
+    "name" : "ExterneBilderVS"
+  },
+  {
+    "id" : "gewuenschte-teilnehmer-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/gewuenschte-teilnehmer-vs",
+    "version" : "0.1.0",
+    "name" : "GewuenschteTeilnehmerVS"
+  },
+  {
+    "id" : "histologische-typisierung-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/histologische-typisierung-vs",
+    "version" : "0.1.0",
+    "name" : "HistologischeTypisierungVS"
+  },
+  {
     "id" : "icd-o-3-morphologie",
     "type" : "ValueSet",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie",
     "version" : "0.1.0",
     "name" : "ICDO3Morphologie"
+  },
+  {
+    "id" : "ja-nein-beratung-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-beratung-vs",
+    "version" : "0.1.0",
+    "name" : "JaNeinBeratungVS"
+  },
+  {
+    "id" : "ja-nein-unbekannt-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs",
+    "version" : "0.1.0",
+    "name" : "JaNeinUnbekanntVS"
   },
   {
     "id" : "krebsstadium-vs",
@@ -488,6 +768,13 @@
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs",
     "version" : "0.1.0",
     "name" : "PerineuraleInvasionVS"
+  },
+  {
+    "id" : "pos-neg-nask-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/pos-neg-nask-vs",
+    "version" : "0.1.0",
+    "name" : "PosNegNaskVS"
   },
   {
     "id" : "tnm-distant-metastases-category-max-vs",
@@ -581,18 +868,18 @@
     "name" : "TNMStagingMethodVS"
   },
   {
+    "id" : "tumorsituation-vs",
+    "type" : "ValueSet",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs",
+    "version" : "0.1.0",
+    "name" : "TumorsituationVS"
+  },
+  {
     "id" : "veneninvasion-vs",
     "type" : "ValueSet",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",
     "version" : "0.1.0",
     "name" : "VeneninvasionVS"
-  },
-  {
-    "id" : "ecog-performance-status",
-    "type" : "ValueSet",
-    "url" : "http://loinc.org/vs/LL529-9",
-    "version" : "0.1.0",
-    "name" : "ECOGPerformanceStatusVS"
   },
   {
     "id" : "krebsstadium-cs",

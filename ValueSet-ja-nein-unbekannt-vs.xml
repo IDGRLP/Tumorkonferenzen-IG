@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ja-nein-unbekannt-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ja-nein-unbekannt-vs</b></p><a name="ja-nein-unbekannt-vs"> </a><a name="hcja-nein-unbekannt-vs"> </a><a name="ja-nein-unbekannt-vs-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/373066001">373066001</a></td><td>Ja</td></tr><tr><td><a href="http://snomed.info/id/373067005">373067005</a></td><td>Nein</td></tr><tr><td><a href="http://snomed.info/id/261665006">261665006</a></td><td>Unbekannt</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-unbekannt-vs"/>
+  <version value="0.1.0"/>
+  <name value="JaNeinUnbekanntVS"/>
+  <title value="Expanded Yes/No Indicator ValueSet"/>
+  <status value="draft"/>
+  <date value="2024-09-17T19:55:11+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="Ein ValueSet, das die Konzepte Yes, No und Unknown aus dem ExpandedYesNoIndicator CodeSystem enthält"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="373066001"/>
+        <display value="Ja"/>
+      </concept>
+      <concept>
+        <code value="373067005"/>
+        <display value="Nein"/>
+      </concept>
+      <concept>
+        <code value="261665006"/>
+        <display value="Unbekannt"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

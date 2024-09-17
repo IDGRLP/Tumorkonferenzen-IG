@@ -7,5 +7,6 @@ http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs,0
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs,0.1.0,draft,,ObdsOpKomplikationCS,oBDS Operation Komplikation Codesystem,"Komplikation gemäß Vorgabe oBDS.",
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs,0.1.0,draft,,ObdsStrahlentherapieIntentionCS,Intention der Strahlentherapie,"Die histopathologische Einstufung des invasiven Karzinoms ",
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs,0.1.0,draft,,PerineuraleInvasionCS,Perineurale Invasion CodeSystem,"PerineuraleInvasionCS",
+http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs,0.1.0,draft,,TumorsituationCS,Tumorsituation CodeSystem,"Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.",
 http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs,0.1.0,draft,,VeneninvasionCS,Veneninvasion CodeSystem,"VeneninvasionCS",
 https://www.uicc.org/resources/tnm,0.1.0,draft,,KrebsstadiumCS,Krebsstadium CodeSystem,"KrebsstadiumCS",

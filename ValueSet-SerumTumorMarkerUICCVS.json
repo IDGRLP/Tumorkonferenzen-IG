@@ -3,14 +3,14 @@
   "id" : "SerumTumorMarkerUICCVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-SerumTumorMarkerUICCCS.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet SerumTumorMarkerUICCVS</b></p><a name=\"SerumTumorMarkerUICCVS\"> </a><a name=\"hcSerumTumorMarkerUICCVS\"> </a><a name=\"SerumTumorMarkerUICCVS-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-SerumTumorMarkerUICCCS.html\"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS</code></a></li></ul></div>"
   },
   "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS",
   "version" : "0.1.0",
   "name" : "SerumTumorMarkerUICCVS",
   "title" : "SerumTumorMarkerUICCVS",
   "status" : "draft",
-  "date" : "2024-05-28T11:48:18+00:00",
+  "date" : "2024-09-17T19:55:11+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",

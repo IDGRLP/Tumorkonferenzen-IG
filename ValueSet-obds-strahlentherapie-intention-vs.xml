@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="obds-strahlentherapie-intention-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-obds-strahlentherapie-intention-cs.html"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet obds-strahlentherapie-intention-vs</b></p><a name="obds-strahlentherapie-intention-vs"> </a><a name="hcobds-strahlentherapie-intention-vs"> </a><a name="obds-strahlentherapie-intention-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-obds-strahlentherapie-intention-cs.html"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs</code></a></li></ul></div>
   </text>
   <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-strahlentherapie-intention-vs"/>
   <version value="0.1.0"/>
   <name value="ObdsStrahlentherapieIntentionVS"/>
   <title value="Intention der Strahlentherapie"/>
   <status value="draft"/>
-  <date value="2024-05-28T11:48:18+00:00"/>
+  <date value="2024-09-17T19:55:11+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>

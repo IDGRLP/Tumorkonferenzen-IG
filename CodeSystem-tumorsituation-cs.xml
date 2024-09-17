@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tumorsituation-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tumorsituation-cs</b></p><a name="tumorsituation-cs"> </a><a name="hctumorsituation-cs"> </a><a name="tumorsituation-cs-en-US"> </a><p>This  code system <code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ED<a name="tumorsituation-cs-ED"> </a></td><td>Erstdiagnose</td></tr><tr><td style="white-space:nowrap">LR<a name="tumorsituation-cs-LR"> </a></td><td>Lokalregionales Rezidiv</td></tr><tr><td style="white-space:nowrap">M<a name="tumorsituation-cs-M"> </a></td><td>Metastasierung</td></tr><tr><td style="white-space:nowrap">TV<a name="tumorsituation-cs-TV"> </a></td><td>Therapieverlauf</td></tr><tr><td style="white-space:nowrap">S<a name="tumorsituation-cs-S"> </a></td><td>Sonstige</td></tr></table></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"/>
+  <version value="0.1.0"/>
+  <name value="TumorsituationCS"/>
+  <title value="Tumorsituation CodeSystem"/>
+  <status value="draft"/>
+  <date value="2024-09-17T19:55:11+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S."/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="ED"/>
+    <display value="Erstdiagnose"/>
+  </concept>
+  <concept>
+    <code value="LR"/>
+    <display value="Lokalregionales Rezidiv"/>
+  </concept>
+  <concept>
+    <code value="M"/>
+    <display value="Metastasierung"/>
+  </concept>
+  <concept>
+    <code value="TV"/>
+    <display value="Therapieverlauf"/>
+  </concept>
+  <concept>
+    <code value="S"/>
+    <display value="Sonstige"/>
+  </concept>
+</CodeSystem>

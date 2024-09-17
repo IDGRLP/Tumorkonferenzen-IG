@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tumorsituation-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet tumorsituation-vs</b></p><a name="tumorsituation-vs"> </a><a name="hctumorsituation-vs"> </a><a name="tumorsituation-vs-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tumorsituation-cs.html"><code>http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs</code></a></li></ul></div>
+  </text>
+  <url value="http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs"/>
+  <version value="0.1.0"/>
+  <name value="TumorsituationVS"/>
+  <title value="Tumorsituation ValueSet"/>
+  <status value="draft"/>
+  <date value="2024-09-17T19:55:11+00:00"/>
+  <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+  <contact>
+    <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.idg-rlp.de/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@idg-rlp.de"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S."/>
+  <compose>
+    <include>
+      <system value="http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/tumorsituation-cs"/>
+    </include>
+  </compose>
+</ValueSet>
