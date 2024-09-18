@@ -51,11 +51,27 @@
       },
       {
         "reference": {
+          "reference": "Bundle/AnmeldeBundleMinimalFreitextLunge-Example"
+        },
+        "name": "AnmeldeBundleMinimalFreitextLunge Example",
+        "description": "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/AnmeldeBundleMinimalFreitextProstata"
         },
         "name": "AnmeldeBundleMinimalFreitextProstata",
         "description": "AnmeldeBundleMinimalFreitextProstata",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Bundle/AnmeldeBundleMinimalFreitextProstata-Example"
+        },
+        "name": "AnmeldeBundleMinimalFreitextProstata Example",
+        "description": "Beispiel für ein minimalen Anmeldebundle für Prostatapatienten",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata"
       },
       {
         "reference": {
@@ -572,6 +588,14 @@
         },
         "name": "MelderInOrganisation-example-1",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MinimalObservation"
+        },
+        "name": "MinimalObservation",
+        "description": "MinimalObservation zur Festlegung gemeinsamer fixen Werten",
+        "exampleBoolean": false
       },
       {
         "reference": {

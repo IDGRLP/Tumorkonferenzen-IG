@@ -6,10 +6,9 @@ Description: "Allgemeiner Leistungszustand: ECOG"
 * extension contains $EpisodeOfCare named episodeOfCare 0..1
 * code 1..1 MS
 * code = LOINC#89247-1 "ECOG Performance Status score"
-* subject 1..1 MS
+* subject MS
 * subject only Reference(TumorPatient)
 * valueCodeableConcept from ECOGPerformanceStatusVS
-
 
 Instance: ECOGExample
 InstanceOf: ECOG

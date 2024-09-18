@@ -1,0 +1,614 @@
+{
+  "resourceType": "Bundle",
+  "id": "AnmeldeBundleMinimalFreitextLunge-Example",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge"
+    ]
+  },
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "TumorPatientExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"
+          ]
+        },
+        "identifier": [
+          {
+            "value": "123456789"
+          }
+        ],
+        "name": [
+          {
+            "family": "Mustermann",
+            "given": [
+              "Max"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1960-05-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TumorBoardAnmeldungExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "tumorBoardAnmeldung",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "tumorboard",
+                  "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "tumorboard-lunge-mittwochs"
+                }
+              ]
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "terminwunsch",
+                  "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+                }
+              ]
+            },
+            "valueString": "2023-10-01"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "zweitmeinung",
+                  "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+                }
+              ]
+            },
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "373066001",
+                  "system": "http://snomed.info/sct",
+                  "display": "Ja"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "HistologischeTypisierungLungeExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologische-typisierung-lunge"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "histologischeTypisierung",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "254637007",
+              "display": "NSCLC"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DiagnoseFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "diagnoseFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "Lungenkrebs im fortgeschrittenen Stadium"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ErstdiagnoseExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "erstdiagnose",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "datumED",
+                  "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+                }
+              ]
+            },
+            "valueDateTime": "2021-03-15"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "stadiumBeiED",
+                  "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+                }
+              ]
+            },
+            "valueString": "IIIb"
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "code": "cTNMbeiED",
+                  "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+                }
+              ]
+            },
+            "valueString": "T4 N3 M0"
+          }
+        ],
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNMFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "tnm-FreitextObservation",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "T4 N3 M0"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ECOGExampleMinimal",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
+          ]
+        },
+        "code": {
+          "coding": [
+            {
+              "code": "89247-1",
+              "system": "http://loinc.org",
+              "display": "ECOG Performance Status score"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "status": "final",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "LA9624-3",
+              "system": "http://loinc.org",
+              "display": "ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "PraxisPathologischesInstitutFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/praxis-pathologisches-institut-freitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "praxisPathologischesInstitutFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "Institut für Pathologie, Musterstadt"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "HistologieMolPatFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "histologieMolPatFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "Adenokarzinom der Lunge, EGFR-Mutation nachgewiesen"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "VerlaufFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "verlaufFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "Stabiler Verlauf unter Immuntherapie"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "RelevanteNebendiagnosenFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "relevanteNebendiagnosenFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "Diabetes mellitus Typ 2"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FragestellungTumorkonferenzFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "fragestellungTumorkonferenzFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "Empfehlung für Chemo-Immuntherapie"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CTMRTSchaedelExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "ctMRTSchaedel",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "auffaellig",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+              "display": "auffällig"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CTMRTAbdomenExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-abdomen"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "ctMRTAbdomen",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "unauffaellig",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+              "display": "unauffällig"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "PetCTExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/pet-ct"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "petCT",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "unauffaellig",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+              "display": "unauffällig"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "SkelettszintigraphieExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/skelettszintigraphie"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "skelettszintigraphie",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "liegtNichtVor",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+              "display": "liegt nicht vor"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "LungenfunktionstestExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/lungenfunktionstest"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "lungenfunktionstest",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "liegtNichtVor",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+              "display": "liegt nicht vor"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "FragestellungRadiologieFreitextExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "fragestellungRadiologieFreitext",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueString": "Abklärung möglicher Metastasen im Abdomen"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ExterneBilderExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/externe-bilder"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "externeBilder",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "elektronischUebermittelt",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+              "display": "werden elektronisch übermittelt"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

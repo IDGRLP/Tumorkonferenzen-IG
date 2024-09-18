@@ -10,7 +10,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MinimalObservation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -24,8 +24,7 @@
               "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
             }
           ]
-        },
-        "mustSupport": true
+        }
       },
       {
         "id": "Observation.value[x]",

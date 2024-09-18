@@ -10,10 +10,22 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MinimalObservation",
   "derivation": "constraint",
   "differential": {
     "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "tumorBoardAnmeldung",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      },
       {
         "id": "Observation.value[x]",
         "path": "Observation.value[x]",
@@ -76,7 +88,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "tumorboard",
+              "code": "terminwunsch",
               "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
             }
           ]
@@ -105,7 +117,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "tumorboard",
+              "code": "zweitmeinung",
               "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
             }
           ]

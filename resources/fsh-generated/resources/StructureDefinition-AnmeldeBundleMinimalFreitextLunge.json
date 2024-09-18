@@ -31,7 +31,27 @@
           ],
           "rules": "open"
         },
-        "min": 2
+        "min": 3
+      },
+      {
+        "id": "Bundle.entry:anmelder",
+        "path": "Bundle.entry",
+        "sliceName": "anmelder",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:anmelder.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Practitioner",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"
+            ]
+          }
+        ]
       },
       {
         "id": "Bundle.entry:patient",

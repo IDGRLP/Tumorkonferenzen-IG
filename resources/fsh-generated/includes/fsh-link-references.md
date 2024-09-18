@@ -1,5 +1,7 @@
 [AnmeldeBundleMinimalFreitextLunge]: StructureDefinition-AnmeldeBundleMinimalFreitextLunge.html
+[AnmeldeBundleMinimalFreitextLunge-Example]: Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html
 [AnmeldeBundleMinimalFreitextProstata]: StructureDefinition-AnmeldeBundleMinimalFreitextProstata.html
+[AnmeldeBundleMinimalFreitextProstata-Example]: Bundle-AnmeldeBundleMinimalFreitextProstata-Example.html
 [Anmelder]: StructureDefinition-Anmelder.html
 [BefundDokument]: StructureDefinition-befund-dokument.html
 [BefundstatusVS]: ValueSet-befundstatust-vs.html
@@ -65,6 +67,7 @@
 [MelderInOrganisation]: StructureDefinition-MelderInOrganisation.html
 [Melder-example-1]: Practitioner-Melder-example-1.html
 [MelderInOrganisation-example-1]: PractitionerRole-MelderInOrganisation-example-1.html
+[MinimalObservation]: StructureDefinition-MinimalObservation.html
 [ICDO3Morphologie]: ValueSet-icd-o-3-morphologie.html
 [MultiplePrimaerTumorenCS]: CodeSystem-multiple-primaer-tumoren-cs.html
 [MultiplePrimaerTumorenVS]: ValueSet-multiple-primaer-tumoren-vs.html

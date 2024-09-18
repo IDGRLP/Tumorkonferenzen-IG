@@ -85,7 +85,7 @@ Description: "AnmeldeBundleMinimalFreitextProstata"
   * resource only WeitereGewuenschteTeilnehmerFreitext
 
 Profile: FamilienanamneseDropDown
-Parent: Observation
+Parent: MinimalObservation
 Id: familienanamnese-drop-down
 Title: "Familienanamnese DropDown"
 Description: "Familienanamnese DropDown"

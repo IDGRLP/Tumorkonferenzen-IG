@@ -8,6 +8,7 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
 * entry ^slicing.discriminator.path = "resource"
 * entry ^slicing.rules = #open
 * entry contains
+  anmelder 1..1 MS and
   patient 1..1 MS and
   tumorBoardAnmeldung 1..1 MS and
   histologischeTypisierungLunge 0..1 MS and
@@ -26,7 +27,9 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
   skelettszintigraphie 0..1 MS and
   lungenfunktionstest 0..1 MS and
   fragestellungRadiologieFreitext 0..1 MS and
-  externeBilder 0..1 MS 
+  externeBilder 0..1 MS
+* entry[anmelder]
+  * resource only Anmelder
 * entry[patient]
   * resource only TumorPatient
 * entry[tumorBoardAnmeldung]
@@ -84,7 +87,7 @@ Description: "ValueSet für die histologische Typisierung mit den Antwortoptione
 * $sct#74964007 "Sonstige"
 
 Profile: HistologischeTypisierungLunge
-Parent: Observation
+Parent: MinimalObservation
 Id: histologische-typisierung-lunge
 Title: "Histologische Typisierung Lunge"
 Description: "Profil zur Dokumentation der histologischen Typisierung Lunge."
@@ -101,10 +104,11 @@ Description: "DiagnoseFreitext"
 * code = $customCodes#diagnoseFreitext
 
 Profile: Erstdiagnose
-Parent: Observation
+Parent: MinimalObservation
 Id: Erstdiagnose
 Title: "Erstdiagnose"
 Description: "Erstdiagnose"
+* code = $customCodes#erstdiagnose
 * subject MS
 * component 
   * ^slicing.discriminator.type = #pattern
@@ -139,7 +143,7 @@ Description: "Freitext zur Dokumentation der Praxis oder des pathologischen Inst
 * code = $customCodes#praxisPathologischesInstitutFreitext
 
 Profile: FertilitaetsBehandlungEmpfohlen
-Parent: Observation
+Parent: MinimalObservation
 Id: FertilitaetsBehandlungEmpfohlen
 Title: "FertilitaetsBehandlungEmpfohlen"
 Description: "FertilitaetsBehandlungEmpfohlen"
@@ -157,14 +161,14 @@ Description: "Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolg
 * $customCodes#beratungSchonErfolgt "Beratung schon erfolgt"
 
 Profile: Tumorsituation
-Parent: Observation
+Parent: MinimalObservation
 Id: tumorsituation
 Title: "Tumorsituation"
 Description: "Profil zur Erfassung der Tumorsituation."
 * code 1.. MS
 * code = $customCodes#tumorsituation
 * value[x] only CodeableConcept
-* valueCodeableConcept from TumorsituationVS (required)
+* valueCodeableConcept from TumorsituationVS
 
 CodeSystem: TumorsituationCS
 Id: tumorsituation-cs
@@ -275,7 +279,7 @@ Description: "ValueSet für externe Bilder mit den Antwortoptionen: sind eingele
 * $customCodes#perPostGesendet "werden per Post gesendet"
 
 Profile: ExterneBilder
-Parent: Observation
+Parent: MinimalObservation
 Id: externe-bilder
 Title: "ExterneBilder"
 Description: "Profil zur Dokumentation externer Bilder mit Antwortoptionen."
@@ -313,7 +317,7 @@ Description: "ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in ei
 * $customCodes#thoraxChirurgie "Thorax-Chirurgie"
 
 Profile: GewuenschteTeilnehmer
-Parent: Observation
+Parent: MinimalObservation
 Id: gewuenschte-teilnehmer
 Title: "Gewünschte Teilnehmer"
 Description: "Profil zur Dokumentation der gewünschten Teilnehmer für ein medizinisches Treffen oder Konsil."
@@ -330,10 +334,12 @@ Description: "Freitext für die Beschreibung weiterer gewünschter Teilnehmer, d
 * code = $customCodes#weitereGewuenschteTeilnehmerFreitext
 
 Profile: TumorBoardAnmeldung
-Parent: Observation
+Parent: MinimalObservation
 Id: tumor-board-anmeldung
 Title: "TumorBoardAnmeldung"
 Description: "TumorBoardAnmeldung"
+* code 1.. MS
+* code = $customCodes#tumorBoardAnmeldung
 * value[x] 0..0
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
@@ -346,10 +352,10 @@ Description: "TumorBoardAnmeldung"
   * code = $customCodes#tumorboard
   * value[x] only CodeableConcept
 * component[terminwunsch]
-  * code = $customCodes#tumorboard
+  * code = $customCodes#terminwunsch
   * value[x] only string
 * component[zweitmeinung]
-  * code = $customCodes#tumorboard
+  * code = $customCodes#zweitmeinung
   * value[x] only CodeableConcept
   * valueCodeableConcept from  JaNeinUnbekanntVS
 
@@ -371,7 +377,7 @@ Description: "ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffälli
 * $customCodes#unbekannt "unbekannt"
 
 Profile: CTMRTSchaedel
-Parent: Observation
+Parent: MinimalObservation
 Id: ct-mrt-schaedel
 Title: "CT/MRT Schädel"
 Description: "Profil zur Dokumentation des CT/MRT Schädel-Befunds."
@@ -381,7 +387,7 @@ Description: "Profil zur Dokumentation des CT/MRT Schädel-Befunds."
 * valueCodeableConcept from BefundstatusVS
 
 Profile: CTMRTAbdomen
-Parent: Observation
+Parent: MinimalObservation
 Id: ct-mrt-abdomen
 Title: "CT/MRT Abdomen"
 Description: "Profil zur Dokumentation des CT/MRT Abdomen-Befunds."
@@ -391,7 +397,7 @@ Description: "Profil zur Dokumentation des CT/MRT Abdomen-Befunds."
 * valueCodeableConcept from BefundstatusVS
 
 Profile: PetCT
-Parent: Observation
+Parent: MinimalObservation
 Id: pet-ct
 Title: "PetCT"
 Description: "Profil zur Dokumentation des PetCT Befunds."
@@ -401,7 +407,7 @@ Description: "Profil zur Dokumentation des PetCT Befunds."
 * valueCodeableConcept from BefundstatusVS
 
 Profile: Skelettszintigraphie
-Parent: Observation
+Parent: MinimalObservation
 Id: skelettszintigraphie
 Title: "Skelettszintigraphie"
 Description: "Profil zur Dokumentation des Skelettszintigraphie Befunds."
@@ -411,7 +417,7 @@ Description: "Profil zur Dokumentation des Skelettszintigraphie Befunds."
 * valueCodeableConcept from BefundstatusVS
 
 Profile: Lungenfunktionstest
-Parent: Observation
+Parent: MinimalObservation
 Id: lungenfunktionstest
 Title: "Lungenfunktionstest"
 Description: "Profil zur Dokumentation des Lungenfunktionstest Befunds."
@@ -421,11 +427,18 @@ Description: "Profil zur Dokumentation des Lungenfunktionstest Befunds."
 * valueCodeableConcept from BefundstatusVS
 
 Profile: FreitextObservation
-Parent: Observation
+Parent: MinimalObservation
 Id: FreitextObservation
 Title: "FreitextObservation"
 Description: "FreitextObservation"
-* code 1.. MS
-* subject MS
 * value[x] only string
 * valueString MS
+
+Profile: MinimalObservation
+Parent: Observation
+Id: MinimalObservation
+Title: "MinimalObservation"
+Description: "MinimalObservation zur Festlegung gemeinsamer fixen Werten"
+* status = #final
+* code 1.. MS
+* subject MS

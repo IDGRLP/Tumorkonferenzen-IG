@@ -10,14 +10,21 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MinimalObservation",
   "derivation": "constraint",
   "differential": {
     "element": [
       {
-        "id": "Observation.subject",
-        "path": "Observation.subject",
-        "mustSupport": true
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "erstdiagnose",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
       },
       {
         "id": "Observation.component",

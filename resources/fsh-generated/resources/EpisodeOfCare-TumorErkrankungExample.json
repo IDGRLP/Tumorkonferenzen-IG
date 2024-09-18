@@ -21,7 +21,7 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "\"TODO-INSTANZs\""
+        "reference": "\"TODO-INSTANZ\""
       },
       "role": {
         "coding": [
