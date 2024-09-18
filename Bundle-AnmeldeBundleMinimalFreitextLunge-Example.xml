@@ -7,6 +7,7 @@
   </meta>
   <type value="collection"/>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample"/>
     <resource>
       <Patient>
         <id value="TumorPatientExample"/>
@@ -29,6 +30,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample"/>
     <resource>
       <Observation>
         <id value="TumorBoardAnmeldungExample"/>
@@ -86,6 +88,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologischeTypisierungLungeExample"/>
     <resource>
       <Observation>
         <id value="HistologischeTypisierungLungeExample"/>
@@ -116,6 +119,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"/>
     <resource>
       <Observation>
         <id value="DiagnoseFreitextExample"/>
@@ -140,6 +144,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"/>
     <resource>
       <Observation>
         <id value="ErstdiagnoseExample"/>
@@ -190,6 +195,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample"/>
     <resource>
       <Observation>
         <id value="TNMFreitextExample"/>
@@ -214,6 +220,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal"/>
     <resource>
       <Observation>
         <id value="ECOGExampleMinimal"/>
@@ -245,6 +252,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PraxisPathologischesInstitutFreitextExample"/>
     <resource>
       <Observation>
         <id value="PraxisPathologischesInstitutFreitextExample"/>
@@ -269,6 +277,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample"/>
     <resource>
       <Observation>
         <id value="HistologieMolPatFreitextExample"/>
@@ -293,6 +302,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"/>
     <resource>
       <Observation>
         <id value="VerlaufFreitextExample"/>
@@ -317,6 +327,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"/>
     <resource>
       <Observation>
         <id value="RelevanteNebendiagnosenFreitextExample"/>
@@ -341,6 +352,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"/>
     <resource>
       <Observation>
         <id value="FragestellungTumorkonferenzFreitextExample"/>
@@ -365,6 +377,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTSchaedelExample"/>
     <resource>
       <Observation>
         <id value="CTMRTSchaedelExample"/>
@@ -395,6 +408,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample"/>
     <resource>
       <Observation>
         <id value="CTMRTAbdomenExample"/>
@@ -425,6 +439,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample"/>
     <resource>
       <Observation>
         <id value="PetCTExample"/>
@@ -455,6 +470,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample"/>
     <resource>
       <Observation>
         <id value="SkelettszintigraphieExample"/>
@@ -485,6 +501,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample"/>
     <resource>
       <Observation>
         <id value="LungenfunktionstestExample"/>
@@ -515,6 +532,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample"/>
     <resource>
       <Observation>
         <id value="FragestellungRadiologieFreitextExample"/>
@@ -539,6 +557,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample"/>
     <resource>
       <Observation>
         <id value="ExterneBilderExample"/>

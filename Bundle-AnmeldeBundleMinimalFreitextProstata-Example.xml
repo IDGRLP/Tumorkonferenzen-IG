@@ -7,6 +7,7 @@
   </meta>
   <type value="collection"/>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample"/>
     <resource>
       <Patient>
         <id value="TumorPatientExample"/>
@@ -29,6 +30,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample"/>
     <resource>
       <Observation>
         <id value="TumorBoardAnmeldungExample"/>
@@ -86,6 +88,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample"/>
     <resource>
       <Practitioner>
         <id value="AnmelderExample"/>
@@ -106,6 +109,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"/>
     <resource>
       <Observation>
         <id value="DiagnoseFreitextExample"/>
@@ -130,6 +134,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"/>
     <resource>
       <Observation>
         <id value="ErstdiagnoseExample"/>
@@ -180,6 +185,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample"/>
     <resource>
       <Observation>
         <id value="TNMFreitextExample"/>
@@ -204,6 +210,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal"/>
     <resource>
       <Observation>
         <id value="ECOGExampleMinimal"/>
@@ -235,6 +242,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FamilienanamneseDropDownExample"/>
     <resource>
       <Observation>
         <id value="FamilienanamneseDropDownExample"/>
@@ -265,6 +273,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FertilitaetsBehandlungEmpfohlenExample"/>
     <resource>
       <Observation>
         <id value="FertilitaetsBehandlungEmpfohlenExample"/>
@@ -295,6 +304,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorsituationExample"/>
     <resource>
       <Observation>
         <id value="TumorsituationExample"/>
@@ -324,6 +334,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample"/>
     <resource>
       <Observation>
         <id value="HistologieMolPatFreitextExample"/>
@@ -348,6 +359,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/OperativeTherapieFreitextExample"/>
     <resource>
       <Observation>
         <id value="OperativeTherapieFreitextExample"/>
@@ -372,6 +384,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/StrahlenTherapieFreitextExample"/>
     <resource>
       <Observation>
         <id value="StrahlenTherapieFreitextExample"/>
@@ -396,6 +409,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/MedikamentoeseTherapieFreitextExample"/>
     <resource>
       <Observation>
         <id value="MedikamentoeseTherapieFreitextExample"/>
@@ -420,6 +434,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"/>
     <resource>
       <Observation>
         <id value="VerlaufFreitextExample"/>
@@ -444,6 +459,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PsaVerlaufFreitextExample"/>
     <resource>
       <Observation>
         <id value="PsaVerlaufFreitextExample"/>
@@ -468,6 +484,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"/>
     <resource>
       <Observation>
         <id value="RelevanteNebendiagnosenFreitextExample"/>
@@ -492,6 +509,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"/>
     <resource>
       <Observation>
         <id value="FragestellungTumorkonferenzFreitextExample"/>
@@ -516,6 +534,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungPathologieFreitextExample"/>
     <resource>
       <Observation>
         <id value="FragestellungPathologieFreitextExample"/>
@@ -540,6 +559,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BemerkungFreitextExample"/>
     <resource>
       <Observation>
         <id value="BemerkungFreitextExample"/>
@@ -564,6 +584,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RadiologieBilderFreitextExample"/>
     <resource>
       <Observation>
         <id value="RadiologieBilderFreitextExample"/>
@@ -588,6 +609,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample"/>
     <resource>
       <Observation>
         <id value="FragestellungRadiologieFreitextExample"/>
@@ -612,6 +634,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample"/>
     <resource>
       <Observation>
         <id value="ExterneBilderExample"/>
@@ -642,6 +665,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GewuenschteTeilnehmerExample"/>
     <resource>
       <Observation>
         <id value="GewuenschteTeilnehmerExample"/>
@@ -672,6 +696,7 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="http://idg-rlp.de/fhir/tumorkonferenzen/Observation/WeitereGewuenschteTeilnehmerFreitextExample"/>
     <resource>
       <Observation>
         <id value="WeitereGewuenschteTeilnehmerFreitextExample"/>

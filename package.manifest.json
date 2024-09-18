@@ -1,6 +1,6 @@
 {
   "version" : "0.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240918104020",
+  "date" : "20240918110947",
   "name" : "de.idg-rlp.tumorkonferenzen"
 }
