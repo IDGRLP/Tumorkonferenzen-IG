@@ -10,7 +10,7 @@
   "name" : "MedikamentoeseTherapieFreitext",
   "title" : "MedikamentöseTherapieFreitext",
   "status" : "draft",
-  "date" : "2024-09-17T19:55:11+00:00",
+  "date" : "2024-09-18T10:41:35+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -583,6 +583,7 @@
       "type" : [{
         "code" : "code"
       }],
+      "patternCode" : "final",
       "constraint" : [{
         "key" : "ele-1",
         "severity" : "error",

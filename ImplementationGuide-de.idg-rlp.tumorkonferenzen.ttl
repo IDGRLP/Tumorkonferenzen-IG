@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TumorkonferenzenIDG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-17T19:55:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-18T10:41:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
@@ -542,6 +542,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Bundle/AnmeldeBundleMinimalFreitextLunge-Example> ;
+         fhir:reference [ fhir:v "Bundle/AnmeldeBundleMinimalFreitextLunge-Example" ]
+       ] ;
+       fhir:name [ fhir:v "AnmeldeBundleMinimalFreitextLunge Example" ] ;
+       fhir:description [ fhir:v "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten" ] ;
+       fhir:example [
+         fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge"^^xsd:anyURI ;
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -551,6 +566,21 @@
        fhir:name [ fhir:v "AnmeldeBundleMinimalFreitextProstata" ] ;
        fhir:description [ fhir:v "AnmeldeBundleMinimalFreitextProstata" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Bundle/AnmeldeBundleMinimalFreitextProstata-Example> ;
+         fhir:reference [ fhir:v "Bundle/AnmeldeBundleMinimalFreitextProstata-Example" ]
+       ] ;
+       fhir:name [ fhir:v "AnmeldeBundleMinimalFreitextProstata Example" ] ;
+       fhir:description [ fhir:v "Beispiel für ein minimalen Anmeldebundle für Prostatapatienten" ] ;
+       fhir:example [
+         fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata"^^xsd:anyURI ;
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1378,6 +1408,18 @@
          fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"^^xsd:anyURI ;
          fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MinimalObservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/MinimalObservation" ]
+       ] ;
+       fhir:name [ fhir:v "MinimalObservation" ] ;
+       fhir:description [ fhir:v "MinimalObservation zur Festlegung gemeinsamer fixen Werten" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

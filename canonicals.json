@@ -154,6 +154,13 @@
     "name" : "MelderInOrganisation"
   },
   {
+    "id" : "MinimalObservation",
+    "type" : "StructureDefinition",
+    "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MinimalObservation",
+    "version" : "0.1.0",
+    "name" : "MinimalObservation"
+  },
+  {
     "id" : "OperativeTherapieFreitext",
     "type" : "StructureDefinition",
     "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/OperativeTherapieFreitext",

@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TumorkonferenzenIDG"/>
   <status value="draft"/>
-  <date value="2024-09-17T19:55:11+00:00"/>
+  <date value="2024-09-18T10:41:35+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -468,6 +468,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/AnmeldeBundleMinimalFreitextLunge-Example"/>
+      </reference>
+      <name value="AnmeldeBundleMinimalFreitextLunge Example"/>
+      <description value="Beispiel für ein minimalen Anmeldebundle für Lungenpatienten"/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -476,6 +487,17 @@
       <name value="AnmeldeBundleMinimalFreitextProstata"/>
       <description value="AnmeldeBundleMinimalFreitextProstata"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/AnmeldeBundleMinimalFreitextProstata-Example"/>
+      </reference>
+      <name value="AnmeldeBundleMinimalFreitextProstata Example"/>
+      <description value="Beispiel für ein minimalen Anmeldebundle für Prostatapatienten"/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1187,6 +1209,17 @@
       </reference>
       <name value="MelderInOrganisation-example-1"/>
       <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MinimalObservation"/>
+      </reference>
+      <name value="MinimalObservation"/>
+      <description value="MinimalObservation zur Festlegung gemeinsamer fixen Werten"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

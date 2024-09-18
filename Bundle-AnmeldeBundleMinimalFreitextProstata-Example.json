@@ -1,0 +1,697 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "AnmeldeBundleMinimalFreitextProstata-Example",
+  "meta" : {
+    "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata"]
+  },
+  "type" : "collection",
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "TumorPatientExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorPatient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_TumorPatientExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient TumorPatientExample</b></p><a name=\"TumorPatientExample\"> </a><a name=\"hcTumorPatientExample\"> </a><a name=\"TumorPatientExample-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Max Mustermann  Male, DoB: 1960-05-01 ( 123456789)</p><hr/></div>"
+      },
+      "identifier" : [{
+        "value" : "123456789"
+      }],
+      "name" : [{
+        "family" : "Mustermann",
+        "given" : ["Max"]
+      }],
+      "gender" : "male",
+      "birthDate" : "1960-05-01"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "TumorBoardAnmeldungExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor-board-anmeldung"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TumorBoardAnmeldungExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TumorBoardAnmeldungExample</b></p><a name=\"TumorBoardAnmeldungExample\"> </a><a name=\"hcTumorBoardAnmeldungExample\"> </a><a name=\"TumorBoardAnmeldungExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tumorBoardAnmeldung}\">tumorBoardAnmeldung</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tumorboard}\">tumorboard</span></p><p><b>value</b>: <span title=\"Codes:\">tumorboard-lunge-mittwochs</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes terminwunsch}\">terminwunsch</span></p><p><b>value</b>: 2023-10-01</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes zweitmeinung}\">zweitmeinung</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Ja</span></p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "tumorBoardAnmeldung"
+        }]
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+            "code" : "tumorboard"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "code" : "tumorboard-lunge-mittwochs"
+          }]
+        }
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+            "code" : "terminwunsch"
+          }]
+        },
+        "valueString" : "2023-10-01"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+            "code" : "zweitmeinung"
+          }]
+        },
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://snomed.info/sct",
+            "code" : "373066001",
+            "display" : "Ja"
+          }]
+        }
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Practitioner",
+      "id" : "AnmelderExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_AnmelderExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner AnmelderExample</b></p><a name=\"AnmelderExample\"> </a><a name=\"hcAnmelderExample\"> </a><a name=\"AnmelderExample-en-US\"> </a><p><b>name</b>: Dr. Erika Musterfrau</p><p><b>telecom</b>: <a href=\"tel:+49987654321\">+49 987 654321</a></p></div>"
+      },
+      "name" : [{
+        "text" : "Dr. Erika Musterfrau"
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+49 987 654321"
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "DiagnoseFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseFreitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_DiagnoseFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation DiagnoseFreitextExample</b></p><a name=\"DiagnoseFreitextExample\"> </a><a name=\"hcDiagnoseFreitextExample\"> </a><a name=\"DiagnoseFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes diagnoseFreitext}\">diagnoseFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Lungenkrebs im fortgeschrittenen Stadium</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "diagnoseFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Lungenkrebs im fortgeschrittenen Stadium"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ErstdiagnoseExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Erstdiagnose"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ErstdiagnoseExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ErstdiagnoseExample</b></p><a name=\"ErstdiagnoseExample\"> </a><a name=\"hcErstdiagnoseExample\"> </a><a name=\"ErstdiagnoseExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes erstdiagnose}\">erstdiagnose</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes datumED}\">datumED</span></p><p><b>value</b>: 2021-03-15</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes stadiumBeiED}\">stadiumBeiED</span></p><p><b>value</b>: IIIb</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes cTNMbeiED}\">cTNMbeiED</span></p><p><b>value</b>: T4 N3 M0</p></blockquote></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "erstdiagnose"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "component" : [{
+        "code" : {
+          "coding" : [{
+            "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+            "code" : "datumED"
+          }]
+        },
+        "valueDateTime" : "2021-03-15"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+            "code" : "stadiumBeiED"
+          }]
+        },
+        "valueString" : "IIIb"
+      },
+      {
+        "code" : {
+          "coding" : [{
+            "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+            "code" : "cTNMbeiED"
+          }]
+        },
+        "valueString" : "T4 N3 M0"
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "TNMFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TNMFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TNMFreitextExample</b></p><a name=\"TNMFreitextExample\"> </a><a name=\"hcTNMFreitextExample\"> </a><a name=\"TNMFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tnm-FreitextObservation}\">tnm-FreitextObservation</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: T4 N3 M0</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "tnm-FreitextObservation"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "T4 N3 M0"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ECOGExampleMinimal",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ECOGExampleMinimal\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ECOGExampleMinimal</b></p><a name=\"ECOGExampleMinimal\"> </a><a name=\"hcECOGExampleMinimal\"> </a><a name=\"ECOGExampleMinimal-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 89247-1}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9624-3}\">ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "89247-1",
+          "display" : "ECOG Performance Status score"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA9624-3",
+          "display" : "ECOG 2: (Gehfähig, Selbstversorgung möglich, aber nicht arbeitsfähig; kann mehr als 50% der Wachzeit aufstehen)"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "FamilienanamneseDropDownExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/familienanamnese-drop-down"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FamilienanamneseDropDownExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FamilienanamneseDropDownExample</b></p><a name=\"FamilienanamneseDropDownExample\"> </a><a name=\"hcFamilienanamneseDropDownExample\"> </a><a name=\"FamilienanamneseDropDownExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes familienanamnese}\">familienanamnese</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 10828004}\">Positive</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "familienanamnese"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "10828004",
+          "display" : "Positive"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "FertilitaetsBehandlungEmpfohlenExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/FertilitaetsBehandlungEmpfohlen"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FertilitaetsBehandlungEmpfohlenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FertilitaetsBehandlungEmpfohlenExample</b></p><a name=\"FertilitaetsBehandlungEmpfohlenExample\"> </a><a name=\"hcFertilitaetsBehandlungEmpfohlenExample\"> </a><a name=\"FertilitaetsBehandlungEmpfohlenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fertilitaetsBehandlungEmpfohlen}\">fertilitaetsBehandlungEmpfohlen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 373066001}\">Ja</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "fertilitaetsBehandlungEmpfohlen"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "373066001",
+          "display" : "Ja"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "TumorsituationExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorsituation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_TumorsituationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation TumorsituationExample</b></p><a name=\"TumorsituationExample\"> </a><a name=\"hcTumorsituationExample\"> </a><a name=\"TumorsituationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes tumorsituation}\">tumorsituation</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:\">Erstdiagnose</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "tumorsituation"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "code" : "ED",
+          "display" : "Erstdiagnose"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "HistologieMolPatFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieMolPatFreitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_HistologieMolPatFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation HistologieMolPatFreitextExample</b></p><a name=\"HistologieMolPatFreitextExample\"> </a><a name=\"hcHistologieMolPatFreitextExample\"> </a><a name=\"HistologieMolPatFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes histologieMolPatFreitext}\">histologieMolPatFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Adenokarzinom der Lunge, EGFR-Mutation nachgewiesen</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "histologieMolPatFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Adenokarzinom der Lunge, EGFR-Mutation nachgewiesen"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "OperativeTherapieFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/OperativeTherapieFreitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_OperativeTherapieFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation OperativeTherapieFreitextExample</b></p><a name=\"OperativeTherapieFreitextExample\"> </a><a name=\"hcOperativeTherapieFreitextExample\"> </a><a name=\"OperativeTherapieFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes operativeTherapieFreitext}\">operativeTherapieFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Radikale Prostatektomie</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "operativeTherapieFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Radikale Prostatektomie"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "StrahlenTherapieFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/StrahlenTherapieFreitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_StrahlenTherapieFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation StrahlenTherapieFreitextExample</b></p><a name=\"StrahlenTherapieFreitextExample\"> </a><a name=\"hcStrahlenTherapieFreitextExample\"> </a><a name=\"StrahlenTherapieFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes strahlenTherapieFreitext}\">strahlenTherapieFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Externe Strahlentherapie</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "strahlenTherapieFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Externe Strahlentherapie"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "MedikamentoeseTherapieFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/medikamentoese-therapie-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_MedikamentoeseTherapieFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation MedikamentoeseTherapieFreitextExample</b></p><a name=\"MedikamentoeseTherapieFreitextExample\"> </a><a name=\"hcMedikamentoeseTherapieFreitextExample\"> </a><a name=\"MedikamentoeseTherapieFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes medikamentoeseTherapieFreitext}\">medikamentoeseTherapieFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Hormontherapie</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "medikamentoeseTherapieFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Hormontherapie"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "VerlaufFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_VerlaufFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation VerlaufFreitextExample</b></p><a name=\"VerlaufFreitextExample\"> </a><a name=\"hcVerlaufFreitextExample\"> </a><a name=\"VerlaufFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes verlaufFreitext}\">verlaufFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Stabiler Verlauf unter Immuntherapie</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "verlaufFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Stabiler Verlauf unter Immuntherapie"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "PsaVerlaufFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/psa-verlauf-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PsaVerlaufFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PsaVerlaufFreitextExample</b></p><a name=\"PsaVerlaufFreitextExample\"> </a><a name=\"hcPsaVerlaufFreitextExample\"> </a><a name=\"PsaVerlaufFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes psaVerlaufFreitext}\">psaVerlaufFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: PSA-Wert stabil bei 0.2 ng/ml</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "psaVerlaufFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "PSA-Wert stabil bei 0.2 ng/ml"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "RelevanteNebendiagnosenFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RelevanteNebendiagnosenFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RelevanteNebendiagnosenFreitextExample</b></p><a name=\"RelevanteNebendiagnosenFreitextExample\"> </a><a name=\"hcRelevanteNebendiagnosenFreitextExample\"> </a><a name=\"RelevanteNebendiagnosenFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes relevanteNebendiagnosenFreitext}\">relevanteNebendiagnosenFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Diabetes mellitus Typ 2</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "relevanteNebendiagnosenFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Diabetes mellitus Typ 2"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "FragestellungTumorkonferenzFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-tumorkonferenz-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FragestellungTumorkonferenzFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FragestellungTumorkonferenzFreitextExample</b></p><a name=\"FragestellungTumorkonferenzFreitextExample\"> </a><a name=\"hcFragestellungTumorkonferenzFreitextExample\"> </a><a name=\"FragestellungTumorkonferenzFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fragestellungTumorkonferenzFreitext}\">fragestellungTumorkonferenzFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Empfehlung für Chemo-Immuntherapie</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "fragestellungTumorkonferenzFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Empfehlung für Chemo-Immuntherapie"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "FragestellungPathologieFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-pathologie-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FragestellungPathologieFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FragestellungPathologieFreitextExample</b></p><a name=\"FragestellungPathologieFreitextExample\"> </a><a name=\"hcFragestellungPathologieFreitextExample\"> </a><a name=\"FragestellungPathologieFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fragestellungPathologieFreitext}\">fragestellungPathologieFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Mikroskopische Untersuchung des Tumorgewebes</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "fragestellungPathologieFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Mikroskopische Untersuchung des Tumorgewebes"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "BemerkungFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/bemerkung-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BemerkungFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BemerkungFreitextExample</b></p><a name=\"BemerkungFreitextExample\"> </a><a name=\"hcBemerkungFreitextExample\"> </a><a name=\"BemerkungFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes bemerkungFreitext}\">bemerkungFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Gute Therapietreue des Patienten</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "bemerkungFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Gute Therapietreue des Patienten"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "RadiologieBilderFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/radiologie-bilder-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_RadiologieBilderFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation RadiologieBilderFreitextExample</b></p><a name=\"RadiologieBilderFreitextExample\"> </a><a name=\"hcRadiologieBilderFreitextExample\"> </a><a name=\"RadiologieBilderFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes radiologieBilderFreitext}\">radiologieBilderFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: CT und MRT Bilder gesendet</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "radiologieBilderFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "CT und MRT Bilder gesendet"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "FragestellungRadiologieFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/fragestellung-radiologie-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_FragestellungRadiologieFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation FragestellungRadiologieFreitextExample</b></p><a name=\"FragestellungRadiologieFreitextExample\"> </a><a name=\"hcFragestellungRadiologieFreitextExample\"> </a><a name=\"FragestellungRadiologieFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes fragestellungRadiologieFreitext}\">fragestellungRadiologieFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Abklärung möglicher Metastasen im Abdomen</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "fragestellungRadiologieFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Abklärung möglicher Metastasen im Abdomen"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "ExterneBilderExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/externe-bilder"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_ExterneBilderExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation ExterneBilderExample</b></p><a name=\"ExterneBilderExample\"> </a><a name=\"hcExterneBilderExample\"> </a><a name=\"ExterneBilderExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes externeBilder}\">externeBilder</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes elektronischUebermittelt}\">werden elektronisch übermittelt</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "externeBilder"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "elektronischUebermittelt",
+          "display" : "werden elektronisch übermittelt"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "GewuenschteTeilnehmerExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/gewuenschte-teilnehmer"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_GewuenschteTeilnehmerExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation GewuenschteTeilnehmerExample</b></p><a name=\"GewuenschteTeilnehmerExample\"> </a><a name=\"hcGewuenschteTeilnehmerExample\"> </a><a name=\"GewuenschteTeilnehmerExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes gewuenschteTeilnehmer}\">gewuenschteTeilnehmer</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes humangenetik}\">Humangenetik</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "gewuenschteTeilnehmer"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "humangenetik",
+          "display" : "Humangenetik"
+        }]
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "WeitereGewuenschteTeilnehmerFreitextExample",
+      "meta" : {
+        "profile" : ["http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/weitere-gewuenschte-teilnehmer-freitext"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_WeitereGewuenschteTeilnehmerFreitextExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation WeitereGewuenschteTeilnehmerFreitextExample</b></p><a name=\"WeitereGewuenschteTeilnehmerFreitextExample\"> </a><a name=\"hcWeitereGewuenschteTeilnehmerFreitextExample\"> </a><a name=\"WeitereGewuenschteTeilnehmerFreitextExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes weitereGewuenschteTeilnehmerFreitext}\">weitereGewuenschteTeilnehmerFreitext</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: Onkologe</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+          "code" : "weitereGewuenschteTeilnehmerFreitext"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueString" : "Onkologe"
+    }
+  }]
+}

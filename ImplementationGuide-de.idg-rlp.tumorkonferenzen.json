@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TumorkonferenzenIDG",
   "status" : "draft",
-  "date" : "2024-09-17T19:55:11+00:00",
+  "date" : "2024-09-18T10:41:35+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -627,6 +627,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AnmeldeBundleMinimalFreitextLunge-Example"
+      },
+      "name" : "AnmeldeBundleMinimalFreitextLunge Example",
+      "description" : "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten",
+      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextLunge"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -635,6 +647,18 @@
       "name" : "AnmeldeBundleMinimalFreitextProstata",
       "description" : "AnmeldeBundleMinimalFreitextProstata",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/AnmeldeBundleMinimalFreitextProstata-Example"
+      },
+      "name" : "AnmeldeBundleMinimalFreitextProstata Example",
+      "description" : "Beispiel für ein minimalen Anmeldebundle für Prostatapatienten",
+      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/AnmeldeBundleMinimalFreitextProstata"
     },
     {
       "extension" : [{
@@ -1411,6 +1435,18 @@
       },
       "name" : "MelderInOrganisation-example-1",
       "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MinimalObservation"
+      },
+      "name" : "MinimalObservation",
+      "description" : "MinimalObservation zur Festlegung gemeinsamer fixen Werten",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{

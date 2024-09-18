@@ -15,7 +15,7 @@
   <name value="FragestellungRadiologieFreitext"/>
   <title value="FragestellungRadiologieFreitext"/>
   <status value="draft"/>
-  <date value="2024-09-17T19:55:11+00:00"/>
+  <date value="2024-09-18T10:41:35+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -569,6 +569,7 @@
       <type>
         <code value="code"/>
       </type>
+      <patternCode value="final"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>
