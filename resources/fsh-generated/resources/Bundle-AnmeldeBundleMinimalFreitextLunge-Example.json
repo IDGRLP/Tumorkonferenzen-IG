@@ -9,6 +9,7 @@
   "type": "collection",
   "entry": [
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample",
       "resource": {
         "resourceType": "Patient",
         "id": "TumorPatientExample",
@@ -35,6 +36,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample",
       "resource": {
         "resourceType": "Observation",
         "id": "TumorBoardAnmeldungExample",
@@ -104,6 +106,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologischeTypisierungLungeExample",
       "resource": {
         "resourceType": "Observation",
         "id": "HistologischeTypisierungLungeExample",
@@ -136,6 +139,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "DiagnoseFreitextExample",
@@ -160,6 +164,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample",
       "resource": {
         "resourceType": "Observation",
         "id": "ErstdiagnoseExample",
@@ -218,6 +223,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "TNMFreitextExample",
@@ -242,6 +248,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal",
       "resource": {
         "resourceType": "Observation",
         "id": "ECOGExampleMinimal",
@@ -275,6 +282,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PraxisPathologischesInstitutFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "PraxisPathologischesInstitutFreitextExample",
@@ -299,6 +307,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "HistologieMolPatFreitextExample",
@@ -323,6 +332,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "VerlaufFreitextExample",
@@ -347,6 +357,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "RelevanteNebendiagnosenFreitextExample",
@@ -371,6 +382,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "FragestellungTumorkonferenzFreitextExample",
@@ -395,6 +407,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTSchaedelExample",
       "resource": {
         "resourceType": "Observation",
         "id": "CTMRTSchaedelExample",
@@ -427,6 +440,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample",
       "resource": {
         "resourceType": "Observation",
         "id": "CTMRTAbdomenExample",
@@ -459,6 +473,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample",
       "resource": {
         "resourceType": "Observation",
         "id": "PetCTExample",
@@ -491,6 +506,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample",
       "resource": {
         "resourceType": "Observation",
         "id": "SkelettszintigraphieExample",
@@ -523,6 +539,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample",
       "resource": {
         "resourceType": "Observation",
         "id": "LungenfunktionstestExample",
@@ -555,6 +572,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "FragestellungRadiologieFreitextExample",
@@ -579,6 +597,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample",
       "resource": {
         "resourceType": "Observation",
         "id": "ExterneBilderExample",

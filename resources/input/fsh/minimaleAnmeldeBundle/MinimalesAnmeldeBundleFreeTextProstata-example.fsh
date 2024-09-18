@@ -4,31 +4,81 @@ Usage: #example
 Title: "AnmeldeBundleMinimalFreitextProstata Example"
 Description: "Beispiel für ein minimalen Anmeldebundle für Prostatapatienten"
 * type = #collection
-* entry[+].resource = TumorPatientExample
-* entry[+].resource = TumorBoardAnmeldungExample
-* entry[+].resource = AnmelderExample
-* entry[+].resource = DiagnoseFreitextExample
-* entry[+].resource = ErstdiagnoseExample
-* entry[+].resource = TNMFreitextExample
-* entry[+].resource = ECOGExampleMinimal
-* entry[+].resource = FamilienanamneseDropDownExample
-* entry[+].resource = FertilitaetsBehandlungEmpfohlenExample
-* entry[+].resource = TumorsituationExample
-* entry[+].resource = HistologieMolPatFreitextExample
-* entry[+].resource = OperativeTherapieFreitextExample
-* entry[+].resource = StrahlenTherapieFreitextExample
-* entry[+].resource = MedikamentoeseTherapieFreitextExample
-* entry[+].resource = VerlaufFreitextExample
-* entry[+].resource = PsaVerlaufFreitextExample
-* entry[+].resource = RelevanteNebendiagnosenFreitextExample
-* entry[+].resource = FragestellungTumorkonferenzFreitextExample
-* entry[+].resource = FragestellungPathologieFreitextExample
-* entry[+].resource = BemerkungFreitextExample
-* entry[+].resource = RadiologieBilderFreitextExample
-* entry[+].resource = FragestellungRadiologieFreitextExample
-* entry[+].resource = ExterneBilderExample
-* entry[+].resource = GewuenschteTeilnehmerExample
-* entry[+].resource = WeitereGewuenschteTeilnehmerFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample"
+  * resource = TumorPatientExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample"
+  * resource = TumorBoardAnmeldungExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample"
+  * resource = AnmelderExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"
+  * resource = DiagnoseFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"
+  * resource = ErstdiagnoseExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample"
+  * resource = TNMFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal"
+  * resource = ECOGExampleMinimal
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FamilienanamneseDropDownExample"
+  * resource = FamilienanamneseDropDownExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FertilitaetsBehandlungEmpfohlenExample"
+  * resource = FertilitaetsBehandlungEmpfohlenExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorsituationExample"
+  * resource = TumorsituationExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample"
+  * resource = HistologieMolPatFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/OperativeTherapieFreitextExample"
+  * resource = OperativeTherapieFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/StrahlenTherapieFreitextExample"
+  * resource = StrahlenTherapieFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/MedikamentoeseTherapieFreitextExample"
+  * resource = MedikamentoeseTherapieFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"
+  * resource = VerlaufFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PsaVerlaufFreitextExample"
+  * resource = PsaVerlaufFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"
+  * resource = RelevanteNebendiagnosenFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"
+  * resource = FragestellungTumorkonferenzFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungPathologieFreitextExample"
+  * resource = FragestellungPathologieFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BemerkungFreitextExample"
+  * resource = BemerkungFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RadiologieBilderFreitextExample"
+  * resource = RadiologieBilderFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample"
+  * resource = FragestellungRadiologieFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample"
+  * resource = ExterneBilderExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GewuenschteTeilnehmerExample"
+  * resource = GewuenschteTeilnehmerExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/WeitereGewuenschteTeilnehmerFreitextExample"
+  * resource = WeitereGewuenschteTeilnehmerFreitextExample
 
 Instance: AnmelderExample
 InstanceOf: Anmelder

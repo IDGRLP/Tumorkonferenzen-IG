@@ -9,6 +9,7 @@
   "type": "collection",
   "entry": [
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample",
       "resource": {
         "resourceType": "Patient",
         "id": "TumorPatientExample",
@@ -35,6 +36,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample",
       "resource": {
         "resourceType": "Observation",
         "id": "TumorBoardAnmeldungExample",
@@ -104,6 +106,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample",
       "resource": {
         "resourceType": "Practitioner",
         "id": "AnmelderExample",
@@ -126,6 +129,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "DiagnoseFreitextExample",
@@ -150,6 +154,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample",
       "resource": {
         "resourceType": "Observation",
         "id": "ErstdiagnoseExample",
@@ -208,6 +213,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "TNMFreitextExample",
@@ -232,6 +238,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal",
       "resource": {
         "resourceType": "Observation",
         "id": "ECOGExampleMinimal",
@@ -265,6 +272,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FamilienanamneseDropDownExample",
       "resource": {
         "resourceType": "Observation",
         "id": "FamilienanamneseDropDownExample",
@@ -297,6 +305,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FertilitaetsBehandlungEmpfohlenExample",
       "resource": {
         "resourceType": "Observation",
         "id": "FertilitaetsBehandlungEmpfohlenExample",
@@ -329,6 +338,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorsituationExample",
       "resource": {
         "resourceType": "Observation",
         "id": "TumorsituationExample",
@@ -360,6 +370,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "HistologieMolPatFreitextExample",
@@ -384,6 +395,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/OperativeTherapieFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "OperativeTherapieFreitextExample",
@@ -408,6 +420,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/StrahlenTherapieFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "StrahlenTherapieFreitextExample",
@@ -432,6 +445,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/MedikamentoeseTherapieFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "MedikamentoeseTherapieFreitextExample",
@@ -456,6 +470,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "VerlaufFreitextExample",
@@ -480,6 +495,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PsaVerlaufFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "PsaVerlaufFreitextExample",
@@ -504,6 +520,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "RelevanteNebendiagnosenFreitextExample",
@@ -528,6 +545,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "FragestellungTumorkonferenzFreitextExample",
@@ -552,6 +570,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungPathologieFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "FragestellungPathologieFreitextExample",
@@ -576,6 +595,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BemerkungFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "BemerkungFreitextExample",
@@ -600,6 +620,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RadiologieBilderFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "RadiologieBilderFreitextExample",
@@ -624,6 +645,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "FragestellungRadiologieFreitextExample",
@@ -648,6 +670,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample",
       "resource": {
         "resourceType": "Observation",
         "id": "ExterneBilderExample",
@@ -680,6 +703,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GewuenschteTeilnehmerExample",
       "resource": {
         "resourceType": "Observation",
         "id": "GewuenschteTeilnehmerExample",
@@ -712,6 +736,7 @@
       }
     },
     {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/WeitereGewuenschteTeilnehmerFreitextExample",
       "resource": {
         "resourceType": "Observation",
         "id": "WeitereGewuenschteTeilnehmerFreitextExample",

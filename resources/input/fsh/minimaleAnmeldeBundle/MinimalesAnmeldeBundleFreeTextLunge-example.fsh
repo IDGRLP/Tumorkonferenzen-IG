@@ -4,25 +4,63 @@ Usage: #example
 Title: "AnmeldeBundleMinimalFreitextLunge Example"
 Description: "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten"
 * type = #collection
-* entry[+].resource = TumorPatientExample
-* entry[+].resource = TumorBoardAnmeldungExample
-* entry[+].resource = HistologischeTypisierungLungeExample
-* entry[+].resource = DiagnoseFreitextExample
-* entry[+].resource = ErstdiagnoseExample
-* entry[+].resource = TNMFreitextExample
-* entry[+].resource = ECOGExampleMinimal
-* entry[+].resource = PraxisPathologischesInstitutFreitextExample
-* entry[+].resource = HistologieMolPatFreitextExample
-* entry[+].resource = VerlaufFreitextExample
-* entry[+].resource = RelevanteNebendiagnosenFreitextExample
-* entry[+].resource = FragestellungTumorkonferenzFreitextExample
-* entry[+].resource = CTMRTSchaedelExample
-* entry[+].resource = CTMRTAbdomenExample
-* entry[+].resource = PetCTExample
-* entry[+].resource = SkelettszintigraphieExample
-* entry[+].resource = LungenfunktionstestExample
-* entry[+].resource = FragestellungRadiologieFreitextExample
-* entry[+].resource = ExterneBilderExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample"
+  * resource = TumorPatientExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TumorBoardAnmeldungExample"
+  * resource = TumorBoardAnmeldungExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologischeTypisierungLungeExample"
+  * resource = HistologischeTypisierungLungeExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"
+  * resource = DiagnoseFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"
+  * resource = ErstdiagnoseExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample"
+  * resource = TNMFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal"
+  * resource = ECOGExampleMinimal
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PraxisPathologischesInstitutFreitextExample"
+  * resource = PraxisPathologischesInstitutFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/HistologieMolPatFreitextExample"
+  * resource = HistologieMolPatFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"
+  * resource = VerlaufFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"
+  * resource = RelevanteNebendiagnosenFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"
+  * resource = FragestellungTumorkonferenzFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTSchaedelExample"
+  * resource = CTMRTSchaedelExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample"
+  * resource = CTMRTAbdomenExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample"
+  * resource = PetCTExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample"
+  * resource = SkelettszintigraphieExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample"
+  * resource = LungenfunktionstestExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample"
+  * resource = FragestellungRadiologieFreitextExample
+* entry[+]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample"
+  * resource = ExterneBilderExample
 
 Instance: TumorPatientExample
 InstanceOf: TumorPatient
