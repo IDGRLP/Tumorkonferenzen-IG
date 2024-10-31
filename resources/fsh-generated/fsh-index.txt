@@ -1,5 +1,5 @@
 Output File                                                       Name                                          Type        FSH File                                                                  Lines
-Bundle-AnmeldeBundleMinimalFreitextLunge-Example.json             AnmeldeBundleMinimalFreitextLunge-Example     Instance    minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge-example.fsh     1 - 63
+Bundle-AnmeldeBundleMinimalFreitextLunge-Example.json             AnmeldeBundleMinimalFreitextLunge-Example     Instance    minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge-example.fsh     1 - 66
 Bundle-AnmeldeBundleMinimalFreitextProstata-Example.json          AnmeldeBundleMinimalFreitextProstata-Example  Instance    minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata-example.fsh  1 - 81
 CodeSystem-HistoGradeCS.json                                      HistoGradeCS                                  CodeSystem  codesystems.fsh                                                           86 - 102
 CodeSystem-Lymphgefaessinvasion-cs.json                           LymphgefaessinvasionCS                        CodeSystem  codesystems.fsh                                                           129 - 135

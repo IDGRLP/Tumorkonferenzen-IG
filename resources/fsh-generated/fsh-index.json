@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge-example.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 66
   },
   {
     "outputFile": "Bundle-AnmeldeBundleMinimalFreitextProstata-Example.json",
