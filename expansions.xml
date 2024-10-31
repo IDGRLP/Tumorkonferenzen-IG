@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cc3025dd-fbc4-4406-b788-4378c018ec7c"/>
+  <id value="1c6e7989-07d5-4735-9889-7c8317120527"/>
   <meta>
-    <lastUpdated value="2024-09-18T11:11:15.460+00:00"/>
+    <lastUpdated value="2024-10-31T11:09:37.792+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -144,10 +144,10 @@
         <name value="HistoGradeVS"/>
         <title value="HistoGradeVS"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:778fb004-3f98-48b9-82b1-507688959e45"/>
-          <timestamp value="2024-09-18T11:13:59+00:00"/>
+          <identifier value="urn:uuid:7c601b98-f4d4-4594-9e81-feb8cd9313a8"/>
+          <timestamp value="2024-10-31T11:11:48+00:00"/>
           <total value="13"/>
           <offset value="0"/>
           <parameter>
@@ -293,10 +293,10 @@
         <name value="LymphgefaessinvasionVS"/>
         <title value="Lymphgefäßinvasion ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:896a378d-aa73-4c81-a6fe-64ea280e8b0b"/>
-          <timestamp value="2024-09-18T11:13:59+00:00"/>
+          <identifier value="urn:uuid:76ff42d3-1d89-4a8c-aa6b-1c312ae720fe"/>
+          <timestamp value="2024-10-31T11:11:48+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -416,10 +416,10 @@
         <name value="ResidualstatusGesamtbeurteilungVS"/>
         <title value="Gesamtbeurteilung des Residualstatus"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:54dc9bfd-bcda-485e-8619-a5eb9507b2cf"/>
-          <timestamp value="2024-09-18T11:13:59+00:00"/>
+          <identifier value="urn:uuid:3f3c7ebd-a629-47c8-b2c5-13819246308e"/>
+          <timestamp value="2024-10-31T11:11:48+00:00"/>
           <total value="6"/>
           <offset value="0"/>
           <parameter>
@@ -538,10 +538,10 @@
         <name value="SerumTumorMarkerUICCVS"/>
         <title value="SerumTumorMarkerUICCVS"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:93cd4569-b0d4-4fee-9842-5c22e9586ac2"/>
-          <timestamp value="2024-09-18T11:13:59+00:00"/>
+          <identifier value="urn:uuid:4e977e50-13b7-4f78-8d3f-a97cb6a92359"/>
+          <timestamp value="2024-10-31T11:11:48+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -594,8 +594,8 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
-            <p>This value set expansion contains 455 concepts.</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
+            <p>This value set expansion contains 456 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -2895,6 +2895,14 @@
                 </td>
                 <td>http://snomed.info/sct</td>
                 <td>American Joint Committee on Cancer stage IV:25</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1336999008"> </a>  
+                  <a href="http://snomed.info/id/1336999008">1336999008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>American Joint Committee on Cancer stage IB3</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -4257,13 +4265,13 @@
         <title value="Cancer Stage Group Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4ecb84b0-1299-4683-bfb3-a2ab01a893f1"/>
-          <timestamp value="2024-09-18T11:14:00+00:00"/>
+          <identifier value="urn:uuid:a067ed5f-aceb-45e3-a715-41cb332e67f9"/>
+          <timestamp value="2024-10-31T11:11:48+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -4283,11 +4291,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -5725,6 +5733,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="1336999008"/>
+            <display value="American Joint Committee on Cancer stage IB3"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="1222811001"/>
             <display value="IIID"/>
           </contains>
@@ -6582,8 +6595,8 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
-            <p>This value set expansion contains 59 concepts.</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
+            <p>This value set expansion contains 65 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -6898,7 +6911,7 @@
                   <a href="http://snomed.info/id/443830009">443830009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)</td>
+                <td>American Joint Committee on Cancer, Cancer Staging Manual, 7th edition tumor staging system</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -6906,7 +6919,7 @@
                   <a href="http://snomed.info/id/444256004">444256004</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>American Joint Commission on Cancer, Cancer Staging Manual, 6th edition neoplasm staging system (tumor staging)</td>
+                <td>American Joint Committee on Cancer, Cancer Staging Manual, 6th edition neoplasm staging system (tumor staging)</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -6914,7 +6927,7 @@
                   <a href="http://snomed.info/id/897275008">897275008</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>American Joint Commission on Cancer, Cancer Staging Manual, 8th edition tumor staging system</td>
+                <td>American Joint Committee on Cancer, Cancer Staging Manual, 8th edition tumor staging system</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -6946,7 +6959,7 @@
                   <a href="http://snomed.info/id/1269566009">1269566009</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>American Joint Commission on Cancer, Cancer Staging Manual, 9th version neoplasm staging system</td>
+                <td>American Joint Committee on Cancer, Cancer Staging Manual, 9th version tumor staging system</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -7030,6 +7043,54 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1342413004"> </a>  
+                  <a href="http://snomed.info/id/1342413004">1342413004</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>IIRC - International Intraocular Retinoblastoma Classification</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1342414005"> </a>  
+                  <a href="http://snomed.info/id/1342414005">1342414005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Butchart staging system</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1343302008"> </a>  
+                  <a href="http://snomed.info/id/1343302008">1343302008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Chang staging system (tumor staging)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1343303003"> </a>  
+                  <a href="http://snomed.info/id/1343303003">1343303003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Durie-Salmon staging system (tumor staging)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1343304009"> </a>  
+                  <a href="http://snomed.info/id/1343304009">1343304009</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>International Prognostic Score (tumor staging)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1343305005"> </a>  
+                  <a href="http://snomed.info/id/1343305005">1343305005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Acquired Immunodeficiency Syndrome Clinical Trials Group system</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="x-http://snomed.info/sct-1149162008"> </a>  
                   <a href="http://snomed.info/id/1149162008">1149162008</a>
                 </td>
@@ -7077,13 +7138,13 @@
         <title value="Cancer Staging Method Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:036e8131-4de7-458b-89be-f83a5730ffa8"/>
-          <timestamp value="2024-09-18T11:14:03+00:00"/>
+          <identifier value="urn:uuid:9add6a13-e833-4314-a2eb-30c61e493f6e"/>
+          <timestamp value="2024-10-31T11:11:50+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -7107,11 +7168,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -7301,17 +7362,17 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="443830009"/>
-            <display value="American Joint Commission on Cancer, Cancer Staging Manual, 7th edition neoplasm staging system (tumor staging)"/>
+            <display value="American Joint Committee on Cancer, Cancer Staging Manual, 7th edition tumor staging system"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="444256004"/>
-            <display value="American Joint Commission on Cancer, Cancer Staging Manual, 6th edition neoplasm staging system (tumor staging)"/>
+            <display value="American Joint Committee on Cancer, Cancer Staging Manual, 6th edition neoplasm staging system (tumor staging)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="897275008"/>
-            <display value="American Joint Commission on Cancer, Cancer Staging Manual, 8th edition tumor staging system"/>
+            <display value="American Joint Committee on Cancer, Cancer Staging Manual, 8th edition tumor staging system"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -7331,7 +7392,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="1269566009"/>
-            <display value="American Joint Commission on Cancer, Cancer Staging Manual, 9th version neoplasm staging system"/>
+            <display value="American Joint Committee on Cancer, Cancer Staging Manual, 9th version tumor staging system"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -7385,6 +7446,36 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="1342413004"/>
+            <display value="IIRC - International Intraocular Retinoblastoma Classification"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1342414005"/>
+            <display value="Butchart staging system"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1343302008"/>
+            <display value="Chang staging system (tumor staging)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1343303003"/>
+            <display value="Durie-Salmon staging system (tumor staging)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1343304009"/>
+            <display value="International Prognostic Score (tumor staging)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1343305005"/>
+            <display value="Acquired Immunodeficiency Syndrome Clinical Trials Group system"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="1149162008"/>
             <display value="International Staging System for multiple myeloma (staging scale)"/>
           </contains>
@@ -7422,7 +7513,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set expansion contains 2 concepts.</p>
             <table class="codes">
               <tr>
@@ -7461,13 +7552,13 @@
         <title value="Cancer Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:4471cf11-9a7d-4ec7-9a6b-1119b247b206"/>
-          <timestamp value="2024-09-18T11:14:03+00:00"/>
+          <identifier value="urn:uuid:e579a60e-9269-470d-8f02-d66923d76bbf"/>
+          <timestamp value="2024-10-31T11:11:51+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -7487,11 +7578,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -7595,10 +7686,10 @@
         <name value="ECOGPerformanceStatusVS"/>
         <title value="ECOG"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6fc95d98-3374-43cf-9d21-95c44595e5dd"/>
-          <timestamp value="2024-09-18T11:14:03+00:00"/>
+          <identifier value="urn:uuid:54e65d75-5ae6-4505-bbe3-666959fc0eae"/>
+          <timestamp value="2024-10-31T11:11:51+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -7674,7 +7765,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set contains 4 concepts</p>
             <table class="codes">
               <tr>
@@ -7728,10 +7819,10 @@
         <name value="HistologischeTypisierungVS"/>
         <title value="Histologische Typisierung ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:56e4165d-f00d-42ea-8872-54a10928229f"/>
-          <timestamp value="2024-09-18T11:14:05+00:00"/>
+          <identifier value="urn:uuid:5cc48aa7-710c-4b7d-8869-a5620901ac3b"/>
+          <timestamp value="2024-10-31T11:11:52+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -7752,11 +7843,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -7792,7 +7883,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
               <tr>
@@ -7838,10 +7929,10 @@
         <name value="JaNeinUnbekanntVS"/>
         <title value="Expanded Yes/No Indicator ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:16598077-ea89-48ac-a203-bcdb501350d4"/>
-          <timestamp value="2024-09-18T11:14:06+00:00"/>
+          <identifier value="urn:uuid:58817eba-22e7-4680-9b5a-ec14fcc4a8f4"/>
+          <timestamp value="2024-10-31T11:11:53+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -7862,11 +7953,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -8169,10 +8260,10 @@
         <name value="KrebsstadiumVS"/>
         <title value="Krebsstadium ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4d58230b-dbf9-4748-9fb2-4bba8b510364"/>
-          <timestamp value="2024-09-18T11:14:06+00:00"/>
+          <identifier value="urn:uuid:12805579-7b4c-48bc-9708-7e60cc7cd735"/>
+          <timestamp value="2024-10-31T11:11:53+00:00"/>
           <total value="31"/>
           <offset value="0"/>
           <parameter>
@@ -8456,10 +8547,10 @@
         <name value="MultiplePrimaerTumorenVS"/>
         <title value="Multiple PrimärTumoren ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6c7f3806-25eb-4637-b881-f2746f734938"/>
-          <timestamp value="2024-09-18T11:14:06+00:00"/>
+          <identifier value="urn:uuid:41b7a4e4-76a2-4680-9671-ec7ce7cc79ec"/>
+          <timestamp value="2024-10-31T11:11:53+00:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -8601,10 +8692,10 @@
         <name value="ObdsStrahlentherapieIntentionVS"/>
         <title value="Intention der Strahlentherapie"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:4158ce3f-e955-4398-893c-9f9f4512b988"/>
-          <timestamp value="2024-09-18T11:14:07+00:00"/>
+          <identifier value="urn:uuid:20771a7c-203b-452f-804b-a8ef858bee04"/>
+          <timestamp value="2024-10-31T11:11:53+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -8710,10 +8801,10 @@
         <name value="PerineuraleInvasionVS"/>
         <title value="Perineurale Invasion ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e761ef02-4e58-4aa5-9639-abd323ec861e"/>
-          <timestamp value="2024-09-18T11:14:07+00:00"/>
+          <identifier value="urn:uuid:48242ec7-0b15-4adb-9b1a-29b3561870c3"/>
+          <timestamp value="2024-10-31T11:11:53+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -8764,7 +8855,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on:</p>
               <ul>
-                <li>SNOMED CT International edition 01-Feb 2024</li>
+                <li>SNOMED CT International edition 01-Aug 2024</li>
                 <li>
                   <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a>
                 </li>
@@ -8830,10 +8921,10 @@
         <name value="PosNegNaskVS"/>
         <title value="PosNegNask"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:05525c2d-a0b7-418f-9cd2-bea257720a9d"/>
-          <timestamp value="2024-09-18T11:14:08+00:00"/>
+          <identifier value="urn:uuid:102c371c-2b8c-41ae-9561-059bda67ad72"/>
+          <timestamp value="2024-10-31T11:11:53+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -8854,11 +8945,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -8896,7 +8987,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on:</p>
               <ul>
-                <li>SNOMED CT International edition 01-Feb 2024</li>
+                <li>SNOMED CT International edition 01-Aug 2024</li>
                 <li>
                   <a href="CodeSystem-krebsstadium-cs.html">codesystem Krebsstadium CodeSystem v0.1.0 (CodeSystem)</a>
                 </li>
@@ -9399,10 +9490,10 @@
         <title value="TNM Distant Metastases Maximum Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:ff8e62a9-7c05-4c8a-bdca-a7b122dfc227"/>
-          <timestamp value="2024-09-18T11:14:08+00:00"/>
+          <identifier value="urn:uuid:61577e23-a723-4f5a-a2e6-db7bb3783c1e"/>
+          <timestamp value="2024-10-31T11:11:54+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -9426,11 +9517,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -9749,7 +9840,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set expansion contains 28 concepts.</p>
             <table class="codes">
               <tr>
@@ -9996,13 +10087,13 @@
         <title value="TNM Distant Metastases Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:3521799e-e7ec-456d-80dd-c79a65bb68c7"/>
-          <timestamp value="2024-09-18T11:14:08+00:00"/>
+          <identifier value="urn:uuid:fd0a602d-3b1e-4c26-a613-95b531c71a36"/>
+          <timestamp value="2024-10-31T11:11:54+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -10022,11 +10113,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -10233,10 +10324,10 @@
         <title value="TNM Distant Metastases Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:02664d25-9318-4343-b8a3-92106f4ba8da"/>
-          <timestamp value="2024-09-18T11:14:08+00:00"/>
+          <identifier value="urn:uuid:d26fd7fc-4a3d-405f-b1db-7bb28e301fd0"/>
+          <timestamp value="2024-10-31T11:11:54+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -10295,7 +10386,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on:</p>
               <ul>
-                <li>SNOMED CT International edition 01-Feb 2024</li>
+                <li>SNOMED CT International edition 01-Aug 2024</li>
                 <li>
                   <a href="CodeSystem-krebsstadium-cs.html">codesystem Krebsstadium CodeSystem v0.1.0 (CodeSystem)</a>
                 </li>
@@ -11518,10 +11609,10 @@
         <title value="TNM Primary Tumor Maximum Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:1da6a097-9fd5-43ef-8c11-e612c4297bd4"/>
-          <timestamp value="2024-09-18T11:14:08+00:00"/>
+          <identifier value="urn:uuid:9997a725-4f7b-457a-acf2-77cb7d1206ae"/>
+          <timestamp value="2024-10-31T11:11:54+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -11545,11 +11636,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -12318,7 +12409,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set expansion contains 118 concepts.</p>
             <table class="codes">
               <tr>
@@ -13285,13 +13376,13 @@
         <title value="TNM Primary Tumor Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:2b1bf8c3-69f7-4e84-bb8c-12c72b6afda9"/>
-          <timestamp value="2024-09-18T11:14:09+00:00"/>
+          <identifier value="urn:uuid:de54a9ce-f1a8-4bdf-8633-f69e3d58d74f"/>
+          <timestamp value="2024-10-31T11:11:54+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -13311,11 +13402,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -13972,10 +14063,10 @@
         <title value="TNM Primary Tumor Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:e74b1363-64bb-4556-b569-9c1727f3f51b"/>
-          <timestamp value="2024-09-18T11:14:09+00:00"/>
+          <identifier value="urn:uuid:760b941b-4c69-4e7f-8b69-df01c0344756"/>
+          <timestamp value="2024-10-31T11:11:55+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -14034,7 +14125,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on:</p>
               <ul>
-                <li>SNOMED CT International edition 01-Feb 2024</li>
+                <li>SNOMED CT International edition 01-Aug 2024</li>
                 <li>
                   <a href="CodeSystem-krebsstadium-cs.html">codesystem Krebsstadium CodeSystem v0.1.0 (CodeSystem)</a>
                 </li>
@@ -14785,10 +14876,10 @@
         <title value="TNM Regional Nodes Maximum Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6ca52510-fe55-4793-b89e-35051d7bc99f"/>
-          <timestamp value="2024-09-18T11:14:09+00:00"/>
+          <identifier value="urn:uuid:362f4682-5386-4141-952b-d8cde764f241"/>
+          <timestamp value="2024-10-31T11:11:55+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -14812,11 +14903,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -15290,7 +15381,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set expansion contains 59 concepts.</p>
             <table class="codes">
               <tr>
@@ -15785,13 +15876,13 @@
         <title value="TNM Regional Nodes Category Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:5d1c6f8c-95af-4f7d-bc3d-94855df5a231"/>
-          <timestamp value="2024-09-18T11:14:09+00:00"/>
+          <identifier value="urn:uuid:ad752b9b-e030-451c-9de2-c2e3bd780576"/>
+          <timestamp value="2024-10-31T11:11:55+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -15811,11 +15902,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -16177,10 +16268,10 @@
         <title value="TNM Regional Nodes Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:585a0635-b724-4af9-8fe9-3a0600c3a6ff"/>
-          <timestamp value="2024-09-18T11:14:10+00:00"/>
+          <identifier value="urn:uuid:9fd1add1-7982-4268-8124-24e9673bc5bb"/>
+          <timestamp value="2024-10-31T11:11:55+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -16239,7 +16330,7 @@
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on:</p>
               <ul>
-                <li>SNOMED CT International edition 01-Feb 2024</li>
+                <li>SNOMED CT International edition 01-Aug 2024</li>
                 <li>
                   <a href="CodeSystem-krebsstadium-cs.html">codesystem Krebsstadium CodeSystem v0.1.0 (CodeSystem)</a>
                 </li>
@@ -16248,7 +16339,7 @@
                 </li>
               </ul>
             </div>
-            <p>This value set expansion contains 172 concepts.</p>
+            <p>This value set expansion contains 173 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -17383,6 +17474,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1336999008"> </a>  
+                  <a href="http://snomed.info/id/1336999008">1336999008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>American Joint Committee on Cancer stage IB3</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="x-http://snomed.info/sct-1222811001"> </a>  
                   <a href="http://snomed.info/id/1222811001">1222811001</a>
                 </td>
@@ -17646,10 +17745,10 @@
         <title value="TNM Stage Group Maximum Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:9094ce25-a3ef-4795-a18f-b834e5a747bd"/>
-          <timestamp value="2024-09-18T11:14:10+00:00"/>
+          <identifier value="urn:uuid:edb00b91-0050-4e8d-855c-d678e005f464"/>
+          <timestamp value="2024-10-31T11:11:55+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -17673,11 +17772,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -18389,6 +18488,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="1336999008"/>
+            <display value="American Joint Committee on Cancer stage IB3"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="1222811001"/>
             <display value="IIID"/>
           </contains>
@@ -18608,10 +18712,10 @@
         <title value="TNM Stage Group Staging Type Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b87a6e10-d115-4cab-961f-baae9fe74454"/>
-          <timestamp value="2024-09-18T11:14:10+00:00"/>
+          <identifier value="urn:uuid:7dc6c2e5-0135-416d-94fa-7f210fcf3cd0"/>
+          <timestamp value="2024-10-31T11:11:56+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -18667,8 +18771,8 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
-            <p>This value set expansion contains 141 concepts.</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
+            <p>This value set expansion contains 142 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -19803,6 +19907,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="x-http://snomed.info/sct-1336999008"> </a>  
+                  <a href="http://snomed.info/id/1336999008">1336999008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>American Joint Committee on Cancer stage IB3</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="x-http://snomed.info/sct-1222811001"> </a>  
                   <a href="http://snomed.info/id/1222811001">1222811001</a>
                 </td>
@@ -19818,13 +19930,13 @@
         <title value="TNM Stage Group Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:a5c77be8-eb96-436e-87df-ff1b80e40e0a"/>
-          <timestamp value="2024-09-18T11:14:10+00:00"/>
+          <identifier value="urn:uuid:90673a2d-4934-4331-be75-5464ba4285fe"/>
+          <timestamp value="2024-10-31T11:11:56+00:00"/>
           <offset value="0"/>
           <parameter>
             <name value="count"/>
@@ -19844,11 +19956,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="excludeNested"/>
@@ -20556,6 +20668,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="1336999008"/>
+            <display value="American Joint Committee on Cancer stage IB3"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="1222811001"/>
             <display value="IIID"/>
           </contains>
@@ -20573,7 +20690,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Feb 2024</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 01-Aug 2024</p>
             <p>This value set contains 3 concepts</p>
             <table class="codes">
               <tr>
@@ -20609,7 +20726,7 @@
                   <a href="http://snomed.info/id/897275008">897275008</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>American Joint Commission on Cancer, Cancer Staging Manual, 8th edition tumor staging system</td>
+                <td>American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)</td>
               </tr>
             </table>
           </div>
@@ -20620,10 +20737,10 @@
         <title value="TNM Staging Method Value Set"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f1f615d1-8b72-4354-bdb4-7fcbe2e03948"/>
-          <timestamp value="2024-09-18T11:14:11+00:00"/>
+          <identifier value="urn:uuid:5efb0ce2-16f5-43ec-97ff-00193e1ce319"/>
+          <timestamp value="2024-10-31T11:11:56+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -20644,11 +20761,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240201"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20240801"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -20663,7 +20780,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="897275008"/>
-            <display value="American Joint Commission on Cancer, Cancer Staging Manual, 8th edition tumor staging system"/>
+            <display value="American Joint Commission on Cancer, Cancer Staging Manual, 8th edition neoplasm staging system (tumor staging)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -20743,10 +20860,10 @@
         <name value="TumorsituationVS"/>
         <title value="Tumorsituation ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b6ceedc0-ca08-492f-9c2b-91e84d4a6afd"/>
-          <timestamp value="2024-09-18T11:14:11+00:00"/>
+          <identifier value="urn:uuid:5c18ce71-8ba1-47bf-8455-f4b3061506f7"/>
+          <timestamp value="2024-10-31T11:11:56+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -20860,10 +20977,10 @@
         <name value="VeneninvasionVS"/>
         <title value="Veneninvasion ValueSet"/>
         <status value="draft"/>
-        <date value="2024-09-18T11:11:15+00:00"/>
+        <date value="2024-10-31T11:09:37+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:8b924fca-51b8-4082-8720-e16e408a342a"/>
-          <timestamp value="2024-09-18T11:14:11+00:00"/>
+          <identifier value="urn:uuid:465746c7-fe96-4b0a-b0e9-70a51b42941a"/>
+          <timestamp value="2024-10-31T11:11:57+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>

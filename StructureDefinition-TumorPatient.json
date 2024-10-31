@@ -10,7 +10,7 @@
   "name" : "TumorPatient",
   "title" : "Tumor-Patient",
   "status" : "draft",
-  "date" : "2024-09-18T11:11:15+00:00",
+  "date" : "2024-10-31T11:09:37+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -1575,7 +1575,7 @@
       "path" : "Patient.address",
       "short" : "Eine Adresse gemäß postalischer Konventionen",
       "definition" : "Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.\r\n\r\nDie verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.\r\n\r\nInsbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.",
-      "comment" : "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).",
+      "comment" : "Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).",
       "requirements" : "May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.",
       "min" : 0,
       "max" : "*",

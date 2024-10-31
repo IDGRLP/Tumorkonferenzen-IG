@@ -21,7 +21,7 @@
   <name value="CancerStageGroup"/>
   <title value="Cancer Stage Group Profile"/>
   <status value="draft"/>
-  <date value="2024-09-18T11:11:15+00:00"/>
+  <date value="2024-10-31T11:09:37+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -1733,7 +1733,7 @@
       <path value="Observation.hasMember"/>
       <short value="Prognostic factors contributing to stage determination."/>
       <definition value="References to the prognostic factors affecting the stage, for example, the T, N, and M categories."/>
-      <comment value="When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation."/>
+      <comment value="When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation."/>
       <min value="0"/>
       <max value="*"/>
       <base>

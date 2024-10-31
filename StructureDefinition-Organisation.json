@@ -10,7 +10,7 @@
   "name" : "Organisation",
   "title" : "Organisation",
   "status" : "draft",
-  "date" : "2024-09-18T11:11:15+00:00",
+  "date" : "2024-10-31T11:09:37+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -852,7 +852,7 @@
       "path" : "Organization.address.type",
       "short" : "postal | physical | both",
       "definition" : "Distinguishes between physical addresses (those you can visit) and mailing addresses (e.g. PO Boxes and care-of addresses). Most addresses are both.",
-      "comment" : "The definition of Address states that \"address is intended to describe postal addresses, not physical locations\". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](location.html#) resource).",
+      "comment" : "The definition of Address states that \"address is intended to describe postal addresses, not physical locations\". However, many applications track whether an address has a dual purpose of being a location that can be visited as well as being a valid delivery destination, and Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).",
       "min" : 0,
       "max" : "1",
       "base" : {

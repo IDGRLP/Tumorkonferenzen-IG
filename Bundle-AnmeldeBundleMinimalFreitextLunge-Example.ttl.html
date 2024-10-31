@@ -189,6 +189,9 @@
   ] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;collection&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:entry</a> ( [
+<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample&quot;^^xsd:anyURI ] ;
+    ( <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">fhir:resource</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample&gt; )
+  ] [
 <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample&quot;^^xsd:anyURI ] ;
     ( <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:resource</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample&gt; )
   ] [
@@ -245,6 +248,25 @@
   ] [
 <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample&quot;^^xsd:anyURI ] ;
     ( <a href="http://hl7.org/fhir/R4/observation.html#Observation">fhir:resource</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample&gt; )
+  ] ) . # 
+
+&lt;http://idg-rlp.de/fhir/tumorkonferenzen/Practitioner/AnmelderExample&gt; <a href="http://hl7.org/fhir/R4/practitioner.html">a</a> fhir:Practitioner ;
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;AnmelderExample&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Practitioner_AnmelderExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Practitioner AnmelderExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;AnmelderExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcAnmelderExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;AnmelderExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;name&lt;/b&gt;: Dr. Erika Musterfrau&lt;/p&gt;&lt;p&gt;&lt;b&gt;telecom&lt;/b&gt;: &lt;a href=\&quot;tel:+49987654321\&quot;&gt;+49 987 654321&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.name">fhir:name</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Dr. Erika Musterfrau&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner.telecom">fhir:telecom</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;phone&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;+49 987 654321&quot; ]
   ] ) . # 
 
 &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample&gt; <a href="http://hl7.org/fhir/R4/patient.html">a</a> fhir:Patient ;
@@ -783,7 +805,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 18, 2024 11:11+0000">2024-09-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 11:09+0000">2024-10-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

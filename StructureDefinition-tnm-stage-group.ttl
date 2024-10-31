@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TNMStageGroup"] ; # 
   fhir:title [ fhir:v "TNM Stage Group Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-09-18T11:11:15+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-10-31T11:09:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
@@ -1901,7 +1901,7 @@
        ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
@@ -2075,7 +2075,7 @@
        fhir:sliceName [ fhir:v "tnm-y-symbol" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2117,7 +2117,7 @@
        fhir:sliceName [ fhir:v "tnm-r-symbol" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2159,7 +2159,7 @@
        fhir:sliceName [ fhir:v "tnm-a-symbol" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2201,7 +2201,7 @@
        fhir:sliceName [ fhir:v "tnm-m-symbol" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2243,7 +2243,7 @@
        fhir:sliceName [ fhir:v "tnm-l-kategorie" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2285,7 +2285,7 @@
        fhir:sliceName [ fhir:v "tnm-v-kategorie" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2327,7 +2327,7 @@
        fhir:sliceName [ fhir:v "tnm-pn-kategorie" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
@@ -2369,7 +2369,7 @@
        fhir:sliceName [ fhir:v "tnm-s-kategorie" ] ;
        fhir:short [ fhir:v "Prognostic factors contributing to stage determination." ] ;
        fhir:definition [ fhir:v "References to the prognostic factors affecting the stage, for example, the T, N, and M categories." ] ;
-       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
+       fhir:comment [ fhir:v "When using this element, an observation will typically have either a value or a set of related resources, although both may be present in some cases.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below.  Note that a system may calculate results from [QuestionnaireResponse](http://hl7.org/fhir/R4/questionnaireresponse.html)  into a final score and represent the score as an Observation." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;
        fhir:base [
