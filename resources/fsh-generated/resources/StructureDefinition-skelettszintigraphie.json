@@ -38,6 +38,17 @@
           "strength": "required",
           "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs"
         }
+      },
+      {
+        "id": "Observation.note",
+        "path": "Observation.note",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.note.text",
+        "path": "Observation.note.text",
+        "mustSupport": true
       }
     ]
   }

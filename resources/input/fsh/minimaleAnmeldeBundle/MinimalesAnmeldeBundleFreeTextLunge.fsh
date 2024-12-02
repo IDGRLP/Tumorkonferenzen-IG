@@ -385,6 +385,8 @@ Description: "Profil zur Dokumentation des CT/MRT Schädel-Befunds."
 * code = $customCodes#ctMRTSchaedel
 * value[x] only CodeableConcept
 * valueCodeableConcept from BefundstatusVS
+* note 0..1 MS
+  * text 1..1 MS
 
 Profile: CTMRTAbdomen
 Parent: MinimalObservation
@@ -395,6 +397,8 @@ Description: "Profil zur Dokumentation des CT/MRT Abdomen-Befunds."
 * code = $customCodes#ctMRTAbdomen
 * value[x] only CodeableConcept
 * valueCodeableConcept from BefundstatusVS
+* note 0..1 MS
+  * text 1..1 MS
 
 Profile: PetCT
 Parent: MinimalObservation
@@ -405,6 +409,8 @@ Description: "Profil zur Dokumentation des PetCT Befunds."
 * code = $customCodes#petCT
 * value[x] only CodeableConcept
 * valueCodeableConcept from BefundstatusVS
+* note 0..1 MS
+  * text 1..1 MS
 
 Profile: Skelettszintigraphie
 Parent: MinimalObservation
@@ -415,6 +421,8 @@ Description: "Profil zur Dokumentation des Skelettszintigraphie Befunds."
 * code = $customCodes#skelettszintigraphie
 * value[x] only CodeableConcept
 * valueCodeableConcept from BefundstatusVS
+* note 0..1 MS
+  * text 1..1 MS
 
 Profile: Lungenfunktionstest
 Parent: MinimalObservation
@@ -425,7 +433,9 @@ Description: "Profil zur Dokumentation des Lungenfunktionstest Befunds."
 * code = $customCodes#lungenfunktionstest
 * value[x] only CodeableConcept
 * valueCodeableConcept from BefundstatusVS
-
+* note 0..1 MS
+  * text 1..1 MS
+  
 Profile: FreitextObservation
 Parent: MinimalObservation
 Id: FreitextObservation

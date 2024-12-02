@@ -177,6 +177,7 @@ Title: "Beispiel eines CT/MRT-Befunds Schädel"
 Description: "Dokumentation des CT/MRT-Befunds des Schädels"
 * subject = Reference(TumorPatientExample)
 * valueCodeableConcept = $customCodes#auffaellig "auffällig"
+* note.text = "Metastasen im Schädel"
 
 Instance: CTMRTAbdomenExample
 InstanceOf: CTMRTAbdomen
@@ -185,6 +186,7 @@ Title: "Beispiel eines CT/MRT-Befunds Abdomen"
 Description: "Dokumentation des CT/MRT-Befunds des Abdomens"
 * subject = Reference(TumorPatientExample)
 * valueCodeableConcept = $customCodes#unauffaellig "unauffällig"
+* note.text = "Keine pathologischen Befunde im Abdomen"
 
 Instance: PetCTExample
 InstanceOf: PetCT
@@ -193,6 +195,7 @@ Title: "Beispiel eines PET-CT-Befunds"
 Description: "Dokumentation des PET-CT-Befunds"
 * subject = Reference(TumorPatientExample)
 * valueCodeableConcept = $customCodes#unauffaellig "unauffällig"
+* note.text = "Keine pathologischen Befunde im PET-CT"
 
 Instance: SkelettszintigraphieExample
 InstanceOf: Skelettszintigraphie
@@ -201,6 +204,7 @@ Title: "Beispiel eines Skelettszintigraphie-Befunds"
 Description: "Dokumentation des Skelettszintigraphie-Befunds"
 * subject = Reference(TumorPatientExample)
 * valueCodeableConcept = $customCodes#liegtNichtVor "liegt nicht vor"
+* note.text = "Keine Skelettmetastasen"
 
 Instance: LungenfunktionstestExample
 InstanceOf: Lungenfunktionstest
@@ -209,6 +213,7 @@ Title: "Beispiel eines Lungenfunktionstests"
 Description: "Dokumentation des Lungenfunktionstests"
 * subject = Reference(TumorPatientExample)
 * valueCodeableConcept = $customCodes#liegtNichtVor "liegt nicht vor"
+* note.text = "Keine Lungenfunktionsstörungen"
 
 Instance: FragestellungRadiologieFreitextExample
 InstanceOf: FragestellungRadiologieFreitext

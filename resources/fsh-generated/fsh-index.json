@@ -372,8 +372,8 @@
     "fshName": "FreitextObservation",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 429,
-    "endLine": 435
+    "startLine": 439,
+    "endLine": 445
   },
   {
     "outputFile": "StructureDefinition-HistologieLymphknoten.json",
@@ -412,8 +412,8 @@
     "fshName": "MinimalObservation",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 437,
-    "endLine": 444
+    "startLine": 447,
+    "endLine": 454
   },
   {
     "outputFile": "StructureDefinition-OperativeTherapieFreitext.json",
@@ -556,8 +556,8 @@
     "fshName": "CTMRTAbdomen",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 389,
-    "endLine": 397
+    "startLine": 391,
+    "endLine": 401
   },
   {
     "outputFile": "StructureDefinition-ct-mrt-schaedel.json",
@@ -565,7 +565,7 @@
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
     "startLine": 379,
-    "endLine": 387
+    "endLine": 389
   },
   {
     "outputFile": "StructureDefinition-ecog.json",
@@ -668,8 +668,8 @@
     "fshName": "Lungenfunktionstest",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 419,
-    "endLine": 427
+    "startLine": 427,
+    "endLine": 437
   },
   {
     "outputFile": "StructureDefinition-medikamentoese-therapie-freitext.json",
@@ -708,8 +708,8 @@
     "fshName": "PetCT",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 399,
-    "endLine": 407
+    "startLine": 403,
+    "endLine": 413
   },
   {
     "outputFile": "StructureDefinition-praxis-pathologisches-institut-freitext.json",
@@ -748,8 +748,8 @@
     "fshName": "Skelettszintigraphie",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 409,
-    "endLine": 417
+    "startLine": 415,
+    "endLine": 425
   },
   {
     "outputFile": "StructureDefinition-status-fernmetastasen.json",

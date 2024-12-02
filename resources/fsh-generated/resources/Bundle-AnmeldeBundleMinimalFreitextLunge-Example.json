@@ -459,7 +459,12 @@
               "display": "auffällig"
             }
           ]
-        }
+        },
+        "note": [
+          {
+            "text": "Metastasen im Schädel"
+          }
+        ]
       }
     },
     {
@@ -492,7 +497,12 @@
               "display": "unauffällig"
             }
           ]
-        }
+        },
+        "note": [
+          {
+            "text": "Keine pathologischen Befunde im Abdomen"
+          }
+        ]
       }
     },
     {
@@ -525,7 +535,12 @@
               "display": "unauffällig"
             }
           ]
-        }
+        },
+        "note": [
+          {
+            "text": "Keine pathologischen Befunde im PET-CT"
+          }
+        ]
       }
     },
     {
@@ -558,7 +573,12 @@
               "display": "liegt nicht vor"
             }
           ]
-        }
+        },
+        "note": [
+          {
+            "text": "Keine Skelettmetastasen"
+          }
+        ]
       }
     },
     {
@@ -591,7 +611,12 @@
               "display": "liegt nicht vor"
             }
           ]
-        }
+        },
+        "note": [
+          {
+            "text": "Keine Lungenfunktionsstörungen"
+          }
+        ]
       }
     },
     {
