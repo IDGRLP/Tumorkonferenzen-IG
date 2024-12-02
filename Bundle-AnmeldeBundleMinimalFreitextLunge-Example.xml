@@ -406,7 +406,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-schaedel"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_CTMRTSchaedelExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation CTMRTSchaedelExample</b></p><a name="CTMRTSchaedelExample"> </a><a name="hcCTMRTSchaedelExample"> </a><a name="CTMRTSchaedelExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}">ctMRTSchaedel</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}">auffällig</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_CTMRTSchaedelExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation CTMRTSchaedelExample</b></p><a name="CTMRTSchaedelExample"> </a><a name="hcCTMRTSchaedelExample"> </a><a name="CTMRTSchaedelExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}">ctMRTSchaedel</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}">auffällig</span></p><p><b>note</b>: Metastasen im Schädel</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -425,6 +425,9 @@
             <display value="auffällig"/>
           </coding>
         </valueCodeableConcept>
+        <note>
+          <text value="Metastasen im Schädel"/>
+        </note>
       </Observation>
     </resource>
   </entry>
@@ -437,7 +440,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-abdomen"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_CTMRTAbdomenExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation CTMRTAbdomenExample</b></p><a name="CTMRTAbdomenExample"> </a><a name="hcCTMRTAbdomenExample"> </a><a name="CTMRTAbdomenExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}">ctMRTAbdomen</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}">unauffällig</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_CTMRTAbdomenExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation CTMRTAbdomenExample</b></p><a name="CTMRTAbdomenExample"> </a><a name="hcCTMRTAbdomenExample"> </a><a name="CTMRTAbdomenExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}">ctMRTAbdomen</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im Abdomen</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -456,6 +459,9 @@
             <display value="unauffällig"/>
           </coding>
         </valueCodeableConcept>
+        <note>
+          <text value="Keine pathologischen Befunde im Abdomen"/>
+        </note>
       </Observation>
     </resource>
   </entry>
@@ -468,7 +474,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/pet-ct"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_PetCTExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation PetCTExample</b></p><a name="PetCTExample"> </a><a name="hcPetCTExample"> </a><a name="PetCTExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}">petCT</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}">unauffällig</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_PetCTExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation PetCTExample</b></p><a name="PetCTExample"> </a><a name="hcPetCTExample"> </a><a name="PetCTExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}">petCT</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im PET-CT</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -487,6 +493,9 @@
             <display value="unauffällig"/>
           </coding>
         </valueCodeableConcept>
+        <note>
+          <text value="Keine pathologischen Befunde im PET-CT"/>
+        </note>
       </Observation>
     </resource>
   </entry>
@@ -499,7 +508,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/skelettszintigraphie"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_SkelettszintigraphieExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation SkelettszintigraphieExample</b></p><a name="SkelettszintigraphieExample"> </a><a name="hcSkelettszintigraphieExample"> </a><a name="SkelettszintigraphieExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}">skelettszintigraphie</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}">liegt nicht vor</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_SkelettszintigraphieExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation SkelettszintigraphieExample</b></p><a name="SkelettszintigraphieExample"> </a><a name="hcSkelettszintigraphieExample"> </a><a name="SkelettszintigraphieExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}">skelettszintigraphie</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}">liegt nicht vor</span></p><p><b>note</b>: Keine Skelettmetastasen</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -518,6 +527,9 @@
             <display value="liegt nicht vor"/>
           </coding>
         </valueCodeableConcept>
+        <note>
+          <text value="Keine Skelettmetastasen"/>
+        </note>
       </Observation>
     </resource>
   </entry>
@@ -530,7 +542,7 @@
           <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/lungenfunktionstest"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_LungenfunktionstestExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation LungenfunktionstestExample</b></p><a name="LungenfunktionstestExample"> </a><a name="hcLungenfunktionstestExample"> </a><a name="LungenfunktionstestExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}">lungenfunktionstest</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}">liegt nicht vor</span></p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_LungenfunktionstestExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation LungenfunktionstestExample</b></p><a name="LungenfunktionstestExample"> </a><a name="hcLungenfunktionstestExample"> </a><a name="LungenfunktionstestExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}">lungenfunktionstest</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}">liegt nicht vor</span></p><p><b>note</b>: Keine Lungenfunktionsstörungen</p></div>
         </text>
         <status value="final"/>
         <code>
@@ -549,6 +561,9 @@
             <display value="liegt nicht vor"/>
           </coding>
         </valueCodeableConcept>
+        <note>
+          <text value="Keine Lungenfunktionsstörungen"/>
+        </note>
       </Observation>
     </resource>
   </entry>

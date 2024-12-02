@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "TNMRegionalNodesCategory"] ; # 
   fhir:title [ fhir:v "TNM Regional Nodes Category Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-10-31T11:09:58+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-12-02T15:35:52+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;

@@ -481,7 +481,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CTMRTSchaedelExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CTMRTSchaedelExample</b></p><a name=\"CTMRTSchaedelExample\"> </a><a name=\"hcCTMRTSchaedelExample\"> </a><a name=\"CTMRTSchaedelExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}\">ctMRTSchaedel</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}\">auffällig</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CTMRTSchaedelExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CTMRTSchaedelExample</b></p><a name=\"CTMRTSchaedelExample\"> </a><a name=\"hcCTMRTSchaedelExample\"> </a><a name=\"CTMRTSchaedelExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}\">ctMRTSchaedel</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}\">auffällig</span></p><p><b>note</b>: Metastasen im Schädel</p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -501,7 +501,10 @@
        fhir:code [ fhir:v "auffaellig" ] ;
        fhir:display [ fhir:v "auffällig" ]
      ] )
-  ] . # 
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Metastasen im Schädel" ]
+  ] ) . # 
 
 <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample> a fhir:Observation ;
   fhir:id [ fhir:v "CTMRTAbdomenExample"] ; # 
@@ -513,7 +516,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CTMRTAbdomenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CTMRTAbdomenExample</b></p><a name=\"CTMRTAbdomenExample\"> </a><a name=\"hcCTMRTAbdomenExample\"> </a><a name=\"CTMRTAbdomenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}\">ctMRTAbdomen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\">unauffällig</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_CTMRTAbdomenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation CTMRTAbdomenExample</b></p><a name=\"CTMRTAbdomenExample\"> </a><a name=\"hcCTMRTAbdomenExample\"> </a><a name=\"CTMRTAbdomenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}\">ctMRTAbdomen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im Abdomen</p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -533,7 +536,10 @@
        fhir:code [ fhir:v "unauffaellig" ] ;
        fhir:display [ fhir:v "unauffällig" ]
      ] )
-  ] . # 
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine pathologischen Befunde im Abdomen" ]
+  ] ) . # 
 
 <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample> a fhir:Observation ;
   fhir:id [ fhir:v "PetCTExample"] ; # 
@@ -545,7 +551,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PetCTExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PetCTExample</b></p><a name=\"PetCTExample\"> </a><a name=\"hcPetCTExample\"> </a><a name=\"PetCTExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}\">petCT</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\">unauffällig</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PetCTExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PetCTExample</b></p><a name=\"PetCTExample\"> </a><a name=\"hcPetCTExample\"> </a><a name=\"PetCTExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}\">petCT</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\">unauffällig</span></p><p><b>note</b>: Keine pathologischen Befunde im PET-CT</p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -565,7 +571,10 @@
        fhir:code [ fhir:v "unauffaellig" ] ;
        fhir:display [ fhir:v "unauffällig" ]
      ] )
-  ] . # 
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine pathologischen Befunde im PET-CT" ]
+  ] ) . # 
 
 <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample> a fhir:Observation ;
   fhir:id [ fhir:v "SkelettszintigraphieExample"] ; # 
@@ -577,7 +586,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_SkelettszintigraphieExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation SkelettszintigraphieExample</b></p><a name=\"SkelettszintigraphieExample\"> </a><a name=\"hcSkelettszintigraphieExample\"> </a><a name=\"SkelettszintigraphieExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}\">skelettszintigraphie</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\">liegt nicht vor</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_SkelettszintigraphieExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation SkelettszintigraphieExample</b></p><a name=\"SkelettszintigraphieExample\"> </a><a name=\"hcSkelettszintigraphieExample\"> </a><a name=\"SkelettszintigraphieExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}\">skelettszintigraphie</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\">liegt nicht vor</span></p><p><b>note</b>: Keine Skelettmetastasen</p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -597,7 +606,10 @@
        fhir:code [ fhir:v "liegtNichtVor" ] ;
        fhir:display [ fhir:v "liegt nicht vor" ]
      ] )
-  ] . # 
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine Skelettmetastasen" ]
+  ] ) . # 
 
 <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample> a fhir:Observation ;
   fhir:id [ fhir:v "LungenfunktionstestExample"] ; # 
@@ -609,7 +621,7 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_LungenfunktionstestExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation LungenfunktionstestExample</b></p><a name=\"LungenfunktionstestExample\"> </a><a name=\"hcLungenfunktionstestExample\"> </a><a name=\"LungenfunktionstestExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}\">lungenfunktionstest</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\">liegt nicht vor</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_LungenfunktionstestExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation LungenfunktionstestExample</b></p><a name=\"LungenfunktionstestExample\"> </a><a name=\"hcLungenfunktionstestExample\"> </a><a name=\"LungenfunktionstestExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}\">lungenfunktionstest</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\">liegt nicht vor</span></p><p><b>note</b>: Keine Lungenfunktionsstörungen</p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
   fhir:code [
@@ -629,7 +641,10 @@
        fhir:code [ fhir:v "liegtNichtVor" ] ;
        fhir:display [ fhir:v "liegt nicht vor" ]
      ] )
-  ] . # 
+  ] ; # 
+  fhir:note ( [
+     fhir:text [ fhir:v "Keine Lungenfunktionsstörungen" ]
+  ] ) . # 
 
 <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample> a fhir:Observation ;
   fhir:id [ fhir:v "FragestellungRadiologieFreitextExample"] ; # 

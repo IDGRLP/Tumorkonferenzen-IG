@@ -91,9 +91,25 @@ The alternate way is to use the value element for actual observations and use th
 ","",0,*,"","","","CodeableConcept {[]} {[]}
 ","High, low, normal, etc.","A categorical assessment of an observation value.  For example, high, low, normal.","Historically used for laboratory results (known as 'abnormal flag' ),  its use extends to other use cases where coded interpretations  are relevant.  Often reported as one or more simple compact codes this element is often placed adjacent to the result value in reports and flow sheets to signal the meaning/normalcy status of the result.","For some results, particularly numeric results, an interpretation is necessary to fully understand the significance of a result.","","","","","","","",,"extensible","Codes identifying interpretations of observations.","http://hl7.org/fhir/ValueSet/observation-interpretation","",,,,"Observation.interpretation",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","< 260245000 |Findings values|","OBX-8","interpretationCode","363713009 |Has interpretation|"
-"Observation.note","Observation.note","","","",0,*,"","","","Annotation {[]} {[]}
+"Observation.note","Observation.note","","","",0,1,"Y","","","Annotation {[]} {[]}
 ","Comments about the observation","Comments about the observation or the results.","May include general statements about the observation, or statements about significant, unexpected or unreliable results values, or information about its source when relevant to its interpretation.","Need to be able to provide free text additional information.","","","","","","","",,,,,"",,,,"Observation.note",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","NTE.3 (partner NTE to OBX, or sometimes another (child?) OBX)","subjectOf.observationEvent[code=""annotation""].value"
+"Observation.note.id","Observation.note.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
+"Observation.note.extension","Observation.note.extension","","extensions
+user content","",0,*,"","","","Extension {[]} {[]}
+","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
+"Observation.note.author[x]","Observation.note.author[x]","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
+string {[]} {[]}","Individual responsible for the annotation","The individual responsible for making the annotation.","Organization is used when there's no need for specific attribution as to who made the comment.","","","","","","","","",,,,,"",,,,"Annotation.author[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Act.participant[typeCode=AUT].role"
+"Observation.note.time","Observation.note.time","","","",0,1,"","","Y","dateTime {[]} {[]}
+","When the annotation was made","Indicates when this particular annotation was made.","","","","","","","","","",,,,,"",,,,"Annotation.time",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Act.effectiveTime"
+"Observation.note.text","Observation.note.text","","","",1,1,"Y","","Y","markdown {[]} {[]}
+","The annotation  - text content (as markdown)","The text of the annotation in markdown format.","","","","","","","","","",,,,,"",,,,"Annotation.text",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","N/A","Act.text"
 "Observation.bodySite","Observation.bodySite","","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Observed body part","Indicates the site on the subject's body where the observation was made (i.e. the target site).","Only used if not implicit in code found in Observation.code.  In many systems, this may be represented as a related observation instead of an inline component.   
 

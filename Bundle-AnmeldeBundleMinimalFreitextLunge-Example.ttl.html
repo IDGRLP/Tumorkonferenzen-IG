@@ -599,7 +599,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_CTMRTSchaedelExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation CTMRTSchaedelExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CTMRTSchaedelExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCTMRTSchaedelExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CTMRTSchaedelExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}\&quot;&gt;ctMRTSchaedel&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}\&quot;&gt;auffällig&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_CTMRTSchaedelExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation CTMRTSchaedelExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CTMRTSchaedelExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCTMRTSchaedelExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CTMRTSchaedelExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTSchaedel}\&quot;&gt;ctMRTSchaedel&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes auffaellig}\&quot;&gt;auffällig&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Metastasen im Schädel&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -616,7 +616,10 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;auffaellig&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;auffällig&quot; ]     ] )
-  ] . # 
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.note">fhir:note</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Metastasen im Schädel&quot; ]
+  ] ) . # 
 
 &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTAbdomenExample&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;CTMRTAbdomenExample&quot;] ; # 
@@ -627,7 +630,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_CTMRTAbdomenExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation CTMRTAbdomenExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CTMRTAbdomenExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCTMRTAbdomenExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CTMRTAbdomenExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}\&quot;&gt;ctMRTAbdomen&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\&quot;&gt;unauffällig&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_CTMRTAbdomenExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation CTMRTAbdomenExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CTMRTAbdomenExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCTMRTAbdomenExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;CTMRTAbdomenExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes ctMRTAbdomen}\&quot;&gt;ctMRTAbdomen&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\&quot;&gt;unauffällig&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Keine pathologischen Befunde im Abdomen&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -644,7 +647,10 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;unauffaellig&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unauffällig&quot; ]     ] )
-  ] . # 
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.note">fhir:note</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Keine pathologischen Befunde im Abdomen&quot; ]
+  ] ) . # 
 
 &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/PetCTExample&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;PetCTExample&quot;] ; # 
@@ -655,7 +661,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_PetCTExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation PetCTExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PetCTExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPetCTExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PetCTExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}\&quot;&gt;petCT&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\&quot;&gt;unauffällig&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_PetCTExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation PetCTExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;PetCTExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcPetCTExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;PetCTExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes petCT}\&quot;&gt;petCT&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes unauffaellig}\&quot;&gt;unauffällig&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Keine pathologischen Befunde im PET-CT&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -672,7 +678,10 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;unauffaellig&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;unauffällig&quot; ]     ] )
-  ] . # 
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.note">fhir:note</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Keine pathologischen Befunde im PET-CT&quot; ]
+  ] ) . # 
 
 &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/SkelettszintigraphieExample&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;SkelettszintigraphieExample&quot;] ; # 
@@ -683,7 +692,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_SkelettszintigraphieExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation SkelettszintigraphieExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SkelettszintigraphieExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSkelettszintigraphieExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;SkelettszintigraphieExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}\&quot;&gt;skelettszintigraphie&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\&quot;&gt;liegt nicht vor&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_SkelettszintigraphieExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation SkelettszintigraphieExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SkelettszintigraphieExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSkelettszintigraphieExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;SkelettszintigraphieExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes skelettszintigraphie}\&quot;&gt;skelettszintigraphie&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\&quot;&gt;liegt nicht vor&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Keine Skelettmetastasen&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -700,7 +709,10 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;liegtNichtVor&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;liegt nicht vor&quot; ]     ] )
-  ] . # 
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.note">fhir:note</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Keine Skelettmetastasen&quot; ]
+  ] ) . # 
 
 &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/LungenfunktionstestExample&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;LungenfunktionstestExample&quot;] ; # 
@@ -711,7 +723,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_LungenfunktionstestExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation LungenfunktionstestExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;LungenfunktionstestExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcLungenfunktionstestExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;LungenfunktionstestExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}\&quot;&gt;lungenfunktionstest&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\&quot;&gt;liegt nicht vor&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;&quot;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a name=\&quot;Observation_LungenfunktionstestExample\&quot;&gt; &lt;/a&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation LungenfunktionstestExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;LungenfunktionstestExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcLungenfunktionstestExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;LungenfunktionstestExample-en-US\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes lungenfunktionstest}\&quot;&gt;lungenfunktionstest&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\&quot;&gt;Bundle: type = collection&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes liegtNichtVor}\&quot;&gt;liegt nicht vor&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;note&lt;/b&gt;: Keine Lungenfunktionsstörungen&lt;/p&gt;&lt;/div&gt;&quot;
   ] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;final&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.code">fhir:code</a> [
@@ -728,7 +740,10 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes&quot;^^xsd:anyURI ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;liegtNichtVor&quot; ] ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;liegt nicht vor&quot; ]     ] )
-  ] . # 
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/observation.html#Observation.note">fhir:note</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Annotation#Annotation.text">fhir:text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;Keine Lungenfunktionsstörungen&quot; ]
+  ] ) . # 
 
 &lt;http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample&gt; <a href="http://hl7.org/fhir/R4/observation.html">a</a> fhir:Observation ;
   <a href="http://hl7.org/fhir/R4/observation.html#Observation.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;FragestellungRadiologieFreitextExample&quot;] ; # 
@@ -805,7 +820,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;a
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Oct 31, 2024 11:09+0000">2024-10-31</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 2, 2024 15:35+0000">2024-12-02</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

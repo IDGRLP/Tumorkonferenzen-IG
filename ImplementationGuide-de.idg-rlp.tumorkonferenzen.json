@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TumorkonferenzenIDG",
   "status" : "draft",
-  "date" : "2024-10-31T11:09:58+00:00",
+  "date" : "2024-12-02T15:35:52+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -33,7 +33,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.0.2"
+    "version" : "6.1.0"
   },
   {
     "id" : "hl7ext",
