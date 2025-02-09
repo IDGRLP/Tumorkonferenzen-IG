@@ -25,13 +25,10 @@ publisher:
 # use cases, the value can be an object with keys for id, uri, and version.
 #
 dependencies:
-  de.basisprofil.r4: 1.5.0
-  hl7.fhir.us.mcode: 2.1.0
-#   hl7.fhir.us.core: 3.1.0
-#   hl7.fhir.us.mcode:
-#     id: mcode
-#     uri: http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode
-#     version: 1.0.0
+  de.basisprofil.r4: 1.5.2
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2025.0.3
+
+
 #
 #
 # The pages property corresponds to IG.definition.page. SUSHI can

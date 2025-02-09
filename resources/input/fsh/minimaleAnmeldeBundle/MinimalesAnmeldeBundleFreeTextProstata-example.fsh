@@ -16,6 +16,27 @@ Description: "Beispiel für ein minimalen Anmeldebundle für Prostatapatienten"
 * entry[diagnoseFreitext]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"
   * resource = DiagnoseFreitextExample
+* entry[diagnose-icd10]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"
+  * resource = ICD10GM-DiagnoseExample
+* entry[allgemeinerLeistungszustandKarnofsky]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample"
+  * resource = AllgemeinerLeistungszustandKarnofskyExample
+* entry[grading]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample"
+  * resource = GradingExample
+* entry[untersuchteLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample"
+  * resource = UntersuchteLymphknotenExample
+* entry[befalleneLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample"
+  * resource = BefalleneLymphknotenExample
+* entry[untersuchteSentinelLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample"
+  * resource = UntersuchteSentinelLymphknotenExample
+* entry[befalleneSentinelLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample"
+  * resource = BefalleneSentinelLymphknotenExample
 * entry[erstdiagnose]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"
   * resource = ErstdiagnoseExample
@@ -79,15 +100,6 @@ Description: "Beispiel für ein minimalen Anmeldebundle für Prostatapatienten"
 * entry[weitereGewuenschteTeilnehmerFreitext]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/WeitereGewuenschteTeilnehmerFreitextExample"
   * resource = WeitereGewuenschteTeilnehmerFreitextExample
-
-Instance: AnmelderExample
-InstanceOf: Anmelder
-Usage: #inline
-Title: "Beispiel eines Anmelders"
-Description: "Person, die den Patienten anmeldet"
-* name.text = "Dr. Erika Musterfrau"
-* telecom.system = #phone
-* telecom.value = "+49 987 654321"
 
 Instance: FamilienanamneseDropDownExample
 InstanceOf: FamilienanamneseDropDown

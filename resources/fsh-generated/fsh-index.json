@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge-example.fsh",
     "startLine": 1,
-    "endLine": 66
+    "endLine": 87
   },
   {
     "outputFile": "Bundle-AnmeldeBundleMinimalFreitextProstata-Example.json",
@@ -13,111 +13,23 @@
     "fshType": "Instance",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata-example.fsh",
     "startLine": 1,
-    "endLine": 81
-  },
-  {
-    "outputFile": "CodeSystem-HistoGradeCS.json",
-    "fshName": "HistoGradeCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 86,
     "endLine": 102
-  },
-  {
-    "outputFile": "CodeSystem-Lymphgefaessinvasion-cs.json",
-    "fshName": "LymphgefaessinvasionCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 129,
-    "endLine": 135
-  },
-  {
-    "outputFile": "CodeSystem-ResidualstatusCS.json",
-    "fshName": "ResidualstatusCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 200,
-    "endLine": 210
-  },
-  {
-    "outputFile": "CodeSystem-SerumTumorMarkerUICCCS.json",
-    "fshName": "SerumTumorMarkerUICCCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 154,
-    "endLine": 161
-  },
-  {
-    "outputFile": "CodeSystem-krebsstadium-cs.json",
-    "fshName": "KrebsstadiumCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 163,
-    "endLine": 198
-  },
-  {
-    "outputFile": "CodeSystem-multiple-primaer-tumoren-cs.json",
-    "fshName": "MultiplePrimaerTumorenCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 115,
-    "endLine": 127
-  },
-  {
-    "outputFile": "CodeSystem-obds-op-komplikation-cs.json",
-    "fshName": "ObdsOpKomplikationCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 1,
-    "endLine": 84
-  },
-  {
-    "outputFile": "CodeSystem-obds-strahlentherapie-intention-cs.json",
-    "fshName": "ObdsStrahlentherapieIntentionCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 104,
-    "endLine": 113
-  },
-  {
-    "outputFile": "CodeSystem-perineurale-invasion-cs.json",
-    "fshName": "PerineuraleInvasionCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 146,
-    "endLine": 152
   },
   {
     "outputFile": "CodeSystem-tumorsituation-cs.json",
     "fshName": "TumorsituationCS",
     "fshType": "CodeSystem",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 173,
-    "endLine": 181
+    "startLine": 194,
+    "endLine": 202
   },
   {
-    "outputFile": "CodeSystem-veneninvasion-cs.json",
-    "fshName": "VeneninvasionCS",
-    "fshType": "CodeSystem",
-    "fshFile": "codesystems.fsh",
-    "startLine": 137,
-    "endLine": 144
-  },
-  {
-    "outputFile": "Condition-ExampleTumorDiagnose.json",
-    "fshName": "ExampleTumorDiagnose",
+    "outputFile": "Condition-ICD10GM-DiagnoseExample.json",
+    "fshName": "ICD10GM-DiagnoseExample",
     "fshType": "Instance",
-    "fshFile": "profile-TumorDiagnose.fsh",
-    "startLine": 50,
-    "endLine": 72
-  },
-  {
-    "outputFile": "Encounter-VerlaufExample.json",
-    "fshName": "VerlaufExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Verlauf.fsh",
-    "startLine": 16,
-    "endLine": 24
+    "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge-example.fsh",
+    "startLine": 255,
+    "endLine": 272
   },
   {
     "outputFile": "EpisodeOfCare-TumorErkrankungExample.json",
@@ -126,6 +38,30 @@
     "fshFile": "profile-TumorErkrankung.fsh",
     "startLine": 19,
     "endLine": 25
+  },
+  {
+    "outputFile": "Observation-AllgemeinerLeistungszustandKarnofskyExample.json",
+    "fshName": "AllgemeinerLeistungszustandKarnofskyExample",
+    "fshType": "Instance",
+    "fshFile": "minimaleAnmeldeBundle/CommonObjects.fsh",
+    "startLine": 10,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Observation-BefalleneLymphknotenExample.json",
+    "fshName": "BefalleneLymphknotenExample",
+    "fshType": "Instance",
+    "fshFile": "minimaleAnmeldeBundle/CommonObjects.fsh",
+    "startLine": 36,
+    "endLine": 43
+  },
+  {
+    "outputFile": "Observation-BefalleneSentinelLymphknotenExample.json",
+    "fshName": "BefalleneSentinelLymphknotenExample",
+    "fshType": "Instance",
+    "fshFile": "minimaleAnmeldeBundle/CommonObjects.fsh",
+    "startLine": 57,
+    "endLine": 64
   },
   {
     "outputFile": "Observation-ECOGExample.json",
@@ -139,137 +75,25 @@
     "outputFile": "Observation-GradingExample.json",
     "fshName": "GradingExample",
     "fshType": "Instance",
-    "fshFile": "profile-TumorGrading.fsh",
-    "startLine": 24,
-    "endLine": 32
-  },
-  {
-    "outputFile": "Observation-Histologie-Example.json",
-    "fshName": "Histologie-Example",
-    "fshType": "Instance",
-    "fshFile": "profile-Histologie.fsh",
-    "startLine": 23,
-    "endLine": 31
-  },
-  {
-    "outputFile": "Observation-HistologieLymphknotenExample.json",
-    "fshName": "HistologieLymphknotenExample",
-    "fshType": "Instance",
-    "fshFile": "profile-HistologieLymphknoten.fsh",
-    "startLine": 48,
-    "endLine": 61
-  },
-  {
-    "outputFile": "Observation-TNMASymbolExample.json",
-    "fshName": "TNMASymbolExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 275,
-    "endLine": 284
-  },
-  {
-    "outputFile": "Observation-TNMLKategorieExample.json",
-    "fshName": "TNMLKategorieExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 336,
-    "endLine": 345
-  },
-  {
-    "outputFile": "Observation-TNMPnKategorieExample.json",
-    "fshName": "TNMPnKategorieExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 396,
-    "endLine": 405
-  },
-  {
-    "outputFile": "Observation-TNMRSymbolExample.json",
-    "fshName": "TNMRSymbolExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 245,
-    "endLine": 254
-  },
-  {
-    "outputFile": "Observation-TNMSKategorieExample.json",
-    "fshName": "TNMSKategorieExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 428,
-    "endLine": 437
-  },
-  {
-    "outputFile": "Observation-TNMStageGroupClinicalExample.json",
-    "fshName": "TNMStageGroupClinicalExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 73,
-    "endLine": 106
-  },
-  {
-    "outputFile": "Observation-TNMVKategorieExample.json",
-    "fshName": "TNMVKategorieExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 366,
-    "endLine": 375
-  },
-  {
-    "outputFile": "Observation-TNMYSymbolExample.json",
-    "fshName": "TNMYSymbolExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 215,
-    "endLine": 224
-  },
-  {
-    "outputFile": "Observation-TNMmSymbolExample.json",
-    "fshName": "TNMmSymbolExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 306,
-    "endLine": 315
-  },
-  {
-    "outputFile": "Observation-TumorkonferenzFragestellungExample.json",
-    "fshName": "TumorkonferenzFragestellungExample",
-    "fshType": "Instance",
-    "fshFile": "profile-TumorkonferenzFragestellung.fsh",
-    "startLine": 17,
-    "endLine": 25
-  },
-  {
-    "outputFile": "Observation-tnm-clinical-distant-metastases-category-cM0.json",
-    "fshName": "tnm-clinical-distant-metastases-category-cM0",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 185,
-    "endLine": 195
-  },
-  {
-    "outputFile": "Observation-tnm-clinical-primary-tumor-category-cT3.json",
-    "fshName": "tnm-clinical-primary-tumor-category-cT3",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 122,
-    "endLine": 131
-  },
-  {
-    "outputFile": "Observation-tnm-clinical-regional-nodes-category-cN3.json",
-    "fshName": "tnm-clinical-regional-nodes-category-cN3",
-    "fshType": "Instance",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 145,
-    "endLine": 154
-  },
-  {
-    "outputFile": "Organization-Organisation-example-1.json",
-    "fshName": "Organisation-example-1",
-    "fshType": "Instance",
-    "fshFile": "profile-Organisation.fsh",
+    "fshFile": "minimaleAnmeldeBundle/CommonObjects.fsh",
     "startLine": 18,
     "endLine": 25
+  },
+  {
+    "outputFile": "Observation-UntersuchteLymphknotenExample.json",
+    "fshName": "UntersuchteLymphknotenExample",
+    "fshType": "Instance",
+    "fshFile": "minimaleAnmeldeBundle/CommonObjects.fsh",
+    "startLine": 27,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Observation-UntersuchteSentinelLymphknotenExample.json",
+    "fshName": "UntersuchteSentinelLymphknotenExample",
+    "fshType": "Instance",
+    "fshFile": "minimaleAnmeldeBundle/CommonObjects.fsh",
+    "startLine": 48,
+    "endLine": 55
   },
   {
     "outputFile": "Patient-TumorPatient-example-1.json",
@@ -280,44 +104,12 @@
     "endLine": 78
   },
   {
-    "outputFile": "Practitioner-Melder-example-1.json",
-    "fshName": "Melder-example-1",
+    "outputFile": "Practitioner-AnmelderExample.json",
+    "fshName": "AnmelderExample",
     "fshType": "Instance",
-    "fshFile": "profile-Melder.fsh",
-    "startLine": 18,
-    "endLine": 27
-  },
-  {
-    "outputFile": "PractitionerRole-MelderInOrganisation-example-1.json",
-    "fshName": "MelderInOrganisation-example-1",
-    "fshType": "Instance",
-    "fshFile": "profile-MelderInOrganisation.fsh",
-    "startLine": 16,
-    "endLine": 20
-  },
-  {
-    "outputFile": "Procedure-OperationEinzelprozedurExample.json",
-    "fshName": "OperationEinzelprozedurExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Operation.fsh",
-    "startLine": 58,
-    "endLine": 67
-  },
-  {
-    "outputFile": "Procedure-OperationExample.json",
-    "fshName": "OperationExample",
-    "fshType": "Instance",
-    "fshFile": "profile-Operation.fsh",
-    "startLine": 50,
-    "endLine": 55
-  },
-  {
-    "outputFile": "Specimen-Tumor-Example.json",
-    "fshName": "Tumor-Example",
-    "fshType": "Instance",
-    "fshFile": "profile-Histologie.fsh",
-    "startLine": 43,
-    "endLine": 51
+    "fshFile": "minimaleAnmeldeBundle/CommonObjects.fsh",
+    "startLine": 1,
+    "endLine": 8
   },
   {
     "outputFile": "StructureDefinition-AnmeldeBundleMinimalFreitextLunge.json",
@@ -325,7 +117,7 @@
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-AnmeldeBundleMinimalFreitextProstata.json",
@@ -333,191 +125,87 @@
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata.fsh",
     "startLine": 1,
-    "endLine": 85
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-Anmelder.json",
     "fshName": "Anmelder",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 72,
-    "endLine": 78
+    "startLine": 93,
+    "endLine": 99
   },
   {
     "outputFile": "StructureDefinition-DiagnoseFreitext.json",
     "fshName": "DiagnoseFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 99,
-    "endLine": 104
+    "startLine": 120,
+    "endLine": 125
   },
   {
     "outputFile": "StructureDefinition-Erstdiagnose.json",
     "fshName": "Erstdiagnose",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 106,
-    "endLine": 129
+    "startLine": 127,
+    "endLine": 150
   },
   {
     "outputFile": "StructureDefinition-FertilitaetsBehandlungEmpfohlen.json",
     "fshName": "FertilitaetsBehandlungEmpfohlen",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 145,
-    "endLine": 153
+    "startLine": 166,
+    "endLine": 174
   },
   {
     "outputFile": "StructureDefinition-FreitextObservation.json",
     "fshName": "FreitextObservation",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 439,
-    "endLine": 445
-  },
-  {
-    "outputFile": "StructureDefinition-HistologieLymphknoten.json",
-    "fshName": "HistologieLymphknoten",
-    "fshType": "Profile",
-    "fshFile": "profile-HistologieLymphknoten.fsh",
-    "startLine": 1,
-    "endLine": 46
+    "startLine": 460,
+    "endLine": 466
   },
   {
     "outputFile": "StructureDefinition-HistologieMolPatFreitext.json",
     "fshName": "HistologieMolPatFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 189,
-    "endLine": 194
-  },
-  {
-    "outputFile": "StructureDefinition-Melder.json",
-    "fshName": "Melder",
-    "fshType": "Profile",
-    "fshFile": "profile-Melder.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
-    "outputFile": "StructureDefinition-MelderInOrganisation.json",
-    "fshName": "MelderInOrganisation",
-    "fshType": "Profile",
-    "fshFile": "profile-MelderInOrganisation.fsh",
-    "startLine": 1,
-    "endLine": 13
+    "startLine": 210,
+    "endLine": 215
   },
   {
     "outputFile": "StructureDefinition-MinimalObservation.json",
     "fshName": "MinimalObservation",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 447,
-    "endLine": 454
+    "startLine": 468,
+    "endLine": 475
   },
   {
     "outputFile": "StructureDefinition-OperativeTherapieFreitext.json",
     "fshName": "OperativeTherapieFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 196,
-    "endLine": 201
-  },
-  {
-    "outputFile": "StructureDefinition-Organisation.json",
-    "fshName": "Organisation",
-    "fshType": "Profile",
-    "fshFile": "profile-Organisation.fsh",
-    "startLine": 1,
-    "endLine": 15
+    "startLine": 217,
+    "endLine": 222
   },
   {
     "outputFile": "StructureDefinition-StrahlenTherapieFreitext.json",
     "fshName": "StrahlenTherapieFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 203,
-    "endLine": 208
-  },
-  {
-    "outputFile": "StructureDefinition-TNMASymbol.json",
-    "fshName": "TNMASymbol",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 256,
-    "endLine": 273
+    "startLine": 224,
+    "endLine": 229
   },
   {
     "outputFile": "StructureDefinition-TNMFreitext.json",
     "fshName": "TNMFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 131,
-    "endLine": 136
-  },
-  {
-    "outputFile": "StructureDefinition-TNMLKategorie.json",
-    "fshName": "TNMLKategorie",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 317,
-    "endLine": 334
-  },
-  {
-    "outputFile": "StructureDefinition-TNMPnKategorie.json",
-    "fshName": "TNMPnKategorie",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 377,
-    "endLine": 394
-  },
-  {
-    "outputFile": "StructureDefinition-TNMRSymbol.json",
-    "fshName": "TNMRSymbol",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 226,
-    "endLine": 243
-  },
-  {
-    "outputFile": "StructureDefinition-TNMSKategorie.json",
-    "fshName": "TNMSKategorie",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 407,
-    "endLine": 426
-  },
-  {
-    "outputFile": "StructureDefinition-TNMVKategorie.json",
-    "fshName": "TNMVKategorie",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 347,
-    "endLine": 364
-  },
-  {
-    "outputFile": "StructureDefinition-TNMYSymbol.json",
-    "fshName": "TNMYSymbol",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 197,
-    "endLine": 213
-  },
-  {
-    "outputFile": "StructureDefinition-TNMmSymbol.json",
-    "fshName": "TNMmSymbol",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 286,
-    "endLine": 304
-  },
-  {
-    "outputFile": "StructureDefinition-TumorDiagnose.json",
-    "fshName": "TumorDiagnose",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorDiagnose.fsh",
-    "startLine": 1,
-    "endLine": 48
+    "startLine": 152,
+    "endLine": 157
   },
   {
     "outputFile": "StructureDefinition-TumorPatient.json",
@@ -528,44 +216,28 @@
     "endLine": 57
   },
   {
-    "outputFile": "StructureDefinition-befund-dokument.json",
-    "fshName": "BefundDokument",
-    "fshType": "Profile",
-    "fshFile": "profile-BefundDokument.fsh",
-    "startLine": 1,
-    "endLine": 14
-  },
-  {
     "outputFile": "StructureDefinition-bemerkung-freitext.json",
     "fshName": "BemerkungFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 252,
-    "endLine": 257
-  },
-  {
-    "outputFile": "StructureDefinition-cancer-stage-group.json",
-    "fshName": "CancerStageGroup",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 1,
-    "endLine": 21
+    "startLine": 273,
+    "endLine": 278
   },
   {
     "outputFile": "StructureDefinition-ct-mrt-abdomen.json",
     "fshName": "CTMRTAbdomen",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 391,
-    "endLine": 401
+    "startLine": 412,
+    "endLine": 422
   },
   {
     "outputFile": "StructureDefinition-ct-mrt-schaedel.json",
     "fshName": "CTMRTSchaedel",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 379,
-    "endLine": 389
+    "startLine": 400,
+    "endLine": 410
   },
   {
     "outputFile": "StructureDefinition-ecog.json",
@@ -580,280 +252,128 @@
     "fshName": "ExterneBilder",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 281,
-    "endLine": 289
+    "startLine": 302,
+    "endLine": 310
   },
   {
     "outputFile": "StructureDefinition-familienanamnese-drop-down.json",
     "fshName": "FamilienanamneseDropDown",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata.fsh",
-    "startLine": 87,
-    "endLine": 95
-  },
-  {
-    "outputFile": "StructureDefinition-familienanamnese.json",
-    "fshName": "Familienanamnese",
-    "fshType": "Profile",
-    "fshFile": "profile-Familienanamnese.fsh",
-    "startLine": 1,
-    "endLine": 10
+    "startLine": 108,
+    "endLine": 116
   },
   {
     "outputFile": "StructureDefinition-fragestellung-pathologie-freitext.json",
     "fshName": "FragestellungPathologieFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 245,
-    "endLine": 250
+    "startLine": 266,
+    "endLine": 271
   },
   {
     "outputFile": "StructureDefinition-fragestellung-radiologie-freitext.json",
     "fshName": "FragestellungRadiologieFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 266,
-    "endLine": 271
+    "startLine": 287,
+    "endLine": 292
   },
   {
     "outputFile": "StructureDefinition-fragestellung-tumorkonferenz-freitext.json",
     "fshName": "FragestellungTumorkonferenzFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 238,
-    "endLine": 243
-  },
-  {
-    "outputFile": "StructureDefinition-gesamtbeurteilung.json",
-    "fshName": "Gesamtbeurteilung",
-    "fshType": "Profile",
-    "fshFile": "profile-Gesamtbeurteilung.fsh",
-    "startLine": 1,
-    "endLine": 21
+    "startLine": 259,
+    "endLine": 264
   },
   {
     "outputFile": "StructureDefinition-gewuenschte-teilnehmer.json",
     "fshName": "GewuenschteTeilnehmer",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 319,
-    "endLine": 327
-  },
-  {
-    "outputFile": "StructureDefinition-grading.json",
-    "fshName": "Grading",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorGrading.fsh",
-    "startLine": 1,
-    "endLine": 22
-  },
-  {
-    "outputFile": "StructureDefinition-histologie.json",
-    "fshName": "Histologie",
-    "fshType": "Profile",
-    "fshFile": "profile-Histologie.fsh",
-    "startLine": 1,
-    "endLine": 21
+    "startLine": 340,
+    "endLine": 348
   },
   {
     "outputFile": "StructureDefinition-histologische-typisierung-lunge.json",
     "fshName": "HistologischeTypisierungLunge",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 89,
-    "endLine": 97
+    "startLine": 110,
+    "endLine": 118
   },
   {
     "outputFile": "StructureDefinition-lungenfunktionstest.json",
     "fshName": "Lungenfunktionstest",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 427,
-    "endLine": 437
+    "startLine": 448,
+    "endLine": 458
   },
   {
     "outputFile": "StructureDefinition-medikamentoese-therapie-freitext.json",
     "fshName": "MedikamentoeseTherapieFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 210,
-    "endLine": 215
-  },
-  {
-    "outputFile": "StructureDefinition-nebenwirkung.json",
-    "fshName": "Nebenwirkung",
-    "fshType": "Profile",
-    "fshFile": "profile-Nebenwirkung.fsh",
-    "startLine": 1,
-    "endLine": 39
-  },
-  {
-    "outputFile": "StructureDefinition-operation-einzelprozedur.json",
-    "fshName": "OperationEinzelprozedur",
-    "fshType": "Profile",
-    "fshFile": "profile-Operation.fsh",
-    "startLine": 24,
-    "endLine": 47
-  },
-  {
-    "outputFile": "StructureDefinition-operation.json",
-    "fshName": "Operation",
-    "fshType": "Profile",
-    "fshFile": "profile-Operation.fsh",
-    "startLine": 1,
-    "endLine": 22
+    "startLine": 231,
+    "endLine": 236
   },
   {
     "outputFile": "StructureDefinition-pet-ct.json",
     "fshName": "PetCT",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 403,
-    "endLine": 413
+    "startLine": 424,
+    "endLine": 434
   },
   {
     "outputFile": "StructureDefinition-praxis-pathologisches-institut-freitext.json",
     "fshName": "PraxisPathologischesInstitutFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 138,
-    "endLine": 143
+    "startLine": 159,
+    "endLine": 164
   },
   {
     "outputFile": "StructureDefinition-psa-verlauf-freitext.json",
     "fshName": "PsaVerlaufFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 224,
-    "endLine": 229
+    "startLine": 245,
+    "endLine": 250
   },
   {
     "outputFile": "StructureDefinition-radiologie-bilder-freitext.json",
     "fshName": "RadiologieBilderFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 259,
-    "endLine": 264
+    "startLine": 280,
+    "endLine": 285
   },
   {
     "outputFile": "StructureDefinition-relevante-nebendiagnosen-freitext.json",
     "fshName": "RelevanteNebendiagnosenFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 231,
-    "endLine": 236
+    "startLine": 252,
+    "endLine": 257
   },
   {
     "outputFile": "StructureDefinition-skelettszintigraphie.json",
     "fshName": "Skelettszintigraphie",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 415,
-    "endLine": 425
-  },
-  {
-    "outputFile": "StructureDefinition-status-fernmetastasen.json",
-    "fshName": "StatusFernmetastasen",
-    "fshType": "Profile",
-    "fshFile": "profile-StatusFernmetastasen.fsh",
-    "startLine": 1,
-    "endLine": 20
-  },
-  {
-    "outputFile": "StructureDefinition-status-lymphknoten.json",
-    "fshName": "StatusLymphknoten",
-    "fshType": "Profile",
-    "fshFile": "profile-StatusLymphknoten.fsh",
-    "startLine": 1,
-    "endLine": 21
-  },
-  {
-    "outputFile": "StructureDefinition-status-primaertumor.json",
-    "fshName": "StatusPrimaertumor",
-    "fshType": "Profile",
-    "fshFile": "profile-StatusPrimaertumor.fsh",
-    "startLine": 1,
-    "endLine": 21
-  },
-  {
-    "outputFile": "StructureDefinition-strahlentherapie-details.json",
-    "fshName": "StrahlentherapieDetails",
-    "fshType": "Extension",
-    "fshFile": "profile-Strahlentherapie.fsh",
-    "startLine": 65,
-    "endLine": 114
-  },
-  {
-    "outputFile": "StructureDefinition-strahlentherapie.json",
-    "fshName": "Strahlentherapie",
-    "fshType": "Profile",
-    "fshFile": "profile-Strahlentherapie.fsh",
-    "startLine": 1,
-    "endLine": 63
-  },
-  {
-    "outputFile": "StructureDefinition-systemische-therapie-details.json",
-    "fshName": "SystemischeTherapieDetails",
-    "fshType": "Extension",
-    "fshFile": "profile-SystemischeTherapie.fsh",
-    "startLine": 39,
-    "endLine": 54
-  },
-  {
-    "outputFile": "StructureDefinition-systemische-therapie.json",
-    "fshName": "SystemischeTherapie",
-    "fshType": "Profile",
-    "fshFile": "profile-SystemischeTherapie.fsh",
-    "startLine": 1,
-    "endLine": 37
-  },
-  {
-    "outputFile": "StructureDefinition-tnm-distant-metastases-category.json",
-    "fshName": "TNMDistantMetastasesCategory",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 156,
-    "endLine": 183
-  },
-  {
-    "outputFile": "StructureDefinition-tnm-primary-tumor-category.json",
-    "fshName": "TNMPrimaryTumorCategory",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 110,
-    "endLine": 120
-  },
-  {
-    "outputFile": "StructureDefinition-tnm-regional-nodes-category.json",
-    "fshName": "TNMRegionalNodesCategory",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 133,
-    "endLine": 143
-  },
-  {
-    "outputFile": "StructureDefinition-tnm-stage-group.json",
-    "fshName": "TNMStageGroup",
-    "fshType": "Profile",
-    "fshFile": "profile-Staging.fsh",
-    "startLine": 24,
-    "endLine": 71
+    "startLine": 436,
+    "endLine": 446
   },
   {
     "outputFile": "StructureDefinition-tumor-board-anmeldung.json",
     "fshName": "TumorBoardAnmeldung",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 336,
-    "endLine": 360
-  },
-  {
-    "outputFile": "StructureDefinition-tumor.json",
-    "fshName": "Tumor",
-    "fshType": "Profile",
-    "fshFile": "profile-Histologie.fsh",
-    "startLine": 33,
-    "endLine": 41
+    "startLine": 357,
+    "endLine": 381
   },
   {
     "outputFile": "StructureDefinition-tumorErkrankung.json",
@@ -864,387 +384,99 @@
     "endLine": 17
   },
   {
-    "outputFile": "StructureDefinition-tumorkonferenz-bemerkung.json",
-    "fshName": "TumorkonferenzBemerkung",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorkonferenzBemerkung.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
-    "outputFile": "StructureDefinition-tumorkonferenz-fragestellung-radiologie.json",
-    "fshName": "TumorkonferenzFragestellungRadiologie",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorkonferenzFragestellungRadiologie.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
-    "outputFile": "StructureDefinition-tumorkonferenz-fragestellung.json",
-    "fshName": "TumorkonferenzFragestellung",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorkonferenzFragestellung.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
-    "outputFile": "StructureDefinition-tumorkonferenz-situation.json",
-    "fshName": "TumorkonferenzSituation",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorkonferenzSituation.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
-    "outputFile": "StructureDefinition-tumorkonferenz-termin.json",
-    "fshName": "TumorkonferenzTermin",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorkonferenzTermin.fsh",
-    "startLine": 1,
-    "endLine": 18
-  },
-  {
-    "outputFile": "StructureDefinition-tumorkonferenz-therapie-verlauf.json",
-    "fshName": "TumorkonferenzTherapieVerlauf",
-    "fshType": "Profile",
-    "fshFile": "profile-TumorkonferenzTherapieVerlauf.fsh",
-    "startLine": 1,
-    "endLine": 15
-  },
-  {
-    "outputFile": "StructureDefinition-tumorkonferenz.json",
-    "fshName": "Tumorkonferenz",
-    "fshType": "Profile",
-    "fshFile": "profile-Tumorkonferenz.fsh",
-    "startLine": 1,
-    "endLine": 16
-  },
-  {
     "outputFile": "StructureDefinition-tumorsituation.json",
     "fshName": "Tumorsituation",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 163,
-    "endLine": 171
+    "startLine": 184,
+    "endLine": 192
   },
   {
     "outputFile": "StructureDefinition-verlauf-freitext.json",
     "fshName": "VerlaufFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 217,
-    "endLine": 222
-  },
-  {
-    "outputFile": "StructureDefinition-verlauf.json",
-    "fshName": "Verlauf",
-    "fshType": "Profile",
-    "fshFile": "profile-Verlauf.fsh",
-    "startLine": 1,
-    "endLine": 14
-  },
-  {
-    "outputFile": "StructureDefinition-watchful-waiting.json",
-    "fshName": "WatchfulWaiting",
-    "fshType": "Profile",
-    "fshFile": "profile-WatchfulWaiting.fsh",
-    "startLine": 1,
-    "endLine": 31
+    "startLine": 238,
+    "endLine": 243
   },
   {
     "outputFile": "StructureDefinition-weitere-gewuenschte-teilnehmer-freitext.json",
     "fshName": "WeitereGewuenschteTeilnehmerFreitext",
     "fshType": "Profile",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 329,
-    "endLine": 334
-  },
-  {
-    "outputFile": "ValueSet-HistoGradeVS.json",
-    "fshName": "HistoGradeVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 24,
-    "endLine": 28
-  },
-  {
-    "outputFile": "ValueSet-Lymphgefaessinvasion-vs.json",
-    "fshName": "LymphgefaessinvasionVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 36,
-    "endLine": 40
-  },
-  {
-    "outputFile": "ValueSet-ResidualstatusGesamtbeurteilungVS.json",
-    "fshName": "ResidualstatusGesamtbeurteilungVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 66,
-    "endLine": 75
-  },
-  {
-    "outputFile": "ValueSet-SerumTumorMarkerUICCVS.json",
-    "fshName": "SerumTumorMarkerUICCVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 54,
-    "endLine": 58
+    "startLine": 350,
+    "endLine": 355
   },
   {
     "outputFile": "ValueSet-befundstatust-vs.json",
     "fshName": "BefundstatusVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 370,
-    "endLine": 377
-  },
-  {
-    "outputFile": "ValueSet-cancer-stage-group-vs.json",
-    "fshName": "CancerStageVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 38,
-    "endLine": 67
-  },
-  {
-    "outputFile": "ValueSet-cancer-staging-method-vs.json",
-    "fshName": "CancerStagingMethodVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 3,
-    "endLine": 23
-  },
-  {
-    "outputFile": "ValueSet-cancer-staging-type-vs.json",
-    "fshName": "CancerStagingTypeVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 25,
-    "endLine": 31
+    "startLine": 391,
+    "endLine": 398
   },
   {
     "outputFile": "ValueSet-ecog-performance-status.json",
     "fshName": "ECOGPerformanceStatusVS",
     "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 6,
-    "endLine": 16
+    "fshFile": "valueSets.fsh",
+    "startLine": 1,
+    "endLine": 11
   },
   {
     "outputFile": "ValueSet-externe-bilder-vs.json",
     "fshName": "ExterneBilderVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 273,
-    "endLine": 279
+    "startLine": 294,
+    "endLine": 300
   },
   {
     "outputFile": "ValueSet-gewuenschte-teilnehmer-vs.json",
     "fshName": "GewuenschteTeilnehmerVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 291,
-    "endLine": 317
+    "startLine": 312,
+    "endLine": 338
   },
   {
     "outputFile": "ValueSet-histologische-typisierung-vs.json",
     "fshName": "HistologischeTypisierungVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 80,
-    "endLine": 87
-  },
-  {
-    "outputFile": "ValueSet-icd-o-3-morphologie.json",
-    "fshName": "ICDO3Morphologie",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 1,
-    "endLine": 4
+    "startLine": 101,
+    "endLine": 108
   },
   {
     "outputFile": "ValueSet-ja-nein-beratung-vs.json",
     "fshName": "JaNeinBeratungVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 155,
-    "endLine": 161
+    "startLine": 176,
+    "endLine": 182
   },
   {
     "outputFile": "ValueSet-ja-nein-unbekannt-vs.json",
     "fshName": "JaNeinUnbekanntVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 362,
-    "endLine": 368
-  },
-  {
-    "outputFile": "ValueSet-krebsstadium-vs.json",
-    "fshName": "KrebsstadiumVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 60,
-    "endLine": 64
-  },
-  {
-    "outputFile": "ValueSet-multiple-primaer-tumoren-vs.json",
-    "fshName": "MultiplePrimaerTumorenVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 30,
-    "endLine": 34
-  },
-  {
-    "outputFile": "ValueSet-obds-op-komplikation-vs.json",
-    "fshName": "ObdsOpKomplikationVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Operation.fsh",
-    "startLine": 1,
-    "endLine": 7
-  },
-  {
-    "outputFile": "ValueSet-obds-strahlentherapie-intention-vs.json",
-    "fshName": "ObdsStrahlentherapieIntentionVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 18,
-    "endLine": 22
-  },
-  {
-    "outputFile": "ValueSet-perineurale-invasion-vs.json",
-    "fshName": "PerineuraleInvasionVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 48,
-    "endLine": 52
+    "startLine": 383,
+    "endLine": 389
   },
   {
     "outputFile": "ValueSet-pos-neg-nask-vs.json",
     "fshName": "PosNegNaskVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextProstata.fsh",
-    "startLine": 97,
-    "endLine": 103
-  },
-  {
-    "outputFile": "ValueSet-tnm-distant-metastases-category-max-vs.json",
-    "fshName": "TNMDistantMetastasesCategoryMaxVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 181,
-    "endLine": 187
-  },
-  {
-    "outputFile": "ValueSet-tnm-distant-metastases-category-vs.json",
-    "fshName": "TNMDistantMetastasesCategoryVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 173,
-    "endLine": 179
-  },
-  {
-    "outputFile": "ValueSet-tnm-distant-metastases-staging-type-vs.json",
-    "fshName": "TNMDistantMetastasesStagingTypeVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 164,
-    "endLine": 171
-  },
-  {
-    "outputFile": "ValueSet-tnm-primary-tumor-category-max-vs.json",
-    "fshName": "TNMPrimaryTumorCategoryMaxVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 126,
-    "endLine": 132
-  },
-  {
-    "outputFile": "ValueSet-tnm-primary-tumor-category-vs.json",
-    "fshName": "TNMPrimaryTumorCategoryVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 117,
+    "startLine": 118,
     "endLine": 124
-  },
-  {
-    "outputFile": "ValueSet-tnm-primary-tumor-staging-type-vs.json",
-    "fshName": "TNMPrimaryTumorStagingTypeVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 108,
-    "endLine": 115
-  },
-  {
-    "outputFile": "ValueSet-tnm-regional-nodes-category-max-vs.json",
-    "fshName": "TNMRegionalNodesCategoryMaxVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 154,
-    "endLine": 160
-  },
-  {
-    "outputFile": "ValueSet-tnm-regional-nodes-category-vs.json",
-    "fshName": "TNMRegionalNodesCategoryVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 145,
-    "endLine": 152
-  },
-  {
-    "outputFile": "ValueSet-tnm-regional-nodes-staging-type-vs.json",
-    "fshName": "TNMRegionalNodesStagingTypeVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 136,
-    "endLine": 143
-  },
-  {
-    "outputFile": "ValueSet-tnm-stage-group-max-vs.json",
-    "fshName": "TNMStageGroupMaxVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 98,
-    "endLine": 104
-  },
-  {
-    "outputFile": "ValueSet-tnm-stage-group-staging-type-vs.json",
-    "fshName": "TNMStageGroupStagingTypeVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 80,
-    "endLine": 87
-  },
-  {
-    "outputFile": "ValueSet-tnm-stage-group-vs.json",
-    "fshName": "TNMStageGroupVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 89,
-    "endLine": 96
-  },
-  {
-    "outputFile": "ValueSet-tnm-staging-method-vs.json",
-    "fshName": "TNMStagingMethodVS",
-    "fshType": "ValueSet",
-    "fshFile": "valueSet-Staging.fsh",
-    "startLine": 69,
-    "endLine": 76
   },
   {
     "outputFile": "ValueSet-tumorsituation-vs.json",
     "fshName": "TumorsituationVS",
     "fshType": "ValueSet",
     "fshFile": "minimaleAnmeldeBundle/MinimalesAnmeldeBundleFreeTextLunge.fsh",
-    "startLine": 183,
-    "endLine": 187
-  },
-  {
-    "outputFile": "ValueSet-veneninvasion-vs.json",
-    "fshName": "VeneninvasionVS",
-    "fshType": "ValueSet",
-    "fshFile": "valuesets.fsh",
-    "startLine": 42,
-    "endLine": 46
+    "startLine": 204,
+    "endLine": 208
   }
 ]

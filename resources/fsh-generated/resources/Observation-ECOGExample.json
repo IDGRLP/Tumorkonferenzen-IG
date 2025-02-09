@@ -19,13 +19,13 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare",
       "valueReference": {
-        "reference": "Tumorerkrankung"
+        "reference": "EpisodeOfCare/TumorErkrankungExample"
       }
     }
   ],
   "status": "final",
   "subject": {
-    "reference": "Beispielpatient"
+    "reference": "Patient/TumorPatientExample"
   },
   "valueCodeableConcept": {
     "coding": [

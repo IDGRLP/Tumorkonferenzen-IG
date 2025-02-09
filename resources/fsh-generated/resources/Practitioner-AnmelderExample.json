@@ -1,0 +1,20 @@
+{
+  "resourceType": "Practitioner",
+  "id": "AnmelderExample",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"
+    ]
+  },
+  "name": [
+    {
+      "text": "Dr. Erika Musterfrau"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+49 987 654321"
+    }
+  ]
+}

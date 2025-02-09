@@ -19,6 +19,27 @@ Description: "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten"
 * entry[diagnoseFreitext]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"
   * resource = DiagnoseFreitextExample
+* entry[diagnose-icd10]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"
+  * resource = ICD10GM-DiagnoseExample
+* entry[allgemeinerLeistungszustandKarnofsky]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample"
+  * resource = AllgemeinerLeistungszustandKarnofskyExample
+* entry[grading]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample"
+  * resource = GradingExample
+* entry[untersuchteLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample"
+  * resource = UntersuchteLymphknotenExample
+* entry[befalleneLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample"
+  * resource = BefalleneLymphknotenExample
+* entry[untersuchteSentinelLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample"
+  * resource = UntersuchteSentinelLymphknotenExample
+* entry[befalleneSentinelLymphknoten]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample"
+  * resource = BefalleneSentinelLymphknotenExample
 * entry[erstdiagnose]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"
   * resource = ErstdiagnoseExample
@@ -230,3 +251,22 @@ Title: "Beispiel externer Bilder"
 Description: "Dokumentation externer Bilder"
 * subject = Reference(TumorPatientExample)
 * valueCodeableConcept = $customCodes#elektronischUebermittelt "werden elektronisch übermittelt"
+
+Instance: ICD10GM-DiagnoseExample
+InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
+Usage: #example
+Title: "Beispiel einer ICD-10-GM-Diagnose"
+Description: "Beispiel einer ICD-10-GM-Diagnose"
+* extension[Feststellungsdatum].valueDateTime = "2020-02-16"
+* extension[morphology-behavior-icdo3].valueCodeableConcept = $icd-o-3#8070/3 "Plattenepithelkarzinom o.n.A."
+* code.coding[icd10-gm] = $icd-10-gm#C34.0 "Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus"
+  * version = "2025"
+  * extension[Seitenlokalisation].valueCoding = $KBV_CS_SFHIR_ICD_SEITENLOKALISATION#R "rechts"
+* clinicalStatus = $condition-clinical#active
+* subject = Reference(TumorPatientExample)
+* recordedDate = "2020-02-16"
+* verificationStatus
+  * coding[condition-ver-status] = ConditionVerificationStatus#confirmed "confirmed"
+  * coding[primaertumorDiagnosesicherung] = MII_CS_Onko_Primaertumor_Diagnosesicherung#1 "klinisch"
+* bodySite.coding[icd-o-3] = $icd-o-3#C34.0 "Hauptbronchus"
+* bodySite.coding[snomed-ct] = $sct#245508000 "Entire main bronchus"

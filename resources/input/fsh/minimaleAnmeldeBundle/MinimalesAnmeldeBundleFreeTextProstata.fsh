@@ -12,6 +12,13 @@ Description: "AnmeldeBundleMinimalFreitextProstata"
   tumorBoardAnmeldung 1..1 MS and
   anmelder 1..1 MS and
   diagnoseFreitext 0..1 MS and
+  diagnose-icd10 0..1 MS and
+  allgemeinerLeistungszustandKarnofsky 0..1 MS and
+  grading 0..1 MS and
+  untersuchteLymphknoten 0..1 MS and
+  befalleneLymphknoten 0..1 MS and
+  untersuchteSentinelLymphknoten 0..1 MS and
+  befalleneSentinelLymphknoten 0..1 MS and
   erstdiagnose 0..1 MS and
   tnmFreitext 0..1 MS and
   ecog 0..1 MS and
@@ -41,6 +48,20 @@ Description: "AnmeldeBundleMinimalFreitextProstata"
   * resource only Anmelder
 * entry[diagnoseFreitext]
   * resource only DiagnoseFreitext
+* entry[diagnose-icd10]
+  * resource only Condition // FIXME: should be: MII_PR_Onko_Diagnose_Primaertumor but this is throwing an error
+* entry[allgemeinerLeistungszustandKarnofsky]
+  * resource only MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky
+* entry[grading]
+  * resource only MII_PR_Onko_Grading
+* entry[untersuchteLymphknoten]
+  * resource only MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten
+* entry[befalleneLymphknoten]
+  * resource only MII_PR_Onko_Anzahl_Befallene_Lymphknoten
+* entry[untersuchteSentinelLymphknoten]
+  * resource only MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten
+* entry[befalleneSentinelLymphknoten]
+  * resource only MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten
 * entry[erstdiagnose]
   * resource only Erstdiagnose
 * entry[tnmFreitext]

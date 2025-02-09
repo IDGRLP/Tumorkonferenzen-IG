@@ -20,6 +20,6 @@ Instance: TumorErkrankungExample
 InstanceOf: TumorErkrankung
 Description: "Ein Beispiel für die Episode einer Tumorerkrankung."
 * status = #active
-* diagnosis.condition = Reference("TODO-INSTANZ")
+* diagnosis.condition = Reference(ICD10GM-DiagnoseExample)
 * diagnosis.role = $csDiagnosisRole#CC
 * patient = Reference(TumorPatient-example-1)

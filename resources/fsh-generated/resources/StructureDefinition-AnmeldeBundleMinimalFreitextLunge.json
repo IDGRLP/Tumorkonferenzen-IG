@@ -134,6 +134,143 @@
         ]
       },
       {
+        "id": "Bundle.entry:diagnose-icd10",
+        "path": "Bundle.entry",
+        "sliceName": "diagnose-icd10",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:diagnose-icd10.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Condition"
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:allgemeinerLeistungszustandKarnofsky",
+        "path": "Bundle.entry",
+        "sliceName": "allgemeinerLeistungszustandKarnofsky",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:allgemeinerLeistungszustandKarnofsky.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:grading",
+        "path": "Bundle.entry",
+        "sliceName": "grading",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:grading.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:untersuchteLymphknoten",
+        "path": "Bundle.entry",
+        "sliceName": "untersuchteLymphknoten",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:untersuchteLymphknoten.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:befalleneLymphknoten",
+        "path": "Bundle.entry",
+        "sliceName": "befalleneLymphknoten",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:befalleneLymphknoten.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:untersuchteSentinelLymphknoten",
+        "path": "Bundle.entry",
+        "sliceName": "untersuchteSentinelLymphknoten",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:untersuchteSentinelLymphknoten.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:befalleneSentinelLymphknoten",
+        "path": "Bundle.entry",
+        "sliceName": "befalleneSentinelLymphknoten",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:befalleneSentinelLymphknoten.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Bundle.entry:erstdiagnose",
         "path": "Bundle.entry",
         "sliceName": "erstdiagnose",

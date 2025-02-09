@@ -21,7 +21,7 @@
   "diagnosis": [
     {
       "condition": {
-        "reference": "\"TODO-INSTANZ\""
+        "reference": "Condition/ICD10GM-DiagnoseExample"
       },
       "role": {
         "coding": [

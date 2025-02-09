@@ -13,7 +13,7 @@ Description: "Allgemeiner Leistungszustand: ECOG"
 Instance: ECOGExample
 InstanceOf: ECOG
 Description: "Beispielinstanz einer Observation welche einen ECOG Wert enthält."
-* extension[episodeOfCare].valueReference =  Reference(Tumorerkrankung)
+* extension[episodeOfCare].valueReference =  Reference(TumorErkrankungExample)
 * status = #final
-* subject = Reference(Beispielpatient)
+* subject = Reference(TumorPatientExample)
 * valueCodeableConcept = LOINC#LA9623-5 "ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)"
