@@ -35,17 +35,16 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Identifikatoren (Business Identifier)","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"","pattern:$this}
 ","",,"open","Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","id",".id","FiveWs.identifier","PID-3"
-"Patient.identifier:krankenversichertennummer","Patient.identifier","krankenversichertennummer","","",0,1,"Y","","","Identifier {[CanonicalType[http://fhir.de/StructureDefinition/identifier-kvid-10]]} {[]}
-","Krankenversichertennummer","An identifier - identifies some entity uniquely and unambiguously. Typically this is used for business identifiers.","","Patients are almost always assigned specific numerical identifiers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
+"Patient.identifier:krankenversichertennummer","Patient.identifier","krankenversichertennummer","","",0,1,"Y","","Y","Identifier {[CanonicalType[http://fhir.de/StructureDefinition/identifier-kvid-10]]} {[]}
+","Krankenversichertennummer","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
   <type>
     <coding>
       <system value=""http://fhir.de/CodeSystem/identifier-type-de-basis""/>
       <code value=""GKV""/>
     </coding>
   </type>
-</valueIdentifier>","","","",,,,,"",,,,"Patient.identifier",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","n/a","II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]","CX / EI (occasionally, more often EI maps to a resource id or a URL)"
+</valueIdentifier>","","","",,,,,"",,,,"Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","id",".id","FiveWs.identifier","PID-3"
 "Patient.identifier:krankenversichertennummer.id","Patient.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Patient.identifier:krankenversichertennummer.extension","Patient.identifier.extension","","extensions
@@ -140,20 +139,9 @@ middle name","",0,*,"Y","","Y","string {[]} {[]}
 "Patient.deceased[x]","Patient.deceased[x]","","","",0,1,"","Y","Y","boolean {[]} {[]}
 dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
-"Patient.address","Patient.address","","","",0,*,"Y","","","Address {[CanonicalType[http://fhir.de/StructureDefinition/address-de-basis]]} {[]}
-","Eine Adresse gemäß postalischer Konventionen","Eine Adresse gemäß postalischer Konventionen (im Gegensatz zu bspw. GPS-Koordinaten). Die Adresse kann sowohl zur Zustellung von Postsendungen oder zum Aufsuchen von Orten, die keine gültige Postadresse haben, verwendet werden.
-
-Die verwendeten Extensions in diesem Profil bilden die Struktur der Adresse ab, wie sie im VSDM-Format der elektronischen Versichertenkarte verwendet wird.
-
-Insbesondere bei ausländischen Adresse oder Adressen, die nicht durch Einlesen einer elektronischen Versichertenkarte erfasst wurden, sind abweichende Strukturen möglich. Die Verwendung der Extensions ist nicht verpflichtend.","Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates.  Postal addresses are often used as proxies for physical locations (also see the [Location](http://hl7.org/fhir/R4/location.html#) resource).","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","<valueAddress xmlns=""http://hl7.org/fhir"">
-  <use value=""home""/>
-  <type value=""postal""/>
-  <line value=""Musterweg 42""/>
-  <city value=""Musterhausen""/>
-  <postalCode value=""99999""/>
-</valueAddress>","","",,,,,"",,,,"Patient.address",0,*,"ele-1
-","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-add-1:Wenn die Extension 'Hausnummer' verwendet wird, muss auch Address.line gefüllt werden {line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty() or $this.hasValue())}add-2:Wenn die Extension 'Strasse' verwendet wird, muss auch Address.line gefüllt werden {line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() or $this.hasValue())}add-3:Wenn die Extension 'Postfach' verwendet wird, muss auch Address.line gefüllt werden {line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue())}add-4:Eine Postfach-Adresse darf nicht vom Type ""physical"" oder ""both"" sein. {line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or $this.hasValue()) or type='postal' or type.empty()}add-5:Wenn die Extension 'Adresszusatz' verwendet wird, muss auch Address.line gefüllt werden {line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator').empty() or $this.hasValue())}add-6:Wenn die Extension 'Postfach' verwendet wird, dürfen die Extensions 'Strasse' und 'Hausnummer' nicht verwendet werden {line.all($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox').empty() or ($this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName').empty() and $this.extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber').empty()))}add-7:Wenn die Extension 'Precinct' (Stadtteil) verwendet wird, dann muss diese Information auch als separates line-item abgebildet sein. {extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').empty() or all(line contains extension('http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct').value.ofType(string))}","n/a","AD","XAD"
+"Patient.address","Patient.address","","","",0,*,"Y","","Y","Address {[CanonicalType[http://fhir.de/StructureDefinition/address-de-basis]]} {[]}
+","An address for the individual","An address for the individual.","Patient may have multiple addresses with different uses or applicable periods.","May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.","","","","","","","",,,,,"",,,,"Patient.address",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","addr",".addr","PID-11"
 "Patient.address.id","Patient.address.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "Patient.address.extension","Patient.address.extension","","extensions

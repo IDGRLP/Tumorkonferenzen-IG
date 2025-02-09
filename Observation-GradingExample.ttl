@@ -11,15 +11,21 @@
   fhir:id [ fhir:v "GradingExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"^^xsd:anyURI ;
-       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading>
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading>
      ] )
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation GradingExample</b></p><a name=\"GradingExample\"> </a><a name=\"hcGradingExample\"> </a><a name=\"GradingExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33732-9}\">Histology grade [Identifier] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Patient-TumorPatient-example-1.html\">Martina Mustermann (official) Female, DoB: 1965-04-03 ( Gesetzliche Krankenversicherung)</a></p><p><b>encounter</b>: <a href=\"Encounter-VerlaufExample.html\">Encounter: status = final; class = virtual (ActCode#VR); type = Cancer follow-up visit; period = 2023-04-05 08:00:00+0000 --&gt; (ongoing)</a></p><p><b>effective</b>: 2023-04-05 14:30:00+0000</p><p><b>value</b>: <span title=\"Codes:{http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS 2}\">Mäßig differenziert</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation GradingExample</b></p><a name=\"GradingExample\"> </a><a name=\"hcGradingExample\"> </a><a name=\"GradingExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33732-9}\">Histology grade [Identifier] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2022-04-21</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading 3}\">schlecht differenziert</span></p></div>"
   ] ; # 
   fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
   fhir:code [
      fhir:coding ( [
        a loinc:33732-9 ;
@@ -29,20 +35,15 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatient-example-1> ;
-     fhir:reference [ fhir:v "Patient/TumorPatient-example-1" ]
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
   ] ; # 
-  fhir:encounter [
-     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Encounter/VerlaufExample> ;
-     fhir:reference [ fhir:v "Encounter/VerlaufExample" ]
-  ] ; # 
-  fhir:effective [ fhir:v "2023-04-05T14:30:00Z"^^xsd:dateTime] ; # 
+  fhir:effective [ fhir:v "2022-04-21"^^xsd:date] ; # 
   fhir:value [
      a fhir:CodeableConcept ;
      fhir:coding ( [
-       fhir:system [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "2" ] ;
-       fhir:display [ fhir:v "Mäßig differenziert" ]
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ]
      ] )
   ] . # 
 

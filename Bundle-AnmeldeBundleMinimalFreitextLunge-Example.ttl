@@ -33,6 +33,27 @@
      fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"^^xsd:anyURI ] ;
      fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample> )
   ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample> )
+  ] [
      fhir:fullUrl [ fhir:v "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"^^xsd:anyURI ] ;
      fhir:resource ( <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample> )
   ] [
@@ -236,6 +257,317 @@
      fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
   ] ; # 
   fhir:value [ fhir:v "Lungenkrebs im fortgeschrittenen Stadium"] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample> a fhir:Condition ;
+  fhir:id [ fhir:v "ICD10GM-DiagnoseExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ICD10GM-DiagnoseExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ICD10GM-DiagnoseExample</b></p><a name=\"ICD10GM-DiagnoseExample\"> </a><a name=\"hcICD10GM-DiagnoseExample\"> </a><a name=\"ICD10GM-DiagnoseExample-en-US\"> </a><p><b>Condition Asserted Date</b>: 2020-02-16</p><p><b>MII EX Onko Histology Morphology Behavior ICDO3</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 8070/3}\">Plattenepithelkarzinom o.n.A.</span></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung 1}\">confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C34.0}\">Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 C34.0}, {http://snomed.info/sct 245508000}\">Hauptbronchus</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>recordedDate</b>: 2020-02-16</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/condition-assertedDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2020-02-16"^^xsd:date ]
+  ] [
+     fhir:url [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "8070/3" ] ;
+         fhir:display [ fhir:v "Plattenepithelkarzinom o.n.A." ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ] ;
+       fhir:display [ fhir:v "confirmed" ]
+     ] [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ] ;
+       fhir:display [ fhir:v "klinisch" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.de/StructureDefinition/seitenlokalisation"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "R" ] ;
+           fhir:display [ fhir:v "rechts" ]
+         ]
+       ] ) ;
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/icd-10-gm"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2025" ] ;
+       fhir:code [ fhir:v "C34.0" ] ;
+       fhir:display [ fhir:v "Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus" ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C34.0" ] ;
+       fhir:display [ fhir:v "Hauptbronchus" ]
+     ] [
+       a sct:245508000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "245508000" ] ;
+       fhir:display [ fhir:v "Entire main bronchus" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:recordedDate [ fhir:v "2020-02-16"^^xsd:date] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample> a fhir:Observation ;
+  fhir:id [ fhir:v "AllgemeinerLeistungszustandKarnofskyExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_AllgemeinerLeistungszustandKarnofskyExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation AllgemeinerLeistungszustandKarnofskyExample</b></p><a name=\"AllgemeinerLeistungszustandKarnofskyExample\"> </a><a name=\"hcAllgemeinerLeistungszustandKarnofskyExample\"> </a><a name=\"AllgemeinerLeistungszustandKarnofskyExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 761869008}\">761869008</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky 30%}\">30%</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:761869008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "761869008" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "30%" ] ;
+       fhir:display [ fhir:v "30%" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample> a fhir:Observation ;
+  fhir:id [ fhir:v "GradingExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_GradingExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation GradingExample</b></p><a name=\"GradingExample\"> </a><a name=\"hcGradingExample\"> </a><a name=\"GradingExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33732-9}\">Histology grade [Identifier] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2022-04-21</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading 3}\">schlecht differenziert</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:33732-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "33732-9" ] ;
+       fhir:display [ fhir:v "Histology grade [Identifier] in Cancer specimen" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-04-21"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ]
+     ] )
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample> a fhir:Observation ;
+  fhir:id [ fhir:v "UntersuchteLymphknotenExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_UntersuchteLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation UntersuchteLymphknotenExample</b></p><a name=\"UntersuchteLymphknotenExample\"> </a><a name=\"hcUntersuchteLymphknotenExample\"> </a><a name=\"UntersuchteLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21894-1}\">Regional lymph nodes examined [#] Specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 23 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21894-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21894-1" ] ;
+       fhir:display [ fhir:v "Regional lymph nodes examined [#] Specimen" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-01-11"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "23"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "#" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1" ]
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample> a fhir:Observation ;
+  fhir:id [ fhir:v "BefalleneLymphknotenExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BefalleneLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BefalleneLymphknotenExample</b></p><a name=\"BefalleneLymphknotenExample\"> </a><a name=\"hcBefalleneLymphknotenExample\"> </a><a name=\"BefalleneLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21893-3}\">Regional lymph nodes positive [#] Specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 0 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21893-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21893-3" ] ;
+       fhir:display [ fhir:v "Regional lymph nodes positive [#] Specimen" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-01-11"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "#" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1" ]
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample> a fhir:Observation ;
+  fhir:id [ fhir:v "UntersuchteSentinelLymphknotenExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_UntersuchteSentinelLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation UntersuchteSentinelLymphknotenExample</b></p><a name=\"UntersuchteSentinelLymphknotenExample\"> </a><a name=\"hcUntersuchteSentinelLymphknotenExample\"> </a><a name=\"UntersuchteSentinelLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85347-3}\">Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 2 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:85347-3 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "85347-3" ] ;
+       fhir:display [ fhir:v "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-01-11"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "2"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "#" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1" ]
+  ] . # 
+
+<http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample> a fhir:Observation ;
+  fhir:id [ fhir:v "BefalleneSentinelLymphknotenExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten"^^xsd:anyURI ;
+       fhir:link <https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BefalleneSentinelLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BefalleneSentinelLymphknotenExample</b></p><a name=\"BefalleneSentinelLymphknotenExample\"> </a><a name=\"hcBefalleneSentinelLymphknotenExample\"> </a><a name=\"BefalleneSentinelLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 92832-5}\">Sentinel lymph nodes with metastasis [#] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 0 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:92832-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "92832-5" ] ;
+       fhir:display [ fhir:v "Sentinel lymph nodes with metastasis [#] in Cancer specimen" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-01-11"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "#" ] ;
+     fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "1" ]
+  ] . # 
 
 <http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample> a fhir:Observation ;
   fhir:id [ fhir:v "ErstdiagnoseExample"] ; # 

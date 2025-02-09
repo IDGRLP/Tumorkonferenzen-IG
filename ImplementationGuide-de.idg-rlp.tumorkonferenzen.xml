@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="TumorkonferenzenIDG"/>
   <status value="draft"/>
-  <date value="2024-12-02T15:35:52+00:00"/>
+  <date value="2025-02-09T15:43:55+00:00"/>
   <publisher value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
   <contact>
     <name value="IDG Institut für digitale Gesundheitsdaten RLP gGmbH"/>
@@ -31,7 +31,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="6.1.0"/>
+    <version value="6.2.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -44,12 +44,12 @@
   <dependsOn id="de_basisprofil_r4">
     <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
     <packageId value="de.basisprofil.r4"/>
-    <version value="1.5.0"/>
+    <version value="1.5.2"/>
   </dependsOn>
-  <dependsOn id="hl7_fhir_us_mcode">
-    <uri value="http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode"/>
-    <packageId value="hl7.fhir.us.mcode"/>
-    <version value="2.1.0"/>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_onkologie">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.onkologie"/>
+    <version value="2025.0.3"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -253,7 +253,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#0.2.0"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.3.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -457,6 +457,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/AllgemeinerLeistungszustandKarnofskyExample"/>
+      </reference>
+      <name value="AllgemeinerLeistungszustandKarnofskyExample"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -512,14 +522,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/befund-dokument"/>
+        <reference value="Observation/BefalleneLymphknotenExample"/>
       </reference>
-      <name value="BefundDokument"/>
-      <description value="Metadaten zu einem Befunddokument bzw. Bildbefund."/>
-      <exampleBoolean value="false"/>
+      <name value="BefalleneLymphknotenExample"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/BefalleneSentinelLymphknotenExample"/>
+      </reference>
+      <name value="BefalleneSentinelLymphknotenExample"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -534,6 +553,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ICD10GM-DiagnoseExample"/>
+      </reference>
+      <name value="Beispiel einer ICD-10-GM-Diagnose"/>
+      <description value="Beispiel einer ICD-10-GM-Diagnose"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/AnmelderExample"/>
+      </reference>
+      <name value="Beispiel eines Anmelders"/>
+      <description value="Person, die den Patienten anmeldet"/>
+      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -541,61 +582,6 @@
       </reference>
       <name value="BemerkungFreitext"/>
       <description value="Freitext für allgemeine Bemerkungen"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/status-lymphknoten"/>
-      </reference>
-      <name value="Beurteilung Primärtumor"/>
-      <description value="Beurteilung des Lymphknoten-Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/cancer-stage-group"/>
-      </reference>
-      <name value="Cancer Stage Group Profile"/>
-      <description value="An assessment of the extent of the cancer in the body, according to a given cancer staging classification system. This profile can be used with any staging system, but it is specifically targeted for non-TNM staging systems, since specialized TNM staging profiles are provided."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/cancer-stage-group-vs"/>
-      </reference>
-      <name value="Cancer Stage Group Value Set"/>
-      <description value="The result of cancer staging, i.e., the stage or category of the cancer."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/cancer-staging-method-vs"/>
-      </reference>
-      <name value="Cancer Staging Method Value Set"/>
-      <description value="System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/cancer-staging-type-vs"/>
-      </reference>
-      <name value="Cancer Staging Type Value Set"/>
-      <description value="Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -677,127 +663,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMStageGroupClinicalExample"/>
-      </reference>
-      <name value="Example TNM Stage Group Observation"/>
-      <description value="An example of an Observation conforming to the TNMStageGroup profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMASymbolExample"/>
-      </reference>
-      <name value="Example TNMASymbol Observation"/>
-      <description value="An example of an Observation conforming to the TNMASymbol profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMLKategorieExample"/>
-      </reference>
-      <name value="Example TNMLKategorie Observation"/>
-      <description value="An example of an Observation conforming to the TNMLKategorie profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMmSymbolExample"/>
-      </reference>
-      <name value="Example TNMmSymbol Observation"/>
-      <description value="An example of an Observation conforming to the TNMmSymbol profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMPnKategorieExample"/>
-      </reference>
-      <name value="Example TNMPnKategorie Observation"/>
-      <description value="An example of an Observation conforming to the TNMPnKategorie profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMRSymbolExample"/>
-      </reference>
-      <name value="Example TNMRSymbol Observation"/>
-      <description value="An example of an Observation conforming to the TNMRSymbol profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMSKategorieExample"/>
-      </reference>
-      <name value="Example TNMSKategorie Observation"/>
-      <description value="An example of an Observation conforming to the TNMSKategorie profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMVKategorieExample"/>
-      </reference>
-      <name value="Example TNMVKategorie Observation"/>
-      <description value="An example of an Observation conforming to the TNMVKategorie profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TNMYSymbolExample"/>
-      </reference>
-      <name value="Example TNMYSymbol Observation"/>
-      <description value="An example of an Observation conforming to the TNMYSymbol profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Condition"/>
-      </extension>
-      <reference>
-        <reference value="Condition/ExampleTumorDiagnose"/>
-      </reference>
-      <name value="Example Tumordiagnose"/>
-      <description value="Example instance of a Tumordiagnose resource"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/TumorkonferenzFragestellungExample"/>
-      </reference>
-      <name value="Example TumorkonferenzFragestellung Observation"/>
-      <description value="An example of an Observation conforming to the TumorkonferenzFragestellung profile."/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -827,17 +692,6 @@
       </reference>
       <name value="ExterneBilder"/>
       <description value="Profil zur Dokumentation externer Bilder mit Antwortoptionen."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/familienanamnese"/>
-      </reference>
-      <name value="Familienanamnese"/>
-      <description value="Familienanamnese"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -911,28 +765,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/gesamtbeurteilung"/>
-      </reference>
-      <name value="Gesamtbeurteilung"/>
-      <description value="Gesamtbeurteilung des Tumorgeschehens"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ResidualstatusGesamtbeurteilungVS"/>
-      </reference>
-      <name value="Gesamtbeurteilung des Residualstatus"/>
-      <description value="Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/gewuenschte-teilnehmer"/>
       </reference>
       <name value="Gewünschte Teilnehmer"/>
@@ -952,78 +784,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/grading"/>
-      </reference>
-      <name value="Grading"/>
-      <description value="Gibt den Differenzierungsgrad des Tumors entsprechend der aktuellen TNM-Auflage an."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
         <reference value="Observation/GradingExample"/>
       </reference>
       <name value="GradingExample"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/HistoGradeVS"/>
-      </reference>
-      <name value="HistoGradeVS"/>
-      <description value="HistoGradeVS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/histologie"/>
-      </reference>
-      <name value="Histologie"/>
-      <description value="Histologie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/Histologie-Example"/>
-      </reference>
-      <name value="HistologieExample"/>
-      <description value="HistologieExample"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/HistologieLymphknoten"/>
-      </reference>
-      <name value="HistologieLymphknoten"/>
-      <description value="HistologieLymphknoten"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/HistologieLymphknotenExample"/>
-      </reference>
-      <name value="HistologieLymphknotenExample"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1060,39 +827,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/HistoGradeCS"/>
-      </reference>
-      <name value="Histopathologische Grading Codes oBDS"/>
-      <description value="oBDS Grading Codes"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/obds-strahlentherapie-intention-vs"/>
-      </reference>
-      <name value="Intention der Strahlentherapie"/>
-      <description value="Die Intention der Strahlentherapie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/obds-strahlentherapie-intention-cs"/>
-      </reference>
-      <name value="Intention der Strahlentherapie"/>
-      <description value="Die histopathologische Einstufung des invasiven Karzinoms"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1104,28 +838,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/krebsstadium-cs"/>
-      </reference>
-      <name value="Krebsstadium CodeSystem"/>
-      <description value="KrebsstadiumCS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/krebsstadium-vs"/>
-      </reference>
-      <name value="Krebsstadium ValueSet"/>
-      <description value="KrebsstadiumVS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1133,28 +845,6 @@
       </reference>
       <name value="Lungenfunktionstest"/>
       <description value="Profil zur Dokumentation des Lungenfunktionstest Befunds."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/Lymphgefaessinvasion-cs"/>
-      </reference>
-      <name value="Lymphgefäßinvasion CodeSystem"/>
-      <description value="LymphgefäßinvasionCS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/Lymphgefaessinvasion-vs"/>
-      </reference>
-      <name value="Lymphgefäßinvasion ValueSet"/>
-      <description value="LymphgefäßinvasionVS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1173,171 +863,11 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Melder"/>
-      </reference>
-      <name value="Melder"/>
-      <description value="Meldende/anfragende ÄrztIn"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MelderInOrganisation"/>
-      </reference>
-      <name value="Melder in Organisation"/>
-      <description value="Zuordnung des Melders zu einer Organisation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
-      </extension>
-      <reference>
-        <reference value="Practitioner/Melder-example-1"/>
-      </reference>
-      <name value="Melder-example-1"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="PractitionerRole"/>
-      </extension>
-      <reference>
-        <reference value="PractitionerRole/MelderInOrganisation-example-1"/>
-      </reference>
-      <name value="MelderInOrganisation-example-1"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/MinimalObservation"/>
       </reference>
       <name value="MinimalObservation"/>
       <description value="MinimalObservation zur Festlegung gemeinsamer fixen Werten"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/icd-o-3-morphologie"/>
-      </reference>
-      <name value="Morphologie Codes des ICD-O-3 CodeSystems."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/multiple-primaer-tumoren-cs"/>
-      </reference>
-      <name value="Multiple PrimärTumoren CodeSystem"/>
-      <description value="MultiplePrimärTumorenCS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/multiple-primaer-tumoren-vs"/>
-      </reference>
-      <name value="Multiple PrimärTumoren ValueSet"/>
-      <description value="MultiplePrimärTumorenVS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/nebenwirkung"/>
-      </reference>
-      <name value="Nebenwirkung"/>
-      <description value="Nebenwirkung Strahlentherapie und systemische Therapie nach CTCAE"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/obds-op-komplikation-cs"/>
-      </reference>
-      <name value="oBDS Operation Komplikation Codesystem"/>
-      <description value="Komplikation gemäß Vorgabe oBDS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/obds-op-komplikation-vs"/>
-      </reference>
-      <name value="oBDS Operation Komplikation Value Set"/>
-      <description value="Komplikation gemäß Vorgabe oBDS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ResidualstatusCS"/>
-      </reference>
-      <name value="Onkologie Residualstatus CS"/>
-      <description value="oBDS-spezifisches Codesystem für R-Klassifikation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/operation"/>
-      </reference>
-      <name value="Operation"/>
-      <description value="Operation (chirurgischer Eingriff) in ihrer Gesamtheit."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/operation-einzelprozedur"/>
-      </reference>
-      <name value="Operation Einzelprozedur"/>
-      <description value="Einzelprozedur als Teil einer Operation. Typischerweise mittels OPS dokumentiert."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/OperationEinzelprozedurExample"/>
-      </reference>
-      <name value="OperationEinzelprozedurExample"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation-einzelprozedur"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Procedure"/>
-      </extension>
-      <reference>
-        <reference value="Procedure/OperationExample"/>
-      </reference>
-      <name value="OperationExample"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1348,49 +878,6 @@
       </reference>
       <name value="OperativeTherapieFreitext"/>
       <description value="OperativeTherapieFreitext"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Organisation"/>
-      </reference>
-      <name value="Organisation"/>
-      <description value="Organisation (Krankenhaus, Praxis)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/Organisation-example-1"/>
-      </reference>
-      <name value="Organisation-example-1"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/perineurale-invasion-cs"/>
-      </reference>
-      <name value="Perineurale Invasion CodeSystem"/>
-      <description value="PerineuraleInvasionCS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/perineurale-invasion-vs"/>
-      </reference>
-      <name value="Perineurale Invasion ValueSet"/>
-      <description value="PerineuraleInvasionVS"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1461,28 +948,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/SerumTumorMarkerUICCCS"/>
-      </reference>
-      <name value="SerumTumorMarkerUICCCS"/>
-      <description value="SerumTumorMarkerUICCCS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/SerumTumorMarkerUICCVS"/>
-      </reference>
-      <name value="SerumTumorMarkerUICCVS"/>
-      <description value="SerumTumorMarkerUICCVS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1490,50 +955,6 @@
       </reference>
       <name value="Skelettszintigraphie"/>
       <description value="Profil zur Dokumentation des Skelettszintigraphie Befunds."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/status-primaertumor"/>
-      </reference>
-      <name value="Status Primärtumor"/>
-      <description value="Beurteilung des Primärtumor-Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/status-fernmetastasen"/>
-      </reference>
-      <name value="StatusFernmetastasen"/>
-      <description value="Beurteilung des Fernmetastasen-Status"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/strahlentherapie"/>
-      </reference>
-      <name value="Strahlentherapie"/>
-      <description value="Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in ihrer Gesamtheit."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/strahlentherapie-details"/>
-      </reference>
-      <name value="StrahlentherapieDetails"/>
-      <description value="Detailinformationen zur Strahlentherapie."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1552,360 +973,11 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/systemische-therapie"/>
-      </reference>
-      <name value="SystemischeTherapie"/>
-      <description value="Systemische Therapie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/systemische-therapie-details"/>
-      </reference>
-      <name value="SystemischeTherapieDetails"/>
-      <description value="Detailinformationen zur systemischen Therapie."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tnm-distant-metastases-category"/>
-      </reference>
-      <name value="TNM Distant Metastases Category Profile"/>
-      <description value="Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-distant-metastases-category-vs"/>
-      </reference>
-      <name value="TNM Distant Metastases Category Value Set"/>
-      <description value="Result values for M category. This value set contains SNOMED-CT equivalents of UICC codes for the M category, according to TNM staging rules."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-distant-metastases-category-max-vs"/>
-      </reference>
-      <name value="TNM Distant Metastases Maximum Value Set"/>
-      <description value="Values for TNM distant metastases category must be selected from this value set, which includes all codes from UICC and all codes from TNMDistantMetastasesCategoryVS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-distant-metastases-staging-type-vs"/>
-      </reference>
-      <name value="TNM Distant Metastases Staging Type Value Set"/>
-      <description value="Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for distant metastases (M) staging observation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tnm-primary-tumor-category"/>
-      </reference>
-      <name value="TNM Primary Tumor Category Profile"/>
-      <description value="Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-primary-tumor-category-vs"/>
-      </reference>
-      <name value="TNM Primary Tumor Category Value Set"/>
-      <description value="Result values for T category. This value set contains SNOMED-CT equivalents of UICC codes for the T category, according to TNM staging rules."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-primary-tumor-category-max-vs"/>
-      </reference>
-      <name value="TNM Primary Tumor Maximum Value Set"/>
-      <description value="Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-primary-tumor-staging-type-vs"/>
-      </reference>
-      <name value="TNM Primary Tumor Staging Type Value Set"/>
-      <description value="Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for primary tumor (T) staging observation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tnm-regional-nodes-category"/>
-      </reference>
-      <name value="TNM Regional Nodes Category Profile"/>
-      <description value="Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-regional-nodes-category-vs"/>
-      </reference>
-      <name value="TNM Regional Nodes Category Value Set"/>
-      <description value="Result values for N category. This value set contains SNOMED-CT equivalents of UICC codes for the N category, according to TNM staging rules."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-regional-nodes-category-max-vs"/>
-      </reference>
-      <name value="TNM Regional Nodes Maximum Value Set"/>
-      <description value="Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-regional-nodes-staging-type-vs"/>
-      </reference>
-      <name value="TNM Regional Nodes Staging Type Value Set"/>
-      <description value="Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for regional nodes (N) staging observation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-stage-group-max-vs"/>
-      </reference>
-      <name value="TNM Stage Group Maximum Value Set"/>
-      <description value="Values for TNM stage group must be selected from this value set, which includes all codes from UICC and all codes from TNMStageGroupVS."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tnm-stage-group"/>
-      </reference>
-      <name value="TNM Stage Group Profile"/>
-      <description value="The extent of cancer represented by the stage group, based on a TNM staging system."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-stage-group-staging-type-vs"/>
-      </reference>
-      <name value="TNM Stage Group Staging Type Value Set"/>
-      <description value="Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for the stage group observation."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-stage-group-vs"/>
-      </reference>
-      <name value="TNM Stage Group Value Set"/>
-      <description value="Result values for cancer stage group using TNM staging. This value set contains SNOMED-CT equivalents of UICC codes for Stage Group, according to TNM staging rules."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/tnm-staging-method-vs"/>
-      </reference>
-      <name value="TNM Staging Method Value Set"/>
-      <description value="Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/tnm-clinical-distant-metastases-category-cM0"/>
-      </reference>
-      <name value="tnm-clinical-distant-metastases-category-cM0"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/tnm-clinical-primary-tumor-category-cT3"/>
-      </reference>
-      <name value="tnm-clinical-primary-tumor-category-cT3"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/tnm-clinical-regional-nodes-category-cN3"/>
-      </reference>
-      <name value="tnm-clinical-regional-nodes-category-cN3"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMASymbol"/>
-      </reference>
-      <name value="TNMASymbol"/>
-      <description value="TNMASymbol"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/TNMFreitext"/>
       </reference>
       <name value="TNMFreitext"/>
       <description value="TNMFreitext"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMLKategorie"/>
-      </reference>
-      <name value="TNMLKategorie"/>
-      <description value="TNMLKategorie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMmSymbol"/>
-      </reference>
-      <name value="TNMmSymbol"/>
-      <description value="TNMmSymbol"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMPnKategorie"/>
-      </reference>
-      <name value="TNMPnKategorie"/>
-      <description value="TNMPnKategorie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMRSymbol"/>
-      </reference>
-      <name value="TNMRSymbol"/>
-      <description value="TNMRSymbol"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMSKategorie"/>
-      </reference>
-      <name value="TNMSKategorie"/>
-      <description value="TNMSKategorie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMVKategorie"/>
-      </reference>
-      <name value="TNMVKategorie"/>
-      <description value="TNMVKategorie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/TNMYSymbol"/>
-      </reference>
-      <name value="TNMYSymbol"/>
-      <description value="TNMYSymbol"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumor"/>
-      </reference>
-      <name value="Tumor"/>
-      <description value="Tumor"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Specimen"/>
-      </extension>
-      <reference>
-        <reference value="Specimen/Tumor-Example"/>
-      </reference>
-      <name value="Tumor-Example"/>
-      <description value="Tumor-Example"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1934,17 +1006,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/TumorDiagnose"/>
-      </reference>
-      <name value="Tumordiagnose"/>
-      <description value="Diagnoseinformationen (Primärtumor, frühere Tumore)"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/tumorErkrankung"/>
       </reference>
       <name value="Tumorerkrankung"/>
@@ -1961,83 +1022,6 @@
       <name value="TumorErkrankungExample"/>
       <description value="Ein Beispiel für die Episode einer Tumorerkrankung."/>
       <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorErkrankung"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumorkonferenz"/>
-      </reference>
-      <name value="Tumorkonferenz"/>
-      <description value="Dieses Profil repräsentiert die Tumorkonferenz zu einem Patienten. Fragestellungen und Informationen, die speziell im Kontext der Tumorkonferenz erstellt werden, referenzieren auf eine entsprechende Tumorkonferenz-Instanz."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumorkonferenz-bemerkung"/>
-      </reference>
-      <name value="TumorkonferenzBemerkung"/>
-      <description value="Tumorkonferenz: Bemerkung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumorkonferenz-fragestellung"/>
-      </reference>
-      <name value="TumorkonferenzFragestellung"/>
-      <description value="Tumorkonferenz: Fragestellung"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumorkonferenz-fragestellung-radiologie"/>
-      </reference>
-      <name value="TumorkonferenzFragestellungRadiologie"/>
-      <description value="Tumorkonferenz: Fragestellung an die Radiologie"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumorkonferenz-situation"/>
-      </reference>
-      <name value="TumorkonferenzSituation"/>
-      <description value="Tumorkonferenz: Beschreibung der aktuelle Situation"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumorkonferenz-termin"/>
-      </reference>
-      <name value="TumorkonferenzTermin"/>
-      <description value="Termin für die Tumorkonferenz."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumorkonferenz-therapie-verlauf"/>
-      </reference>
-      <name value="TumorkonferenzTherapieVerlauf"/>
-      <description value="Tumorkonferenz: Beschreibung von Therapie und Verlauf"/>
-      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2084,46 +1068,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/veneninvasion-cs"/>
+        <reference value="Observation/UntersuchteLymphknotenExample"/>
       </reference>
-      <name value="Veneninvasion CodeSystem"/>
-      <description value="VeneninvasionCS"/>
-      <exampleBoolean value="false"/>
+      <name value="UntersuchteLymphknotenExample"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="ValueSet/veneninvasion-vs"/>
+        <reference value="Observation/UntersuchteSentinelLymphknotenExample"/>
       </reference>
-      <name value="Veneninvasion ValueSet"/>
-      <description value="VeneninvasionVS"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/verlauf"/>
-      </reference>
-      <name value="Verlauf"/>
-      <description value="Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
-      </extension>
-      <reference>
-        <reference value="Encounter/VerlaufExample"/>
-      </reference>
-      <name value="VerlaufExample"/>
-      <exampleCanonical value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf"/>
+      <name value="UntersuchteSentinelLymphknotenExample"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2134,17 +1095,6 @@
       </reference>
       <name value="VerlaufFreitext"/>
       <description value="Freitext für die Beschreibung des Verlaufs"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/watchful-waiting"/>
-      </reference>
-      <name value="WatchfulWaiting"/>
-      <description value="Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

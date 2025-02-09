@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
@@ -44,6 +45,7 @@
     h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 
 
@@ -133,16 +135,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#4">Terminology: Code Systems</a>
-      </li>
-      <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#4">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -185,29 +184,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-befund-dokument.html"
-                  title="StructureDefinition/befund-dokument">BefundDokument</a>
-            </td>
-            <td>
-<p>Metadaten zu einem Befunddokument bzw. Bildbefund.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-bemerkung-freitext.html"
                   title="StructureDefinition/bemerkung-freitext">BemerkungFreitext</a>
             </td>
             <td>
 <p>Freitext für allgemeine Bemerkungen</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-status-lymphknoten.html"
-                  title="StructureDefinition/status-lymphknoten">Beurteilung Primärtumor</a>
-            </td>
-            <td>
-<p>Beurteilung des Lymphknoten-Status</p>
 </td>
          </tr>
          <tr>
@@ -226,15 +207,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profil zur Dokumentation des CT/MRT Schädel-Befunds.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-cancer-stage-group.html"
-                  title="StructureDefinition/cancer-stage-group">Cancer Stage Group Profile</a>
-            </td>
-            <td>
-<p>An assessment of the extent of the cancer in the body, according to a given cancer staging classification system. This profile can be used with any staging system, but it is specifically targeted for non-TNM staging systems, since specialized TNM staging profiles are provided.</p>
 </td>
          </tr>
          <tr>
@@ -270,15 +242,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>Profil zur Dokumentation externer Bilder mit Antwortoptionen.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-familienanamnese.html"
-                  title="StructureDefinition/familienanamnese">Familienanamnese</a>
-            </td>
-            <td>
-<p>Familienanamnese</p>
 </td>
          </tr>
          <tr>
@@ -337,47 +300,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-gesamtbeurteilung.html"
-                  title="StructureDefinition/gesamtbeurteilung">Gesamtbeurteilung</a>
-            </td>
-            <td>
-<p>Gesamtbeurteilung des Tumorgeschehens</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-gewuenschte-teilnehmer.html"
                   title="StructureDefinition/gewuenschte-teilnehmer">Gewünschte Teilnehmer</a>
             </td>
             <td>
 <p>Profil zur Dokumentation der gewünschten Teilnehmer für ein medizinisches Treffen oder Konsil.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-grading.html"
-                  title="StructureDefinition/grading">Grading</a>
-            </td>
-            <td>
-<p>Gibt den Differenzierungsgrad des Tumors entsprechend der aktuellen TNM-Auflage an.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-histologie.html"
-                  title="StructureDefinition/histologie">Histologie</a>
-            </td>
-            <td>
-<p>Histologie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-HistologieLymphknoten.html"
-                  title="StructureDefinition/HistologieLymphknoten">HistologieLymphknoten</a>
-            </td>
-            <td>
-<p>HistologieLymphknoten</p>
 </td>
          </tr>
          <tr>
@@ -418,24 +345,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Melder.html"
-                  title="StructureDefinition/Melder">Melder</a>
-            </td>
-            <td>
-<p>Meldende/anfragende ÄrztIn</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-MelderInOrganisation.html"
-                  title="StructureDefinition/MelderInOrganisation">Melder in Organisation</a>
-            </td>
-            <td>
-<p>Zuordnung des Melders zu einer Organisation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-MinimalObservation.html"
                   title="StructureDefinition/MinimalObservation">MinimalObservation</a>
             </td>
@@ -445,47 +354,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-nebenwirkung.html"
-                  title="StructureDefinition/nebenwirkung">Nebenwirkung</a>
-            </td>
-            <td>
-<p>Nebenwirkung Strahlentherapie und systemische Therapie nach CTCAE</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-operation.html"
-                  title="StructureDefinition/operation">Operation</a>
-            </td>
-            <td>
-<p>Operation (chirurgischer Eingriff) in ihrer Gesamtheit.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-operation-einzelprozedur.html"
-                  title="StructureDefinition/operation-einzelprozedur">Operation Einzelprozedur</a>
-            </td>
-            <td>
-<p>Einzelprozedur als Teil einer Operation. Typischerweise mittels OPS dokumentiert.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-OperativeTherapieFreitext.html"
                   title="StructureDefinition/OperativeTherapieFreitext">OperativeTherapieFreitext</a>
             </td>
             <td>
 <p>OperativeTherapieFreitext</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Organisation.html"
-                  title="StructureDefinition/Organisation">Organisation</a>
-            </td>
-            <td>
-<p>Organisation (Krankenhaus, Praxis)</p>
 </td>
          </tr>
          <tr>
@@ -544,24 +417,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-status-primaertumor.html"
-                  title="StructureDefinition/status-primaertumor">Status Primärtumor</a>
-            </td>
-            <td>
-<p>Beurteilung des Primärtumor-Status</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-status-fernmetastasen.html"
-                  title="StructureDefinition/status-fernmetastasen">StatusFernmetastasen</a>
-            </td>
-            <td>
-<p>Beurteilung des Fernmetastasen-Status</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-StrahlenTherapieFreitext.html"
                   title="StructureDefinition/StrahlenTherapieFreitext">StrahlenTherapieFreitext</a>
             </td>
@@ -571,145 +426,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-strahlentherapie.html"
-                  title="StructureDefinition/strahlentherapie">Strahlentherapie</a>
-            </td>
-            <td>
-<p>Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in ihrer Gesamtheit.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-systemische-therapie.html"
-                  title="StructureDefinition/systemische-therapie">SystemischeTherapie</a>
-            </td>
-            <td>
-<p>Systemische Therapie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tnm-distant-metastases-category.html"
-                  title="StructureDefinition/tnm-distant-metastases-category">TNM Distant Metastases Category Profile</a>
-            </td>
-            <td>
-<p>Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tnm-primary-tumor-category.html"
-                  title="StructureDefinition/tnm-primary-tumor-category">TNM Primary Tumor Category Profile</a>
-            </td>
-            <td>
-<p>Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tnm-regional-nodes-category.html"
-                  title="StructureDefinition/tnm-regional-nodes-category">TNM Regional Nodes Category Profile</a>
-            </td>
-            <td>
-<p>Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tnm-stage-group.html"
-                  title="StructureDefinition/tnm-stage-group">TNM Stage Group Profile</a>
-            </td>
-            <td>
-<p>The extent of cancer represented by the stage group, based on a TNM staging system.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMASymbol.html"
-                  title="StructureDefinition/TNMASymbol">TNMASymbol</a>
-            </td>
-            <td>
-<p>TNMASymbol</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-TNMFreitext.html"
                   title="StructureDefinition/TNMFreitext">TNMFreitext</a>
             </td>
             <td>
 <p>TNMFreitext</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMLKategorie.html"
-                  title="StructureDefinition/TNMLKategorie">TNMLKategorie</a>
-            </td>
-            <td>
-<p>TNMLKategorie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMPnKategorie.html"
-                  title="StructureDefinition/TNMPnKategorie">TNMPnKategorie</a>
-            </td>
-            <td>
-<p>TNMPnKategorie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMRSymbol.html"
-                  title="StructureDefinition/TNMRSymbol">TNMRSymbol</a>
-            </td>
-            <td>
-<p>TNMRSymbol</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMSKategorie.html"
-                  title="StructureDefinition/TNMSKategorie">TNMSKategorie</a>
-            </td>
-            <td>
-<p>TNMSKategorie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMVKategorie.html"
-                  title="StructureDefinition/TNMVKategorie">TNMVKategorie</a>
-            </td>
-            <td>
-<p>TNMVKategorie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMYSymbol.html"
-                  title="StructureDefinition/TNMYSymbol">TNMYSymbol</a>
-            </td>
-            <td>
-<p>TNMYSymbol</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-TNMmSymbol.html"
-                  title="StructureDefinition/TNMmSymbol">TNMmSymbol</a>
-            </td>
-            <td>
-<p>TNMmSymbol</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumor.html" title="StructureDefinition/tumor">Tumor</a>
-            </td>
-            <td>
-<p>Tumor</p>
 </td>
          </tr>
          <tr>
@@ -732,83 +453,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-TumorDiagnose.html"
-                  title="StructureDefinition/TumorDiagnose">Tumordiagnose</a>
-            </td>
-            <td>
-<p>Diagnoseinformationen (Primärtumor, frühere Tumore)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-tumorErkrankung.html"
                   title="StructureDefinition/tumorErkrankung">Tumorerkrankung</a>
             </td>
             <td>
 <p>Tumorerkrankung/Fall, dient als Klammer der Krebserkrankung</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumorkonferenz.html"
-                  title="StructureDefinition/tumorkonferenz">Tumorkonferenz</a>
-            </td>
-            <td>
-<p>Dieses Profil repräsentiert die Tumorkonferenz zu einem Patienten. Fragestellungen und Informationen, die speziell im Kontext der Tumorkonferenz erstellt werden, referenzieren auf eine entsprechende Tumorkonferenz-Instanz.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumorkonferenz-bemerkung.html"
-                  title="StructureDefinition/tumorkonferenz-bemerkung">TumorkonferenzBemerkung</a>
-            </td>
-            <td>
-<p>Tumorkonferenz: Bemerkung</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumorkonferenz-fragestellung.html"
-                  title="StructureDefinition/tumorkonferenz-fragestellung">TumorkonferenzFragestellung</a>
-            </td>
-            <td>
-<p>Tumorkonferenz: Fragestellung</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumorkonferenz-fragestellung-radiologie.html"
-                  title="StructureDefinition/tumorkonferenz-fragestellung-radiologie">TumorkonferenzFragestellungRadiologie</a>
-            </td>
-            <td>
-<p>Tumorkonferenz: Fragestellung an die Radiologie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumorkonferenz-situation.html"
-                  title="StructureDefinition/tumorkonferenz-situation">TumorkonferenzSituation</a>
-            </td>
-            <td>
-<p>Tumorkonferenz: Beschreibung der aktuelle Situation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumorkonferenz-termin.html"
-                  title="StructureDefinition/tumorkonferenz-termin">TumorkonferenzTermin</a>
-            </td>
-            <td>
-<p>Termin für die Tumorkonferenz.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-tumorkonferenz-therapie-verlauf.html"
-                  title="StructureDefinition/tumorkonferenz-therapie-verlauf">TumorkonferenzTherapieVerlauf</a>
-            </td>
-            <td>
-<p>Tumorkonferenz: Beschreibung von Therapie und Verlauf</p>
 </td>
          </tr>
          <tr>
@@ -822,29 +471,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-verlauf.html"
-                  title="StructureDefinition/verlauf">Verlauf</a>
-            </td>
-            <td>
-<p>Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-verlauf-freitext.html"
                   title="StructureDefinition/verlauf-freitext">VerlaufFreitext</a>
             </td>
             <td>
 <p>Freitext für die Beschreibung des Verlaufs</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-watchful-waiting.html"
-                  title="StructureDefinition/watchful-waiting">WatchfulWaiting</a>
-            </td>
-            <td>
-<p>Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)</p>
 </td>
          </tr>
          <tr>
@@ -859,32 +490,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="2"> </a>
-   <h3>Structures: Extension Definitions </h3>
-    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
-<table class="grid">
-      <col style="width:20%"/>
-      <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-strahlentherapie-details.html"
-                  title="StructureDefinition/strahlentherapie-details">StrahlentherapieDetails</a>
-            </td>
-            <td>
-<p>Detailinformationen zur Strahlentherapie.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-systemische-therapie-details.html"
-                  title="StructureDefinition/systemische-therapie-details">SystemischeTherapieDetails</a>
-            </td>
-            <td>
-<p>Detailinformationen zur systemischen Therapie.</p>
-</td>
-         </tr>
-      </tbody>
-   </table>
-   <a name="3"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -896,33 +501,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 <p>ValueSet für die CT/MRT Befund mit den Antwortoptionen: auffällig, unauffällig, liegt nicht vor, unbekannt.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-cancer-stage-group-vs.html"
-                  title="ValueSet/cancer-stage-group-vs">Cancer Stage Group Value Set</a>
-            </td>
-            <td>
-<p>The result of cancer staging, i.e., the stage or category of the cancer.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-cancer-staging-method-vs.html"
-                  title="ValueSet/cancer-staging-method-vs">Cancer Staging Method Value Set</a>
-            </td>
-            <td>
-<p>System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-cancer-staging-type-vs.html"
-                  title="ValueSet/cancer-staging-type-vs">Cancer Staging Type Value Set</a>
-            </td>
-            <td>
-<p>Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables.</p>
 </td>
          </tr>
          <tr>
@@ -954,28 +532,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-ResidualstatusGesamtbeurteilungVS.html"
-                  title="ValueSet/ResidualstatusGesamtbeurteilungVS">Gesamtbeurteilung des Residualstatus</a>
-            </td>
-            <td>
-<p>Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-gewuenschte-teilnehmer-vs.html"
                   title="ValueSet/gewuenschte-teilnehmer-vs">Gewünschte Teilnehmer ValueSet</a>
             </td>
             <td>
 <p>ValueSet mit den Antwortoptionen für gewünschte Teilnehmer in einem medizinischen Kontext.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-HistoGradeVS.html" title="ValueSet/HistoGradeVS">HistoGradeVS</a>
-            </td>
-            <td>
-<p>HistoGradeVS</p>
 </td>
          </tr>
          <tr>
@@ -989,64 +550,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-obds-strahlentherapie-intention-vs.html"
-                  title="ValueSet/obds-strahlentherapie-intention-vs">Intention der Strahlentherapie</a>
-            </td>
-            <td>
-<p>Die Intention der Strahlentherapie</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-ja-nein-beratung-vs.html"
                   title="ValueSet/ja-nein-beratung-vs">Ja, Nein, Beratung schon erfolgt ValueSet</a>
             </td>
             <td>
 <p>Ein ValueSet mit den Codes für Ja, Nein und Beratung schon erfolgt.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-krebsstadium-vs.html" title="ValueSet/krebsstadium-vs">Krebsstadium ValueSet</a>
-            </td>
-            <td>
-<p>KrebsstadiumVS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-Lymphgefaessinvasion-vs.html"
-                  title="ValueSet/Lymphgefaessinvasion-vs">Lymphgefäßinvasion ValueSet</a>
-            </td>
-            <td>
-<p>LymphgefäßinvasionVS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-icd-o-3-morphologie.html"
-                  title="ValueSet/icd-o-3-morphologie">Morphologie Codes des ICD-O-3 CodeSystems.</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-multiple-primaer-tumoren-vs.html"
-                  title="ValueSet/multiple-primaer-tumoren-vs">Multiple PrimärTumoren ValueSet</a>
-            </td>
-            <td>
-<p>MultiplePrimärTumorenVS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-perineurale-invasion-vs.html"
-                  title="ValueSet/perineurale-invasion-vs">Perineurale Invasion ValueSet</a>
-            </td>
-            <td>
-<p>PerineuraleInvasionVS</p>
 </td>
          </tr>
          <tr>
@@ -1059,132 +567,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-SerumTumorMarkerUICCVS.html"
-                  title="ValueSet/SerumTumorMarkerUICCVS">SerumTumorMarkerUICCVS</a>
-            </td>
-            <td>
-<p>SerumTumorMarkerUICCVS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-distant-metastases-category-vs.html"
-                  title="ValueSet/tnm-distant-metastases-category-vs">TNM Distant Metastases Category Value Set</a>
-            </td>
-            <td>
-<p>Result values for M category. This value set contains SNOMED-CT equivalents of UICC codes for the M category, according to TNM staging rules.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-distant-metastases-category-max-vs.html"
-                  title="ValueSet/tnm-distant-metastases-category-max-vs">TNM Distant Metastases Maximum Value Set</a>
-            </td>
-            <td>
-<p>Values for TNM distant metastases category must be selected from this value set, which includes all codes from UICC and all codes from TNMDistantMetastasesCategoryVS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-distant-metastases-staging-type-vs.html"
-                  title="ValueSet/tnm-distant-metastases-staging-type-vs">TNM Distant Metastases Staging Type Value Set</a>
-            </td>
-            <td>
-<p>Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for distant metastases (M) staging observation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-primary-tumor-category-vs.html"
-                  title="ValueSet/tnm-primary-tumor-category-vs">TNM Primary Tumor Category Value Set</a>
-            </td>
-            <td>
-<p>Result values for T category. This value set contains SNOMED-CT equivalents of UICC codes for the T category, according to TNM staging rules.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-primary-tumor-category-max-vs.html"
-                  title="ValueSet/tnm-primary-tumor-category-max-vs">TNM Primary Tumor Maximum Value Set</a>
-            </td>
-            <td>
-<p>Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-primary-tumor-staging-type-vs.html"
-                  title="ValueSet/tnm-primary-tumor-staging-type-vs">TNM Primary Tumor Staging Type Value Set</a>
-            </td>
-            <td>
-<p>Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for primary tumor (T) staging observation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-regional-nodes-category-vs.html"
-                  title="ValueSet/tnm-regional-nodes-category-vs">TNM Regional Nodes Category Value Set</a>
-            </td>
-            <td>
-<p>Result values for N category. This value set contains SNOMED-CT equivalents of UICC codes for the N category, according to TNM staging rules.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-regional-nodes-category-max-vs.html"
-                  title="ValueSet/tnm-regional-nodes-category-max-vs">TNM Regional Nodes Maximum Value Set</a>
-            </td>
-            <td>
-<p>Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-regional-nodes-staging-type-vs.html"
-                  title="ValueSet/tnm-regional-nodes-staging-type-vs">TNM Regional Nodes Staging Type Value Set</a>
-            </td>
-            <td>
-<p>Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for regional nodes (N) staging observation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-stage-group-max-vs.html"
-                  title="ValueSet/tnm-stage-group-max-vs">TNM Stage Group Maximum Value Set</a>
-            </td>
-            <td>
-<p>Values for TNM stage group must be selected from this value set, which includes all codes from UICC and all codes from TNMStageGroupVS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-stage-group-staging-type-vs.html"
-                  title="ValueSet/tnm-stage-group-staging-type-vs">TNM Stage Group Staging Type Value Set</a>
-            </td>
-            <td>
-<p>Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for the stage group observation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-stage-group-vs.html"
-                  title="ValueSet/tnm-stage-group-vs">TNM Stage Group Value Set</a>
-            </td>
-            <td>
-<p>Result values for cancer stage group using TNM staging. This value set contains SNOMED-CT equivalents of UICC codes for Stage Group, according to TNM staging rules.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-tnm-staging-method-vs.html"
-                  title="ValueSet/tnm-staging-method-vs">TNM Staging Method Value Set</a>
-            </td>
-            <td>
-<p>Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-tumorsituation-vs.html"
                   title="ValueSet/tumorsituation-vs">Tumorsituation ValueSet</a>
             </td>
@@ -1192,102 +574,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>ValueSet für die Tumorsituation mit den Codes ED, LR, M, TV, S.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-veneninvasion-vs.html" title="ValueSet/veneninvasion-vs">Veneninvasion ValueSet</a>
-            </td>
-            <td>
-<p>VeneninvasionVS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-obds-op-komplikation-vs.html"
-                  title="ValueSet/obds-op-komplikation-vs">oBDS Operation Komplikation Value Set</a>
-            </td>
-            <td>
-<p>Komplikation gemäß Vorgabe oBDS.</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Code Systems </h3>
     <p>These define new code systems used by systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-HistoGradeCS.html" title="CodeSystem/HistoGradeCS">Histopathologische Grading Codes oBDS</a>
-            </td>
-            <td>
-<p>oBDS Grading Codes</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-obds-strahlentherapie-intention-cs.html"
-                  title="CodeSystem/obds-strahlentherapie-intention-cs">Intention der Strahlentherapie</a>
-            </td>
-            <td>
-<p>Die histopathologische Einstufung des invasiven Karzinoms</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-krebsstadium-cs.html"
-                  title="CodeSystem/krebsstadium-cs">Krebsstadium CodeSystem</a>
-            </td>
-            <td>
-<p>KrebsstadiumCS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-Lymphgefaessinvasion-cs.html"
-                  title="CodeSystem/Lymphgefaessinvasion-cs">Lymphgefäßinvasion CodeSystem</a>
-            </td>
-            <td>
-<p>LymphgefäßinvasionCS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-multiple-primaer-tumoren-cs.html"
-                  title="CodeSystem/multiple-primaer-tumoren-cs">Multiple PrimärTumoren CodeSystem</a>
-            </td>
-            <td>
-<p>MultiplePrimärTumorenCS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-ResidualstatusCS.html"
-                  title="CodeSystem/ResidualstatusCS">Onkologie Residualstatus CS</a>
-            </td>
-            <td>
-<p>oBDS-spezifisches Codesystem für R-Klassifikation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-perineurale-invasion-cs.html"
-                  title="CodeSystem/perineurale-invasion-cs">Perineurale Invasion CodeSystem</a>
-            </td>
-            <td>
-<p>PerineuraleInvasionCS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-SerumTumorMarkerUICCCS.html"
-                  title="CodeSystem/SerumTumorMarkerUICCCS">SerumTumorMarkerUICCCS</a>
-            </td>
-            <td>
-<p>SerumTumorMarkerUICCCS</p>
-</td>
-         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="CodeSystem-tumorsituation-cs.html"
@@ -1297,32 +591,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>Codesystem für die Tumorsituation mit den Codes ED, LR, M, TV, S.</p>
 </td>
          </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-veneninvasion-cs.html"
-                  title="CodeSystem/veneninvasion-cs">Veneninvasion CodeSystem</a>
-            </td>
-            <td>
-<p>VeneninvasionCS</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-obds-op-komplikation-cs.html"
-                  title="CodeSystem/obds-op-komplikation-cs">oBDS Operation Komplikation Codesystem</a>
-            </td>
-            <td>
-<p>Komplikation gemäß Vorgabe oBDS.</p>
-</td>
-         </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="4"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-AllgemeinerLeistungszustandKarnofskyExample.html"
+                  title="Observation/AllgemeinerLeistungszustandKarnofskyExample">AllgemeinerLeistungszustandKarnofskyExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html"
@@ -1343,109 +628,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Observation-BefalleneLymphknotenExample.html"
+                  title="Observation/BefalleneLymphknotenExample">BefalleneLymphknotenExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-BefalleneSentinelLymphknotenExample.html"
+                  title="Observation/BefalleneSentinelLymphknotenExample">BefalleneSentinelLymphknotenExample</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Condition-ICD10GM-DiagnoseExample.html"
+                  title="Condition/ICD10GM-DiagnoseExample">Beispiel einer ICD-10-GM-Diagnose</a>
+            </td>
+            <td>
+<p>Beispiel einer ICD-10-GM-Diagnose</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-AnmelderExample.html"
+                  title="Practitioner/AnmelderExample">Beispiel eines Anmelders</a>
+            </td>
+            <td>
+<p>Person, die den Patienten anmeldet</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Observation-ECOGExample.html" title="Observation/ECOGExample">ECOGExample</a>
             </td>
             <td>
 <p>Beispielinstanz einer Observation welche einen ECOG Wert enthält.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMStageGroupClinicalExample.html"
-                  title="Observation/TNMStageGroupClinicalExample">Example TNM Stage Group Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMStageGroup profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMASymbolExample.html"
-                  title="Observation/TNMASymbolExample">Example TNMASymbol Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMASymbol profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMLKategorieExample.html"
-                  title="Observation/TNMLKategorieExample">Example TNMLKategorie Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMLKategorie profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMPnKategorieExample.html"
-                  title="Observation/TNMPnKategorieExample">Example TNMPnKategorie Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMPnKategorie profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMRSymbolExample.html"
-                  title="Observation/TNMRSymbolExample">Example TNMRSymbol Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMRSymbol profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMSKategorieExample.html"
-                  title="Observation/TNMSKategorieExample">Example TNMSKategorie Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMSKategorie profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMVKategorieExample.html"
-                  title="Observation/TNMVKategorieExample">Example TNMVKategorie Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMVKategorie profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMYSymbolExample.html"
-                  title="Observation/TNMYSymbolExample">Example TNMYSymbol Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMYSymbol profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TNMmSymbolExample.html"
-                  title="Observation/TNMmSymbolExample">Example TNMmSymbol Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TNMmSymbol profile.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Condition-ExampleTumorDiagnose.html"
-                  title="Condition/ExampleTumorDiagnose">Example Tumordiagnose</a>
-            </td>
-            <td>
-<p>Example instance of a Tumordiagnose resource</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-TumorkonferenzFragestellungExample.html"
-                  title="Observation/TumorkonferenzFragestellungExample">Example TumorkonferenzFragestellung Observation</a>
-            </td>
-            <td>
-<p>An example of an Observation conforming to the TumorkonferenzFragestellung profile.</p>
 </td>
          </tr>
          <tr>
@@ -1455,77 +677,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </td>
             <td>
 
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-Histologie-Example.html"
-                  title="Observation/Histologie-Example">HistologieExample</a>
-            </td>
-            <td>
-<p>HistologieExample</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-HistologieLymphknotenExample.html"
-                  title="Observation/HistologieLymphknotenExample">HistologieLymphknotenExample</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-Melder-example-1.html"
-                  title="Practitioner/Melder-example-1">Melder-example-1</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-MelderInOrganisation-example-1.html"
-                  title="PractitionerRole/MelderInOrganisation-example-1">MelderInOrganisation-example-1</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Procedure-OperationEinzelprozedurExample.html"
-                  title="Procedure/OperationEinzelprozedurExample">OperationEinzelprozedurExample</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Procedure-OperationExample.html"
-                  title="Procedure/OperationExample">OperationExample</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-Organisation-example-1.html"
-                  title="Organization/Organisation-example-1">Organisation-example-1</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Specimen-Tumor-Example.html" title="Specimen/Tumor-Example">Tumor-Example</a>
-            </td>
-            <td>
-<p>Tumor-Example</p>
 </td>
          </tr>
          <tr>
@@ -1548,7 +699,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Encounter-VerlaufExample.html" title="Encounter/VerlaufExample">VerlaufExample</a>
+               <a href="Observation-UntersuchteLymphknotenExample.html"
+                  title="Observation/UntersuchteLymphknotenExample">UntersuchteLymphknotenExample</a>
             </td>
             <td>
 
@@ -1556,26 +708,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Observation-tnm-clinical-distant-metastases-category-cM0.html"
-                  title="Observation/tnm-clinical-distant-metastases-category-cM0">tnm-clinical-distant-metastases-category-cM0</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-tnm-clinical-primary-tumor-category-cT3.html"
-                  title="Observation/tnm-clinical-primary-tumor-category-cT3">tnm-clinical-primary-tumor-category-cT3</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Observation-tnm-clinical-regional-nodes-category-cN3.html"
-                  title="Observation/tnm-clinical-regional-nodes-category-cN3">tnm-clinical-regional-nodes-category-cN3</a>
+               <a href="Observation-UntersuchteSentinelLymphknotenExample.html"
+                  title="Observation/UntersuchteSentinelLymphknotenExample">UntersuchteSentinelLymphknotenExample</a>
             </td>
             <td>
 
@@ -1601,7 +735,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 2, 2024 15:35+0000">2024-12-02</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.idg-rlp.de/">IDG Institut für digitale Gesundheitsdaten RLP gGmbH</a>.  Package de.idg-rlp.tumorkonferenzen#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 9, 2025 15:43+0000">2025-02-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

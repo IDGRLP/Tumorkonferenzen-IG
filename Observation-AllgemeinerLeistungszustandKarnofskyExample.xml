@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="AllgemeinerLeistungszustandKarnofskyExample"/>
+  <meta>
+    <profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation AllgemeinerLeistungszustandKarnofskyExample</b></p><a name="AllgemeinerLeistungszustandKarnofskyExample"> </a><a name="hcAllgemeinerLeistungszustandKarnofskyExample"> </a><a name="AllgemeinerLeistungszustandKarnofskyExample-en-US"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 761869008}">761869008</span></p><p><b>subject</b>: <a href="Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample">Bundle: type = collection</a></p><p><b>value</b>: <span title="Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky 30%}">30%</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="761869008"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/TumorPatientExample"/>
+  </subject>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky"/>
+      <code value="30%"/>
+      <display value="30%"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

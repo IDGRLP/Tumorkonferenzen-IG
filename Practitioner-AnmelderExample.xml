@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="AnmelderExample"/>
+  <meta>
+    <profile value="http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner AnmelderExample</b></p><a name="AnmelderExample"> </a><a name="hcAnmelderExample"> </a><a name="AnmelderExample-en-US"> </a><p><b>name</b>: Dr. Erika Musterfrau</p><p><b>telecom</b>: <a href="tel:+49987654321">+49 987 654321</a></p></div>
+  </text>
+  <name>
+    <text value="Dr. Erika Musterfrau"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+49 987 654321"/>
+  </telecom>
+</Practitioner>

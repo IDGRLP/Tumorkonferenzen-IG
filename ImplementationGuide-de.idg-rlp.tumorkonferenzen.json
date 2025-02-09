@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "TumorkonferenzenIDG",
   "status" : "draft",
-  "date" : "2024-12-02T15:35:52+00:00",
+  "date" : "2025-02-09T15:43:55+00:00",
   "publisher" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
   "contact" : [{
     "name" : "IDG Institut für digitale Gesundheitsdaten RLP gGmbH",
@@ -33,7 +33,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "6.1.0"
+    "version" : "6.2.0"
   },
   {
     "id" : "hl7ext",
@@ -49,13 +49,13 @@
     "id" : "de_basisprofil_r4",
     "uri" : "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
     "packageId" : "de.basisprofil.r4",
-    "version" : "1.5.0"
+    "version" : "1.5.2"
   },
   {
-    "id" : "hl7_fhir_us_mcode",
-    "uri" : "http://hl7.org/fhir/us/mcode/ImplementationGuide/hl7.fhir.us.mcode",
-    "packageId" : "hl7.fhir.us.mcode",
-    "version" : "2.1.0"
+    "id" : "de_medizininformatikinitiative_kerndatensatz_onkologie",
+    "uri" : "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
+    "packageId" : "de.medizininformatikinitiative.kerndatensatz.onkologie",
+    "version" : "2025.0.3"
   }],
   "definition" : {
     "extension" : [{
@@ -335,7 +335,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#0.2.0"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.3.0"
     },
     {
       "extension" : [{
@@ -615,6 +615,17 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/AllgemeinerLeistungszustandKarnofskyExample"
+      },
+      "name" : "AllgemeinerLeistungszustandKarnofskyExample",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -675,14 +686,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/befund-dokument"
+        "reference" : "Observation/BefalleneLymphknotenExample"
       },
-      "name" : "BefundDokument",
-      "description" : "Metadaten zu einem Befunddokument bzw. Bildbefund.",
-      "exampleBoolean" : false
+      "name" : "BefalleneLymphknotenExample",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/BefalleneSentinelLymphknotenExample"
+      },
+      "name" : "BefalleneSentinelLymphknotenExample",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -699,6 +720,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/ICD10GM-DiagnoseExample"
+      },
+      "name" : "Beispiel einer ICD-10-GM-Diagnose",
+      "description" : "Beispiel einer ICD-10-GM-Diagnose",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/AnmelderExample"
+      },
+      "name" : "Beispiel eines Anmelders",
+      "description" : "Person, die den Patienten anmeldet",
+      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -706,66 +751,6 @@
       },
       "name" : "BemerkungFreitext",
       "description" : "Freitext für allgemeine Bemerkungen",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/status-lymphknoten"
-      },
-      "name" : "Beurteilung Primärtumor",
-      "description" : "Beurteilung des Lymphknoten-Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/cancer-stage-group"
-      },
-      "name" : "Cancer Stage Group Profile",
-      "description" : "An assessment of the extent of the cancer in the body, according to a given cancer staging classification system. This profile can be used with any staging system, but it is specifically targeted for non-TNM staging systems, since specialized TNM staging profiles are provided.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/cancer-stage-group-vs"
-      },
-      "name" : "Cancer Stage Group Value Set",
-      "description" : "The result of cancer staging, i.e., the stage or category of the cancer.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/cancer-staging-method-vs"
-      },
-      "name" : "Cancer Staging Method Value Set",
-      "description" : "System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/cancer-staging-type-vs"
-      },
-      "name" : "Cancer Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables.",
       "exampleBoolean" : false
     },
     {
@@ -855,138 +840,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMStageGroupClinicalExample"
-      },
-      "name" : "Example TNM Stage Group Observation",
-      "description" : "An example of an Observation conforming to the TNMStageGroup profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-stage-group"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMASymbolExample"
-      },
-      "name" : "Example TNMASymbol Observation",
-      "description" : "An example of an Observation conforming to the TNMASymbol profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMASymbol"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMLKategorieExample"
-      },
-      "name" : "Example TNMLKategorie Observation",
-      "description" : "An example of an Observation conforming to the TNMLKategorie profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMLKategorie"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMmSymbolExample"
-      },
-      "name" : "Example TNMmSymbol Observation",
-      "description" : "An example of an Observation conforming to the TNMmSymbol profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMmSymbol"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMPnKategorieExample"
-      },
-      "name" : "Example TNMPnKategorie Observation",
-      "description" : "An example of an Observation conforming to the TNMPnKategorie profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMPnKategorie"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMRSymbolExample"
-      },
-      "name" : "Example TNMRSymbol Observation",
-      "description" : "An example of an Observation conforming to the TNMRSymbol profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMRSymbol"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMSKategorieExample"
-      },
-      "name" : "Example TNMSKategorie Observation",
-      "description" : "An example of an Observation conforming to the TNMSKategorie profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMSKategorie"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMVKategorieExample"
-      },
-      "name" : "Example TNMVKategorie Observation",
-      "description" : "An example of an Observation conforming to the TNMVKategorie profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMVKategorie"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TNMYSymbolExample"
-      },
-      "name" : "Example TNMYSymbol Observation",
-      "description" : "An example of an Observation conforming to the TNMYSymbol profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMYSymbol"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/ExampleTumorDiagnose"
-      },
-      "name" : "Example Tumordiagnose",
-      "description" : "Example instance of a Tumordiagnose resource",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TumorDiagnose"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/TumorkonferenzFragestellungExample"
-      },
-      "name" : "Example TumorkonferenzFragestellung Observation",
-      "description" : "An example of an Observation conforming to the TumorkonferenzFragestellung profile.",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-fragestellung"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1018,18 +871,6 @@
       },
       "name" : "ExterneBilder",
       "description" : "Profil zur Dokumentation externer Bilder mit Antwortoptionen.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/familienanamnese"
-      },
-      "name" : "Familienanamnese",
-      "description" : "Familienanamnese",
       "exampleBoolean" : false
     },
     {
@@ -1110,30 +951,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/gesamtbeurteilung"
-      },
-      "name" : "Gesamtbeurteilung",
-      "description" : "Gesamtbeurteilung des Tumorgeschehens",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ResidualstatusGesamtbeurteilungVS"
-      },
-      "name" : "Gesamtbeurteilung des Residualstatus",
-      "description" : "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/gewuenschte-teilnehmer"
       },
       "name" : "Gewünschte Teilnehmer",
@@ -1155,84 +972,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/grading"
-      },
-      "name" : "Grading",
-      "description" : "Gibt den Differenzierungsgrad des Tumors entsprechend der aktuellen TNM-Auflage an.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Observation"
       }],
       "reference" : {
         "reference" : "Observation/GradingExample"
       },
       "name" : "GradingExample",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/grading"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/HistoGradeVS"
-      },
-      "name" : "HistoGradeVS",
-      "description" : "HistoGradeVS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/histologie"
-      },
-      "name" : "Histologie",
-      "description" : "Histologie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/Histologie-Example"
-      },
-      "name" : "HistologieExample",
-      "description" : "HistologieExample",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/histologie"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/HistologieLymphknoten"
-      },
-      "name" : "HistologieLymphknoten",
-      "description" : "HistologieLymphknoten",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/HistologieLymphknotenExample"
-      },
-      "name" : "HistologieLymphknotenExample",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/HistologieLymphknoten"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1273,42 +1019,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/HistoGradeCS"
-      },
-      "name" : "Histopathologische Grading Codes oBDS",
-      "description" : "oBDS Grading Codes",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/obds-strahlentherapie-intention-vs"
-      },
-      "name" : "Intention der Strahlentherapie",
-      "description" : "Die Intention der Strahlentherapie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/obds-strahlentherapie-intention-cs"
-      },
-      "name" : "Intention der Strahlentherapie",
-      "description" : "Die histopathologische Einstufung des invasiven Karzinoms",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "ValueSet"
       }],
       "reference" : {
@@ -1321,30 +1031,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/krebsstadium-cs"
-      },
-      "name" : "Krebsstadium CodeSystem",
-      "description" : "KrebsstadiumCS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/krebsstadium-vs"
-      },
-      "name" : "Krebsstadium ValueSet",
-      "description" : "KrebsstadiumVS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1352,30 +1038,6 @@
       },
       "name" : "Lungenfunktionstest",
       "description" : "Profil zur Dokumentation des Lungenfunktionstest Befunds.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/Lymphgefaessinvasion-cs"
-      },
-      "name" : "Lymphgefäßinvasion CodeSystem",
-      "description" : "LymphgefäßinvasionCS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/Lymphgefaessinvasion-vs"
-      },
-      "name" : "Lymphgefäßinvasion ValueSet",
-      "description" : "LymphgefäßinvasionVS",
       "exampleBoolean" : false
     },
     {
@@ -1396,186 +1058,11 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Melder"
-      },
-      "name" : "Melder",
-      "description" : "Meldende/anfragende ÄrztIn",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/MelderInOrganisation"
-      },
-      "name" : "Melder in Organisation",
-      "description" : "Zuordnung des Melders zu einer Organisation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/Melder-example-1"
-      },
-      "name" : "Melder-example-1",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "PractitionerRole"
-      }],
-      "reference" : {
-        "reference" : "PractitionerRole/MelderInOrganisation-example-1"
-      },
-      "name" : "MelderInOrganisation-example-1",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/MinimalObservation"
       },
       "name" : "MinimalObservation",
       "description" : "MinimalObservation zur Festlegung gemeinsamer fixen Werten",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/icd-o-3-morphologie"
-      },
-      "name" : "Morphologie Codes des ICD-O-3 CodeSystems.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/multiple-primaer-tumoren-cs"
-      },
-      "name" : "Multiple PrimärTumoren CodeSystem",
-      "description" : "MultiplePrimärTumorenCS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/multiple-primaer-tumoren-vs"
-      },
-      "name" : "Multiple PrimärTumoren ValueSet",
-      "description" : "MultiplePrimärTumorenVS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/nebenwirkung"
-      },
-      "name" : "Nebenwirkung",
-      "description" : "Nebenwirkung Strahlentherapie und systemische Therapie nach CTCAE",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/obds-op-komplikation-cs"
-      },
-      "name" : "oBDS Operation Komplikation Codesystem",
-      "description" : "Komplikation gemäß Vorgabe oBDS.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/obds-op-komplikation-vs"
-      },
-      "name" : "oBDS Operation Komplikation Value Set",
-      "description" : "Komplikation gemäß Vorgabe oBDS.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ResidualstatusCS"
-      },
-      "name" : "Onkologie Residualstatus CS",
-      "description" : "oBDS-spezifisches Codesystem für R-Klassifikation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/operation"
-      },
-      "name" : "Operation",
-      "description" : "Operation (chirurgischer Eingriff) in ihrer Gesamtheit.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/operation-einzelprozedur"
-      },
-      "name" : "Operation Einzelprozedur",
-      "description" : "Einzelprozedur als Teil einer Operation. Typischerweise mittels OPS dokumentiert.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Procedure"
-      }],
-      "reference" : {
-        "reference" : "Procedure/OperationEinzelprozedurExample"
-      },
-      "name" : "OperationEinzelprozedurExample",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation-einzelprozedur"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Procedure"
-      }],
-      "reference" : {
-        "reference" : "Procedure/OperationExample"
-      },
-      "name" : "OperationExample",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/operation"
     },
     {
       "extension" : [{
@@ -1587,53 +1074,6 @@
       },
       "name" : "OperativeTherapieFreitext",
       "description" : "OperativeTherapieFreitext",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Organisation"
-      },
-      "name" : "Organisation",
-      "description" : "Organisation (Krankenhaus, Praxis)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/Organisation-example-1"
-      },
-      "name" : "Organisation-example-1",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/perineurale-invasion-cs"
-      },
-      "name" : "Perineurale Invasion CodeSystem",
-      "description" : "PerineuraleInvasionCS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/perineurale-invasion-vs"
-      },
-      "name" : "Perineurale Invasion ValueSet",
-      "description" : "PerineuraleInvasionVS",
       "exampleBoolean" : false
     },
     {
@@ -1711,30 +1151,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/SerumTumorMarkerUICCCS"
-      },
-      "name" : "SerumTumorMarkerUICCCS",
-      "description" : "SerumTumorMarkerUICCCS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/SerumTumorMarkerUICCVS"
-      },
-      "name" : "SerumTumorMarkerUICCVS",
-      "description" : "SerumTumorMarkerUICCVS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1742,54 +1158,6 @@
       },
       "name" : "Skelettszintigraphie",
       "description" : "Profil zur Dokumentation des Skelettszintigraphie Befunds.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/status-primaertumor"
-      },
-      "name" : "Status Primärtumor",
-      "description" : "Beurteilung des Primärtumor-Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/status-fernmetastasen"
-      },
-      "name" : "StatusFernmetastasen",
-      "description" : "Beurteilung des Fernmetastasen-Status",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/strahlentherapie"
-      },
-      "name" : "Strahlentherapie",
-      "description" : "Strahlentherapie jeglicher Art (perkutan, Brachytherapie usw.) in ihrer Gesamtheit.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/strahlentherapie-details"
-      },
-      "name" : "StrahlentherapieDetails",
-      "description" : "Detailinformationen zur Strahlentherapie.",
       "exampleBoolean" : false
     },
     {
@@ -1810,392 +1178,11 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/systemische-therapie"
-      },
-      "name" : "SystemischeTherapie",
-      "description" : "Systemische Therapie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/systemische-therapie-details"
-      },
-      "name" : "SystemischeTherapieDetails",
-      "description" : "Detailinformationen zur systemischen Therapie.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tnm-distant-metastases-category"
-      },
-      "name" : "TNM Distant Metastases Category Profile",
-      "description" : "Category describing the extent of a tumor metastasis in remote anatomical locations, based on evidence such as physical examination, imaging, and/or biopsy.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-distant-metastases-category-vs"
-      },
-      "name" : "TNM Distant Metastases Category Value Set",
-      "description" : "Result values for M category. This value set contains SNOMED-CT equivalents of UICC codes for the M category, according to TNM staging rules.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-distant-metastases-category-max-vs"
-      },
-      "name" : "TNM Distant Metastases Maximum Value Set",
-      "description" : "Values for TNM distant metastases category must be selected from this value set, which includes all codes from UICC and all codes from TNMDistantMetastasesCategoryVS.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-distant-metastases-staging-type-vs"
-      },
-      "name" : "TNM Distant Metastases Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for distant metastases (M) staging observation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tnm-primary-tumor-category"
-      },
-      "name" : "TNM Primary Tumor Category Profile",
-      "description" : "Category of the primary tumor, based on its size and extent, based on evidence such as physical examination, imaging, and/or biopsy.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-primary-tumor-category-vs"
-      },
-      "name" : "TNM Primary Tumor Category Value Set",
-      "description" : "Result values for T category. This value set contains SNOMED-CT equivalents of UICC codes for the T category, according to TNM staging rules.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-primary-tumor-category-max-vs"
-      },
-      "name" : "TNM Primary Tumor Maximum Value Set",
-      "description" : "Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-primary-tumor-staging-type-vs"
-      },
-      "name" : "TNM Primary Tumor Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for primary tumor (T) staging observation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tnm-regional-nodes-category"
-      },
-      "name" : "TNM Regional Nodes Category Profile",
-      "description" : "Category of the presence or absence of metastases in regional lymph nodes, based on evidence such as physical examination, imaging, and/or biopsy.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-regional-nodes-category-vs"
-      },
-      "name" : "TNM Regional Nodes Category Value Set",
-      "description" : "Result values for N category. This value set contains SNOMED-CT equivalents of UICC codes for the N category, according to TNM staging rules.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-regional-nodes-category-max-vs"
-      },
-      "name" : "TNM Regional Nodes Maximum Value Set",
-      "description" : "Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-regional-nodes-staging-type-vs"
-      },
-      "name" : "TNM Regional Nodes Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for regional nodes (N) staging observation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-stage-group-max-vs"
-      },
-      "name" : "TNM Stage Group Maximum Value Set",
-      "description" : "Values for TNM stage group must be selected from this value set, which includes all codes from UICC and all codes from TNMStageGroupVS.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tnm-stage-group"
-      },
-      "name" : "TNM Stage Group Profile",
-      "description" : "The extent of cancer represented by the stage group, based on a TNM staging system.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-stage-group-staging-type-vs"
-      },
-      "name" : "TNM Stage Group Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for the stage group observation.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-stage-group-vs"
-      },
-      "name" : "TNM Stage Group Value Set",
-      "description" : "Result values for cancer stage group using TNM staging. This value set contains SNOMED-CT equivalents of UICC codes for Stage Group, according to TNM staging rules.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/tnm-staging-method-vs"
-      },
-      "name" : "TNM Staging Method Value Set",
-      "description" : "Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/tnm-clinical-distant-metastases-category-cM0"
-      },
-      "name" : "tnm-clinical-distant-metastases-category-cM0",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/tnm-clinical-primary-tumor-category-cT3"
-      },
-      "name" : "tnm-clinical-primary-tumor-category-cT3",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-primary-tumor-category"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/tnm-clinical-regional-nodes-category-cN3"
-      },
-      "name" : "tnm-clinical-regional-nodes-category-cN3",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tnm-regional-nodes-category"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMASymbol"
-      },
-      "name" : "TNMASymbol",
-      "description" : "TNMASymbol",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/TNMFreitext"
       },
       "name" : "TNMFreitext",
       "description" : "TNMFreitext",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMLKategorie"
-      },
-      "name" : "TNMLKategorie",
-      "description" : "TNMLKategorie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMmSymbol"
-      },
-      "name" : "TNMmSymbol",
-      "description" : "TNMmSymbol",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMPnKategorie"
-      },
-      "name" : "TNMPnKategorie",
-      "description" : "TNMPnKategorie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMRSymbol"
-      },
-      "name" : "TNMRSymbol",
-      "description" : "TNMRSymbol",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMSKategorie"
-      },
-      "name" : "TNMSKategorie",
-      "description" : "TNMSKategorie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMVKategorie"
-      },
-      "name" : "TNMVKategorie",
-      "description" : "TNMVKategorie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/TNMYSymbol"
-      },
-      "name" : "TNMYSymbol",
-      "description" : "TNMYSymbol",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumor"
-      },
-      "name" : "Tumor",
-      "description" : "Tumor",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Specimen"
-      }],
-      "reference" : {
-        "reference" : "Specimen/Tumor-Example"
-      },
-      "name" : "Tumor-Example",
-      "description" : "Tumor-Example",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor"
     },
     {
       "extension" : [{
@@ -2227,18 +1214,6 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/TumorDiagnose"
-      },
-      "name" : "Tumordiagnose",
-      "description" : "Diagnoseinformationen (Primärtumor, frühere Tumore)",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
         "reference" : "StructureDefinition/tumorErkrankung"
       },
       "name" : "Tumorerkrankung",
@@ -2256,90 +1231,6 @@
       "name" : "TumorErkrankungExample",
       "description" : "Ein Beispiel für die Episode einer Tumorerkrankung.",
       "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorErkrankung"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumorkonferenz"
-      },
-      "name" : "Tumorkonferenz",
-      "description" : "Dieses Profil repräsentiert die Tumorkonferenz zu einem Patienten. Fragestellungen und Informationen, die speziell im Kontext der Tumorkonferenz erstellt werden, referenzieren auf eine entsprechende Tumorkonferenz-Instanz.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumorkonferenz-bemerkung"
-      },
-      "name" : "TumorkonferenzBemerkung",
-      "description" : "Tumorkonferenz: Bemerkung",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumorkonferenz-fragestellung"
-      },
-      "name" : "TumorkonferenzFragestellung",
-      "description" : "Tumorkonferenz: Fragestellung",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumorkonferenz-fragestellung-radiologie"
-      },
-      "name" : "TumorkonferenzFragestellungRadiologie",
-      "description" : "Tumorkonferenz: Fragestellung an die Radiologie",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumorkonferenz-situation"
-      },
-      "name" : "TumorkonferenzSituation",
-      "description" : "Tumorkonferenz: Beschreibung der aktuelle Situation",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumorkonferenz-termin"
-      },
-      "name" : "TumorkonferenzTermin",
-      "description" : "Termin für die Tumorkonferenz.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/tumorkonferenz-therapie-verlauf"
-      },
-      "name" : "TumorkonferenzTherapieVerlauf",
-      "description" : "Tumorkonferenz: Beschreibung von Therapie und Verlauf",
-      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -2391,49 +1282,24 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "CodeSystem/veneninvasion-cs"
+        "reference" : "Observation/UntersuchteLymphknotenExample"
       },
-      "name" : "Veneninvasion CodeSystem",
-      "description" : "VeneninvasionCS",
-      "exampleBoolean" : false
+      "name" : "UntersuchteLymphknotenExample",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "ValueSet/veneninvasion-vs"
+        "reference" : "Observation/UntersuchteSentinelLymphknotenExample"
       },
-      "name" : "Veneninvasion ValueSet",
-      "description" : "VeneninvasionVS",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/verlauf"
-      },
-      "name" : "Verlauf",
-      "description" : "Verlauf: Klammer für alle Informationen zu einer Verlaufsbeobachtung/Nachsorge.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/VerlaufExample"
-      },
-      "name" : "VerlaufExample",
-      "exampleCanonical" : "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf"
+      "name" : "UntersuchteSentinelLymphknotenExample",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -2445,18 +1311,6 @@
       },
       "name" : "VerlaufFreitext",
       "description" : "Freitext für die Beschreibung des Verlaufs",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/watchful-waiting"
-      },
-      "name" : "WatchfulWaiting",
-      "description" : "Watchful Waiting (abwartende/beobachtende Maßnahme ohne Therapie)",
       "exampleBoolean" : false
     },
     {

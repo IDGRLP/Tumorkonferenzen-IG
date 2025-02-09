@@ -27,60 +27,6 @@
       "StructureDefinition-TumorPatient.html" : "Tumor-Patient"
     },
     {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/HistoGradeVS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "HistoGradeVS",
-      "title" : "HistoGradeVS",
-      "description" : "HistoGradeVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/HistoGradeCS"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-grading.html" : "Grading",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/Lymphgefaessinvasion-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "LymphgefaessinvasionVS",
-      "title" : "Lymphgefäßinvasion ValueSet",
-      "description" : "LymphgefäßinvasionVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/Lymphgefaessinvasion-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-TNMLKategorie.html" : "TNMLKategorie"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ResidualstatusGesamtbeurteilungVS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ResidualstatusGesamtbeurteilungVS",
-      "title" : "Gesamtbeurteilung des Residualstatus",
-      "description" : "Value Set für oBDS-Codes für die Gesamtbeurteilung des Residualstatus",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/ResidualstatusCS"
-      ]
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/SerumTumorMarkerUICCVS",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SerumTumorMarkerUICCVS",
-      "title" : "SerumTumorMarkerUICCVS",
-      "description" : "SerumTumorMarkerUICCVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/SerumTumorMarkerUICCCS"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-TNMSKategorie.html" : "TNMSKategorie"
-    },
-    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/befundstatust-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -92,47 +38,11 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen",
-      "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest",
-      "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
+      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel",
       "StructureDefinition-pet-ct.html" : "PetCT",
-      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-stage-group-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CancerStageVS",
-      "title" : "Cancer Stage Group Value Set",
-      "description" : "The result of cancer staging, i.e., the stage or category of the cancer.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-method-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CancerStagingMethodVS",
-      "title" : "Cancer Staging Method Value Set",
-      "description" : "System or method used for staging cancers. The terms in this value set describe staging systems, not specific stages or descriptors used within those systems.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/cancer-staging-type-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "CancerStagingTypeVS",
-      "title" : "Cancer Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed. In terms of the SNOMED CT hierarchy, these codes represent observables.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-cancer-stage-group.html" : "Cancer Stage Group Profile"
+      "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
+      "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen",
+      "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest"
     },
     {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
@@ -187,15 +97,6 @@
       "StructureDefinition-histologische-typisierung-lunge.html" : "Histologische Typisierung Lunge"
     },
     {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/icd-o-3-morphologie",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ICDO3Morphologie",
-      "title" : "Morphologie Codes des ICD-O-3 CodeSystems.",
-      "description" : null,
-      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"]
-    },
-    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ja-nein-beratung-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -223,72 +124,6 @@
       "StructureDefinition-tumor-board-anmeldung.html" : "TumorBoardAnmeldung"
     },
     {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/krebsstadium-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "KrebsstadiumVS",
-      "title" : "Krebsstadium ValueSet",
-      "description" : "KrebsstadiumVS",
-      "systems" : ["https://www.uicc.org/resources/tnm"],
-      "uses" : {
-      },
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/multiple-primaer-tumoren-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "MultiplePrimaerTumorenVS",
-      "title" : "Multiple PrimärTumoren ValueSet",
-      "description" : "MultiplePrimärTumorenVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/multiple-primaer-tumoren-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-TNMmSymbol.html" : "TNMmSymbol"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-op-komplikation-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ObdsOpKomplikationVS",
-      "title" : "oBDS Operation Komplikation Value Set",
-      "description" : "Komplikation gemäß Vorgabe oBDS.",
-      "systems" : [
-        "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-op-komplikation-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-operation.html" : "Operation"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/obds-strahlentherapie-intention-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "ObdsStrahlentherapieIntentionVS",
-      "title" : "Intention der Strahlentherapie",
-      "description" : "Die Intention der Strahlentherapie",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/obds-strahlentherapie-intention-cs"
-      ]
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/perineurale-invasion-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "PerineuraleInvasionVS",
-      "title" : "Perineurale Invasion ValueSet",
-      "description" : "PerineuraleInvasionVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/perineurale-invasion-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-TNMPnKategorie.html" : "TNMPnKategorie"
-    },
-    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/pos-neg-nask-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -304,155 +139,6 @@
       "StructureDefinition-familienanamnese-drop-down.html" : "Familienanamnese DropDown"
     },
     {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-max-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMDistantMetastasesCategoryMaxVS",
-      "title" : "TNM Distant Metastases Maximum Value Set",
-      "description" : "Values for TNM distant metastases category must be selected from this value set, which includes all codes from UICC and all codes from TNMDistantMetastasesCategoryVS.",
-      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-category-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMDistantMetastasesCategoryVS",
-      "title" : "TNM Distant Metastases Category Value Set",
-      "description" : "Result values for M category. This value set contains SNOMED-CT equivalents of UICC codes for the M category, according to TNM staging rules.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "ValueSet-tnm-distant-metastases-category-max-vs.html" : "TNM Distant Metastases Maximum Value Set"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-distant-metastases-staging-type-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMDistantMetastasesStagingTypeVS",
-      "title" : "TNM Distant Metastases Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for distant metastases (M) staging observation.",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-max-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMPrimaryTumorCategoryMaxVS",
-      "title" : "TNM Primary Tumor Maximum Value Set",
-      "description" : "Values for TNM primary tumor category must be selected from this value set, which includes all codes from UICC and all codes from TNMPrimaryTumorCategoryVS.",
-      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-category-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMPrimaryTumorCategoryVS",
-      "title" : "TNM Primary Tumor Category Value Set",
-      "description" : "Result values for T category. This value set contains SNOMED-CT equivalents of UICC codes for the T category, according to TNM staging rules.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "ValueSet-tnm-primary-tumor-category-max-vs.html" : "TNM Primary Tumor Maximum Value Set",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-primary-tumor-staging-type-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMPrimaryTumorStagingTypeVS",
-      "title" : "TNM Primary Tumor Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for primary tumor (T) staging observation.",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-category-max-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMRegionalNodesCategoryMaxVS",
-      "title" : "TNM Regional Nodes Maximum Value Set",
-      "description" : "Values for TNM regional nodes category must be selected from this value set, which includes all codes from UICC and all codes from TNMRegionalNodesCategoryVS.",
-      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-category-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMRegionalNodesCategoryVS",
-      "title" : "TNM Regional Nodes Category Value Set",
-      "description" : "Result values for N category. This value set contains SNOMED-CT equivalents of UICC codes for the N category, according to TNM staging rules.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "ValueSet-tnm-regional-nodes-category-max-vs.html" : "TNM Regional Nodes Maximum Value Set",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-regional-nodes-staging-type-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMRegionalNodesStagingTypeVS",
-      "title" : "TNM Regional Nodes Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for regional nodes (N) staging observation.",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-max-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMStageGroupMaxVS",
-      "title" : "TNM Stage Group Maximum Value Set",
-      "description" : "Values for TNM stage group must be selected from this value set, which includes all codes from UICC and all codes from TNMStageGroupVS.",
-      "systems" : ["https://www.uicc.org/resources/tnm", "http://snomed.info/sct"]
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-staging-type-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMStageGroupStagingTypeVS",
-      "title" : "TNM Stage Group Staging Type Value Set",
-      "description" : "Identifying codes for the type of cancer staging performed, i.e., clinical, pathological, or other, for the stage group observation.",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-stage-group-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMStageGroupVS",
-      "title" : "TNM Stage Group Value Set",
-      "description" : "Result values for cancer stage group using TNM staging. This value set contains SNOMED-CT equivalents of UICC codes for Stage Group, according to TNM staging rules.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "ValueSet-tnm-stage-group-max-vs.html" : "TNM Stage Group Maximum Value Set"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tnm-staging-method-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "TNMStagingMethodVS",
-      "title" : "TNM Staging Method Value Set",
-      "description" : "Method used for TNM staging, e.g., UICC 6th, 7th, or 8th edition.",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-tnm-stage-group.html" : "TNM Stage Group Profile",
-      "StructureDefinition-tnm-regional-nodes-category.html" : "TNM Regional Nodes Category Profile",
-      "StructureDefinition-tnm-distant-metastases-category.html" : "TNM Distant Metastases Category Profile",
-      "StructureDefinition-tnm-primary-tumor-category.html" : "TNM Primary Tumor Category Profile"
-    },
-    {
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/tumorsituation-vs",
       "version" : "0.1.0",
       "status" : "draft",
@@ -465,20 +151,6 @@
       "uses" : {
       },
       "StructureDefinition-tumorsituation.html" : "Tumorsituation"
-    },
-    {
-      "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/veneninvasion-vs",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "VeneninvasionVS",
-      "title" : "Veneninvasion ValueSet",
-      "description" : "VeneninvasionVS",
-      "systems" : [
-        "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/veneninvasion-cs"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-TNMVKategorie.html" : "TNMVKategorie"
     }
   ]
 }

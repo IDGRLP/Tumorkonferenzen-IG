@@ -133,6 +133,305 @@
     }
   },
   {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "ICD10GM-DiagnoseExample",
+      "meta" : {
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor"]
+      },
+      "text" : {
+        "status" : "extensions",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_ICD10GM-DiagnoseExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition ICD10GM-DiagnoseExample</b></p><a name=\"ICD10GM-DiagnoseExample\"> </a><a name=\"hcICD10GM-DiagnoseExample\"> </a><a name=\"ICD10GM-DiagnoseExample-en-US\"> </a><p><b>Condition Asserted Date</b>: 2020-02-16</p><p><b>MII EX Onko Histology Morphology Behavior ICDO3</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 8070/3}\">Plattenepithelkarzinom o.n.A.</span></p><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>verificationStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-ver-status confirmed}, {https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung 1}\">confirmed</span></p><p><b>code</b>: <span title=\"Codes:{http://fhir.de/CodeSystem/bfarm/icd-10-gm C34.0}\">Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus</span></p><p><b>bodySite</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/icd-o-3 C34.0}, {http://snomed.info/sct 245508000}\">Hauptbronchus</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>recordedDate</b>: 2020-02-16</p></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
+        "valueDateTime" : "2020-02-16"
+      },
+      {
+        "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+            "code" : "8070/3",
+            "display" : "Plattenepithelkarzinom o.n.A."
+          }]
+        }
+      }],
+      "clinicalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+          "code" : "active"
+        }]
+      },
+      "verificationStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+          "code" : "confirmed",
+          "display" : "confirmed"
+        },
+        {
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung",
+          "code" : "1",
+          "display" : "klinisch"
+        }]
+      },
+      "code" : {
+        "coding" : [{
+          "extension" : [{
+            "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding" : {
+              "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "code" : "R",
+              "display" : "rechts"
+            }
+          }],
+          "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+          "version" : "2025",
+          "code" : "C34.0",
+          "display" : "Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus"
+        }]
+      },
+      "bodySite" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+          "code" : "C34.0",
+          "display" : "Hauptbronchus"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "245508000",
+          "display" : "Entire main bronchus"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "recordedDate" : "2020-02-16"
+    }
+  },
+  {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "AllgemeinerLeistungszustandKarnofskyExample",
+      "meta" : {
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-allgemeiner-leistungszustand-karnofsky"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_AllgemeinerLeistungszustandKarnofskyExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation AllgemeinerLeistungszustandKarnofskyExample</b></p><a name=\"AllgemeinerLeistungszustandKarnofskyExample\"> </a><a name=\"hcAllgemeinerLeistungszustandKarnofskyExample\"> </a><a name=\"AllgemeinerLeistungszustandKarnofskyExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 761869008}\">761869008</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky 30%}\">30%</span></p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "761869008"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky",
+          "code" : "30%",
+          "display" : "30%"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "GradingExample",
+      "meta" : {
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_GradingExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation GradingExample</b></p><a name=\"GradingExample\"> </a><a name=\"hcGradingExample\"> </a><a name=\"GradingExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 33732-9}\">Histology grade [Identifier] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2022-04-21</p><p><b>value</b>: <span title=\"Codes:{https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading 3}\">schlecht differenziert</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "33732-9",
+          "display" : "Histology grade [Identifier] in Cancer specimen"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "effectiveDateTime" : "2022-04-21",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading",
+          "code" : "3"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "UntersuchteLymphknotenExample",
+      "meta" : {
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_UntersuchteLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation UntersuchteLymphknotenExample</b></p><a name=\"UntersuchteLymphknotenExample\"> </a><a name=\"hcUntersuchteLymphknotenExample\"> </a><a name=\"UntersuchteLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21894-1}\">Regional lymph nodes examined [#] Specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 23 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "21894-1",
+          "display" : "Regional lymph nodes examined [#] Specimen"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "effectiveDateTime" : "2024-01-11",
+      "valueQuantity" : {
+        "value" : 23,
+        "unit" : "#",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "BefalleneLymphknotenExample",
+      "meta" : {
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BefalleneLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BefalleneLymphknotenExample</b></p><a name=\"BefalleneLymphknotenExample\"> </a><a name=\"hcBefalleneLymphknotenExample\"> </a><a name=\"BefalleneLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 21893-3}\">Regional lymph nodes positive [#] Specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 0 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "21893-3",
+          "display" : "Regional lymph nodes positive [#] Specimen"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "effectiveDateTime" : "2024-01-11",
+      "valueQuantity" : {
+        "value" : 0,
+        "unit" : "#",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "UntersuchteSentinelLymphknotenExample",
+      "meta" : {
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_UntersuchteSentinelLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation UntersuchteSentinelLymphknotenExample</b></p><a name=\"UntersuchteSentinelLymphknotenExample\"> </a><a name=\"hcUntersuchteSentinelLymphknotenExample\"> </a><a name=\"UntersuchteSentinelLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 85347-3}\">Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 2 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "85347-3",
+          "display" : "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "effectiveDateTime" : "2024-01-11",
+      "valueQuantity" : {
+        "value" : 2,
+        "unit" : "#",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "BefalleneSentinelLymphknotenExample",
+      "meta" : {
+        "profile" : ["https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_BefalleneSentinelLymphknotenExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation BefalleneSentinelLymphknotenExample</b></p><a name=\"BefalleneSentinelLymphknotenExample\"> </a><a name=\"hcBefalleneSentinelLymphknotenExample\"> </a><a name=\"BefalleneSentinelLymphknotenExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 92832-5}\">Sentinel lymph nodes with metastasis [#] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>effective</b>: 2024-01-11</p><p><b>value</b>: 0 #<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "laboratory"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "92832-5",
+          "display" : "Sentinel lymph nodes with metastasis [#] in Cancer specimen"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/TumorPatientExample"
+      },
+      "effectiveDateTime" : "2024-01-11",
+      "valueQuantity" : {
+        "value" : 0,
+        "unit" : "#",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "1"
+      }
+    }
+  },
+  {
     "fullUrl" : "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample",
     "resource" : {
       "resourceType" : "Observation",

@@ -2,168 +2,7 @@
   "package": "de.idg-rlp.tumorkonferenzen",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
-  "extensions": [
-    {
-      "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie-details",
-      "title": "StrahlentherapieDetails",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "Quantity",
-        "string",
-        "Extension",
-        "decimal",
-        "code",
-        "string",
-        "uri",
-        "code",
-        "Quantity",
-        "string",
-        "Extension",
-        "decimal",
-        "code",
-        "string",
-        "uri",
-        "code",
-        "Quantity",
-        "string",
-        "Extension",
-        "decimal",
-        "code",
-        "string",
-        "uri",
-        "code",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    },
-    {
-      "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/systemische-therapie-details",
-      "title": "SystemischeTherapieDetails",
-      "types": [
-        "Coding",
-        "string",
-        "Extension",
-        "uri",
-        "string",
-        "code",
-        "string",
-        "boolean",
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta"
-      ]
-    }
-  ],
+  "extensions": [],
   "profiles": {
     "Bundle": [
       {
@@ -177,32 +16,22 @@
     ],
     "Practitioner": [
       {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Melder",
-        "title": "Melder"
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Anmelder",
+        "title": "Anmelder"
       }
     ],
     "Observation": [
       {
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorsituation",
+        "title": "Tumorsituation"
+      },
+      {
+        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf-freitext",
+        "title": "VerlaufFreitext"
+      },
+      {
         "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/weitere-gewuenschte-teilnehmer-freitext",
         "title": "WeitereGewuenschteTeilnehmerFreitext"
-      }
-    ],
-    "PractitionerRole": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MelderInOrganisation",
-        "title": "Melder in Organisation"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Organisation",
-        "title": "Organisation"
-      }
-    ],
-    "Condition": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/nebenwirkung",
-        "title": "Nebenwirkung"
       }
     ],
     "Patient": [
@@ -211,64 +40,21 @@
         "title": "Tumor-Patient"
       }
     ],
-    "DocumentReference": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/befund-dokument",
-        "title": "BefundDokument"
-      }
-    ],
-    "FamilyMemberHistory": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/familienanamnese",
-        "title": "Familienanamnese"
-      }
-    ],
-    "Procedure": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/watchful-waiting",
-        "title": "WatchfulWaiting"
-      }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/systemische-therapie",
-        "title": "SystemischeTherapie"
-      }
-    ],
-    "Specimen": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumor",
-        "title": "Tumor"
-      }
-    ],
     "EpisodeOfCare": [
       {
         "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorErkrankung",
         "title": "Tumorerkrankung"
       }
-    ],
-    "Encounter": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/verlauf",
-        "title": "Verlauf"
-      }
-    ],
-    "Appointment": [
-      {
-        "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/tumorkonferenz-termin",
-        "title": "TumorkonferenzTermin"
-      }
     ]
   },
   "usage": {
-    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
-      "Condition.code.coding"
-    ],
-    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
-      "Condition.code.coding"
-    ],
     "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Bundle.entry.resource.code.coding",
       "Condition.code.coding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Bundle.entry.resource",
+      "Condition"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
@@ -280,7 +66,6 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
-      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
@@ -334,15 +119,9 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent": [
-      "MedicationStatement",
-      "Procedure"
-    ],
-    "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/strahlentherapie-details": [
-      "Procedure"
-    ],
-    "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/systemische-therapie-details": [
-      "MedicationStatement"
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3": [
+      "Bundle.entry.resource",
+      "Condition"
     ]
   }
 }

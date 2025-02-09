@@ -17,13 +17,14 @@
   ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ECOGExample</b></p><a name=\"ECOGExample\"> </a><a name=\"hcECOGExample\"> </a><a name=\"ECOGExample-en-US\"> </a><p><b>Episode of care</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Tumorerkrankung\">??</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 89247-1}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.5.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Beispielpatient\">??</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9623-5}\">ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)</span></p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ECOGExample</b></p><a name=\"ECOGExample\"> </a><a name=\"hcECOGExample\"> </a><a name=\"ECOGExample-en-US\"> </a><p><b>Episode of care</b>: <a href=\"EpisodeOfCare-TumorErkrankungExample.html\">EpisodeOfCare: status = active; type = Cancer Diagnosis</a></p><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 89247-1}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Bundle-AnmeldeBundleMinimalFreitextLunge-Example.html#Patient_TumorPatientExample\">Bundle: type = collection</a></p><p><b>value</b>: <span title=\"Codes:{http://loinc.org LA9623-5}\">ECOG 1: (Einschränkung bei körperlicher Anstrengung, aber gehfähig; leichte körperliche Arbeit bzw. Arbeit im Sitzen)</span></p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
-       fhir:reference [ fhir:v "Tumorerkrankung" ]
+       fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/EpisodeOfCare/TumorErkrankungExample> ;
+       fhir:reference [ fhir:v "EpisodeOfCare/TumorErkrankungExample" ]
      ]
   ] ) ; # 
   fhir:status [ fhir:v "final"] ; # 
@@ -36,7 +37,8 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:reference [ fhir:v "Beispielpatient" ]
+     fhir:link <http://idg-rlp.de/fhir/tumorkonferenzen/Patient/TumorPatientExample> ;
+     fhir:reference [ fhir:v "Patient/TumorPatientExample" ]
   ] ; # 
   fhir:value [
      a fhir:CodeableConcept ;
