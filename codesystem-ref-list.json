@@ -33,10 +33,10 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-histologische-typisierung-vs.html" : "Histologische Typisierung ValueSet",
       "ValueSet-ja-nein-beratung-vs.html" : "Ja, Nein, Beratung schon erfolgt ValueSet",
+      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask",
       "ValueSet-ja-nein-unbekannt-vs.html" : "Expanded Yes/No Indicator ValueSet",
-      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask"
+      "ValueSet-histologische-typisierung-vs.html" : "Histologische Typisierung ValueSet"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",

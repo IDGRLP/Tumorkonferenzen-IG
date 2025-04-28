@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2883b977-c1df-4311-82b3-53883618fa1f",
+  "id" : "b8d0b201-8aa9-48ae-ba3c-934ea789e751",
   "meta" : {
-    "lastUpdated" : "2025-02-09T15:43:55.408+00:00"
+    "lastUpdated" : "2025-04-28T11:03:49.739+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,17 +11,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.78</p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9622-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9622-7/\">LA9622-7</a></td><td>http://loinc.org</td><td>Fully active, able to carry on all pre-disease performance without restriction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9623-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9623-5/\">LA9623-5</a></td><td>http://loinc.org</td><td>Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9624-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9624-3/\">LA9624-3</a></td><td>http://loinc.org</td><td>Ambulatory and capable of all selfcare but unable to carry out any work activities. Up and about more than 50% of waking hours</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9625-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9625-0/\">LA9625-0</a></td><td>http://loinc.org</td><td>Capable of only limited selfcare, confined to bed or chair more than 50% of waking hours</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9626-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9626-8/\">LA9626-8</a></td><td>http://loinc.org</td><td>Completely disabled. Cannot carry on any selfcare. Totally confined to bed or chair</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9627-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9627-6/\">LA9627-6</a></td><td>http://loinc.org</td><td>Dead</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA4489-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA4489-6/\">LA4489-6</a></td><td>http://loinc.org</td><td>Unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet </b></p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on Loinc v2.80</p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9622-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9622-7/\">LA9622-7</a></td><td>http://loinc.org</td><td>Fully active, able to carry on all pre-disease performance without restriction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9623-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9623-5/\">LA9623-5</a></td><td>http://loinc.org</td><td>Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9624-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9624-3/\">LA9624-3</a></td><td>http://loinc.org</td><td>Ambulatory and capable of all selfcare but unable to carry out any work activities. Up and about more than 50% of waking hours</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9625-0\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9625-0/\">LA9625-0</a></td><td>http://loinc.org</td><td>Capable of only limited selfcare, confined to bed or chair more than 50% of waking hours</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9626-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9626-8/\">LA9626-8</a></td><td>http://loinc.org</td><td>Completely disabled. Cannot carry on any selfcare. Totally confined to bed or chair</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA9627-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA9627-6/\">LA9627-6</a></td><td>http://loinc.org</td><td>Dead</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"x-http://loinc.org-LA4489-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA4489-6/\">LA4489-6</a></td><td>http://loinc.org</td><td>Unknown</td></tr></table></div>"
       },
       "url" : "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/ecog-performance-status",
       "version" : "0.1.0",
       "name" : "ECOGPerformanceStatusVS",
       "title" : "ECOG",
       "status" : "draft",
-      "date" : "2025-02-09T15:43:55+00:00",
+      "date" : "2025-04-28T11:03:49+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b3f511bd-79c6-4ab5-b25a-bc76f066172e",
-        "timestamp" : "2025-02-09T15:45:25+00:00",
+        "identifier" : "urn:uuid:ab70f6cb-c694-4686-8379-72a8634f5b4f",
+        "timestamp" : "2025-04-28T11:05:19+00:00",
         "total" : 7,
         "offset" : 0,
         "parameter" : [{
@@ -42,11 +42,11 @@
         },
         {
           "name" : "used-codesystem",
-          "valueUri" : "http://loinc.org|2.78"
+          "valueUri" : "http://loinc.org|2.80"
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.78"
+          "valueUri" : "http://loinc.org|2.80"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -99,10 +99,10 @@
       "name" : "TumorsituationVS",
       "title" : "Tumorsituation ValueSet",
       "status" : "draft",
-      "date" : "2025-02-09T15:43:55+00:00",
+      "date" : "2025-04-28T11:03:49+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:f60081d5-b51c-42ae-940d-a006fd1b76fa",
-        "timestamp" : "2025-02-09T15:45:28+00:00",
+        "identifier" : "urn:uuid:daac3226-b7d9-41cb-8197-821486b42854",
+        "timestamp" : "2025-04-28T11:05:22+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{

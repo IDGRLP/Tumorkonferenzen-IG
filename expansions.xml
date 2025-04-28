@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2883b977-c1df-4311-82b3-53883618fa1f"/>
+  <id value="b8d0b201-8aa9-48ae-ba3c-934ea789e751"/>
   <meta>
-    <lastUpdated value="2025-02-09T15:43:55.408+00:00"/>
+    <lastUpdated value="2025-04-28T11:03:49.739+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
             <p class="res-header-id">
               <b>Generated Narrative: ValueSet </b>
             </p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.78</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on Loinc v2.80</p>
             <p>This value set contains 7 concepts</p>
             <table class="codes">
               <tr>
@@ -94,10 +94,10 @@
         <name value="ECOGPerformanceStatusVS"/>
         <title value="ECOG"/>
         <status value="draft"/>
-        <date value="2025-02-09T15:43:55+00:00"/>
+        <date value="2025-04-28T11:03:49+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:b3f511bd-79c6-4ab5-b25a-bc76f066172e"/>
-          <timestamp value="2025-02-09T15:45:25+00:00"/>
+          <identifier value="urn:uuid:ab70f6cb-c694-4686-8379-72a8634f5b4f"/>
+          <timestamp value="2025-04-28T11:05:19+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -118,11 +118,11 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.78"/>
+            <valueUri value="http://loinc.org|2.80"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -237,10 +237,10 @@
         <name value="TumorsituationVS"/>
         <title value="Tumorsituation ValueSet"/>
         <status value="draft"/>
-        <date value="2025-02-09T15:43:55+00:00"/>
+        <date value="2025-04-28T11:03:49+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:f60081d5-b51c-42ae-940d-a006fd1b76fa"/>
-          <timestamp value="2025-02-09T15:45:28+00:00"/>
+          <identifier value="urn:uuid:daac3226-b7d9-41cb-8197-821486b42854"/>
+          <timestamp value="2025-04-28T11:05:22+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

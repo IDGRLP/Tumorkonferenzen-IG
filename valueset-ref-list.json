@@ -38,10 +38,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel",
       "StructureDefinition-pet-ct.html" : "PetCT",
       "StructureDefinition-skelettszintigraphie.html" : "Skelettszintigraphie",
       "StructureDefinition-ct-mrt-abdomen.html" : "CT/MRT Abdomen",
+      "StructureDefinition-ct-mrt-schaedel.html" : "CT/MRT Schädel",
       "StructureDefinition-lungenfunktionstest.html" : "Lungenfunktionstest"
     },
     {

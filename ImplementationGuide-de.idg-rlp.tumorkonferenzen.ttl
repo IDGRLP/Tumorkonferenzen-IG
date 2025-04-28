@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TumorkonferenzenIDG"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-02-09T15:43:55+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-04-28T11:03:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "IDG Institut für digitale Gesundheitsdaten RLP gGmbH" ] ;
@@ -54,7 +54,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "5.1.0" ]
+     fhir:version [ fhir:v "5.2.0" ]
   ] [
      fhir:id [ fhir:v "de_basisprofil_r4" ] ;
      fhir:uri [
@@ -62,7 +62,7 @@
        fhir:link <http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4>
      ] ;
      fhir:packageId [ fhir:v "de.basisprofil.r4" ] ;
-     fhir:version [ fhir:v "1.5.2" ]
+     fhir:version [ fhir:v "1.5.3" ]
   ] [
      fhir:id [ fhir:v "de_medizininformatikinitiative_kerndatensatz_onkologie" ] ;
      fhir:uri [

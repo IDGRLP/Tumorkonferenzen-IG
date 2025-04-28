@@ -164,8 +164,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "ValueSet-ecog-performance-status.html" : "ECOG"
+      "ValueSet-ecog-performance-status.html" : "ECOG",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -177,13 +177,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-histologische-typisierung-vs.html" : "Histologische Typisierung ValueSet",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
       "ValueSet-ja-nein-beratung-vs.html" : "Ja, Nein, Beratung schon erfolgt ValueSet",
-      "ValueSet-ja-nein-unbekannt-vs.html" : "Expanded Yes/No Indicator ValueSet",
-      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods"
+      "ValueSet-pos-neg-nask-vs.html" : "PosNegNask",
+      "ValueSet-ja-nein-unbekannt-vs.html" : "Expanded Yes/No Indicator ValueSet",
+      "ValueSet-histologische-typisierung-vs.html" : "Histologische Typisierung ValueSet"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
