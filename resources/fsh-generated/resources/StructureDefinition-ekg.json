@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ekg",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ekg",
+  "name": "BildBefundEKG",
+  "title": "EKG",
+  "status": "draft",
+  "description": "Abbildung der Verfügbarkeit von EKG-Befunden.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MinimalObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "11524-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/StatusBildbefundVS"
+        }
+      }
+    ]
+  }
+}

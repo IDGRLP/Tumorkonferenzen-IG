@@ -196,3 +196,19 @@ Title: "Beispiel weiterer gewünschter Teilnehmer"
 Description: "Freitext zur Dokumentation weiterer gewünschter Teilnehmer"
 * subject = Reference(TumorPatientExample)
 * valueString = "Onkologe"
+
+Instance: TNMFreitextExample
+InstanceOf: TNMFreitext
+Usage: #inline
+Title: "Beispiel eines TNM-Freitexts"
+Description: "TNM-Klassifikation Freitext für den Patienten"
+* subject = Reference(TumorPatientExample)
+* valueString = "T4 N3 M0"
+
+Instance: ExterneBilderExample
+InstanceOf: ExterneBilder
+Usage: #inline
+Title: "Beispiel externer Bilder"
+Description: "Dokumentation externer Bilder"
+* subject = Reference(TumorPatientExample)
+* valueCodeableConcept = $customCodes#elektronischUebermittelt "werden elektronisch übermittelt"

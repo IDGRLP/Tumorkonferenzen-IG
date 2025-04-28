@@ -33,14 +33,8 @@
       "id": "de_basisprofil_r4"
     },
     {
-      "packageId": "hl7.fhir.uv.genomics-reporting",
-      "version": "3.0.0",
-      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
-      "id": "hl7_fhir_uv_genomics_reporting"
-    },
-    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-      "version": "2025.0.4",
+      "version": "2025.0.3",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
     }
@@ -122,7 +116,7 @@
         },
         "name": "Beispiel einer ICD-10-GM-Diagnose",
         "description": "Beispiel einer ICD-10-GM-Diagnose",
-        "exampleBoolean": true
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseLungenTumorMinimal"
       },
       {
         "reference": {
@@ -134,10 +128,41 @@
       },
       {
         "reference": {
+          "reference": "Condition/Nebendiagnose-Example"
+        },
+        "name": "Beispiel für eine Nebendiagnose",
+        "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose"
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/bemerkung-freitext"
         },
         "name": "BemerkungFreitext",
         "description": "Freitext für allgemeine Bemerkungen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/C34-BronchusLunge-Neoplasien"
+        },
+        "name": "Bösartige Neubildungen von Bronchus und Lunge (ICD-10 C34.x)",
+        "description": "ICD-10-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/C34-BronchusLunge-ICDO3Topo"
+        },
+        "name": "Bösartige Neubildungen von Bronchus und Lunge (ICD-O-3 Topographie C34.x)",
+        "description": "ICD-O-3 Topographie-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ct-mrt-thorax"
+        },
+        "name": "CT / MRT Thorax",
+        "description": "Abbildung der Verfügbarkeit von CT/MRT-Bildern des Thorax.",
         "exampleBoolean": false
       },
       {
@@ -154,6 +179,14 @@
         },
         "name": "CT/MRT Schädel",
         "description": "Profil zur Dokumentation des CT/MRT Schädel-Befunds.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/DiagnoseLungenTumorMinimal"
+        },
+        "name": "Diagnose Lungen-Tumor Minimal",
+        "description": "Diagnose Lungen-Tumor Minimal",
         "exampleBoolean": false
       },
       {
@@ -187,6 +220,14 @@
         "name": "ECOGExample",
         "description": "Beispielinstanz einer Observation welche einen ECOG Wert enthält.",
         "exampleCanonical": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ecog"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ekg"
+        },
+        "name": "EKG",
+        "description": "Abbildung der Verfügbarkeit von EKG-Befunden.",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -349,6 +390,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/Nebendiagnose"
+        },
+        "name": "Nebendiagnose",
+        "description": "Nebendiagnose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/OperativeTherapieFreitext"
         },
         "name": "OperativeTherapieFreitext",
@@ -413,11 +462,47 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/StatusBildbefundVS"
+        },
+        "name": "StatusBildbefundVS",
+        "description": "Status Bildbefund ValueSet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/StrahlenTherapieFreitext"
         },
         "name": "StrahlenTherapieFreitext",
         "description": "StrahlenTherapieFreitext",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNM-Example"
+        },
+        "name": "TNM-Example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNM-M-Example"
+        },
+        "name": "TNM-M-Example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNM-N-Example"
+        },
+        "name": "TNM-N-Example",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/TNM-T-Example"
+        },
+        "name": "TNM-T-Example",
+        "exampleBoolean": true
       },
       {
         "reference": {

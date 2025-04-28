@@ -16,12 +16,11 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
   diagnose-icd10 0..1 MS and
   allgemeinerLeistungszustandKarnofsky 0..1 MS and
   grading 0..1 MS and
-  untersuchteLymphknoten 0..1 MS and
-  befalleneLymphknoten 0..1 MS and
-  untersuchteSentinelLymphknoten 0..1 MS and
-  befalleneSentinelLymphknoten 0..1 MS and
   erstdiagnose 0..1 MS and
-  tnmFreitext 0..1 MS and
+  tnm 0..1 MS and
+  tnm-t 0..1 MS and
+  tnm-n 0..1 MS and
+  tnm-m 0..1 MS and
   ecog 0..1 MS and
   praxisPathologischesInstitutFreitext 0..1 MS and
   histologieMolPatFreitext 0..1 MS and
@@ -34,7 +33,8 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
   skelettszintigraphie 0..1 MS and
   lungenfunktionstest 0..1 MS and
   fragestellungRadiologieFreitext 0..1 MS and
-  externeBilder 0..1 MS
+  ctmrtThorax 0..1 MS and
+  bildBefundEKG 0..1 MS
 * entry[anmelder]
   * resource only Anmelder
 * entry[patient]
@@ -46,23 +46,21 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
 * entry[diagnoseFreitext]
   * resource only DiagnoseFreitext
 * entry[diagnose-icd10]
-  * resource only Condition // FIXME: should be: MII_PR_Onko_Diagnose_Primaertumor but this is throwing an error
+  * resource only DiagnoseLungenTumorMinimal
 * entry[allgemeinerLeistungszustandKarnofsky]
   * resource only MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky
 * entry[grading]
   * resource only MII_PR_Onko_Grading
-* entry[untersuchteLymphknoten]
-  * resource only MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten
-* entry[befalleneLymphknoten]
-  * resource only MII_PR_Onko_Anzahl_Befallene_Lymphknoten
-* entry[untersuchteSentinelLymphknoten]
-  * resource only MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten
-* entry[befalleneSentinelLymphknoten]
-  * resource only MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten
 * entry[erstdiagnose]
   * resource only Erstdiagnose
-* entry[tnmFreitext]
-  * resource only TNMFreitext
+* entry[tnm]
+  * resource only MII_PR_Onko_TNM_Klassifikation
+* entry[tnm-t]
+  * resource only MII_PR_Onko_TNM_T_Kategorie
+* entry[tnm-n]
+  * resource only MII_PR_Onko_TNM_N_Kategorie
+* entry[tnm-m]
+  * resource only MII_PR_Onko_TNM_M_Kategorie
 * entry[ecog]
   * resource only ECOG
 * entry[praxisPathologischesInstitutFreitext]
@@ -87,8 +85,10 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
   * resource only Lungenfunktionstest
 * entry[fragestellungRadiologieFreitext]
   * resource only FragestellungRadiologieFreitext
-* entry[externeBilder]
-  * resource only ExterneBilder
+* entry[ctmrtThorax]
+  * resource only BildBefundCTMRTThorax
+* entry[bildBefundEKG]
+  * resource only BildBefundEKG
 
 Profile: Anmelder
 Parent: Practitioner
@@ -299,15 +299,34 @@ Description: "ValueSet für externe Bilder mit den Antwortoptionen: sind eingele
 * $customCodes#elektronischUebermittelt "werden elektronisch übermittelt"
 * $customCodes#perPostGesendet "werden per Post gesendet"
 
-Profile: ExterneBilder
+ValueSet: StatusBildbefundVS
+Id: StatusBildbefundVS
+Title: "StatusBildbefundVS"
+Description: "Status Bildbefund ValueSet"
+* $customCodes#nichtVorhanden "nicht vorhanden"
+* $customCodes#eingelesen "sind eingelesen"
+* $customCodes#noch-nicht-eingelesen "noch nicht eingelesen"
+* $customCodes#ausstehend "ausstehend"
+
+Profile: BildBefundCTMRTThorax
 Parent: MinimalObservation
-Id: externe-bilder
-Title: "ExterneBilder"
-Description: "Profil zur Dokumentation externer Bilder mit Antwortoptionen."
+Id: ct-mrt-thorax
+Title: "CT / MRT Thorax"
+Description: "Abbildung der Verfügbarkeit von CT/MRT-Bildern des Thorax."
 * code 1.. MS
-* code = $customCodes#externeBilder
+* code = $customCodes#ct-mrt-thorax
 * value[x] only CodeableConcept
-* valueCodeableConcept from ExterneBilderVS
+* valueCodeableConcept from StatusBildbefundVS
+
+Profile: BildBefundEKG
+Parent: MinimalObservation
+Id: ekg
+Title: "EKG"
+Description: "Abbildung der Verfügbarkeit von EKG-Befunden."
+* code 1.. MS
+* code = $loinc#11524-6 // EKG study
+* value[x] only CodeableConcept
+* valueCodeableConcept from StatusBildbefundVS
 
 ValueSet: GewuenschteTeilnehmerVS
 Id: gewuenschte-teilnehmer-vs

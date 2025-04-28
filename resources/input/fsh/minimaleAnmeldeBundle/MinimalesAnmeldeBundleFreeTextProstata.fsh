@@ -122,3 +122,13 @@ Description: "PosNegNask"
 * $sct#10828004 "Positive"
 * $sct#260385009 "Negative"
 * NullFlavor#NASK "This information has not been sought (e.g., patient was not asked)"
+
+Profile: ExterneBilder
+Parent: MinimalObservation
+Id: externe-bilder
+Title: "ExterneBilder"
+Description: "Profil zur Dokumentation externer Bilder mit Antwortoptionen."
+* code 1.. MS
+* code = $customCodes#externeBilder
+* value[x] only CodeableConcept
+* valueCodeableConcept from ExterneBilderVS

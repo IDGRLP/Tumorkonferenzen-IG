@@ -1,0 +1,44 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ct-mrt-thorax",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-thorax",
+  "name": "BildBefundCTMRTThorax",
+  "title": "CT / MRT Thorax",
+  "status": "draft",
+  "description": "Abbildung der Verfügbarkeit von CT/MRT-Bildern des Thorax.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/MinimalObservation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "ct-mrt-thorax",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/StatusBildbefundVS"
+        }
+      }
+    ]
+  }
+}

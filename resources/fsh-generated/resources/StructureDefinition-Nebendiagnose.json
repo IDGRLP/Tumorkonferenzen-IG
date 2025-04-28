@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Nebendiagnose",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose",
+  "name": "Nebendiagnose",
+  "status": "draft",
+  "description": "Nebendiagnose",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.extension:related",
+        "path": "Condition.extension",
+        "sliceName": "related",
+        "short": "Verknüpfte (Krebs)Diagnose",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/condition-related"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "short": "klinischer Status",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding",
+        "path": "Condition.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM",
+        "path": "Condition.code.coding",
+        "sliceName": "ICD-10-GM",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM.system",
+        "path": "Condition.code.coding.system",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM.version",
+        "path": "Condition.code.coding.version",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.code.coding:ICD-10-GM.code",
+        "path": "Condition.code.coding.code",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "mustSupport": true
+      }
+    ]
+  }
+}

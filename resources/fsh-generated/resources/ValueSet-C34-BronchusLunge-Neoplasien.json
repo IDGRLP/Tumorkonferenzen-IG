@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "C34_BronchusLunge_NeoplasienVS",
+  "id": "C34-BronchusLunge-Neoplasien",
+  "title": "Bösartige Neubildungen von Bronchus und Lunge (ICD-10 C34.x)",
+  "description": "ICD-10-Codes für maligne Neubildungen des Hauptbronchus, der Lungenlappen und überlappender bzw. unspezifischer Lokalisationen.",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/C34-BronchusLunge-Neoplasien",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "concept": [
+          {
+            "code": "C34.0",
+            "display": "Hauptbronchus"
+          },
+          {
+            "code": "C34.1",
+            "display": "Oberlappen (Bronchus)"
+          },
+          {
+            "code": "C34.2",
+            "display": "Mittellappen (Bronchus)"
+          },
+          {
+            "code": "C34.3",
+            "display": "Unterlappen (Bronchus)"
+          },
+          {
+            "code": "C34.8",
+            "display": "Bronchus und Lunge, mehrere Teilbereiche überlappend"
+          },
+          {
+            "code": "C34.9",
+            "display": "Bronchus oder Lunge, nicht näher bezeichnet"
+          }
+        ]
+      }
+    ]
+  }
+}

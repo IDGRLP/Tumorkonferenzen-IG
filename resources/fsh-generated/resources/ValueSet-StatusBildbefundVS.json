@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "StatusBildbefundVS",
+  "id": "StatusBildbefundVS",
+  "title": "StatusBildbefundVS",
+  "description": "Status Bildbefund ValueSet",
+  "url": "http://idg-rlp.de/fhir/tumorkonferenzen/ValueSet/StatusBildbefundVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+        "concept": [
+          {
+            "code": "nichtVorhanden",
+            "display": "nicht vorhanden"
+          },
+          {
+            "code": "eingelesen",
+            "display": "sind eingelesen"
+          },
+          {
+            "code": "noch-nicht-eingelesen",
+            "display": "noch nicht eingelesen"
+          },
+          {
+            "code": "ausstehend",
+            "display": "ausstehend"
+          }
+        ]
+      }
+    ]
+  }
+}

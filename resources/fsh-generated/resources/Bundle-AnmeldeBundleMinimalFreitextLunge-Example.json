@@ -193,22 +193,18 @@
         "id": "ICD10GM-DiagnoseExample",
         "meta": {
           "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor"
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseLungenTumorMinimal"
           ]
         },
         "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/condition-assertedDate",
-            "valueDateTime": "2020-02-16"
-          },
           {
             "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3",
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "8070/3",
+                  "code": "8140/3",
                   "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-                  "display": "Plattenepithelkarzinom o.n.A."
+                  "display": "Adenokarzinom o.n.A."
                 }
               ]
             }
@@ -218,33 +214,9 @@
           "coding": [
             {
               "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-              "extension": [
-                {
-                  "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
-                  "valueCoding": {
-                    "code": "R",
-                    "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
-                    "display": "rechts"
-                  }
-                }
-              ],
               "code": "C34.0",
               "display": "Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus",
               "version": "2025"
-            }
-          ]
-        },
-        "verificationStatus": {
-          "coding": [
-            {
-              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-              "code": "confirmed",
-              "display": "confirmed"
-            },
-            {
-              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung",
-              "code": "1",
-              "display": "klinisch"
             }
           ]
         },
@@ -257,9 +229,9 @@
                 "display": "Hauptbronchus"
               },
               {
-                "system": "http://snomed.info/sct",
-                "code": "245508000",
-                "display": "Entire main bronchus"
+                "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation",
+                "code": "M",
+                "display": "Mittellinie/mittig"
               }
             ]
           }
@@ -356,174 +328,6 @@
       }
     },
     {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "UntersuchteLymphknotenExample",
-        "meta": {
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "21894-1",
-              "display": "Regional lymph nodes examined [#] Specimen"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "1",
-          "value": 23,
-          "unit": "#"
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/TumorPatientExample"
-        },
-        "effectiveDateTime": "2024-01-11"
-      }
-    },
-    {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "BefalleneLymphknotenExample",
-        "meta": {
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "21893-3",
-              "display": "Regional lymph nodes positive [#] Specimen"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "1",
-          "value": 0,
-          "unit": "#"
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/TumorPatientExample"
-        },
-        "effectiveDateTime": "2024-01-11"
-      }
-    },
-    {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "UntersuchteSentinelLymphknotenExample",
-        "meta": {
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "85347-3",
-              "display": "Sentinel lymph nodes examined [#] in Cancer specimen by Light microscopy"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "1",
-          "value": 2,
-          "unit": "#"
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/TumorPatientExample"
-        },
-        "effectiveDateTime": "2024-01-11"
-      }
-    },
-    {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "BefalleneSentinelLymphknotenExample",
-        "meta": {
-          "profile": [
-            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten"
-          ]
-        },
-        "category": [
-          {
-            "coding": [
-              {
-                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-                "code": "laboratory"
-              }
-            ]
-          }
-        ],
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "92832-5",
-              "display": "Sentinel lymph nodes with metastasis [#] in Cancer specimen"
-            }
-          ]
-        },
-        "valueQuantity": {
-          "system": "http://unitsofmeasure.org",
-          "code": "1",
-          "value": 0,
-          "unit": "#"
-        },
-        "status": "final",
-        "subject": {
-          "reference": "Patient/TumorPatientExample"
-        },
-        "effectiveDateTime": "2024-01-11"
-      }
-    },
-    {
       "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample",
       "resource": {
         "resourceType": "Observation",
@@ -583,28 +387,232 @@
       }
     },
     {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample",
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-Example",
       "resource": {
         "resourceType": "Observation",
-        "id": "TNMFreitextExample",
+        "id": "TNM-Example",
         "meta": {
           "profile": [
-            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext"
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation"
           ]
         },
         "status": "final",
         "code": {
           "coding": [
             {
-              "code": "tnm-FreitextObservation",
-              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+              "code": "399537006",
+              "system": "http://snomed.info/sct",
+              "display": "Clinical TNM stage grouping"
             }
           ]
         },
         "subject": {
           "reference": "Patient/TumorPatientExample"
         },
-        "valueString": "T4 N3 M0"
+        "effectiveDateTime": "2024-01-11",
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+              "display": "8. Auflage"
+            }
+          ]
+        },
+        "hasMember": [
+          {
+            "reference": "Observation/TNM-T-Example"
+          },
+          {
+            "reference": "Observation/TNM-N-Example"
+          },
+          {
+            "reference": "Observation/mii-exa-onko-tnm-m-kategorie-M0"
+          }
+        ],
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "0",
+              "system": "https://www.uicc.org/resources/tnm",
+              "display": "Stadium 0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-T-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNM-T-Example",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"
+          ]
+        },
+        "code": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "c",
+                    "system": "https://www.uicc.org/resources/tnm",
+                    "display": "c"
+                  }
+                ]
+              }
+            }
+          ],
+          "coding": [
+            {
+              "code": "399504009",
+              "system": "http://snomed.info/sct",
+              "display": "cT category (observable entity)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+              "display": "8. Auflage"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "T2a2",
+              "system": "https://www.uicc.org/resources/tnm",
+              "display": "T2a2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-N-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNM-N-Example",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"
+          ]
+        },
+        "code": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "c",
+                    "system": "https://www.uicc.org/resources/tnm",
+                    "display": "c"
+                  }
+                ]
+              }
+            }
+          ],
+          "coding": [
+            {
+              "code": "399534004",
+              "system": "http://snomed.info/sct",
+              "display": "cN category (observable entity)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+              "display": "8. Auflage"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "N0",
+              "system": "https://www.uicc.org/resources/tnm",
+              "display": "N0"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-M-Example",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "TNM-M-Example",
+        "meta": {
+          "profile": [
+            "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"
+          ]
+        },
+        "code": {
+          "extension": [
+            {
+              "url": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "c",
+                    "system": "https://www.uicc.org/resources/tnm",
+                    "display": "c"
+                  }
+                ]
+              }
+            }
+          ],
+          "coding": [
+            {
+              "code": "399387003",
+              "system": "http://snomed.info/sct",
+              "display": "cM category (observable entity)"
+            }
+          ]
+        },
+        "status": "final",
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "effectiveDateTime": "2024-01-11",
+        "method": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+              "display": "8. Auflage"
+            }
+          ]
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "M0",
+              "system": "https://www.uicc.org/resources/tnm",
+              "display": "M0"
+            }
+          ]
+        }
       }
     },
     {
@@ -982,20 +990,20 @@
       }
     },
     {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample",
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTExample",
       "resource": {
         "resourceType": "Observation",
-        "id": "ExterneBilderExample",
+        "id": "CTMRTExample",
         "meta": {
           "profile": [
-            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/externe-bilder"
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-thorax"
           ]
         },
         "status": "final",
         "code": {
           "coding": [
             {
-              "code": "externeBilder",
+              "code": "ct-mrt-thorax",
               "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
             }
           ]
@@ -1006,9 +1014,42 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "elektronischUebermittelt",
+              "code": "noch-nicht-eingelesen",
               "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
-              "display": "werden elektronisch übermittelt"
+              "display": "noch nicht eingelesen"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/EKGExample",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "EKGExample",
+        "meta": {
+          "profile": [
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ekg"
+          ]
+        },
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "code": "11524-6",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/TumorPatientExample"
+        },
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "code": "nichtVorhanden",
+              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
+              "display": "nicht vorhanden"
             }
           ]
         }

@@ -28,24 +28,21 @@ Description: "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten"
 * entry[grading]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/GradingExample"
   * resource = GradingExample
-* entry[untersuchteLymphknoten]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteLymphknotenExample"
-  * resource = UntersuchteLymphknotenExample
-* entry[befalleneLymphknoten]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneLymphknotenExample"
-  * resource = BefalleneLymphknotenExample
-* entry[untersuchteSentinelLymphknoten]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/UntersuchteSentinelLymphknotenExample"
-  * resource = UntersuchteSentinelLymphknotenExample
-* entry[befalleneSentinelLymphknoten]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/BefalleneSentinelLymphknotenExample"
-  * resource = BefalleneSentinelLymphknotenExample
 * entry[erstdiagnose]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ErstdiagnoseExample"
   * resource = ErstdiagnoseExample
-* entry[tnmFreitext]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNMFreitextExample"
-  * resource = TNMFreitextExample
+* entry[tnm]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-Example"
+  * resource = TNM-Example
+* entry[tnm-t]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-T-Example"
+  * resource = TNM-T-Example
+* entry[tnm-n]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-N-Example"
+  * resource = TNM-N-Example
+* entry[tnm-m]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/TNM-M-Example"
+  * resource = TNM-M-Example  
 * entry[ecog]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ECOGExampleMinimal"
   * resource = ECOGExampleMinimal
@@ -82,9 +79,12 @@ Description: "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten"
 * entry[fragestellungRadiologieFreitext]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungRadiologieFreitextExample"
   * resource = FragestellungRadiologieFreitextExample
-* entry[externeBilder]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ExterneBilderExample"
-  * resource = ExterneBilderExample
+* entry[ctmrtThorax]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/CTMRTExample"
+  * resource = CTMRTExample
+* entry[bildBefundEKG]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/EKGExample"
+  * resource = EKGExample
 
 Instance: TumorPatientExample
 InstanceOf: TumorPatient
@@ -134,13 +134,63 @@ Description: "Erstdiagnose des Lungenkrebses"
 * component[stadiumBeiED].valueString = "IIIb"
 * component[cTNMbeiED].valueString = "T4 N3 M0"
 
-Instance: TNMFreitextExample
+Instance: TNMExample
 InstanceOf: TNMFreitext
 Usage: #inline
 Title: "Beispiel eines TNM-Freitexts"
 Description: "TNM-Klassifikation Freitext für den Patienten"
 * subject = Reference(TumorPatientExample)
 * valueString = "T4 N3 M0"
+
+Alias: $sct = http://snomed.info/sct
+Alias: $mii-cs-onko-tnm-version = https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version
+Alias: $tnm = https://www.uicc.org/resources/tnm
+
+Instance: TNM-Example
+InstanceOf: MII_PR_Onko_TNM_Klassifikation
+Usage: #example
+* status = #final
+* code = $sct#399537006 "Clinical TNM stage grouping"
+* subject = Reference(TumorPatientExample)
+* effectiveDateTime = "2024-01-11"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* hasMember[0] = Reference(TNM-T-Example)
+* hasMember[+] = Reference(TNM-N-Example)
+* hasMember[+] = Reference(Observation/mii-exa-onko-tnm-m-kategorie-M0)
+* valueCodeableConcept = $tnm#0 "Stadium 0"
+
+Instance: TNM-T-Example
+InstanceOf: MII_PR_Onko_TNM_T_Kategorie
+Usage: #example
+* status = #final
+* code.extension[cpPraefix].valueCodeableConcept = $tnm#c "c"
+* code = $sct#399504009 "cT category (observable entity)"
+* subject = Reference(TumorPatientExample)
+* effectiveDateTime = "2024-01-11"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept = $tnm#T2a2 "T2a2"
+
+Instance: TNM-N-Example
+InstanceOf: MII_PR_Onko_TNM_N_Kategorie
+Usage: #example
+* status = #final
+* code.extension[cpPraefix].valueCodeableConcept = $tnm#c "c"
+* code = $sct#399534004 "cN category (observable entity)"
+* subject = Reference(TumorPatientExample)
+* effectiveDateTime = "2024-01-11"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept = $tnm#N0 "N0"
+
+Instance: TNM-M-Example
+InstanceOf: MII_PR_Onko_TNM_M_Kategorie
+Usage: #example
+* status = #final
+* code.extension[cpPraefix].valueCodeableConcept = $tnm#c "c"
+* code = $sct#399387003 "cM category (observable entity)"
+* subject = Reference(TumorPatientExample)
+* effectiveDateTime = "2024-01-11"
+* method = $mii-cs-onko-tnm-version#8 "8. Auflage"
+* valueCodeableConcept = $tnm#M0 "M0"
 
 Instance: ECOGExampleMinimal
 InstanceOf: ECOG
@@ -244,29 +294,42 @@ Description: "Spezifische Fragestellung für die Radiologie"
 * subject = Reference(TumorPatientExample)
 * valueString = "Abklärung möglicher Metastasen im Abdomen"
 
-Instance: ExterneBilderExample
-InstanceOf: ExterneBilder
+Instance: CTMRTExample
+InstanceOf: BildBefundCTMRTThorax
 Usage: #inline
-Title: "Beispiel externer Bilder"
-Description: "Dokumentation externer Bilder"
+Title: "Beispiel eines CT/MRT-Befunds"
+Description: "Dokumentation des CT/MRT-Befunds"
 * subject = Reference(TumorPatientExample)
-* valueCodeableConcept = $customCodes#elektronischUebermittelt "werden elektronisch übermittelt"
+* valueCodeableConcept = $customCodes#noch-nicht-eingelesen "noch nicht eingelesen"
+
+Instance: EKGExample
+InstanceOf: BildBefundEKG
+Usage: #inline
+Title: "Beispiel eines EKG-Befunds"
+Description: "Dokumentation des EKG-Befunds"
+* subject = Reference(TumorPatientExample)
+* valueCodeableConcept = $customCodes#nichtVorhanden "nicht vorhanden"
 
 Instance: ICD10GM-DiagnoseExample
-InstanceOf: MII_PR_Onko_Diagnose_Primaertumor
+InstanceOf: DiagnoseLungenTumorMinimal
 Usage: #example
 Title: "Beispiel einer ICD-10-GM-Diagnose"
 Description: "Beispiel einer ICD-10-GM-Diagnose"
-* extension[Feststellungsdatum].valueDateTime = "2020-02-16"
-* extension[morphology-behavior-icdo3].valueCodeableConcept = $icd-o-3#8070/3 "Plattenepithelkarzinom o.n.A."
+* extension[morphology-behavior-icdo3].valueCodeableConcept = $icd-o-3#8140/3 "Adenokarzinom o.n.A."
 * code.coding[icd10-gm] = $icd-10-gm#C34.0 "Bösartige Neubildung der Bronchien und der Lunge: Hauptbronchus"
   * version = "2025"
-  * extension[Seitenlokalisation].valueCoding = $KBV_CS_SFHIR_ICD_SEITENLOKALISATION#R "rechts"
 * clinicalStatus = $condition-clinical#active
 * subject = Reference(TumorPatientExample)
 * recordedDate = "2020-02-16"
-* verificationStatus
-  * coding[condition-ver-status] = ConditionVerificationStatus#confirmed "confirmed"
-  * coding[primaertumorDiagnosesicherung] = MII_CS_Onko_Primaertumor_Diagnosesicherung#1 "klinisch"
 * bodySite.coding[icd-o-3] = $icd-o-3#C34.0 "Hauptbronchus"
-* bodySite.coding[snomed-ct] = $sct#245508000 "Entire main bronchus"
+* bodySite.coding[primaertumorSeitenlokalisation] = MII_CS_Onko_Seitenlokalisation#M "Mittellinie/mittig"
+
+Instance: Nebendiagnose-Example
+InstanceOf: Nebendiagnose
+Usage: #example
+Title: "Beispiel für eine Nebendiagnose"
+* extension[related].valueReference = Reference(ICD10GM-DiagnoseExample)
+* code.coding[ICD-10-GM].code = #J18.9 "Pneumonie, nicht näher bezeichnet" 
+* code.coding[ICD-10-GM].version = "2024"
+* subject = Reference(TumorPatientExample)
+* recordedDate = "2025-04-28"

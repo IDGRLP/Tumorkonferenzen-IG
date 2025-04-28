@@ -1,0 +1,30 @@
+{
+  "resourceType": "Condition",
+  "id": "Nebendiagnose-Example",
+  "meta": {
+    "profile": [
+      "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "code": "J18.9",
+        "version": "2024"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+      "valueReference": {
+        "reference": "Condition/ICD10GM-DiagnoseExample"
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/TumorPatientExample"
+  },
+  "recordedDate": "2025-04-28"
+}

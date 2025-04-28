@@ -146,7 +146,10 @@
         "path": "Bundle.entry.resource",
         "type": [
           {
-            "code": "Condition"
+            "code": "Condition",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/DiagnoseLungenTumorMinimal"
+            ]
           }
         ]
       },
@@ -191,86 +194,6 @@
         ]
       },
       {
-        "id": "Bundle.entry:untersuchteLymphknoten",
-        "path": "Bundle.entry",
-        "sliceName": "untersuchteLymphknoten",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry:untersuchteLymphknoten.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Observation",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-lymphknoten"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:befalleneLymphknoten",
-        "path": "Bundle.entry",
-        "sliceName": "befalleneLymphknoten",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry:befalleneLymphknoten.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Observation",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-lymphknoten"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:untersuchteSentinelLymphknoten",
-        "path": "Bundle.entry",
-        "sliceName": "untersuchteSentinelLymphknoten",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry:untersuchteSentinelLymphknoten.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Observation",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-untersuchte-sentinel-lymphknoten"
-            ]
-          }
-        ]
-      },
-      {
-        "id": "Bundle.entry:befalleneSentinelLymphknoten",
-        "path": "Bundle.entry",
-        "sliceName": "befalleneSentinelLymphknoten",
-        "min": 0,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Bundle.entry:befalleneSentinelLymphknoten.resource",
-        "path": "Bundle.entry.resource",
-        "type": [
-          {
-            "code": "Observation",
-            "profile": [
-              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-anzahl-befallene-sentinel-lymphknoten"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Bundle.entry:erstdiagnose",
         "path": "Bundle.entry",
         "sliceName": "erstdiagnose",
@@ -291,21 +214,81 @@
         ]
       },
       {
-        "id": "Bundle.entry:tnmFreitext",
+        "id": "Bundle.entry:tnm",
         "path": "Bundle.entry",
-        "sliceName": "tnmFreitext",
+        "sliceName": "tnm",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Bundle.entry:tnmFreitext.resource",
+        "id": "Bundle.entry:tnm.resource",
         "path": "Bundle.entry.resource",
         "type": [
           {
             "code": "Observation",
             "profile": [
-              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/TNMFreitext"
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-klassifikation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-t",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-t",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-t.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-n",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-n",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-n.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:tnm-m",
+        "path": "Bundle.entry",
+        "sliceName": "tnm-m",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:tnm-m.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie"
             ]
           }
         ]
@@ -551,21 +534,41 @@
         ]
       },
       {
-        "id": "Bundle.entry:externeBilder",
+        "id": "Bundle.entry:ctmrtThorax",
         "path": "Bundle.entry",
-        "sliceName": "externeBilder",
+        "sliceName": "ctmrtThorax",
         "min": 0,
         "max": "1",
         "mustSupport": true
       },
       {
-        "id": "Bundle.entry:externeBilder.resource",
+        "id": "Bundle.entry:ctmrtThorax.resource",
         "path": "Bundle.entry.resource",
         "type": [
           {
             "code": "Observation",
             "profile": [
-              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/externe-bilder"
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ct-mrt-thorax"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Bundle.entry:bildBefundEKG",
+        "path": "Bundle.entry",
+        "sliceName": "bildBefundEKG",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Bundle.entry:bildBefundEKG.resource",
+        "path": "Bundle.entry.resource",
+        "type": [
+          {
+            "code": "Observation",
+            "profile": [
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/ekg"
             ]
           }
         ]
