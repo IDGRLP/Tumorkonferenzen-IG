@@ -30,7 +30,7 @@ jobs:
       - name: Build IG
         run: |
           fhir install de.basisprofil.r4@1.5.3
-          fhir install   de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.4
+          fhir install de.medizininformatikinitiative.kerndatensatz.onkologie@2025.0.4
           echo "Run the IG publisher..."
           java -Xmx4G -jar /opt/publisher/publisher.jar publisher -ig resources
 

@@ -28,13 +28,19 @@
   "dependsOn": [
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.2",
+      "version": "1.5.3",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
     {
+      "packageId": "hl7.fhir.uv.genomics-reporting",
+      "version": "3.0.0",
+      "uri": "http://hl7.org/fhir/uv/genomics-reporting/ImplementationGuide/hl7.fhir.uv.genomics-reporting",
+      "id": "hl7_fhir_uv_genomics_reporting"
+    },
+    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-      "version": "2025.0.3",
+      "version": "2025.0.4",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
     }
