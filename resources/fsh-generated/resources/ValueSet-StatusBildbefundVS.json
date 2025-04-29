@@ -12,7 +12,7 @@
         "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
         "concept": [
           {
-            "code": "nichtVorhanden",
+            "code": "nicht-vorhanden",
             "display": "nicht vorhanden"
           },
           {

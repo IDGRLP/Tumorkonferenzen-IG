@@ -187,7 +187,7 @@
       }
     },
     {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample",
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample",
       "resource": {
         "resourceType": "Condition",
         "id": "ICD10GM-DiagnoseExample",
@@ -725,28 +725,36 @@
       }
     },
     {
-      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample",
+      "fullUrl": "http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example",
       "resource": {
-        "resourceType": "Observation",
-        "id": "RelevanteNebendiagnosenFreitextExample",
+        "resourceType": "Condition",
+        "id": "Nebendiagnose-Example",
         "meta": {
           "profile": [
-            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"
+            "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose"
           ]
         },
-        "status": "final",
         "code": {
           "coding": [
             {
-              "code": "relevanteNebendiagnosenFreitext",
-              "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes"
+              "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+              "code": "J18.9",
+              "version": "2024"
             }
           ]
         },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/condition-related",
+            "valueReference": {
+              "reference": "Condition/ICD10GM-DiagnoseExample"
+            }
+          }
+        ],
         "subject": {
           "reference": "Patient/TumorPatientExample"
         },
-        "valueString": "Diabetes mellitus Typ 2"
+        "recordedDate": "2025-04-28"
       }
     },
     {
@@ -1047,7 +1055,7 @@
         "valueCodeableConcept": {
           "coding": [
             {
-              "code": "nichtVorhanden",
+              "code": "nicht-vorhanden",
               "system": "http://idg-rlp.de/fhir/tumorkonferenzen/CodeSystem/CustomCodes",
               "display": "nicht vorhanden"
             }

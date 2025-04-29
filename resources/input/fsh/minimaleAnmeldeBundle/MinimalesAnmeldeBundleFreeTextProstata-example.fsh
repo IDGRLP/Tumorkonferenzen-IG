@@ -212,3 +212,11 @@ Title: "Beispiel externer Bilder"
 Description: "Dokumentation externer Bilder"
 * subject = Reference(TumorPatientExample)
 * valueCodeableConcept = $customCodes#elektronischUebermittelt "werden elektronisch übermittelt"
+
+Instance: RelevanteNebendiagnosenFreitextExample
+InstanceOf: RelevanteNebendiagnosenFreitext
+Usage: #inline
+Title: "Beispiel für relevante Nebendiagnosen"
+Description: "Freitext-Dokumentation relevanter Nebendiagnosen"
+* subject = Reference(TumorPatientExample)
+* valueString = "Diabetes mellitus Typ 2"

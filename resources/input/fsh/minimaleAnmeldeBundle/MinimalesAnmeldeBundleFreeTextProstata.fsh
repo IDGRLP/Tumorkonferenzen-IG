@@ -132,3 +132,10 @@ Description: "Profil zur Dokumentation externer Bilder mit Antwortoptionen."
 * code = $customCodes#externeBilder
 * value[x] only CodeableConcept
 * valueCodeableConcept from ExterneBilderVS
+
+Profile: RelevanteNebendiagnosenFreitext
+Parent: FreitextObservation
+Id: relevante-nebendiagnosen-freitext
+Title: "RelevanteNebendiagnosenFreitext"
+Description: "Freitext für die Beschreibung relevanter Nebendiagnosen"
+* code = $customCodes#relevanteNebendiagnosenFreitext

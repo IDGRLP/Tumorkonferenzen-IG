@@ -25,7 +25,7 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
   praxisPathologischesInstitutFreitext 0..1 MS and
   histologieMolPatFreitext 0..1 MS and
   verlaufFreitext 0..1 MS and
-  relevanteNebendiagnosenFreitext 0..1 MS and
+  nebendiagnosen 0..* MS and
   fragestellungTumorkonferenzFreitext 0..1 MS and
   ctmrtSchaedel 0..1 MS and
   ctmrtAbdomen 0..1 MS and
@@ -69,8 +69,8 @@ Description: "AnmeldeBundleMinimalFreitextLunge"
   * resource only HistologieMolPatFreitext
 * entry[verlaufFreitext]
   * resource only VerlaufFreitext 
-* entry[relevanteNebendiagnosenFreitext]
-  * resource only RelevanteNebendiagnosenFreitext 
+* entry[nebendiagnosen]
+  * resource only Nebendiagnose 
 * entry[fragestellungTumorkonferenzFreitext]
   * resource only FragestellungTumorkonferenzFreitext 
 * entry[ctmrtSchaedel]
@@ -249,13 +249,6 @@ Title: "PsaVerlaufFreitext"
 Description: "Freitext für die Beschreibung des PSA-Verlaufs"
 * code = $customCodes#psaVerlaufFreitext
 
-Profile: RelevanteNebendiagnosenFreitext
-Parent: FreitextObservation
-Id: relevante-nebendiagnosen-freitext
-Title: "RelevanteNebendiagnosenFreitext"
-Description: "Freitext für die Beschreibung relevanter Nebendiagnosen"
-* code = $customCodes#relevanteNebendiagnosenFreitext
-
 Profile: FragestellungTumorkonferenzFreitext
 Parent: FreitextObservation
 Id: fragestellung-tumorkonferenz-freitext
@@ -303,7 +296,7 @@ ValueSet: StatusBildbefundVS
 Id: StatusBildbefundVS
 Title: "StatusBildbefundVS"
 Description: "Status Bildbefund ValueSet"
-* $customCodes#nichtVorhanden "nicht vorhanden"
+* $customCodes#nicht-vorhanden "nicht vorhanden"
 * $customCodes#eingelesen "sind eingelesen"
 * $customCodes#noch-nicht-eingelesen "noch nicht eingelesen"
 * $customCodes#ausstehend "ausstehend"

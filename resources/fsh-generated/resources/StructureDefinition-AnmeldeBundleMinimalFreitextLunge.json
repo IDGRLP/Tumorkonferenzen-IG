@@ -374,21 +374,21 @@
         ]
       },
       {
-        "id": "Bundle.entry:relevanteNebendiagnosenFreitext",
+        "id": "Bundle.entry:nebendiagnosen",
         "path": "Bundle.entry",
-        "sliceName": "relevanteNebendiagnosenFreitext",
+        "sliceName": "nebendiagnosen",
         "min": 0,
-        "max": "1",
+        "max": "*",
         "mustSupport": true
       },
       {
-        "id": "Bundle.entry:relevanteNebendiagnosenFreitext.resource",
+        "id": "Bundle.entry:nebendiagnosen.resource",
         "path": "Bundle.entry.resource",
         "type": [
           {
-            "code": "Observation",
+            "code": "Condition",
             "profile": [
-              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/relevante-nebendiagnosen-freitext"
+              "http://idg-rlp.de/fhir/tumorkonferenzen/StructureDefinition/Nebendiagnose"
             ]
           }
         ]

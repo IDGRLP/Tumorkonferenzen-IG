@@ -20,7 +20,7 @@ Description: "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten"
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/DiagnoseFreitextExample"
   * resource = DiagnoseFreitextExample
 * entry[diagnose-icd10]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/ICD10GM-DiagnoseExample"
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Condition/ICD10GM-DiagnoseExample"
   * resource = ICD10GM-DiagnoseExample
 * entry[allgemeinerLeistungszustandKarnofsky]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/AllgemeinerLeistungszustandKarnofskyExample"
@@ -55,9 +55,9 @@ Description: "Beispiel für ein minimalen Anmeldebundle für Lungenpatienten"
 * entry[verlaufFreitext]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/VerlaufFreitextExample"
   * resource = VerlaufFreitextExample
-* entry[relevanteNebendiagnosenFreitext]
-  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/RelevanteNebendiagnosenFreitextExample"
-  * resource = RelevanteNebendiagnosenFreitextExample
+* entry[nebendiagnosen]
+  * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Condition/Nebendiagnose-Example"
+  * resource = Nebendiagnose-Example
 * entry[fragestellungTumorkonferenzFreitext]
   * fullUrl = "http://idg-rlp.de/fhir/tumorkonferenzen/Observation/FragestellungTumorkonferenzFreitextExample"
   * resource = FragestellungTumorkonferenzFreitextExample
@@ -225,14 +225,6 @@ Description: "Freitext-Verlauf des Krankheitsfortschritts"
 * subject = Reference(TumorPatientExample)
 * valueString = "Stabiler Verlauf unter Immuntherapie"
 
-Instance: RelevanteNebendiagnosenFreitextExample
-InstanceOf: RelevanteNebendiagnosenFreitext
-Usage: #inline
-Title: "Beispiel für relevante Nebendiagnosen"
-Description: "Freitext-Dokumentation relevanter Nebendiagnosen"
-* subject = Reference(TumorPatientExample)
-* valueString = "Diabetes mellitus Typ 2"
-
 Instance: FragestellungTumorkonferenzFreitextExample
 InstanceOf: FragestellungTumorkonferenzFreitext
 Usage: #inline
@@ -308,7 +300,7 @@ Usage: #inline
 Title: "Beispiel eines EKG-Befunds"
 Description: "Dokumentation des EKG-Befunds"
 * subject = Reference(TumorPatientExample)
-* valueCodeableConcept = $customCodes#nichtVorhanden "nicht vorhanden"
+* valueCodeableConcept = $customCodes#nicht-vorhanden "nicht vorhanden"
 
 Instance: ICD10GM-DiagnoseExample
 InstanceOf: DiagnoseLungenTumorMinimal
